@@ -1,0 +1,23 @@
+.carousel-sides {
+    display: flex;
+}
+.nav-link{
+          font-size: 1.1em;
+          color: #fff;
+          font-weight: 500;
+          text-decoration: none;
+}
+.card {
+    background-color: #fff;
+}
+h5 .card-title {
+    color: #000;
+}
+.card-body .card-text strong {
+    color: #1E90FF;
+}
+@media screen and (max-width: 550) {
+    footer {
+        width: 80%;
+    }
+}

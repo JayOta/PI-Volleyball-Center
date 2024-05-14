@@ -1,0 +1,51 @@
+footer {
+    display: flex;
+    width: 100%;
+}
+.nav-link {
+          font-size: 1.1em;
+          color: #fff;
+          font-weight: 500;
+          text-decoration: none;
+}
+.carouselDownPics {
+    display: flex;
+}
+/* Arrumar o tamanho dos textos do carrousel(.carousel-title {
+    display: flex;
+}) */
+
+@media screen and (max-width: 1320px) {
+    .carousel .carousel-item {
+        width: 1200px;
+        height: 500px auto !important;
+        margin-right: 200px;
+    }
+    .card {
+        display: flex;
+        height: 290px;
+        width: 300px;
+    }
+    .carouselDownPics {
+        display: flex;
+        width: auto;
+    }
+    .carousel-caption h2{
+        display: flex;
+        width: 20%;
+    }
+    h2.carousel-title{
+        display: flex;
+        width: 60% auto;
+        font-size: 50%;
+
+    }   
+}
+@media screen and (max-width: 1100px) {
+    .carousel .carousel-item img {
+        width: 500px;
+        height: 150px;
+    }
+
+
+}

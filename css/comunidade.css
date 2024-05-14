@@ -1,0 +1,17 @@
+.nav-link {
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+}
+.container {
+          
+    padding: 10px;
+    border-radius: 10px;
+}
+.imagem img {
+align-items: center; 
+height: 135px; 
+padding-right: 16px;
+padding-top: 1em;
+}
