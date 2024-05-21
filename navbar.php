@@ -27,7 +27,7 @@
 					<a href="fundamentos.php">Fundamentos</a>
 					<a href="noticias.php">Notícias</a>
 					<a href="loja.php" style="color: #7fb7f0;">Loja</a>
-					<a href="login.html" style="bottom: 13px;"><button class="btnLogin-popup">Login</button></a>
+					<a href="login.html" style="bottom: 13px;"><button type="submit" class="btnLogin-popup">Login</button></a>
 				</nav>
 			</header>
 		</div>

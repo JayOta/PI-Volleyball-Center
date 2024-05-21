@@ -36,15 +36,10 @@
 
 	<br>
 	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<div class="container "> <!-- isto concerta a largura de alguns containers -->
+	<div class="container"> <!-- isto concerta a largura de alguns containers -->
 <!-- Arrumar a largura das imagens dos dois carroséis -->
-<div class="background-container" style="display: flex; position: absolute; left: 140px; width: 1850px; height: 770px; color: #e0e0e0; background-color: #ececec; border-radius: 10px; box-shadow: 0px 0px 8px #787878;"></div>
 
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style="display: flex; width: auto; height: 750px auto; position: relative; border-radius: 10px; right: 200px; top: 10px;">
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style="display: flex; width: auto; height: 750px auto; position: relative; border-radius: 10px; right: 220px; top: 10px;">
     <div class="carousel-inner">
       <div class="carousel-item active" style="justify-content: center; text-align: center;">
         <img src="img/comunidadeC01.jpg" class="d-block" alt="Imagem do campeonato Paranaense Sub-13 de 2023" style="display: flex; width: 1105px; height: 730px; border-radius: 10px; box-shadow: 0px 0px 5px #787878; text-align: center; margin-top: 10px;"> <!-- Deixar o carrousel mais escuro -->
@@ -58,24 +53,24 @@
 
 	<div class="carousel-sides d-flex" style="justify-content: space-between;">
 
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style="display: flex; left: 954px; bottom: 720px; transition: 0.3s;">
-    <div class="carousel-inner">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style="display: flex; width: 620px; border-radius: 15px; left: 914px; bottom: 720px; transition: 0.3s;">
+    <div class="carousel-inner" style="background-color: black; border-radius: 10px;">
       <div class="carousel-item active">
-        <img src="img/comunidadeC01.jpg" class="d-block" alt="Imagem do campeonato Paranaense Sub-13 de 2023" style="display: flex; width: 620px; height: 345px; border-radius: 10px; margin-right: 10px; box-shadow: 0px 0px px 8px #787878; transition: 0.3s;">
+        <img src="img/comunidadeC01.jpg" class="d-block" alt="Imagem do campeonato Paranaense Sub-13 de 2023" style="display: flex; width: 620px; height: 345px; border: 1px solid #000; border-radius: 10px; margin-right: 10px; opacity: 0.7; box-shadow: 0px 0px px 8px #787878; transition: 0.3s;">
         <div class="carousel-caption d-none d-md-block">
           <h5 style="font-size: 20px; position: relative; display: flex; text-shadow: 0px 0px 8px #0B0B0B;"><!--Data: (27 de Novembro de 2023)--></h5>  
           <p style="font-size: 19px; position: relative; display: flex;"><!--Título--></p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="img/comunidadeC02.jpg" class="d-block" alt="Imagem de jogadores de volêi" style="display: flex; width: 620px; height: 345px; border-radius: 10px; box-shadow: 0px 0px 4px #787878; transition: 0.3s;">
+        <img src="img/comunidadeC02.jpg" class="d-block" alt="Imagem de jogadores de volêi" style="display: flex; width: 620px; height: 345px; border: 1px solid #000; border-radius: 10px; box-shadow: 0px 0px 4px #787878; transition: 0.3s; opacity: 0.7;">
         <div class="carousel-caption d-none d-md-block">
           <h5 class="justify-content-center" style="font-size: 20px; position: relative; display: flex; text-align: center; text-shadow: 0px 0px 8px #0B0B0B;">29 de novembro de 2023</h5>
           <p class="justify-content-center" style="font-size: 19px; position: relative; display: flex;">Fase final do Paranaense Sub-19 feminino, Série A, começa nesta quinta-feira (30), em Maringá</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="img/comunidadeC03.jpg" class="d-block" alt="Imagem da equipe de vôlei da smel Araucária de 2023" style="display: flex; width: 620px; height: 345px; border-radius: 10px; box-shadow: 0px 0px 5px #787878; transition: 0.3s;">
+        <img src="img/comunidadeC03.jpg" class="d-block" alt="Imagem da equipe de vôlei da smel Araucária de 2023" style="display: flex; width: 620px; height: 345px; border: 1px solid #000; border-radius: 10px; box-shadow: 0px 0px 5px #787878; transition: 0.3s; opacity: 0.7;">
         <div class="carousel-caption d-none d-md-block">
           <h5 class="justify-content-center" style="font-size: 20px; position: relative; display: flex; text-shadow: 0px 0px 8px #0B0B0B;">22 de novembro de 2023</h5>
           <p class="justify-content-center" style="font-size: 19px; position: relative; display: flex;">Com mais de 500 atletas reunidos, final de semana teve 93 partidas e cinco campeões estaduais da Série A</p>
@@ -84,24 +79,24 @@
     </div>
   </div>
  
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style="display: flex; position: relative; border-radius: 10px; margin-left: 15px; bottom: 335px; left: 279px; transition: 0.3s;">
-    <div class="carousel-inner">
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style="display: flex; position: relative; border-radius: 10px; margin-left: 15px; bottom: 335px; left: 238px; transition: 0.3s;">
+    <div class="carousel-inner" style="background-color: black; border-radius: 10px;">
       <div class="carousel-item active">
-        <img src="img/comunidadeC01.jpg" class="d-block" alt="Imagem do campeonato Paranaense Sub-13 de 2023" style="display: flex; width: 620px; height: 345px; border-radius: 10px; transition: 0.3s;">
+        <img src="img/comunidadeC01.jpg" class="d-block" alt="Imagem do campeonato Paranaense Sub-13 de 2023" style="display: flex; width: 620px; height: 345px; border: 1px solid #000; border-radius: 10px; transition: 0.3s; opacity: 0.7;">
         <div class="carousel-caption d-none d-md-block">
           <h5 class="justify-content-center" style="font-size: 20px; position: relative; display: flex; text-shadow: 0px 0px 8px #0B0B0B;"><!--27 de novembro de 2023--></h5>  
           <p class="justify-content-center" style="font-size: 19px; position: relative; display: flex;"><!--PM Foz do Iguaçu/ Smel conquista Paranaense Sub-14 Série B feminino 2023--></p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="img/comunidadeC02.jpg" class="d-block" alt="Imagem de jogadores de volêi" style="display: flex; width: 620px; height: 345px; border-radius: 10px; transition: 0.3s;">
+        <img src="img/comunidadeC02.jpg" class="d-block" alt="Imagem de jogadores de volêi" style="display: flex; width: 620px; height: 345px; border: 1px solid #000; border-radius: 10px; transition: 0.3s; opacity: 0.7;">
         <div class="carousel-caption d-none d-md-block">
           <h5 class="justify-content-center" style="font-size: 20px; position: relative; display: flex; text-shadow: 0px 0px 8px #0B0B0B;">29 de novembro de 2023</h5>
           <p class="justify-content-center" style="font-size: 18px; position: relative; display: flex;">Fase final do Paranaense Sub-19 feminino, Série A, começa nesta quinta-feira (30), em Maringá</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="img/comunidadeC03.jpg" class="d-block" alt="Imagem da equipe de vôlei da smel Araucária de 2023" style="display: flex; width: 620px; height: 345px; border-radius: 10px; transition: 0.3s;">
+        <img src="img/comunidadeC03.jpg" class="d-block" alt="Imagem da equipe de vôlei da smel Araucária de 2023" style="display: flex; width: 620px; height: 345px; border: 1px solid #000; border-radius: 10px; transition: 0.3s; opacity: 0.7;">
         <div class="carousel-caption d-none d-md-block">
           <h5 class="justify-content-center" style="font-size: 20px; position: relative; display: flex; text-shadow: 0px 0px 8px #0B0B0B;">22 de novembro de 2023</h5>
           <p class="justify-content-center" style="font-size: 18px; position: relative; display: flex;">Com mais de 500 atletas reunidos, final de semana teve 93 partidas e cinco campeões estaduais da Série A</p>
@@ -111,7 +106,7 @@
   </div>
 </div>
   
-<br><br><br><br><br><br>
+<br><br><br>
 	<div class="content-cards" style="position: relative;bottom: 250px;">
 
 		<div class="row row-cols-1 row-cols-md-3 g-4">
@@ -211,23 +206,37 @@
 			</div>
 		</div>
 	</div>
-
+</div>
+<div class="blue-back">
+	<div class="section">
+		<section>
+			<h1 style="text-shadow: 0px 0px 6px #2b2b2b;">
+				Foz do Iguaçu ganha Campeonato Paranaense Feminino!
+			</h1>
+			<br>
+			<h2 style="text-shadow: 0px 0px 6px #2b2b2b;">
+				Time feminino de Foz do Iguaçu Sub-14, ganha Campeonato Paranaense na série B, e sobe para a série A
+			</h2>
+			<br>
+			<button class="saiba-mais">Saiba mais</button>
+		</section>
+	</div>
+		<aside>
+		<div id="carouselExampleSlidesOnly" class="carousel slide d-flex" data-bs-ride="carousel" style="position: relative; width: 830px; height: 492px; border-radius: 10px; bottom: 120px; margin-left: 800px; box-shadow: 0px 0px 6px #02203f;">
+			<div class="carousel-inner" style="border-radius: 10px; background-color: black;">
+			<div class="carousel-item active" style="justify-content: center; text-align: center;">
+				<img src="img/comunidadeC01.jpg" class="d-block" alt="Imagem do campeonato Paranaense Sub-13 de 2023" style="display: flex; width: 830px; height: 492px; border-radius: 10px; opacity: 0.7;">
+				<div class="carousel-caption d-none d-md-block">
+				<h5 class="justify-content-center" style="font-size: 20px; position: relative; display: flex; text-shadow: 0px 0px 8px #0B0B0B;">27 de novembro de 2023</h5>  
+				<p style="font-size: 19px; position: relative; display: flex;">PM Foz do Iguaçu/ Smel conquista Paranaense Sub-14 Série B feminino 2023</p>
+			</aside>
+			</div>
+		</div>
+		</div>
+	</div>
 </div>
 
-<div id="carouselExampleSlidesOnly" class="carousel slide d-flex justify-content-center" data-bs-ride="carousel" style="position: relative; width: 1085px; height: 622px; border-radius: 10px; bottom: 140px;">
-    <div class="carousel-inner" style="border-radius: 10px;">
-      <div class="carousel-item active" style="justify-content: center; text-align: center;">
-        <img src="img/comunidadeC01.jpg" class="d-block" alt="Imagem do campeonato Paranaense Sub-13 de 2023" style="display: flex; width: 1085px; height: 622px; border-radius: 10px; box-shadow: 0px 0px 6px #787878;"> <!-- Deixar o carrousel mais escuro -->
-        <div class="carousel-caption d-none d-md-block">
-          <h5 style="font-size: 20px; position: relative; display: flex; text-shadow: 0px 0px 8px #0B0B0B;"><!--27 de novembro de 2023--></h5>  
-          <p style="font-size: 19px; position: relative; display: flex;"><!--PM Foz do Iguaçu/ Smel conquista Paranaense Sub-14 Série B feminino 2023--></p>
-        </div>
-      </div>
-    </div>
-  </div>
-	<!-- add conteudo novo -->
-
-	<!-- <img src="img/anuncio-4.png" alt="" style="float: right; position: relative; right:93px;" width="500px" height="250px"> -->
+  <div class="puxar-pra-cima">
 	<div class="container">
 		<div class="row row-cols-1 row-cols-md-3 g-4">
 			<div class="col">
@@ -325,7 +334,6 @@
 		</div>
 	</div>
 </div>
-
 <br><br><br>
 
 </div>

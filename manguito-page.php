@@ -89,9 +89,8 @@
         <h2 class="price-sub__heading">VolleyBall Center</h2>
         <h1 class="price-main__heading">Produtos de Edição Limitada Verão</h1>
         <p class="price-txt">
-          These low-profile sneakers are your perfect casual wear companion.
-          Featuring a durable rubber outer sole, they’ll withstand everything
-          the weather can offer.
+        Este manguito é o companheiro perfeito para uso no vôlei. 
+        Apresentando um tecido de Poliamida, que resistirá ao uso prolongado durante os jogos.
         </p>
         <div class="price-box">
           <div class="price-box__main">
