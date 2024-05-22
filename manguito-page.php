@@ -90,7 +90,7 @@
         <h1 class="price-main__heading">Produtos de Edição Limitada Verão</h1>
         <p class="price-txt">
         Este manguito é o companheiro perfeito para uso no vôlei. 
-        Apresentando um tecido de Poliamida, que resistirá ao uso prolongado durante os jogos.
+        Apresentando um <br/> tecido de Poliamida, que resistirá ao uso prolongado durante os jogos.
         </p>
         <div class="price-box">
           <div class="price-box__main">
@@ -132,9 +132,9 @@
       </section>
     </main>
 
-    <br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-    <footer class="text-center bg-" style=" padding-left: 20em; background-color: #F9CC02; position: relative; top: 100%; width: 100%;">
+  <footer class="text-center bg-" style=" padding-left: 20em; background-color: #F9CC02; position: relative; top: 100%; width: 100%;">
 <div class="container-fluid py-3">
   <div class="row">
     <div class="col-4">
