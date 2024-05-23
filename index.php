@@ -55,7 +55,7 @@
   <br>
   <div class="carousel-imagesItens d-block w-500">
 
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" style=" max-width: 1303px;  max-height: 1000px; margin-left: 251px; border: 1px solid; border-radius: 11px; background-color: black; justify-content: center;">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" style=" max-width: 1303px;  max-height: 1000px; margin-left: 286px; border: 1px solid; border-radius: 11px; background-color: black; justify-content: center;">
 
       <div class="carousel-inner" style="border-radius: 10px; opacity: 0.7; box-shadow: 0px 5px 30px #696969; ">
         <div class="carousel-item active" data-bs-interval="2000">
@@ -84,7 +84,7 @@
     <br><br>
 
     <div class="carouselDownPics">
-      <div class="card bg-dark text-white" style="width: 600px; position: relative; left: 250px; background-color: black;">
+      <div class="card bg-dark text-white" style="width: 600px; position: relative; left: 285px; background-color: black;">
         <img src="img/jogo-2.jpg" class="card-img" alt="..." style="opacity: 0.6; box-shadow: 0px 5px 20px #696969;">
         <div class="card-img-overlay">
           <!-- <h5 class="card-title">Brasil bate Coreia do Sul e pega EUA na final do vôlei feminino</h5>
@@ -93,7 +93,7 @@
       <p class="card-text">Last updated 3 mins ago</p> -->
         </div>
       </div>
-      <div class="card bg-dark text-white" style="width: 600px; position: relative; left: 353px; background-color:black;">
+      <div class="card bg-dark text-white" style="width: 600px; position: relative; left: 386px; background-color:black;">
         <img src="img/jogo-3.jpg" class="card-img" alt="..." style="opacity: 0.6; box-shadow: 0px 5px 20px #696969;">
         <div class="card-img-overlay">
           <!-- <h5 class="card-title">Card title</h5>

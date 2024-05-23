@@ -203,7 +203,7 @@
 			</div>	
 		</div>
 
-		<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" style="display: flex; border-radius: 10px; width: 620px; height: 345px; bottom: 110px; right: 109px; transition: 0.3s; box-shadow: 0px 3px 8px #000;">
+		<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" style="display: flex; border-radius: 10px; width: 620px; height: 345px; bottom: 110px; right: 173px; transition: 0.3s; box-shadow: 0px 3px 8px #000;">
 			<div class="carousel-inner" style="background-color: black; border-radius: 10px;">
 				<div class="carousel-item active">
 					<img src="img/comunidadeC01.jpg" class="d-block" alt="Imagem do campeonato Paranaense Sub-13 de 2023" style="display: flex; width: 620px; height: 345px; border-radius: 10px; transition: 0.3s; opacity: 0.7;">

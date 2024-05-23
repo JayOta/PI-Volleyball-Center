@@ -58,12 +58,13 @@ Product section stylling
   margin: auto;
   display: grid;
   grid-template-columns: 0.8fr 1fr;
-  gap: 10rem;
+  gap: 5rem;
 }
 
 /* Left img container stylling */
 .img-main {
   max-width: 100%;
+  height: 100%;
   border-radius: 5%;
   cursor: pointer;
   margin-bottom: 3.5rem;
@@ -130,6 +131,7 @@ Product section stylling
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin-right: 50px;
 }
 
 .price-sub__heading {
@@ -143,10 +145,12 @@ Product section stylling
 .price-main__heading {
   font-size: 4rem;
   font-weight: 700;
+  color: #000;
 }
 
 .price-txt {
   margin-top: 2rem;
+  margin-right: 30px;
   font-size: 1.4rem;
   color: var(--dark-grayish-blue);
   line-height: 1.5;
@@ -167,6 +171,7 @@ Product section stylling
 .price-box__main-new {
   font-size: 3.0rem;
   font-weight: 700;
+  color: #000;
 }
 
 .price-box__main-discount {
