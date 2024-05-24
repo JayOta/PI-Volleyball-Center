@@ -20,22 +20,20 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
-    <title>Produto Page</title>
-<link rel="stylesheet" href="css/navbar.css">
-<link rel="stylesheet" href="css/produto-page.css">
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  </head>
-  <body>
-    <div class="body-wrapper"></div>
-    <!-- Header -->
-    
     <?php 
     include 'navbar.php';
     ?>
+    <title>Produto Page</title>
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/produto-page.css">
 
-  <br><br><br>
+  </head>
+  <body>
+    <!-- Header -->
+
     <!-- Main item container -->
+
+    <br><br>
     <main class="item">
       <section class="img">
         <button class="img-main__btnlft img-main__btn">
@@ -132,7 +130,7 @@
       </section>
     </main>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
 
   <footer class="text-center bg-" style=" padding-left: 20em; background-color: #F9CC02; position: relative; top: 100%; width: 100%;">
 <div class="container-fluid py-3">

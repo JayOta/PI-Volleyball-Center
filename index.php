@@ -59,13 +59,13 @@
 
       <div class="carousel-inner" style="border-radius: 10px; opacity: 0.7; box-shadow: 0px 5px 30px #696969; ">
         <div class="carousel-item active" data-bs-interval="2000">
-          <img src="img/jogo-5.jpg" class="d-block w-100" alt="..." style="height: 648px;">
+          <img src="img/jogo-5.jpg" class="d-block w-100" alt="..." style="height: 670px;">
         </div>
         <div class="carousel-item" data-bs-interval="2000">
-          <img src="img/jogo-6.jpg" class="d-block w-100" alt="..." style="height: 648px;">
+          <img src="img/jogo-6.jpg" class="d-block w-100" alt="..." style="height: 670px;">
         </div>
         <div class="carousel-item" data-bs-interval="2000">
-          <img src="img/jogo-1.jpg" class="d-block w-100" alt="..." style="height: 648px;">
+          <img src="img/jogo-1.jpg" class="d-block w-100" alt="..." style="height: 670px;">
         </div>
       </div>
       <div class="carousel-caption d-none d-md-block m-auto w-auto">
@@ -85,7 +85,7 @@
 
     <div class="carouselDownPics">
       <div class="card bg-dark text-white" style="width: 600px; position: relative; left: 285px; background-color: black;">
-        <img src="img/jogo-2.jpg" class="card-img" alt="..." style="opacity: 0.6; box-shadow: 0px 5px 20px #696969;">
+        <img src="img/jogo-2.jpg" class="card-img d-block" alt="..." style="opacity: 0.6; box-shadow: 0px 5px 20px #696969;">
         <div class="card-img-overlay">
           <!-- <h5 class="card-title">Brasil bate Coreia do Sul e pega EUA na final do vôlei feminino</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
@@ -119,10 +119,10 @@
   <div class="noticias-align" style="display: flex; justify-content: center;">
     <br>
     <div class="row row-cols-1 row-cols-md-2 g-4" style="width: 1250px; position: relative; display: flex; justify-content: center; ">
-      <a href="#" style="text-decoration: none;">
+      <a href="#" class="" style="text-decoration: none;">
         <div class="col">
           <div class="card" style="box-shadow: 0px 0px 6px #696969;">
-            <img src="img/jogo-7.jpg" class="card-img-top" alt="..." style="height: 338px;">
+            <img class="d-block" src="img/jogo-7.jpg" class="card-img-top" alt="..." style="height: 350px;">
             <div class="card-body">
               <h5 class="card-title">Porque a seleção da Espanha não existe no volêi?</h5>
               <!-- <p class="card-text">Porque a seleção da Espanha não existe no volêi?</p> -->
@@ -132,8 +132,8 @@
       </a>
       <a href="#" style="text-decoration: none;">
         <div class="col">
-          <div class="card" style="box-shadow: 0px 0px 6px #696969;">
-            <img src="img/jogo-8.jpg" class="card-img-top" alt="..." style="height: 336px;">
+          <div class="card" style="box-shadow: 0px 0px 6px #696969; ">
+            <img src="img/jogo-8.jpg" class="card-img-top" alt="..." style="height: 350px;">
             <div class="card-body">
               <h5 class="card-title">Argentina perdeu o clássico com o Brasil</h5>
               <!-- <p class="card-text">Liga das Nações de Vôlei: Argentina perdeu o clássico com o Brasil</p> -->
@@ -144,7 +144,7 @@
       <a href="#" style="text-decoration: none;">
         <div class="col">
           <div class="card" style="box-shadow: 0px 0px 6px #696969;">
-            <img src="img/jogo-4.jpg" class="card-img-top" alt="..." style="height: 292px;">
+            <img src="img/jogo-4.jpg" class="card-img-top" alt="..." style="height: 370px;">
             <div class="card-body">
               <h5 class="card-title">Brasil ganha seu terceiro amistoso consecutivo</h5>
               <!-- <p class="card-text">Brasil ganha seu terceiro amistoso consecutivo</p> -->
@@ -155,7 +155,7 @@
       <a href="#" style="text-decoration: none;">
         <div class="col">
           <div class="card" style="box-shadow: 0px 0px 6px #696969;">
-            <img src="img/jogo-1-official.jpg" class="card-img-top" alt="..." style="height: 292px;">
+            <img src="img/jogo-1-official.jpg" class="card-img-top" alt="..." style="height: 370px;">
             <div class="card-body">
               <h5 class="card-title">López, do Cruzeiro, inicia a temporada em alto nível</h5>
               <!-- <p class="card-text">Brasil bate Coreia do Sul e pega EUA na final do vôlei feminino</p> -->

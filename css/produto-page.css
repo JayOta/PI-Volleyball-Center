@@ -28,7 +28,6 @@ Main CSS
 body {
   font-family: "Kumbh Sans", sans-serif;
   position: relative;
-  
 }
 
 .body-wrapper {
@@ -53,12 +52,15 @@ Product section stylling
 /////////////////////// */
 
 .item {
+  position: relative;
   padding: 0 3rem;
   max-width: 134rem;
   margin: auto;
+  bottom: 220px;
   display: grid;
   grid-template-columns: 0.8fr 1fr;
   gap: 5rem;
+
 }
 
 /* Left img container stylling */
@@ -67,7 +69,7 @@ Product section stylling
   height: 100%;
   border-radius: 5%;
   cursor: pointer;
-  margin-bottom: 3.5rem;
+  margin-bottom: 2rem;
 }
 
 .img-main__btn {
@@ -78,10 +80,13 @@ Product section stylling
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
+  margin-top: 1rem;
 }
 
 .img-btn {
   display: block;
+  height: 100%;
+  width: 100%;
   cursor: pointer;
   background: none;
   border: none;
@@ -231,6 +236,7 @@ Product section stylling
 .price-btn__txt {
   font-size: 1.7rem;
   font-weight: 700;
+  color: #000 ;
 }
 
 .price-cart__btn {
