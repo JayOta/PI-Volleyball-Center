@@ -29,7 +29,7 @@ function login() {
         
         alert("Login realizado!");
 
-        window.location.href = "http://localhost/phpPI/PI/View/index.php";
+        window.location.href = "http://localhost/phpPI/PI/View/inicial.php";
     }
     else { 
         alert("Email ou senha incorretos!");

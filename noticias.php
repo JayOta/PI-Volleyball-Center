@@ -14,17 +14,17 @@
 <body style="transition: .3s;">
 	<nav class="navbar navbar-expand-lg bg-body-tertiary p-0 m-0" style="background-color: #F9CC02;">
 		<div class="container-fluid" style="background-color: #F9CC02;">
-			<a href="index.php">
+			<a href="inicial.php">
 				<img src="img/logo-volei.png" style="width: 87px; margin-bottom: 2px; margin-top: 2px; padding-bottom: 2px; padding-top: 2px;">
 			</a>
 
 			<header>
 				<nav class="navigation">
-					<a href="index.php">Início</a>
+					<a href="inicial.php">Início</a>
 					<a href="fundamentos.php">Fundamentos</a>
 					<a href="noticias.phpl" style="color: #7fb7f0;">Notícias</a>
 					<a href="loja.php">Loja</a>
-					<a href="login.html" style="bottom: 13px;"><button class="btnLogin-popup">Login</button></a>
+					<a href="index.php" style="bottom: 13px;"><button class="btnLogin-popup">Login</button></a>
 				</nav>
 			</header>
 		</div>
