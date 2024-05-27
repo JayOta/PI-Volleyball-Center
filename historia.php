@@ -31,10 +31,10 @@
 
 	<ul class="nav nav-tabs" style="position: relative; margin-top: 20px;">
 		<li class="nav-item">
-			<a class="nav-link active" style="color: #363636"; aria-current="page" href="#">Fundamentos</a>
+			<a class="nav-link" style="color: #363636"; aria-current="page" href="fundamentos.php">Fundamentos</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" style="color: #363636"; aria-current="page" href="historia.php">História</a>
+			<a class="nav-link active" style="color: #363636"; aria-current="page" href="historia.php">História</a>
 		</li>
 		<li class="nav-item">
 			<a class="nav-link" style="color: #363636"; aria-current="page" href="#">Regras</a>
@@ -44,11 +44,7 @@
 		</li>
 	</ul>
 
-	<h1 style="font-size: 50px; position: relative; display: flex; left: 50px;  font-weight: 200;">Saques</h1>
-	<h2>1. Saque por baixo:</h2>
-	
-
-	<!-- <div class="container">
+	<div class="container">
 		<br>
 		<div class="row row-cols-2 justify-content-center">
 			<div class="card m-3" style="max-width: 500px;">
@@ -155,7 +151,7 @@
 					</div>
 				</div>
 			</div>
-		</div> -->
+		</div>
 
 
 	<hr>
