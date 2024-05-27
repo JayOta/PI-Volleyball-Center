@@ -22,12 +22,12 @@ footer {
 .card-img img:hover {
     background: none;
     opacity: 0.4;
-    transition: .3s;
+    transition: .5s;
     transform: scale(1.05);
     z-index: -1;
 }
 img {
-    transition: .8s;
+    transition: .3s;
     width: 100%;
     height: 100%;
 }
