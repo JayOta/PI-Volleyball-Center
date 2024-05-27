@@ -1,10 +1,12 @@
 body{
  
-    background-color: gray ;
-    font-family: "Lato";
+    background-image: url("../img/volei-image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
    
     > header{
-    background-color: black;
+    background-color: #F9CC02;
     color: white;
     font-size: 24px;
     padding: 20px 0;
@@ -39,7 +41,7 @@ body{
 }
  
 button{
-    font-family: "Lato";
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     cursor: pointer;
 }
  
@@ -58,7 +60,7 @@ table{
                 text-align: left;
                 padding-bottom: 10px;
                 text-transform: uppercase; /*maiúsculo*/
-                color: #666;
+                color: #5f5f5f;
             }
         }
     }
@@ -73,6 +75,8 @@ table{
  
             td{
                 padding: 30px 0;
+                font-size: 19px;
+                font-weight: 600;
        
             }
         }
@@ -115,7 +119,6 @@ table{
     overflow: hidden;
  
 span{
- 
     margin: 0 10px;
  
 }
@@ -184,7 +187,7 @@ button{
         }
  
         button{
-            color: green;
+            color: #3792ec;
             background-color: transparent;
             display: flex;
             border: 0;
@@ -210,7 +213,7 @@ button{
         border: 0;
         color:white;
         padding: 15px 0;
-        background-color: green;
+        background-color: #3792ec;
         display: block;
         width: 100%;
         text-transform: uppercase;

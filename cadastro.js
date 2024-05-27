@@ -9,5 +9,5 @@ function cadastro() {
 
     var resultado = confirm("Castrado com sucesso!");
 
-    window.location.href = "login.html";
+    window.location.href = "index.php";
 }

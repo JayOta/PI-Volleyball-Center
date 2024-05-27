@@ -121,7 +121,7 @@
 
             </button>
           </div>
-          <button type="submit" class="price-cart__btn btn--blue" style="display: flex; margin-top: 30px;"><a href="carrinho.html" style="text-decoration: none; color:#fff;">
+          <button type="submit" class="price-cart__btn btn--blue" style="display: flex; margin-top: 30px;"><a href="carrinho.php" style="text-decoration: none; color:#fff;">
             <img
               src="img/shopping-cart-2-fill (1).png" height="40px"
               alt="Imagem do carrinho"

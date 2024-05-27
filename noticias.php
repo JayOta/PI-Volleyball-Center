@@ -14,17 +14,17 @@
 <body style="transition: .3s;">
 	<nav class="navbar navbar-expand-lg bg-body-tertiary p-0 m-0" style="background-color: #F9CC02;">
 		<div class="container-fluid" style="background-color: #F9CC02;">
-			<a href="index.php">
+			<a href="inicial.php">
 				<img src="img/logo-volei.png" style="width: 87px; margin-bottom: 2px; margin-top: 2px; padding-bottom: 2px; padding-top: 2px;">
 			</a>
 
 			<header>
 				<nav class="navigation">
-					<a href="index.php">Início</a>
+					<a href="inicial.php">Início</a>
 					<a href="fundamentos.php">Fundamentos</a>
 					<a href="noticias.phpl" style="color: #7fb7f0;">Notícias</a>
 					<a href="loja.php">Loja</a>
-					<a href="login.html" style="bottom: 13px;"><button class="btnLogin-popup">Login</button></a>
+					<a href="index.php" style="bottom: 13px;"><button class="btnLogin-popup">Login</button></a>
 				</nav>
 			</header>
 		</div>
@@ -49,17 +49,21 @@
 						Time feminino de Foz do Iguaçu Sub-14, ganha Campeonato Paranaense na série B, e sobe para a série A
 					</h2>
 					<br>
-					<button class="saiba-mais">Saiba mais</button>
+					<button class="saiba-mais"><a href="" style="text-decoration: none; color: #fff;">Saiba mais</a></button>
 				</section>
 			</div>
 			<aside>
-				<div id="carouselExampleSlidesOnly" class="carousel slide d-flex" data-bs-ride="carousel" style="position: relative; width: 830px; height: 492px; border-radius: 10px; bottom: 190px; margin-left: 800px; box-shadow: 0px 0px 7px #02203f;">
+				<div id="carouselExampleSlidesOnly" class="carousel slide d-flex" data-bs-ride="carousel" style="position: relative; width: 830px; height: 492px; border-radius: 10px; bottom: 190px; margin-left: 800px; box-shadow: 0px 2px 8px #02203f;">
 					<div class="carousel-inner" style="border-radius: 10px; background-color: black;">
 						<div class="carousel-item active" style="justify-content: center; text-align: center;">
 							<img src="img/comunidadeC01.jpg" class="d-block" alt="Imagem do campeonato Paranaense Sub-13 de 2023" style="display: flex; width: 830px; height: 492px; border-radius: 10px; opacity: 0.9;">
 							<div class="carousel-caption d-none d-md-block">
 								<h5 class="justify-content-center" style="font-size: 20px; position: relative; display: flex; text-shadow: 0px 0px 8px #0B0B0B;"><!--27 de novembro de 2023--></h5>
 								<p style="font-size: 19px; position: relative; display: flex;"><!--PM Foz do Iguaçu/ Smel conquista Paranaense Sub-14 Série B feminino 2023--></p>
+							</div>
+						</div>
+					</div>
+				</div>
 			</aside>
 		</div>
 
