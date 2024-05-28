@@ -79,7 +79,7 @@
                 <div class="box">
                     <header>Resumo da Compra</header>
                     <div class="info">
-                        <div><span>Sub-total</span><span>R$ 480</span></div>
+                        <div><span>Total</span><span>R$ 480</span></div>
                         <div><span>Frete</span><span>Gratuito</span></div>
                         <div><button>Adicionar cupom de desconto<i class='bx bx-right-arrow-alt' ></i></button></div>
                     </div>
