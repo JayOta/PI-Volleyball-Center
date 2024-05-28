@@ -297,6 +297,7 @@ body {
 
 .links:hover {
     color: #302f2f;
+    box-shadow: 0px 0px 12px #fff;
 }
 #button_cadastro {
     width: 100px;

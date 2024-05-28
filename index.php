@@ -54,7 +54,7 @@
 
                 <div class="card-footer">
 
-                    <a href="cadastro.html">Não tem login? <span id="cadastrar-se">Cadastrar-se</span></a>
+                    <a href="cadastro.php">Não tem login? <span id="cadastrar-se">Cadastrar-se</span></a>
 
                     <br>
 
