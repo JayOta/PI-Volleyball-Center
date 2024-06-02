@@ -23,10 +23,10 @@
 			<a class="nav-link" style="color: #363636"; aria-current="page" href="historia.php">História</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" style="color: #363636"; aria-current="page" href="#">Regras</a>
+			<a class="nav-link" style="color: #363636"; aria-current="page" href="regras.php">Regras</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" style="color: #363636"; aria-current="true">Sistema de Rodízio</a>
+			<a class="nav-link" style="color: #363636"; aria-current="true" href="sistema-rodizio.php">Sistema de Rodízio</a>
 		</li>
 	</ul>
 

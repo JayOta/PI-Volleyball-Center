@@ -106,8 +106,7 @@ background-size: cover;
     font-size: 18px;
 }
 .links:hover {
-    color: transparent;
-    box-shadow: none;
+    color: #fff;
 }
 #button_cadastro {
     width: 100px;

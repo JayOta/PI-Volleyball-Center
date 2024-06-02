@@ -1,11 +1,54 @@
-.carousel-sides {
-    display: grid;
-}
-.nav-link{
+.navigation a#link-3 {
+    color: #7fb7f0;
+}.nav-link{
           font-size: 1.1em;
           color: #fff;
           font-weight: 500;
           text-decoration: none;
+}
+#carouselExampleSlidesOnly-1 {
+    display: flex; 
+    position: relative; 
+    width: 830px; 
+    height: 492px; 
+    margin-top: 100px; 
+    margin-left: 150px; 
+    border-radius: 10px; 
+    box-shadow: 0px 2px 8px #02203f;
+}
+#carouselExampleSlidesOnly-1 .carousel-inner {
+    border-radius: 10px; 
+    background-color: black;
+}
+#carouselExampleSlidesOnly-1 .carousel-inner .carousel-item {
+    justify-content: center; 
+    text-align: center;
+}
+.carousel-item img {
+    display: flex; 
+    width: 830px; 
+    height: 492px; 
+    border-radius: 10px; 
+    opacity: 0.9;
+}
+.carousel-caption h5 {
+    display: flex;
+    font-size: 20px; 
+    position: relative;  
+    text-shadow: 0px 0px 8px #0B0B0B;
+}
+.carousel-caption p {
+    display: flex;
+    font-size: 19px; 
+    position: relative; 
+}
+button a#saiba-mais {
+    text-decoration: none;
+    color: #fff;
+} 
+
+.carousel-sides {
+    display: grid;
 }
 .card {
     background-color: #fff;
@@ -18,11 +61,17 @@ h5 .card-title {
 }
 .blue-back {
     position: relative;
-    right: 285px;
-    width: 1860px;
-    height: 750px;
+    width: 112.4rem;
+    right: 251px;
+    height: 700px;
     bottom: 48px;
+    z-index: 0;
     background: #1E90FF;
+}
+.blue-back img {
+    z-index: 1;
+    display: flex;
+    justify-content: flex-start;
 }
 section {
     display:grid; 
@@ -32,11 +81,11 @@ section {
     top: 220px;
     color: #fff;
 }
-section h1 {
+#title-h1 {
     width: 650px;
     font-size: 41px;
 }
-section h2 {
+#title-h2 {
     width: 580px;
     font-size: 24px;
 }
@@ -112,12 +161,11 @@ aside img:hover {
     margin-top: 15px;
     font-size: 22px;
 }
-@media screen and (max-width: 1520px) {
-    footer {
-        width: auto;
+@media screen and (max-width: 1320px) {
+    .blue-back {
+        width: 1320px;
     }
-    #carousel-slide {
-        width: 457.5px;
-        height: 285px;
+    h1#title-h1 {
+        font-size: 20px;
     }
 }

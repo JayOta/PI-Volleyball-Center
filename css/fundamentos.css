@@ -1,4 +1,4 @@
-.navigation a#fundamentos {
+.navigation a#link-2 {
     color: #7fb7f0;
 }
 .nav-link {
@@ -10,9 +10,4 @@
 .ana {
 background-color: #F9CC02;
 font-family: Courier New;
-}
-footer {
-    position: absolute;
-    display: flex;
-    
 }
