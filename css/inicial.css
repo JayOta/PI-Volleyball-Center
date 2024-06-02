@@ -242,4 +242,12 @@ footer img {
     width: 350px;
     min-height: 200px;
   }
-} 
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

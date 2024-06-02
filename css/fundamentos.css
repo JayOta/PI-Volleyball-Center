@@ -11,3 +11,8 @@
 background-color: #F9CC02;
 font-family: Courier New;
 }
+footer {
+    position: absolute;
+    display: flex;
+    
+}
