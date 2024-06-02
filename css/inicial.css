@@ -1,0 +1,184 @@
+a#inicial {
+  color: #7fb7f0;
+}
+footer {
+    display: flex;
+    width: 100%;
+}
+.nav-link {
+          font-size: 1.1em;
+          color: #fff;
+          font-weight: 500;
+          text-decoration: none;
+}
+.carouselDownPics {
+    display: flex;
+}
+img {
+    transition: .3s;
+    width: 100%;
+    height: 100%;
+}
+img:hover {
+    transform: scale(1.05);
+    width: 100%;
+    object-fit:cover;
+}
+.card {
+        position: relative;
+        overflow: hidden;
+      }
+.card img {
+        position: relative;
+        z-index: 1;
+      }
+.card-img img:hover {
+    background: none;
+    opacity: 0.4;
+    transition: .5s;
+    transform: scale(1.05);
+    z-index: -1;
+}
+
+.card-body {
+    padding-bottom: 15px;
+}
+.card {
+    margin: 3px;
+}
+.card-body h5 {
+    display: flex;
+    margin-top: 15px;
+    font-size: 22px;
+}
+footer img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Inicio do carrousel inicial */
+#carouselExample .carousel-inner {
+    background-color: black;
+    box-shadow: 0px 0px 4px #787878;
+  }
+  #first-carousel img {
+    display: block !important;
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    opacity: 0.7;
+  }
+  .carousel-item h1 {
+    font-size: 70px;
+    position: relative; 
+    bottom: 70px; 
+    display: flex; 
+    right: 110px; 
+    text-shadow: 0px 0px 8px #0B0B0B;  
+    font-weight: 500;
+  }
+  .carousel-caption p {
+    font-size: 30px; 
+    position: relative; 
+    bottom: 70px; 
+    display: flex; 
+    right: 110px; 
+    color:#f0f0f0; 
+    text-shadow: 0px 0px 8px #0B0B0B;
+  }
+  span#title-site1 {
+    color: #1E90FF; 
+    margin-right: 15px;
+  }
+  /* Fim do carrousel inicial */
+
+  #carouselExampleInterval {
+    max-width: 1303px;  
+    max-height: 1000px; 
+    margin-left: 284px; 
+    border: 1px solid; 
+    border-radius: 11px; 
+    background-color: black; 
+    justify-content: center;
+  }
+  #carouselExampleInterval .carousel-inner {
+    border-radius: 10px; 
+    opacity: 0.6; 
+    box-shadow: 0px 5px 30px #696969;
+  }
+  .carousel-item img {
+    height: 670px;
+  }
+  .carousel-caption h5.carousel-title {
+    text-shadow: 0px 0px 8px #0b0b0b;
+     font-size: auto;
+  }
+  .carousel-caption h2.carousel-title {
+    font-size: 38px; 
+    width: 950px; 
+    text-shadow: 0px 0px 8px #0b0b0b; 
+    font-size: auto;
+  }
+  .carouselDownPics .card {
+    position: relative;
+    width: 600px;
+    background-color: black;
+  }
+  .carouselDownPics .card img {
+    opacity: 0.6;
+    box-shadow: 0px 5px 20px #696969;
+  }
+  h1#noticias-sem-title {
+    text-align: center; 
+    font-style: italic;
+  }
+  .noticias-align {
+    display: flex; 
+    justify-content: center;
+  }
+  .noticias-align .row {
+    width: 1250px; 
+    position: relative; 
+    display: flex; 
+    justify-content: center;
+  }
+  .col .card {
+    box-shadow: 0px 0px 6px #696969;
+  }
+  .col .card img {
+    height: 350px;
+  }
+@media screen and (max-width: 1320px) {
+    .carousel .carousel-item {
+        width: 1200px;
+        height: 500px auto !important;
+        margin-right: 200px;
+    }
+    .card {
+        display: flex;
+        height: 290px;
+        width: 300px;
+    }
+    .carouselDownPics {
+        display: flex;
+        width: auto;
+    }
+    .carousel-caption h2{
+        display: flex;
+        width: 20%;
+    }
+    h2.carousel-title{
+        display: flex;
+        width: 60% auto;
+        font-size: 50%;
+
+    }   
+}
+@media screen and (max-width: 1100px) {
+    .carousel .carousel-item img {
+        width: 500px;
+        height: 150px;
+    }
+
+
+}

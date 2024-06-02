@@ -23,11 +23,11 @@
 
 			<header>
 				<nav class="navigation">
-					<a href="inicial.php">Início</a>
-					<a href="fundamentos.php">Fundamentos</a>
-					<a href="noticias.php">Notícias</a>
-					<a href="loja.php" style="color: #7fb7f0;">Loja</a>
-					<a href="index.php" style="bottom: 13px;"><button type="submit" class="btnLogin-popup">Login</button></a>
+					<a id="inicial" href="inicial.php">Início</a>
+					<a id="fundamentos" href="fundamentos.php">Fundamentos</a>
+					<a id="noticias" href="noticias.php">Notícias</a>
+					<a id="loja" href="loja.php">Loja</a>
+					<a id="login" href="index.php" style="bottom: 13px;"><button type="submit" class="btnLogin-popup">Login</button></a>
 				</nav>
 			</header>
 		</div>

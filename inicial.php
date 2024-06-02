@@ -12,198 +12,141 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
   <title></title>
-  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/inicial.css">
   <link rel="stylesheet" href="css/navbar.css">
+
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 m-0" style="background-color: #F9CC02;">
-    <div class="container-fluid" style="background-color: #F9CC02;">
-      <a href="inicial.php">
-        <img src="img/logo-volei.png" style="width: 87px; margin-bottom: 2px; margin-top: 2px; padding-bottom: 2px; padding-top: 2px;">
-      </a>
+  <?php 
+    include 'navbar.php';
+  ?>
 
-
-      <header class="header-content">
-        <nav class="navigation">
-          <a class="currentPage" href="inicial.php" style="color: #7fb7f0;">Início</a>
-          <a href="fundamentos.php">Fundamentos</a>
-          <a href="noticias.php">Notícias</a>
-          <a href="loja.php">Loja</a>
-          <a href="index.php" target="_blank" style="bottom: 13px;"><button class="btnLogin-popup">Login</button></a>
-        </nav>
-      </header>
-    </div>
-    </div>
-  </nav>
-
-  <div id="carouselExample" class="carousel slide">
-    <div class="carousel-inner" style="background-color: black; box-shadow: 0px 0px 4px #787878;">
-      <div class="carousel-item active">
-        <img src="img/back_top1.jpg" class="d-block w-100" alt="CarrouselImgTop" height="400px" style="opacity: 0.7;">
-        <div class="carousel-caption d-none d-md-block">
-          <h1 style="font-size: 70px; position: relative; bottom: 70px; display: flex; right: 110px; text-shadow: 0px 0px 8px #0B0B0B;  font-weight: 500;"><span style="color: #1E90FF; margin-right: 15px;">Volleyball</span> <span style="color: #F9CC02;">Center</span></h1>
-          <p style="font-size: 30px; position: relative; bottom: 70px; display: flex; right: 110px; color:#f0f0f0; text-shadow: 0px 0px 8px #0B0B0B;">Seja bem vindo ao melhor site de vôlei do paraná, aqui você estará por dentro de tudo!</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <br>
-  <br>
-  <br>
-  <br>
-  <div class="carousel-imagesItens d-block justify-content-center">
-
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" style=" max-width: 1303px;  max-height: 1000px; margin-left: 284px; border: 1px solid; border-radius: 11px; background-color: black; justify-content: center;">
-
-      <div class="carousel-inner" style="border-radius: 10px; opacity: 0.6; box-shadow: 0px 5px 30px #696969; ">
-        <div class="carousel-item active" data-bs-interval="2000">
-          <img src="img/jogo-5.jpg" class="d-block w-100" alt="..." style="height: 670px;">
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="img/jogo-6.jpg" class="d-block w-100" alt="..." style="height: 670px;">
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="img/jogo-1.jpg" class="d-block w-100" alt="..." style="height: 670px;">
-        </div>
-      </div>
-      <div class="carousel-caption d-none d-md-block m-auto w-auto">
-        <h5 class="carousel-title" style="text-shadow: 0px 0px 8px #0b0b0b; font-size: auto;">27 de novembro de 2023</h5>
-        <h2 class="carousel-title" style="font-size: 38px; width: 950px; text-shadow: 0px 0px 8px #0b0b0b; font-size: auto;">Brasil bate Coreia do Sul e pega EUA na final do vôlei feminino!</h2>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <br><br>
-
-    <div class="carouselDownPics">
-      <div class="card bg-dark text-white" style="width: 600px; position: relative; left: 283px; background-color: black;">
-        <img src="img/jogo-2.jpg" class="card-img d-block" alt="..." style="opacity: 0.6; box-shadow: 0px 5px 20px #696969;">
-        <div class="card-img-overlay">
-          <!-- <h5 class="card-title">Brasil bate Coreia do Sul e pega EUA na final do vôlei feminino</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
-        This content is a little bit longer.</p>
-      <p class="card-text">Last updated 3 mins ago</p> -->
-        </div>
-      </div>
-      <div class="card bg-dark text-white" style="width: 600px; position: relative; left: 377px; background-color:black;">
-        <img src="img/jogo-3.jpg" class="card-img" alt="..." style="opacity: 0.6; box-shadow: 0px 5px 20px #696969;">
-        <div class="card-img-overlay">
-          <!-- <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
-        This content is a little bit longer.</p>
-      <p class="card-text">Last updated 3 mins ago</p> -->
-        </div>
-      </div>
-    </div>
-  </div>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <hr>
-  <br>
-  <br>
-  <!-- Acrescentar algo(talvez anúncio ou linha) para preencher este espaço em branco por causa dos dois cards acima  -->
-
-  <h1 style="text-align: center; font-style: italic;">Notícias semanais</h1>
-  <br><br>
-  <div class="noticias-align" style="display: flex; justify-content: center;">
-    <br>
-    <div class="row row-cols-1 row-cols-md-2 g-4" style="width: 1250px; position: relative; display: flex; justify-content: center; ">
-      <a href="#" class="" style="text-decoration: none;">
-        <div class="col">
-          <div class="card" style="box-shadow: 0px 0px 6px #696969;">
-            <img class="d-block" src="img/jogo-7.jpg" class="card-img-top" alt="..." style="height: 350px;">
-            <div class="card-body">
-              <h5 class="card-title">Porque a seleção da Espanha não existe no volêi?</h5>
-              <!-- <p class="card-text">Porque a seleção da Espanha não existe no volêi?</p> -->
+  <form>
+    <main>
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active" id="first-carousel">
+          <img src="img/back_top1.jpg" class="d-block w-100" alt="CarrouselImgTop" height="400px" ">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>
+                  <span id="title-site1">Volleyball</span>
+                  <span style="color: #F9CC02;">Center</span>
+              </h1>
+              <p>Seja bem vindo ao melhor site de vôlei do paraná, 
+                aqui você estará por dentro de tudo!
+              </p>
             </div>
           </div>
         </div>
-      </a>
-      <a href="#" style="text-decoration: none;">
-        <div class="col">
-          <div class="card" style="box-shadow: 0px 0px 6px #696969; ">
-            <img src="img/jogo-8.jpg" class="card-img-top" alt="..." style="height: 350px;">
-            <div class="card-body">
-              <h5 class="card-title">Argentina perdeu o clássico com o Brasil</h5>
-              <!-- <p class="card-text">Liga das Nações de Vôlei: Argentina perdeu o clássico com o Brasil</p> -->
-            </div>
-          </div>
-        </div>
-      </a>
-      <a href="#" style="text-decoration: none;">
-        <div class="col">
-          <div class="card" style="box-shadow: 0px 0px 6px #696969;">
-            <img src="img/jogo-4.jpg" class="card-img-top" alt="..." style="height: 370px;">
-            <div class="card-body">
-              <h5 class="card-title">Brasil ganha seu terceiro amistoso consecutivo</h5>
-              <!-- <p class="card-text">Brasil ganha seu terceiro amistoso consecutivo</p> -->
-            </div>
-          </div>
-        </div>
-      </a>
-      <a href="#" style="text-decoration: none;">
-        <div class="col">
-          <div class="card" style="box-shadow: 0px 0px 6px #696969;">
-            <img src="img/jogo-1-official.jpg" class="card-img-top" alt="..." style="height: 370px;">
-            <div class="card-body">
-              <h5 class="card-title">López, do Cruzeiro, inicia a temporada em alto nível</h5>
-              <!-- <p class="card-text">Brasil bate Coreia do Sul e pega EUA na final do vôlei feminino</p> -->
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="carousel-imagesItens d-block justify-content-center">
 
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-
-  <footer class="text-center bg-" style=" padding-left: 20em; background-color: #F9CC02; width: 100% auto;">
-    <div class="container-fluid py-3">
-      <div class="row">
-        <div class="col-4">
-          <ul class="nav flex-column">
-            <li class="nav-link"><a href="#" style="text-decoration: none; color: #fff;">Retornar ao
-                início</a></li>
-            <li class="nav-link"><a href="#" style="text-decoration: none; color: #fff;">Sobre</a></li>
-            <li class="nav-link"><a href="#" style="text-decoration: none; color: #fff;">Suporte</a></li>
-          </ul>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img src="img/jogo-5.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="img/jogo-6.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="img/jogo-1.jpg" class="d-block w-100">
+            </div>
+          </div>
+          <div class="carousel-caption d-none d-md-block m-auto w-auto">
+            <h5 class="carousel-title">27 de novembro de 2023</h5>
+            <h2 class="carousel-title">Brasil bate Coreia do Sul e pega EUA na final do vôlei feminino!</h2>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div class="col-6">
-          <p class="nav-link" style="left: 10em;">
-            Aqui estão as nossas redes sociais:
-          </p>
-          <ul class="list-inline mb-2 mb-md-0">
-            <li class="list-inline-item">
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="text-decoration-none"><img src="img/facebook.png" alt="ícone Facebook" title="Facebook Melhor do Vôlei" width="45"></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="text-decoration-none"><img src="img/instagram.png" alt="ícone Instagram" title="Instagram Melhor do Vôlei" width="45"></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="text-decoration-none"><img src="img/twitter.png" alt="ícone Twitter" title="Twitter Melhor do Vôlei" width="45"></a>
-            </li>
-          </ul>
+        <br><br>
+
+        <div class="carouselDownPics">
+          <div class="card bg-dark text-white" style="left: 283px;">
+            <img src="img/jogo-2.jpg" class="card-img d-block">
+            <div class="card-img-overlay"></div>
+          </div>
+          <div class="card bg-dark text-white" style="left: 377px;">
+            <img src="img/jogo-3.jpg" class="card-img">
+            <div class="card-img-overlay"></div>
+          </div>
         </div>
       </div>
-    </div>
-    <br>
-  </footer>
+      <br><br><br><br><br>
+      <hr>
+      <br><br>
+      <!-- Acrescentar algo(talvez anúncio ou linha) para preencher este espaço em branco por causa dos dois cards acima  -->
+
+      <h1 id="noticias-sem-title">Notícias semanais</h1>
+      <br><br>
+      <div class="noticias-align">
+        <br>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <a href="#" class="" style="text-decoration: none;">
+            <div class="col">
+              <div class="card">
+                <img class="d-block" src="img/jogo-7.jpg" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Porque a seleção da Espanha não existe no volêi?</h5>
+                  <!-- <p class="card-text">Porque a seleção da Espanha não existe no volêi?</p> -->
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <div class="col">
+              <div class="card">
+                <img src="img/jogo-8.jpg" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Argentina perdeu o clássico com o Brasil</h5>
+                  <!-- <p class="card-text">Liga das Nações de Vôlei: Argentina perdeu o clássico com o Brasil</p> -->
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <div class="col">
+              <div class="card">
+                <img src="img/jogo-4.jpg" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Brasil ganha seu terceiro amistoso consecutivo</h5>
+                  <!-- <p class="card-text">Brasil ganha seu terceiro amistoso consecutivo</p> -->
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <div class="col">
+              <div class="card">
+                <img src="img/jogo-1-official.jpg" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">López, do Cruzeiro, inicia a temporada em alto nível</h5>
+                  <!-- <p class="card-text">Brasil bate Coreia do Sul e pega EUA na final do vôlei feminino</p> -->
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+    <br><br><br><br><br><br>
+  </form> 
+  <?php 
+    include 'footer.php';
+  ?>
 </body>
 
 </html>

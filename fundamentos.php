@@ -10,24 +10,10 @@
 	<link rel="stylesheet" href="css/navbar.css">
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg bg-body-tertiary p-0 m-0" style="background-color: #F9CC02;">
-		<div class="container-fluid" style="background-color: #F9CC02;">
-		<a href="inicial.php">
-        	<img src="img/logo-volei.png" style="width: 87px; margin-bottom: 2px; margin-top: 2px; padding-bottom: 2px; padding-top: 2px;">
-      	</a>
-
-		  <header>
-			<nav class="navigation">
-		  <a href="inicial.php">Início</a>
-          <a href="fundamentos.php" style="color: #7fb7f0;">Fundamentos</a>
-          <a href="noticias.php">Notícias</a>
-		  <a href="loja.php">Loja</a>
-          <a href="index.php" target="_blank" style="bottom: 13px;"><button class="btnLogin-popup">Login</button></a>
-			  </nav>
-		  </header>
-		  </div>
-		</div>
-	</nav>
+	
+	<?php 
+		include 'navbar.php';
+	?>
 
 	<ul class="nav nav-tabs" style="position: relative; margin-top: 20px;">
 		<li class="nav-item">
@@ -167,36 +153,8 @@
 	</ul>
 	</div>
 
-
-
-	<footer class="text-center bg-" style=" padding-left: 20em; background-color: #F9CC02;">
-		<div class="container-fluid py-3">
-		  <div class="row">
-			<div class="col-4">
-			  <ul class="nav flex-column">
-				<li class="nav-link"><a href="#" style="text-decoration: none; color: #fff;">Retornar ao início</a></li>
-				<li class="nav-link"><a href="#" style="text-decoration: none; color: #fff;">Sobre</a></li>
-				<li class="nav-link"><a href="#" style="text-decoration: none; color: #fff;">Suporte</a></li>
-			  </ul>
-			</div>
-			<div class="col-6">
-			  <p class="nav-link" style="left: 10em;">
-				Aqui estão as nossas redes sociais:
-			  </p>
-			  <ul class="list-inline mb-2 mb-md-0">
-				<li class="list-inline-item">
-					<a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="text-decoration-none"><img src="img/facebook.png" alt="ícone Facebook" title="Facebook Melhor do Vôlei" width="45"></a>
-				</li>
-				<li class="list-inline-item">
-					<a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="text-decoration-none"><img src="img/instagram.png" alt="ícone Instagram" title="Instagram Melhor do Vôlei" width="45"></a>
-				</li>
-				<li class="list-inline-item">
-					<a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="text-decoration-none"><img src="img/twitter.png" alt="ícone Twitter" title="Twitter Melhor do Vôlei" width="45"></a>
-				</li>
-			  </ul>
-			</div>
-		  </div>
-		</div>
-	  </footer>
+	<?php 
+    	include 'footer.php';
+  	?>
 </body>
 </html>
