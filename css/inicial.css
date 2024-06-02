@@ -1,19 +1,14 @@
 a#inicial {
   color: #7fb7f0;
 }
-footer {
-    display: flex;
-    width: 100%;
-}
+
 .nav-link {
           font-size: 1.1em;
           color: #fff;
           font-weight: 500;
           text-decoration: none;
 }
-.carouselDownPics {
-    display: flex;
-}
+
 img {
     transition: .3s;
     width: 100%;
@@ -50,6 +45,10 @@ img:hover {
     display: flex;
     margin-top: 15px;
     font-size: 22px;
+}
+footer {
+    display: flex;
+    width: 100%;
 }
 footer img {
     width: 50px;
@@ -90,16 +89,20 @@ footer img {
     color: #1E90FF; 
     margin-right: 15px;
   }
+  span#title-site2 {
+    color: #F9CC02; 
+    margin-right: 15px;
+  }
   /* Fim do carrousel inicial */
 
   #carouselExampleInterval {
+    display: flex;
+    margin-left: 248px;
     max-width: 1303px;  
     max-height: 1000px; 
-    margin-left: 284px; 
     border: 1px solid; 
     border-radius: 11px; 
     background-color: black; 
-    justify-content: center;
   }
   #carouselExampleInterval .carousel-inner {
     border-radius: 10px; 
@@ -119,7 +122,17 @@ footer img {
     text-shadow: 0px 0px 8px #0b0b0b; 
     font-size: auto;
   }
-  .carouselDownPics .card {
+  .carouselDownPics {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+  }
+  .carouselDownPics .card:first-child {
+    position: relative;
+    width: 600px;
+    background-color: black;
+  }
+  .carouselDownPics .card:last-child {
     position: relative;
     width: 600px;
     background-color: black;
@@ -148,37 +161,85 @@ footer img {
   .col .card img {
     height: 350px;
   }
+
+@media screen and (max-width: 1400px) {
+  /* .carouselDownPics {
+    display: flex;
+    position: relative;
+    gap: 50px;
+    left: 24rem;
+  } */
+} 
 @media screen and (max-width: 1320px) {
-    .carousel .carousel-item {
-        width: 1200px;
-        height: 500px auto !important;
-        margin-right: 200px;
-    }
-    .card {
-        display: flex;
-        height: 290px;
-        width: 300px;
-    }
-    .carouselDownPics {
-        display: flex;
-        width: auto;
-    }
-    .carousel-caption h2{
-        display: flex;
-        width: 20%;
-    }
-    h2.carousel-title{
-        display: flex;
-        width: 60% auto;
-        font-size: 50%;
+  #title-site1 {
+    display: flex;
+    font-size: 40px;
+    margin-left: 24rem;
+  }
+  #title-site2 {
+    font-size: 40px;
+  }
+  .carousel-caption p {
+    display: flex;
+    font-size: 25px;
+    margin-left: 12rem;
+  }
+  #carouselExampleInterval {
+    margin-left: 180px;
+    max-width: 900px;
+    max-height: 500px;
+  }
+  .carousel-caption h5.carousel-title {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+  }
+  .carousel-caption h2.carousel-title {
+    display: flex;
+    position: relative;
+    left: 5rem;
+    font-size: 15px;
+  }
+  .carouselDownPics {
+    display: flex;
+    position: relative;
+    gap: 50px;
+    left: 20rem;
+  }
+  .card-img {
+    display: flex;
+    max-width: 600px;
+  }
+  .carouselDownPics {
+    display: flex;
+    flex-direction: column;
+  }
+  .carouselDownPics img {
+    width: 600px;
+    height: 300px;
+  }
 
-    }   
-}
-@media screen and (max-width: 1100px) {
-    .carousel .carousel-item img {
-        width: 500px;
-        height: 150px;
-    }
-
-
-}
+  #noticias-sem-title {
+    font-size: 28px;
+  }
+  .row {
+    position: relative;
+    display: flex;
+    left: 7rem;
+  }
+  .col {
+    width: 350px;
+    height: 350px;
+  }
+  .col .card {
+    width: 350px;
+    height: 320px;
+  }
+  .card .card-body {
+    height: 400px;
+  }
+  .col .card img {
+    width: 350px;
+    min-height: 200px;
+  }
+} 

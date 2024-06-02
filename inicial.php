@@ -32,7 +32,7 @@
             <div class="carousel-caption d-none d-md-block">
               <h1>
                   <span id="title-site1">Volleyball</span>
-                  <span style="color: #F9CC02;">Center</span>
+                  <span id="title-site2">Center</span>
               </h1>
               <p>Seja bem vindo ao melhor site de vôlei do paraná, 
                 aqui você estará por dentro de tudo!
@@ -47,7 +47,7 @@
       <br>
       <div class="carousel-imagesItens d-block justify-content-center">
 
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleInterval" class="carousel slide d-flex" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="2000">
               <img src="img/jogo-5.jpg" class="d-block w-100">
@@ -75,11 +75,11 @@
         <br><br>
 
         <div class="carouselDownPics">
-          <div class="card bg-dark text-white" style="left: 283px;">
+          <div class="card bg-dark text-white">
             <img src="img/jogo-2.jpg" class="card-img d-block">
             <div class="card-img-overlay"></div>
           </div>
-          <div class="card bg-dark text-white" style="left: 377px;">
+          <div class="card bg-dark text-white">
             <img src="img/jogo-3.jpg" class="card-img">
             <div class="card-img-overlay"></div>
           </div>
@@ -88,7 +88,6 @@
       <br><br><br><br><br>
       <hr>
       <br><br>
-      <!-- Acrescentar algo(talvez anúncio ou linha) para preencher este espaço em branco por causa dos dois cards acima  -->
 
       <h1 id="noticias-sem-title">Notícias semanais</h1>
       <br><br>
