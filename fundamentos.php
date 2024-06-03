@@ -17,16 +17,16 @@
 
 	<ul class="nav nav-tabs" style="position: relative; margin-top: 20px;">
 		<li class="nav-item">
-			<a class="nav-link active" style="color: #363636"; aria-current="page" href="#">Fundamentos</a>
+			<a class="nav-link active" aria-current="page" href="#"  style="color: #363636;">Fundamentos</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" style="color: #363636"; aria-current="page" href="historia.php">História</a>
+			<a class="nav-link" aria-current="page" href="historia.php"  style="color: #363636;">História</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" style="color: #363636"; aria-current="page" href="regras.php">Regras</a>
+			<a class="nav-link" aria-current="page" href="regras.php"  style="color: #363636;">Regras</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" style="color: #363636"; aria-current="true" href="sistema-rodizio.php">Sistema de Rodízio</a>
+			<a class="nav-link" aria-current="true" href="sistema-rodizio.php"  style="color: #363636;">Sistema de Rodízio</a>
 		</li>
 	</ul>
 

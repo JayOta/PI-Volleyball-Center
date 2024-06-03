@@ -23,7 +23,7 @@
 	<div class="container"> <!-- isto concerta a largura de alguns containers -->
 		<!-- Arrumar a largura das imagens dos dois carroséis -->
 
-		<div class="blue-back d-flex" style="overflow: hidden;">
+		<div class="blue-back d-flex">
 			<div class="section">
 				<section>
 					<h1 id="title-h1" style="text-shadow: 0px 0px 6px #2b2b2b;">
@@ -54,11 +54,11 @@
 
 		<br><br><br><br><br><br><br><br><br><br><br><br><br>
 		<!-- Change this -->
-		<div class="content-cards" style="position: relative;bottom: 250px;">
+		<div class="content-cards">
 
 			<div class="row row-cols-1 row-cols-md-3 g-4">
-				<div class="col" style="max-width: 450px;">
-					<div class="card h-100" style="box-shadow: 0px 0px 2px #787878;">
+				<div class="col">
+					<div class="card h-100">
 						<a href="#" target="_blank">
 							<img src="img/foto-selecao.png" class="card-img-top d-block" alt="Seleção"></a>
 						<div class="card-body">
@@ -73,7 +73,7 @@
 				</div>
 
 				<div class="col">
-					<div class="card h-100" style="box-shadow: 0px 0px 2px #787878;">
+					<div class="card h-100">
 						<a href="#" target="_blank">
 							<img src="img/noticia-2.png" class="card-img-top" alt="Seleção">
 						</a>
@@ -88,7 +88,7 @@
 				</div>
 
 				<div class="col">
-					<div class="card h-100" style="box-shadow: 0px 0px 2px #787878;">
+					<div class="card h-100">
 						<a href="#" target="_blank">
 							<img src="img/noticia-3.png" class="card-img-top" alt="Seleção"></a>
 						<div class="card-body">
@@ -107,7 +107,7 @@
 			<div class="container">
 				<div class="row row-cols-1 row-cols-md-3 g-4">
 					<div class="col">
-						<div class="card h-100" style="box-shadow: 0px 0px 2px #787878;">
+						<div class="card h-100">
 							<a href="#" target="_blank">
 								<img src="img/noticia-4.png" class="card-img-top" alt="Seleção"></a>
 							<div class="card-body">
@@ -121,7 +121,7 @@
 					</div>
 
 					<div class="col">
-						<div class="card h-100" style="box-shadow: 0px 0px 2px #787878;">
+						<div class="card h-100">
 							<a href="#" target="_blank">
 								<img src="img/noticia-5.png" class="card-img-top" alt="Seleção"></a>
 							<div class="card-body">
@@ -135,7 +135,7 @@
 					</div>
 
 					<div class="col">
-						<div class="card h-100" style="box-shadow: 0px 0px 2px #787878;">
+						<div class="card h-100">
 							<a href="#" target="_blank">
 								<img src="img/noticia-6.png" class="card-img-top" alt="Seleção"></a>
 							<div class="card-body">
@@ -152,67 +152,110 @@
 		</div>
 	</div>
 
-	<div class="blue-back2" style="z-index: 1;">
+	<div class="blue-back2">
 		<aside>
 			<h1 class="second-title">Campeonato Paranaense!</h1>
-			<div id="carouselExampleSlidesOnly" id="carousel-slide" class="carousel slide" data-bs-ride="carousel" style="display: flex; width: 915px; height: 570px; position: relative; left: 100px; top: 130px; border-radius: 10px; box-shadow: 0px 3px 8px #000; background-repeat: no-repeat;">
-				<div class="carousel-inner" style="background: #000; border-radius: 10px;">
-					<div class="carousel-item active" style="justify-content: center; text-align: center;">
-						<img class="aside-imgs" src="img/comunidadeC01.jpg" class="d-block" alt="Imagem do campeonato Paranaense Sub-13 de 2023" style="position: relative; display: flex; width: 915px; height: 570px; border-radius: 10px; text-align: center;"> <!-- Deixar o carrousel mais escuro -->
-						<div class="carousel-caption d-flex d-md-block justify-content-center" style="display: flex; align-items:center; z-index: 1; margin-bottom: 100px;">
-							<h5 class="d-flex justify-content-center" style="font-size: 20px; ">27 de novembro de 2023</h5>
-							<p class="d-flex justify-content-center" style="font-size: 19px;">PM Foz do Iguaçu/ Smel conquista Paranaense Sub-14 Série B feminino 2023</p>
+			<div id="carouselExampleSlidesOnly" id="carousel-slide" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img class="aside-imgs" src="img/comunidadeC01.jpg" class="d-block" alt="Imagem do campeonato Paranaense Sub-13 de 2023"> <!-- Deixar o carrousel mais escuro -->
+						<div class="carousel-caption d-flex d-md-block justify-content-center align-items-center">
+							<h5 class="d-flex justify-content-center">27 de novembro de 2023</h5>
+							<p class="d-flex justify-content-center">PM Foz do Iguaçu/ Smel conquista Paranaense Sub-14 Série B feminino 2023</p>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="carousel-sides d-flex" style="justify-content: space-between;">
-
-				<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" style="display: flex; width: 620px; height: 345px; border-radius: 15px; left: 1070px; bottom: 500px; box-shadow: 0px 3px 8px #000; transition: 0.3s;">
-					<div class="carousel-inner" style="background-color: black; border-radius: 10px;">
+			<div class="carousel-sides d-flex position-absolute">
+				<div id="carouselExampleFade" class="carousel slide carousel-fade d-flex" data-bs-ride="carousel">
+					<div class="carousel-inner">
 						<div class="carousel-item active">
-							<img class="aside-imgs"	 src="img/comunidadeC01.jpg" class="d-block" alt="Imagem do campeonato Paranaense Sub-13 de 2023" style="position: relative; display: flex; width: 620px; height: 345px; border-radius: 10px; transition: 0.3s;">
+							<img class="aside-imgs position-relative d-flex" src="img/comunidadeC01.jpg" class="d-block" alt="Imagem do campeonato Paranaense Sub-13 de 2023" style="
+								width: 620px; 
+								height: 345px; 
+								border-radius: 10px; 
+								transition: 0.3s;
+								">
 							<div class="carousel-caption d-none d-md-block">
-								<h5 class="d-flex justify-content-center" style="font-size: 20px; position: relative; display: flex;">27 de Novembro de 2023</h5>
-								<p class="d-flex justify-content-center" style="font-size: 19px; position: relative; display: flex;">PM Foz do Iguaçu/ Smel conquista Paranaense Sub-14 Série B feminino 2023</p>
+								<h5 class="d-flex justify-content-center position-relative d-flex" style="font-size: 20px;">27 de Novembro de 2023</h5>
+								<p class="d-flex justify-content-center position-relative d-flex" style="font-size: 19px;">PM Foz do Iguaçu/ Smel conquista Paranaense Sub-14 Série B feminino 2023</p>
 							</div>
 						</div>
 						<div class="carousel-item">
-							<img class="aside-imgs" src="img/comunidadeC02.jpg" class="d-block" alt="Imagem de jogadores de volêi" style="display: flex; width: 620px; height: 345px; border-radius: 10px; transition: 0.3s;">
+							<img class="aside-imgs" src="img/comunidadeC02.jpg" class="d-block" alt="Imagem de jogadores de volêi" style="
+								display: flex; 
+								width: 620px; 
+								height: 345px; 
+								border-radius: 10px; 
+								transition: 0.3s;
+								">
 							<div class="carousel-caption d-none d-md-block">
-								<h5 class="justify-content-center" style="font-size: 20px; position: relative; display: flex; text-align: center;">29 de novembro de 2023</h5>
-								<p class="justify-content-center" style="font-size: 19px; position: relative; display: flex;">Fase final do Paranaense Sub-19 feminino, Série A, começa nesta quinta-feira (30), em Maringá</p>
+								<h5 class="justify-content-center position-relative d-flex" style="font-size: 20px; text-align: center;">29 de novembro de 2023</h5>
+								<p class="justify-content-center position-relative d-flex" style="font-size: 19px;">Fase final do Paranaense Sub-19 feminino, Série A, começa nesta quinta-feira (30), em Maringá</p>
 							</div>
 						</div>
 						<div class="carousel-item">
-							<img class="aside-imgs" src="img/comunidadeC03.jpg" class="d-block" alt="Imagem da equipe de vôlei da smel Araucária de 2023" style="display: flex; width: 620px; height: 345px; border-radius: 10px; transition: 0.3s;">
+							<img class="aside-imgs" src="img/comunidadeC03.jpg" class="d-block" alt="Imagem da equipe de vôlei da smel Araucária de 2023" style="
+							display: flex; 
+							width: 620px; 
+							height: 345px; 
+							border-radius: 10px; 
+							transition: 0.3s;
+							">
 							<div class="carousel-caption d-none d-md-block">
-								<h5 class="justify-content-center" style="font-size: 20px; position: relative; display: flex;">22 de novembro de 2023</h5>
-								<p class="justify-content-center" style="font-size: 19px; position: relative; display: flex;">Com mais de 500 atletas reunidos, final de semana teve 93 partidas e cinco campeões estaduais da Série A</p>
+								<h5 class="justify-content-center position-relative d-flex" style="font-size: 20px;">22 de novembro de 2023</h5>
+								<p class="justify-content-center position-relative d-flex" style="font-size: 19px;">Com mais de 500 atletas reunidos, final de semana teve 93 partidas e cinco campeões estaduais da Série A</p>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" style="display: flex; border-radius: 10px; width: 620px; height: 345px; bottom: 110px; right: 173px; transition: 0.3s; box-shadow: 0px 3px 8px #000;">
+				<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" style="
+					display: flex; 
+					border-radius: 10px; 
+					width: 620px; 
+					height: 345px; 
+					margin-top: 70px; 
+					transition: 0.3s; 
+					box-shadow: 0px 3px 8px #000;
+					">
 					<div class="carousel-inner" style="background-color: black; border-radius: 10px;">
 						<div class="carousel-item active">
-							<img class="aside-imgs" src="img/comunidadeC01.jpg" class="d-block" alt="Imagem do campeonato Paranaense Sub-13 de 2023" style="position: relative; display: flex; width: 620px; height: 345px; border-radius: 10px; transition: 0.3s;">
+							<img class="aside-imgs" src="img/comunidadeC01.jpg" class="d-block" alt="Imagem do campeonato Paranaense Sub-13 de 2023" style="
+								position: relative; 
+								display: flex; 
+								width: 620px; 
+								height: 345px; 
+								border-radius: 10px; 
+								transition: 0.3s;
+								">
 							<div class="carousel-caption d-none d-md-block">
 								<h5 class="justify-content-center" style="font-size: 20px; position: relative; display: flex;">27 de novembro de 2023</h5>
 								<p class="justify-content-center" style="font-size: 19px; position: relative; display: flex;">PM Foz do Iguaçu/ Smel conquista Paranaense Sub-14 Série B feminino 2023</p>
 							</div>
 						</div>
 						<div class="carousel-item">
-							<img class="aside-imgs" src="img/comunidadeC02.jpg" class="d-block" alt="Imagem de jogadores de volêi" style="display: flex; width: 620px; height: 345px; border-radius: 10px; transition: 0.3s;">
+							<img class="aside-imgs" src="img/comunidadeC02.jpg" class="d-block" alt="Imagem de jogadores de volêi" style="
+								display: flex; 
+								width: 620px; 
+								height: 345px; 
+								border-radius: 10px; 
+								transition: 0.3s;
+								">
 							<div class="carousel-caption d-none d-md-block">
 								<h5 class="justify-content-center" style="font-size: 20px; position: relative; display: flex;">29 de novembro de 2023</h5>
 								<p class="justify-content-center" style="font-size: 18px; position: relative; display: flex;">Fase final do Paranaense Sub-19 feminino, Série A, começa nesta quinta-feira (30), em Maringá</p>
 							</div>
 						</div>
 						<div class="carousel-item">
-							<img class="aside-imgs" src="img/comunidadeC03.jpg" class="d-block" alt="Imagem da equipe de vôlei da smel Araucária de 2023" style="display: flex; width: 620px; height: 345px; border-radius: 10px; transition: 0.3s;">
+							<img class="aside-imgs" src="img/comunidadeC03.jpg" class="d-block" alt="Imagem da equipe de vôlei da smel Araucária de 2023" style="
+								display: flex; 
+								width: 620px; 
+								height: 345px; 
+								border-radius: 10px; 
+								transition: 0.3s;
+								">
 							<div class="carousel-caption d-none d-md-block">
 								<h5 class="justify-content-center" style="font-size: 20px; position: relative; display: flex;">22 de novembro de 2023</h5>
 								<p class="justify-content-center" style="font-size: 18px; position: relative; display: flex;">Com mais de 500 atletas reunidos, final de semana teve 93 partidas e cinco campeões estaduais da Série A</p>
@@ -224,13 +267,13 @@
 		</aside>
 	</div>
 
-	<br><br><br><br>
+	<br><br>
 
 	<div class="puxar-pra-cima">
 		<div class="container">
 			<div class="row row-cols-1 row-cols-md-3 g-4">
 				<div class="col">
-					<div class="card h-100" style="box-shadow: 0px 0px 2px #787878;">
+					<div class="card h-100">
 						<a href="#" target="_blank">
 							<img src="img/noticia-7.png" class="card-img-top" alt="Seleção"></a>
 						<div class="card-body">
@@ -244,7 +287,7 @@
 				</div>
 
 				<div class="col">
-					<div class="card h-100" style="box-shadow: 0px 0px 2px #787878;">
+					<div class="card h-100">
 						<a href="#" target="_blank">
 							<img src="img/noticia-8.png" class="card-img-top" alt="Seleção"></a>
 						<div class="card-body">
@@ -258,7 +301,7 @@
 				</div>
 
 				<div class="col">
-					<div class="card h-100" style="box-shadow: 0px 0px 2px #787878;">
+					<div class="card h-100">
 						<a href="#" target="_blank">
 							<img src="img/noticia-9.png" class="card-img-top" alt="Seleção"></a>
 						<div class="card-body">
@@ -281,7 +324,7 @@
 		<div class="container">
 			<div class="row row-cols-1 row-cols-md-3 g-4">
 				<div class="col">
-					<div class="card h-100" style="box-shadow: 0px 0px 2px #787878;">
+					<div class="card h-100">
 						<a href="#" target="_blank">
 							<img src="img/noticia-10.png" class="card-img-top" alt="Seleção"></a>
 						<div class="card-body">
@@ -295,7 +338,7 @@
 				</div>
 
 				<div class="col">
-					<div class="card h-100" style="box-shadow: 0px 0px 2px #787878;">
+					<div class="card h-100">
 						<a href="#" target="_blank">
 							<img src="img/noticia-11.png" class="card-img-top" alt="Seleção"></a>
 						<div class="card-body">
@@ -309,7 +352,7 @@
 				</div>
 
 				<div class="col">
-					<div class="card h-100" style="box-shadow: 0px 0px 2px #787878;">
+					<div class="card h-100">
 						<a href="#" target="_blank">
 							<img src="img/noticia-12.png" class="card-img-top" alt="Seleção"></a>
 						<div class="card-body">

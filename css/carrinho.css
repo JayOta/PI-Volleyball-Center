@@ -217,5 +217,12 @@ button{
         text-transform: uppercase;
         letter-spacing: 1px;
         font-size: 16px;
-    } button:hover{background-color: #3792ec;}
+    } 
+    button#finalizar{
+        border-radius: 2px;
+    }
+    button#finalizar:hover {
+        transition: .3s ease-in-out;
+        background-color: #3792ec;
+    }
 }

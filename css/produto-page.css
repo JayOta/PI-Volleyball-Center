@@ -56,17 +56,16 @@ Product section stylling
   padding: 0 3rem;
   max-width: 134rem;
   margin: auto;
-  bottom: 220px;
+  bottom: 40px;
   display: grid;
   grid-template-columns: 0.8fr 1fr;
   gap: 5rem;
-
 }
 
 /* Left img container stylling */
 .img-main {
   max-width: 100%;
-  height: 100%;
+  height: 80%;
   border-radius: 5%;
   cursor: pointer;
   margin-bottom: 2rem;
