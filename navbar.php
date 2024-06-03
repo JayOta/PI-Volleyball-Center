@@ -25,7 +25,7 @@
 					<a id="inicial" href="inicial.php">Início</a>
 					<a id="link-2" href="fundamentos.php">Fundamentos</a>
 					<a id="link-3" href="noticias.php">Notícias</a>
-					<a id="loja" href="loja.php">Loja</a>
+					<a id="link-4" href="loja.php">Loja</a>
 					<a id="login" href="index.php" style="bottom: 13px;"><button type="submit" class="btnLogin-popup">Login</button></a>
 				</nav>
 			</header>

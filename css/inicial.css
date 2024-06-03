@@ -162,15 +162,7 @@ footer img {
     height: 350px;
   }
 
-@media screen and (max-width: 1400px) {
-  /* .carouselDownPics {
-    display: flex;
-    position: relative;
-    gap: 50px;
-    left: 24rem;
-  } */
-} 
-@media screen and (max-width: 1320px) {
+@media screen and (max-width: 1220px) {
   #title-site1 {
     display: flex;
     font-size: 40px;
@@ -203,16 +195,14 @@ footer img {
   .carouselDownPics {
     display: flex;
     position: relative;
+    flex-direction: column;
+    overflow: hidden;
     gap: 50px;
     left: 20rem;
   }
   .card-img {
     display: flex;
     max-width: 600px;
-  }
-  .carouselDownPics {
-    display: flex;
-    flex-direction: column;
   }
   .carouselDownPics img {
     width: 600px;

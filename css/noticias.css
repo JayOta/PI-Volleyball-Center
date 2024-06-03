@@ -1,10 +1,28 @@
 .navigation a#link-3 {
     color: #7fb7f0;
-}.nav-link{
-          font-size: 1.1em;
-          color: #fff;
-          font-weight: 500;
-          text-decoration: none;
+}
+.nav-link{
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+}.blue-back {
+    width: 111.3rem;
+    height: 700px;
+    position: relative;
+    right: 243px;
+    bottom: 48px;
+    z-index: 0;
+    overflow: hidden;
+    background: #1E90FF;
+}
+.blue-back img {
+    z-index: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+.blue-back img:hover {
+    opacity: 0.7;
 }
 #carouselExampleSlidesOnly-1 {
     display: flex; 
@@ -59,20 +77,7 @@ h5 .card-title {
 .card-body .card-text strong {
     color: #1E90FF;
 }
-.blue-back {
-    position: relative;
-    width: 112.4rem;
-    right: 251px;
-    height: 700px;
-    bottom: 48px;
-    z-index: 0;
-    background: #1E90FF;
-}
-.blue-back img {
-    z-index: 1;
-    display: flex;
-    justify-content: flex-start;
-}
+
 section {
     display:grid; 
     flex-direction: column;
@@ -110,10 +115,10 @@ section button:hover {
 
 aside img {
         position: relative;
-        z-index: 1;
         transition: .3s;
         width: 100%;
         height: 100%;
+        background-color: #000;
 }
 aside img:hover {
     opacity: 1.0;
@@ -121,7 +126,6 @@ aside img:hover {
     transform: scale(1.05);
 }
 .blue-back2 {
-    z-index: -1;
     position: relative;
     width: 100%;
     height: 960px;
@@ -129,6 +133,9 @@ aside img:hover {
     box-shadow: 0px 0px 4px #000;
     border-radius: 5px;
     background: #1E90FF;
+}
+.aside-imgs:hover {
+    opacity: 0.7;
 }
 .blue-back2 .second-title {
     display: flex;
@@ -143,6 +150,9 @@ aside img:hover {
 .blue-back2 .carousel-caption {
     position: absolute;
     bottom: 80px;
+}
+.blue-back2 .carousel-caption h5,h2 {
+    color: #fff;
 }
 .puxar-pra-cima {
     position: relative;
