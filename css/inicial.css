@@ -97,7 +97,7 @@ footer img {
 
   #carouselExampleInterval {
     display: flex;
-    margin-left: 248px;
+    margin-left: 279px;
     max-width: 1303px;  
     max-height: 1000px; 
     border: 1px solid; 
@@ -114,7 +114,7 @@ footer img {
   }
   .carousel-caption h5.carousel-title {
     text-shadow: 0px 0px 8px #0b0b0b;
-     font-size: auto;
+    font-size: auto;
   }
   .carousel-caption h2.carousel-title {
     font-size: 38px; 
