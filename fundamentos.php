@@ -29,7 +29,7 @@
 		</div>
 	</nav>
 
-	<ul class="nav nav-tabs" style="position: relative; margin-top: 20px;">
+	<ul class="nav nav-tabs d-flex justify-content-center" style="position: relative; margin-top: 20px;">
 		<li class="nav-item">
 			<a class="nav-link active" style="color: #363636"; aria-current="page" href="#">Fundamentos</a>
 		</li>
@@ -44,10 +44,79 @@
 		</li>
 	</ul>
 
-	<h1 style="font-size: 50px; position: relative; display: flex; left: 50px;  font-weight: 200;">Saques</h1>
-	<h2>1. Saque por baixo:</h2>
-	
+	<div class="meioDosFundamentos" style="transform: translateX(38rem); ">
+		<h1 style="font-size: 50px; position: relative; display: flex;  font-weight: 200;">Saques</h1>
+		<br>
+		<div class="align-text" style="display: flex; flex-direction: row; position: relative;">
+			<div class="card" style="width: 35rem; height: 20rem; display: flex; flex-direction: column;">
+				<img src="img/saque-baixo.jpeg" class="card-img-top" alt="imagem de como é feito passo a passo o saque por baixo no vôlei.">
+				<br>
+				<p class="card-text" style="transform: translateX(3rem); font-size: 20px"><strong>Saque por baixo:</strong></p>
+				<div class="card-body">
+				</div>
+			</div>
+			<p style="display: flex; width: 300px; margin: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem quas a fuga cum deleniti explicabo eos, ipsam perferendis quo ea autem eaque laudantium possimus inventore, beatae ex minima voluptatibus repellendus! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				Dolorum facilis ab quidem, eos eaque nostrum rem fugiat illum eligendi expedita nam placeat blanditiis, animi voluptate, laudantium aut dicta ipsa atque.</p>
+		</div>
+	</div>
+	<br>
+	<div class="meioDosFundamentos" style="transform: translateX(38rem); ">
+		<br>
+		<div class="align-text" style="display: flex; flex-direction: row; position: relative;">
+			<div class="card" style="width: 35rem; height: 14rem; display: flex; flex-direction: column;">
+				<img src="img/saque-cima.jpg" class="card-img-top" alt="imagem de como é feito passo a passo o saque por baixo no vôlei.">
+				<br>
+				<p class="card-text" style="transform: translateX(3rem); font-size: 20px"><strong>Saque por baixo:</strong></p>
+				<div class="card-body">
+				</div>
+			</div>
+			<p style="display: flex; width: 300px; margin: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem quas a fuga cum deleniti explicabo eos, ipsam perferendis quo ea autem eaque laudantium possimus inventore, beatae ex minima voluptatibus repellendus! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				Dolorum facilis ab quidem, eos eaque nostrum rem fugiat illum eligendi expedita nam placeat blanditiis, animi voluptate, laudantium aut dicta ipsa atque.</p>
+		</div>
+	</div>
+	<br>
+	<div class="meioDosFundamentos" style="transform: translateX(38rem); ">
+		<br>
+		<div class="align-text" style="display: flex; flex-direction: row; position: relative;">
+			<div class="card" style="width: 35rem; display: flex; flex-direction: column;">
+				<img src="img/saque-baixo.jpeg" class="card-img-top" alt="imagem de como é feito passo a passo o saque por baixo no vôlei.">
+				<p class="card-text" style="transform: translateX(3rem); font-size: 20px"><strong>Saque por baixo:</strong></p>
+				<div class="card-body">
+				</div>
+			</div>
+			<p style="display: flex; width: 300px; margin: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem quas a fuga cum deleniti explicabo eos, ipsam perferendis quo ea autem eaque laudantium possimus inventore, beatae ex minima voluptatibus repellendus! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				Dolorum facilis ab quidem, eos eaque nostrum rem fugiat illum eligendi expedita nam placeat blanditiis, animi voluptate, laudantium aut dicta ipsa atque.</p>
+		</div>
+	</div>
+	<br>
 
+	<div class="meioDosFundamentos" style="transform: translateX(38rem); ">
+		<br>
+		<div class="align-text" style="display: flex; flex-direction: row; position: relative;">
+			<div class="card" style="width: 35rem; display: flex; flex-direction: column;">
+				<img src="img/saque-baixo.jpeg" class="card-img-top" alt="imagem de como é feito passo a passo o saque por baixo no vôlei.">
+				<p class="card-text" style="transform: translateX(3rem); font-size: 20px"><strong>Saque por baixo:</strong></p>
+				<div class="card-body">
+				</div>
+			</div>
+			<p style="display: flex; width: 300px; margin: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem quas a fuga cum deleniti explicabo eos, ipsam perferendis quo ea autem eaque laudantium possimus inventore, beatae ex minima voluptatibus repellendus! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				Dolorum facilis ab quidem, eos eaque nostrum rem fugiat illum eligendi expedita nam placeat blanditiis, animi voluptate, laudantium aut dicta ipsa atque.</p>
+		</div>
+	</div>
+	<br>
+	<div class="meioDosFundamentos" style="transform: translateX(38rem); ">
+		<br>
+		<div class="align-text" style="display: flex; flex-direction: row; position: relative;">
+			<div class="card" style="width: 35rem; display: flex; flex-direction: column;">
+				<img src="img/saque-baixo.jpeg" class="card-img-top" alt="imagem de como é feito passo a passo o saque por baixo no vôlei.">
+				<p class="card-text" style="transform: translateX(3rem); font-size: 20px"><strong>Saque por baixo:</strong></p>
+				<div class="card-body">
+				</div>
+			</div>
+			<p style="display: flex; width: 300px; margin: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem quas a fuga cum deleniti explicabo eos, ipsam perferendis quo ea autem eaque laudantium possimus inventore, beatae ex minima voluptatibus repellendus! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				Dolorum facilis ab quidem, eos eaque nostrum rem fugiat illum eligendi expedita nam placeat blanditiis, animi voluptate, laudantium aut dicta ipsa atque.</p>
+		</div>
+	</div>
 	<!-- <div class="container">
 		<br>
 		<div class="row row-cols-2 justify-content-center">
