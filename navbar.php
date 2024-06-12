@@ -10,7 +10,6 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
 		crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="css/noticias.css">
 	<link rel="stylesheet" href="css/navbar.css">
 </head>
 
@@ -23,11 +22,11 @@
 
 			<header>
 				<nav class="navigation">
-					<a href="inicial.php">Início</a>
-					<a href="fundamentos.php">Fundamentos</a>
-					<a href="noticias.php">Notícias</a>
-					<a href="loja.php" style="color: #7fb7f0;">Loja</a>
-					<a href="index.php" style="bottom: 13px;"><button type="submit" class="btnLogin-popup">Login</button></a>
+					<a id="inicial" href="inicial.php">Início</a>
+					<a id="link-2" href="fundamentos.php">Fundamentos</a>
+					<a id="link-3" href="noticias.php">Notícias</a>
+					<a id="link-4" href="loja.php">Loja</a>
+					<a id="login" href="index.php" style="bottom: 13px;"><button type="submit" class="btnLogin-popup">Login</button></a>
 				</nav>
 			</header>
 		</div>

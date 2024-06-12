@@ -89,7 +89,7 @@
                        <span>R$ 480</span>
                     </footer>
                 </div>
-                <button>Finalizar compra</button>
+                <button id="finalizar">Finalizar compra</button>
             </aside>
         </div>
     </main>
