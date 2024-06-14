@@ -19,3 +19,28 @@ h1 {
   background-color: #f9cc02;
   font-family: Courier New;
 }
+
+.fundamentos_centro { 
+    width: 100rem; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+#galeria > div {
+  float: left;
+  width: 33%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.foto img{
+  width: 100%;
+}
+.detalhes{display: none;}
+
+.foto:target{
+  position: fixed;
+  width: 50%;
+  top: 15%;
+  left: 25%
+}

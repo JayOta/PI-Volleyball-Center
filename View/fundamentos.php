@@ -14,8 +14,7 @@
 	<?php 
 		include 'navbar.php';
 	?>
-
-	<ul class="nav nav-tabs" style="position: relative; margin-top: 20px;">
+	<ul class="nav nav-tabs" style="position: relative; margin-top: 20px;" style="text-align: center;" >
 		<li class="nav-item">
 			<a class="nav-link active" aria-current="page" href="#"  style="color: #363636;">Fundamentos</a>
 		</li>
@@ -30,8 +29,239 @@
 		</li>
 	</ul>
 
-	<h1 style="font-size: 50px; position: relative; display: flex; left: 50px;  font-weight: 200;">Saques</h1>
-	<h2>1. Saque por baixo:</h2>
+	<div class="fundamentos_centro">
+
+		<h1 style="font-size: 50px; position: relative; display: flex;">Fundamentos</h1>
+
+		<div>
+		<div class="row">
+						<div class="col-md-3">
+							<div class="card">
+								<img src="img/saque-baixo.jpg" class="card-img-top" alt="Desenho de uma pessoa realizando o passo a passo do saque por baixo no vôlei.">
+								<div class="card-body">
+									<h3 class="card-title">Saque por baixo</h3>
+									<a href="#saque-baixo.jpg"><button type="button" class="btn btn-outline-dark">Detalhes</button></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="card">
+								<img src="img/joelheira.png" class="card-img-top" alt="Produto 1">
+								<div class="card-body">
+									<h5 class="card-title">Joelheira</h5>
+									<h3 class="card-text">R$55,60</h3>
+									<a href="joelheira-page.php" class="btn btn-success card-button">Comprar</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="card">
+								<img src="img/bola-de-volei.png" class="card-img-top" alt="Produto 2">
+								<div class="card-body">
+									<h5 class="card-title">Bola Penalty VP5000M</h5>
+									<h3 class="card-text">R$86,70</h3>
+									<a href="bola-penalty-page.php" class="btn btn-success card-button">Comprar</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="card">
+								<img src="img/calca-compressao.png" class="card-img-top" alt="Produto 3">
+								<div class="card-body">
+									<h5 class="card-title">Calça de compressão</h5>
+									<h3 class="card-text">R$115,00</h3>
+									<a href="calca-compressao-page.php" class="btn btn-success card-button">Comprar</a>
+								</div>
+							</div>
+						</div>
+						<br>
+						<div class="col-md-3">
+							<div class="card">
+								<img src="img/manguito.png" class="card-img-top" alt="Produto 1">
+								<div class="card-body">
+									<h5 class="card-title">Manguito</h5>
+									<h3 class="card-text">R$70,00</h3>
+									<a href="manguito-page.php" class="btn btn-success card-button">Comprar</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="card">
+								<img src="img/joelheira.png" class="card-img-top" alt="Produto 1">
+								<div class="card-body">
+									<h5 class="card-title">Joelheira</h5>
+									<h3 class="card-text">R$55,60</h3>
+									<a href="joelheira-page.php" class="btn btn-success card-button">Comprar</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="card">
+								<img src="img/bola-de-volei.png" class="card-img-top" alt="Produto 2">
+								<div class="card-body">
+									<h5 class="card-title">Bola Penalty VP5000M</h5>
+									<h3 class="card-text">R$86,70</h3>
+									<a href="bola-penalty-page.php" class="btn btn-success card-button">Comprar</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="card">
+								<img src="img/calca-compressao.png" class="card-img-top" alt="Produto 3">
+								<div class="card-body">
+									<h5 class="card-title">Calça de compressão</h5>
+									<h3 class="card-text">R$115,00</h3>
+									<a href="calca-compressao-page.php" class="btn btn-success card-button">Comprar</a>
+								</div>
+							</div>
+						</div>
+			</div>
+		</div>
+			
+	</div>
+
+
+
+
+
+
+	<!-- <div id="galeria">
+		<div class="foto" id="foto1">
+			<div class="card" style="width: 18rem;">
+				<img src="img/saque-baixo.jpg" class="card-img-top" alt="Desenho de uma pessoa realizando o passo a passo do saque por baixo no vôlei.">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+					<div class="detalhes">
+						Descricao da imagem <br><a href="#fechar">Fechar</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="foto" id="foto2 ">
+			<div class="card" style="width: 18rem;">
+				<img src="img/saque-cima.jpg" class="card-img-top" alt="Desenho de uma pessoa realizando o passo a passo do saque por cima no vôlei.">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<a href="#foto2" class="btn btn-primary">Go somewhere</a>
+					<div class="detalhes">
+						Descricao da imagem <br><a href="#fechar">Fechar</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="foto" id="foto3">
+			<div class="card" style="width: 18rem;">
+				<img src="img/ataque.jpg" class="card-img-top" alt="Desenho de uma pessoa realizando um ataque no vôlei.">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<a href="#foto3" class="btn btn-primary">Go somewhere</a>
+					<div class="detalhes">
+						Descricao da imagem <br><a href="#fechar">Fechar</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="foto" id="foto4">
+			<div class="card" style="width: 18rem;">
+				<img src="img/bloqueio.jpg" class="card-img-top" alt="Desenho de uma pessoa realizando o passo a passo do bloqueio no vôlei.">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<a href="#foto4" class="btn btn-primary">Go somewhere</a>
+					<div class="detalhes">
+						Descricao da imagem <br><a href="#fechar">Fechar</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="foto" id="foto5">
+			<div class="card" style="width: 18rem;">
+				<img src="img/levantamento.jpg" class="card-img-top" alt="Desenho de uma pessoa realizando o passo a passo de um levantamento.">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<a href="#foto5" class="btn btn-primary">Go somewhere</a>
+					<div class="detalhes">
+						Descricao da imagem <br><a href="#fechar">Fechar</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="foto" id="foto1">
+			<div class="card" style="width: 18rem;">
+				<img src="img/saque-baixo.jpg" class="card-img-top" alt="Desenho de uma pessoa realizando o passo a passo do saque por baixo no vôlei.">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<a href="#foto1" class="btn btn-primary">Go somewhere</a>
+					<div class="detalhes">
+						Descricao da imagem <br><a href="#fechar">Fechar</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="foto" id="foto2 ">
+			<div class="card" style="width: 18rem;">
+				<img src="img/saque-cima.jpg" class="card-img-top" alt="Desenho de uma pessoa realizando o passo a passo do saque por cima no vôlei.">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<a href="#foto2" class="btn btn-primary">Go somewhere</a>
+					<div class="detalhes">
+						Descricao da imagem <br><a href="#fechar">Fechar</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="foto" id="foto3">
+			<div class="card" style="width: 18rem;">
+				<img src="img/ataque.jpg" class="card-img-top" alt="Desenho de uma pessoa realizando um ataque no vôlei.">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<a href="#foto3" class="btn btn-primary">Go somewhere</a>
+					<div class="detalhes">
+						Descricao da imagem <br><a href="#fechar">Fechar</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="foto" id="foto4">
+			<div class="card" style="width: 18rem;">
+				<img src="img/bloqueio.jpg" class="card-img-top" alt="Desenho de uma pessoa realizando o passo a passo do bloqueio no vôlei.">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<a href="#foto4" class="btn btn-primary">Go somewhere</a>
+					<div class="detalhes">
+						Descricao da imagem <br><a href="#fechar">Fechar</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="foto" id="foto5">
+			<div class="card" style="width: 18rem;">
+				<img src="img/levantamento.jpg" class="card-img-top" alt="Desenho de uma pessoa realizando o passo a passo de um levantamento.">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<a href="#foto5" class="btn btn-primary">Go somewhere</a>
+					<div class="detalhes">
+						Descricao da imagem <br><a href="#fechar">Fechar</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div> -->
+	
+
+	
 	
 
 	<!-- <div class="container">
@@ -144,7 +374,7 @@
 		</div> -->
 
 
-	<hr>
+	<!-- <hr>
 	<p>Com o treino frequente desses fundamentos, a sua habilidade irá melhorar aos poucos.</p>
 	<strong><h6>Não esqueça!</h6></strong>
 	<ul>
@@ -153,8 +383,8 @@
 	</ul>
 	</div>
 
-	<?php 
+	?php 
     	include 'footer.php';
-  	?>
+  	?> -->
 </body>
 </html>
