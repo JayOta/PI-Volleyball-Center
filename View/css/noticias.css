@@ -1,258 +1,265 @@
-.navigation a#link-3 {
-    color: #7fb7f0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.nav-link{
-    font-size: 1.1em;
-    color: #fff;
-    font-weight: 500;
-    text-decoration: none;
+.navigation a#link-3 {
+  color: #7fb7f0;
+}
+.nav-link {
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
 }
 .blue-back {
-    width: 116.5rem;
-    height: 700px;
-    position: relative;
-    right: 284px;
-    bottom: 48px;
-    z-index: 0;
-    overflow: hidden;
-    background: #1E90FF;;
+  box-sizing: border-box;
+  width: 116.5rem;
+  height: 700px;
+  position: relative;
+  right: 284px;
+  bottom: 48px;
+  z-index: 0;
+  overflow: hidden;
+  background: #1e90ff;
 }
 .blue-back img {
-    z-index: 1;
-    display: flex;
-    justify-content: flex-start;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-start;
 }
 .blue-back img:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 section {
-    display:grid; 
-    flex-direction: column;
-    position: relative;
-    left: 100px;
-    top: 220px;
-    color: #fff;
+  display: grid;
+  flex-direction: column;
+  position: relative;
+  left: 100px;
+  top: 220px;
+  color: #fff;
 }
 #title-h1 {
-    width: 650px;
-    font-size: 41px;
+  width: 650px;
+  font-size: 41px;
 }
 #title-h2 {
-    width: 580px;
-    font-size: 24px;
+  width: 580px;
+  font-size: 24px;
 }
 section button {
-    width: 100px;
-    height: 45px;
-    font-size: 15px;
-    border: 2.5px solid #fff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 3px #ffffff;
-    color: #fff;
-    background: transparent;
+  width: 100px;
+  height: 45px;
+  font-size: 15px;
+  border: 2.5px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px #ffffff;
+  color: #fff;
+  background: transparent;
 }
 section button:hover {
-    transform: scale(1.05);
-    transition: 0.6s;
-    box-shadow: 0px 0px 4px #ffffff;
-    color: #fff;
-    border: 2.5px solid #fff;
-    background: #F9CC02;
-}aside img {
-        position: relative;
-        transition: .3s;
-        width: 100%;
-        height: 100%;
-        background-color: #000;
+  transform: scale(1.05);
+  transition: 0.6s;
+  box-shadow: 0px 0px 4px #ffffff;
+  color: #fff;
+  border: 2.5px solid #fff;
+  background: #f9cc02;
+}
+aside img {
+  position: relative;
+  transition: 0.3s;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
 }
 aside img:hover {
-    opacity: 1.0;
-    transition: .5s;
-    transform: scale(1.05);
+  opacity: 1;
+  transition: 0.5s;
+  transform: scale(1.05);
 }
 #carouselExampleSlidesOnly-1 .carousel-inner {
-    border-radius: 10px; 
-    background-color: black;
+  border-radius: 10px;
+  background-color: black;
 }
 #carouselExampleSlidesOnly-1 .carousel-inner .carousel-item {
-    justify-content: center; 
-    text-align: center;
+  justify-content: center;
+  text-align: center;
 }
 #carouselExampleSlidesOnly-1 {
-    display: flex; 
-    position: relative; 
-    width: 830px; 
-    height: 492px; 
-    margin-top: 100px; 
-    margin-left: 150px; 
-    border-radius: 10px; 
-    box-shadow: 0px 2px 8px #02203f;
+  display: flex;
+  position: relative;
+  width: 830px;
+  height: 492px;
+  margin-top: 100px;
+  margin-left: 150px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px #02203f;
 }
 .carousel-item img {
-    display: flex; 
-    width: 830px; 
-    height: 492px; 
-    border-radius: 10px; 
-    opacity: 0.9;
+  display: flex;
+  width: 830px;
+  height: 492px;
+  border-radius: 10px;
+  opacity: 0.9;
 }
 .carousel-caption h5 {
-    display: flex;
-    font-size: 20px; 
-    position: relative;  
-    text-shadow: 0px 0px 8px #0B0B0B;
+  display: flex;
+  font-size: 20px;
+  position: relative;
+  text-shadow: 0px 0px 8px #0b0b0b;
 }
 .carousel-caption p {
-    display: flex;
-    font-size: 19px; 
-    position: relative; 
+  display: flex;
+  font-size: 19px;
+  position: relative;
 }
 button a#saiba-mais {
-    text-decoration: none;
-    color: #fff;
-} 
+  text-decoration: none;
+  color: #fff;
+}
 .content-cards {
-    position: relative;
-    bottom: 250px;
+  position: relative;
+  bottom: 250px;
 }
 .row .col {
-    max-width: 450px;
+  max-width: 450px;
 }
 .row .col .card {
-    box-shadow: 0px 0px 2px #787878;
+  box-shadow: 0px 0px 2px #787878;
 }
 .blue-back2 {
-    position: relative;
-    width: 100%;
-    height: 960px;
-    bottom: 100px;
-    z-index: 1;
-    box-shadow: 0px 0px 4px #000;
-    border-radius: 5px;
-    background: #1E90FF;
+  position: relative;
+  width: 100%;
+  height: 960px;
+  bottom: 100px;
+  z-index: 1;
+  box-shadow: 0px 0px 4px #000;
+  border-radius: 5px;
+  background: #1e90ff;
 }
 
 .blue-back2 .second-title {
-    display: flex;
-    font-style: italic;
-    position: relative;
-    justify-content: center;
-    top: 15px;
-    font-size: 51px;
-    text-shadow: 0px 0px 6px #2b2b2b;
-    color: #fff;
+  display: flex;
+  font-style: italic;
+  position: relative;
+  justify-content: center;
+  top: 15px;
+  font-size: 51px;
+  text-shadow: 0px 0px 6px #2b2b2b;
+  color: #fff;
 }
 .blue-back2 .carousel-caption {
-    position: absolute;
-    bottom: 80px;
+  position: absolute;
+  bottom: 80px;
 }
-.blue-back2 .carousel-caption h5,h2 {
-    color: #fff;
+.blue-back2 .carousel-caption h5,
+h2 {
+  color: #fff;
 }
 .blue-back2 {
-    text-shadow: 0px 0px 20px #000;
-    font-size: 32px;
+  text-shadow: 0px 0px 20px #000;
+  font-size: 32px;
 }
 #carouselExampleSlidesOnly {
-    display: flex; 
-    width: 915px; 
-    height: 492px; 
-    position: relative; 
-    left: 100px; 
-    top: 160px; 
-    border-radius: 10px; 
-    box-shadow: 0px 3px 8px #000; 
-    background-repeat: no-repeat;
+  display: flex;
+  width: 915px;
+  height: 492px;
+  position: relative;
+  left: 100px;
+  top: 160px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 8px #000;
+  background-repeat: no-repeat;
 }
 #carouselExampleSlidesOnly .carousel-inner {
-    background: #000; 
-    border-radius: 10px;
-    height: 492px;
+  background: #000;
+  border-radius: 10px;
+  height: 492px;
 }
 #carouselExampleSlidesOnly .carousel-inner .carousel-item {
-    justify-content: center; 
-    text-align: center;
-    height: 492px;
-    width: 915px;
+  justify-content: center;
+  text-align: center;
+  height: 492px;
+  width: 915px;
 }
 
 #carouselExampleSlidesOnly .carousel-caption {
-    display: flex; 
-    align-items:center;
-    margin-bottom: 100px; 
-    z-index: 1; 
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+  z-index: 1;
 }
 #carouselExampleSlidesOnly h5 {
-    font-size: 20px; 
+  font-size: 20px;
 }
 #carouselExampleSlidesOnly p {
-    font-size: 19px;
+  font-size: 19px;
 }
 .carousel-sides {
-    display: flex;
-    justify-content: space-between; 
-    flex-direction: column; 
-    transform: translateX(70rem); 
-    margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  transform: translateX(70rem);
+  margin-top: 50px;
 }
 #carouselExampleFade {
-    width: 620px; 
-    height: 345px; 
-    border-radius: 15px; 
-    bottom: 500px; 
-    box-shadow: 0px 3px 8px #000; 
-    transition: 0.3s;
+  width: 620px;
+  height: 345px;
+  border-radius: 15px;
+  bottom: 500px;
+  box-shadow: 0px 3px 8px #000;
+  transition: 0.3s;
 }
 #carouselExampleFade .carousel-inner {
-    background-color: #000; 
-    border-radius: 10px;
+  background-color: #000;
+  border-radius: 10px;
 }
 #carouselExampleFade .carousel-caption {
-    display: flex;
-    text-align: center;
+  display: flex;
+  text-align: center;
 }
 img.aside-imgs {
-    display: flex; 
-    width: 915px; 
-    height: 492px;
-    border-radius: 10px; 
-    transition: 0.3s;
+  display: flex;
+  width: 915px;
+  height: 492px;
+  border-radius: 10px;
+  transition: 0.3s;
 }
 img.aside-imgs:hover {
-    opacity: 0.7;
-    position: relative; 
-    display: flex; 
-    width: 915px; 
-    height: 492px; 
-    border-radius: 10px; 
-    text-align: center;
+  opacity: 0.7;
+  position: relative;
+  display: flex;
+  width: 915px;
+  height: 492px;
+  border-radius: 10px;
+  text-align: center;
 }
 .puxar-pra-cima {
-    position: relative;
+  position: relative;
 }
 .card {
-    background-color: #fff;
+  background-color: #fff;
 }
 .card-body {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 .card-body h5 {
-    display: flex;
-    margin-top: 15px;
-    font-size: 22px;
+  display: flex;
+  margin-top: 15px;
+  font-size: 22px;
 }
 h5 .card-title {
-    color: #000;
+  color: #000;
 }
 .card-body .card-text strong {
-    color: #1E90FF;
+  color: #1e90ff;
 }
 
-
 @media screen and (max-width: 1320px) {
-    .blue-back {
-        width: 1320px;
-    }
-    h1#title-h1 {
-        font-size: 20px;
-    }
+  .blue-back {
+    width: 1320px;
+  }
+  h1#title-h1 {
+    font-size: 20px;
+  }
 }

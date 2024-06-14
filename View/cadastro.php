@@ -21,7 +21,7 @@
 
 				<div class="card-content-area">
 
-					<label for="usuario">Usuário</label>
+					<label for="usuario" style="font-size: 15px; font-style: italic;">Usuário</label>
 
 					<input type="text" id="usuario" autocomplete="off">
 
@@ -29,7 +29,7 @@
 
 				<div class="card-content-area">
 
-					<label for="email">E-mail</label>
+					<label for="email" style="font-size: 15px; font-style: italic;">E-mail</label>
 
 					<input type="text" id="email" autocomplete="off">
 
@@ -38,7 +38,7 @@
 
 			<div class="card-content-area">
 
-				<label for="password">Senha</label>
+				<label for="password" style="font-size: 15px; font-style: italic;">Senha</label>
 
 				<input type="password" id="senha" autocomplete="off">
 
@@ -51,7 +51,7 @@
 
 				<br>
 
-				<a href="index.php" class="links" id="fazer-login">Fazer login</a>
+				<a href="index.php" class="links" id="fazer-login" style="font-size: 15px;">Fazer login</a>
 
 			</div>
 <h6 style="text-align: center;"><span id="volley">Volleyball</span> <span id="center">Center</span></h6>

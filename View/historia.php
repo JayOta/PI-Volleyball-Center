@@ -11,12 +11,33 @@
 	<link rel="stylesheet" href="css/navbar.css">
 </head>
 <body>
-	<h1>Origem do Voleibol</h1>
-	<p>William George Morgan, professor e diretor de Educação Física na Associação Cristã de Moços (ACM), idealizou um jogo em que as probabilidades dos participantes se machucarem, em detrimento de contato físico, fossem baixas. Outro fator importante - e pensado nos jogadores mais velhos - era que o esporte não fosse fisicamente tão exigente.</p>
-	<p>Na época, o basquetebol estava na moda. Havia sido criado 4 anos antes, em 1891, também por um professor de educação física da Associação Cristã dos Moços.</p>
-	<p>E assim surgiu o vôlei - chamado de "mintonette" - que, graças ao fato de cada uma das equipes ficarem separadas por uma rede, trazia menos chances de lesões.</p>
 	<?php 
-    	include 'footer.php';
-  	?>
+		include 'navbar.php';
+	?>
+	<main>
+		<ul class="nav nav-tabs" style="position: relative; margin-top: 20px;">
+			<li class="nav-item">
+				<a class="nav-link" aria-current="page" href="fundamentos.php"  style="color: #363636;">Fundamentos</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="historia.php"  style="color: #363636;">História</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" aria-current="page" href="regras.php"  style="color: #363636;">Regras</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" aria-current="true" href="sistema-rodizio.php"  style="color: #363636;">Sistema de Rodízio</a>
+			</li>
+		</ul>
+		<h1>Origem do Voleibol</h1>
+		<p>William George Morgan, professor e diretor de Educação Física na Associação Cristã de Moços (ACM), idealizou um jogo em que as probabilidades dos participantes se machucarem, em detrimento de contato físico, fossem baixas. Outro fator importante - e pensado nos jogadores mais velhos - era que o esporte não fosse fisicamente tão exigente.</p>
+		<p>Na época, o basquetebol estava na moda. Havia sido criado 4 anos antes, em 1891, também por um professor de educação física da Associação Cristã dos Moços.</p>
+		<p>E assim surgiu o vôlei - chamado de "mintonette" - que, graças ao fato de cada uma das equipes ficarem separadas por uma rede, trazia menos chances de lesões.</p>
+	</main>
+	<footer>
+		<?php 
+    		include 'footer.php';
+  		?>
+	</footer>
 </body>
 </html>

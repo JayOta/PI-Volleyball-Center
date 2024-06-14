@@ -23,7 +23,7 @@
 
                     <div class="card-content-area">
 
-                        <label for="e-mail">Email</label>
+                        <label for="e-mail" class="labels" style="font-size: 15px; font-style: italic;">Email</label>
 
                         <input type="text" id="email" autocomplete="off">
 
@@ -31,7 +31,7 @@
 
                     <div class="card-content-area">
 
-                        <label for="password">Senha</label>
+                        <label for="password" class="labels" style="font-size: 15px; font-style: italic;">Senha</label>
 
                         <input type="password" id="senha" autocomplete="off">
 
@@ -54,11 +54,11 @@
 
                 <div class="card-footer">
 
-                    <a href="cadastro.php">Não tem login? <span id="cadastrar-se">Cadastrar-se</span></a>
+                    <a href="cadastro.php" style="text-shadow: 0px 0px 3px #302f2f;">Não tem login? <span id="cadastrar-se">Cadastrar-se</span></a>
 
                     <br>
 
-                    <a href="inicial.php" class="links">Ir à página inicial</a>
+                    <a href="inicial.php" class="links" id="para-inicial">Ir à página inicial</a>
 
                 </div>
 

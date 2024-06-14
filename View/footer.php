@@ -9,10 +9,14 @@
     <title>Document</title>
 </head>
 <body>
-<footer class="text-center" 
-    style=" padding-left: 20em; 
+<footer class="text-center" style="
+    padding-left: 20em; 
     background-color: #F9CC02; 
-    width: 100% auto;">
+    width: 100% auto; 
+    position: relative;
+    bottom: 0;
+    left: 0;
+    ">
     <div class="container-fluid py-3">
       <div class="row">
         <div class="col-4">

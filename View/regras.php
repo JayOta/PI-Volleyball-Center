@@ -11,37 +11,22 @@
 	<link rel="stylesheet" href="css/navbar.css">
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg bg-body-tertiary p-0 m-0" style="background-color: #F9CC02;">
-		<div class="container-fluid" style="background-color: #F9CC02;">
-		<a href="inicial.php">
-        	<img src="img/logo-volei.png" style="width: 87px; margin-bottom: 2px; margin-top: 2px; padding-bottom: 2px; padding-top: 2px;">
-      	</a>
+	<?php 
+		include 'navbar.php';
+	?>
 
-		  <header>
-			<nav class="navigation">
-		  <a href="inicial.php">Início</a>
-          <a href="fundamentos.php" style="color: #7fb7f0;">Fundamentos</a>
-          <a href="noticias.php">Notícias</a>
-		  <a href="loja.php">Loja</a>
-          <a href="index.php" target="_blank" style="bottom: 13px;"><button class="btnLogin-popup">Login</button></a>
-			  </nav>
-		  </header>
-		  </div>
-		</div>
-	</nav>
-
-	<ul class="nav nav-tabs" style="position: relative; margin-top: 20px;">
+<ul class="nav nav-tabs" style="position: relative; margin-top: 20px;">
 		<li class="nav-item">
-			<a class="nav-link" style="color: #363636"; aria-current="page" href="fundamentos.php">Fundamentos</a>
+			<a class="nav-link" aria-current="page" href="fundamentos.php"  style="color: #363636;">Fundamentos</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" style="color: #363636"; aria-current="page" href="historia.php">História</a>
+			<a class="nav-link" aria-current="page" href="historia.php"  style="color: #363636;">História</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link active" style="color: #363636"; aria-current="page" href="regras.php">Regras</a>
+			<a class="nav-link active" aria-current="page" href="regras.php"  style="color: #363636;">Regras</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" style="color: #363636"; aria-current="true" href="sistema-rodizio.php">Sistema de Rodízio</a>
+			<a class="nav-link" aria-current="true" href="sistema-rodizio.php"  style="color: #363636;">Sistema de Rodízio</a>
 		</li>
 	</ul>
 
