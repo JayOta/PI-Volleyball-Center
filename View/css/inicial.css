@@ -99,7 +99,11 @@ span#title-site2 {
   margin-right: 15px;
 }
 /* Fim do carrousel inicial */
-
+.carousel-imagesItens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 #carouselExampleInterval {
   display: flex;
   margin-left: 279px;
@@ -108,6 +112,7 @@ span#title-site2 {
   border: 1px solid;
   border-radius: 11px;
   background-color: black;
+  flex-grow: 1;
 }
 #carouselExampleInterval .carousel-inner {
   border-radius: 10px;
@@ -135,11 +140,13 @@ span#title-site2 {
 .carouselDownPics .card:first-child {
   position: relative;
   width: 600px;
+  flex-basis: 600px;
   background-color: black;
 }
 .carouselDownPics .card:last-child {
   position: relative;
   width: 600px;
+  flex-basis: 600px;
   background-color: black;
 }
 .carouselDownPics .card img {
@@ -168,6 +175,9 @@ h1#noticias-sem-title {
 }
 
 @media screen and (max-width: 1200px) {
+  body {
+    overflow-x: hidden;
+  }
   #title-site1 {
     display: flex;
     font-size: 40px;
@@ -182,7 +192,7 @@ h1#noticias-sem-title {
     margin-left: 12rem;
   }
   #carouselExampleInterval {
-    margin-left: 180px;
+    position: relative;
     max-width: 900px;
     max-height: 500px;
   }
@@ -202,16 +212,13 @@ h1#noticias-sem-title {
     position: relative;
     flex-direction: column;
     overflow: hidden;
-    gap: 50px;
-    left: 20rem;
   }
-  .card-img {
+  .carouselDownPics .card-img-overlay {
     display: flex;
-    max-width: 600px;
   }
   .carouselDownPics img {
-    width: 600px;
-    height: 300px;
+    flex-basis: 200px;
+    height: 200px auto;
   }
 
   #noticias-sem-title {
@@ -239,16 +246,44 @@ h1#noticias-sem-title {
   }
 }
 @media screen and (max-width: 992px) {
-  .carouselDownPics img {
+  /* .carouselDownPics img {
     display: flex;
     flex-direction: column;
     width: 400px;
     height: 200px;
-  }
+  } */
 }
 @media screen and (max-width: 768px) {
 }
 @media screen and (max-width: 576px) {
+  /* Inicio do carrousel inicial */
+  /* #first-carousel img {
+    display: block !important;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+  }
+  .carousel-item h1 {
+    font-size: 22px;
+    position: relative;
+    display: flex;
+    text-shadow: 0px 0px 8px #0b0b0b;
+    font-weight: 500;
+  }
+  .carousel-caption p {
+    font-size: 17px;
+    position: relative;
+    display: flex;
+    color: #f0f0f0;
+    text-shadow: 0px 0px 8px #0b0b0b;
+  }
+  span#title-site1 {
+    color: #1e90ff;
+  }
+  span#title-site2 {
+    color: #f9cc02;
+  } */
+  /* Fim do carrousel inicial */
 }
 @keyframes slideUp {
   0% {

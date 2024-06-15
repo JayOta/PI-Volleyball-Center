@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+footer {
+  padding-left: 20em;
+  background-color: #f9cc02;
+  width: 100% auto;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+li.nav-link a {
+  text-decoration: none;
+  color: #fff;
+}
+p.nav-link {
+  color: #fff;
+}
+li a.icon {
+  background: transparent;
+}
+a img {
+  transition: 0.4s ease-in;
+  border-radius: 13px;
+}
