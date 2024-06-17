@@ -74,11 +74,25 @@
         <br><br>
 
         <div class="carouselDownPics">
-          <div class="card bg-dark text-white">
+          <div class="card" style="
+            min-width: 200px; 
+            width: 600px; 
+            min-height: 150px; 
+            min-width: 300px; 
+            height: 359px; 
+            border: none; 
+            background: transparent;
+            ">
             <img src="img/jogo-2.jpg" class="card-img d-block">
             <div class="card-img-overlay"></div>
           </div>
-          <div class="card bg-dark text-white">
+          <div class="card" style="
+            min-width: 200px; 
+            width: 600px; 
+            height: 359px; 
+            border: none; 
+            background: transparent;
+          ">
             <img src="img/jogo-3.jpg" class="card-img">
             <div class="card-img-overlay"></div>
           </div>

@@ -15,7 +15,7 @@ a#inicial {
 }
 
 img {
-  transition: 0.3s ease-in-out;
+  transition: 0.4s ease-in-out;
   width: 100%;
   height: 100%;
 }
@@ -109,7 +109,7 @@ span#title-site2 {
   margin-left: 279px;
   max-width: 1303px;
   max-height: 1000px;
-  border: 1px solid;
+  border: none;
   border-radius: 11px;
   background-color: black;
   flex-grow: 1;
@@ -137,20 +137,14 @@ span#title-site2 {
   gap: 100px;
   justify-content: center;
 }
-.carouselDownPics .card:first-child {
+.carouselDownPics .card {
   position: relative;
-  width: 600px;
+  width: auto;
   flex-basis: 600px;
-  background-color: black;
-}
-.carouselDownPics .card:last-child {
-  position: relative;
-  width: 600px;
-  flex-basis: 600px;
-  background-color: black;
+  background-color: transparent;
+  box-shadow:0px 0px 6px#0b0b0b;
 }
 .carouselDownPics .card img {
-  opacity: 0.6;
   box-shadow: 0px 5px 20px #696969;
   cursor: pointer;
 }
@@ -214,12 +208,23 @@ h1#noticias-sem-title {
     flex-direction: column;
     overflow: hidden;
   }
-  .carouselDownPics .card-img-overlay {
-    display: none;
+  .carouselDownPics .card {
+    display: flex;
+    min-width: 300px;
+    min-height: 150px;
+    max-width: 500px;
+    max-height: 260px;
+    border: none;
+    box-shadow:0px 0px 6px #0b0b0b;
+    flex-grow: 1;
   }
   .carouselDownPics img {
     flex-basis: 200px;
-    height: 200px auto;
+    width: 500px;
+    height: 280px;
+    z-index: 1;
+    display: flex;
+    flex-grow: 1;
   }
 
   #noticias-sem-title {

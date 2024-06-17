@@ -36,7 +36,7 @@
 				<div class="row">
 					<div class="col-md-3">
 						<div class="card">
-							<img src="img/manguito.png" class="card-img-top" alt="Produto 1">
+							<img src="img/manguito.png" class="card-img-top" alt="Produto 1" style="cursor: pointer;">
 							<div class="card-body">
 								<h5 class="card-title">Manguito</h5>
 								<h3 class="card-text">R$70,00</h3>
@@ -46,7 +46,7 @@
 					</div>
 					<div class="col-md-3">
 						<div class="card">
-							<img src="img/joelheira.png" class="card-img-top" alt="Produto 1">
+							<img src="img/joelheira.png" class="card-img-top" alt="Produto 2" style="cursor: pointer;">
 							<div class="card-body">
 								<h5 class="card-title">Joelheira</h5>
 								<h3 class="card-text">R$55,60</h3>
@@ -56,7 +56,7 @@
 					</div>
 					<div class="col-md-3">
 						<div class="card">
-							<img src="img/bola-de-volei.png" class="card-img-top" alt="Produto 2">
+							<img src="img/bola-de-volei.png" class="card-img-top" alt="Produto 3" style="cursor: pointer;">
 							<div class="card-body">
 								<h5 class="card-title">Bola Penalty VP5000M</h5>
 								<h3 class="card-text">R$86,70</h3>
@@ -66,7 +66,7 @@
 					</div>
 					<div class="col-md-3">
 						<div class="card">
-							<img src="img/calca-compressao.png" class="card-img-top" alt="Produto 3">
+							<img src="img/calca-compressao.png" class="card-img-top" alt="Produto 4" style="cursor: pointer;" >
 							<div class="card-body">
 								<h5 class="card-title">Calça de compressão</h5>
 								<h3 class="card-text">R$115,00</h3>
@@ -82,7 +82,7 @@
 				<div class="row">
 					<div class="col-md-3">
 						<div class="card">
-							<img src="img/meias-nike.png" class="card-img-top" alt="Produto 1">
+							<img src="img/meias-nike.png" class="card-img-top" alt="Produto 5" style="cursor: pointer;">
 							<div class="card-body">
 								<h5 class="card-title">Meias Nike</h5>
 								<h3 class="card-text">R$60,00</h3>
@@ -92,7 +92,7 @@
 					</div>
 					<div class="col-md-3">
 						<div class="card">
-							<img src="img/tenis-volei.png" class="card-img-top" alt="Produto 1">
+							<img src="img/tenis-volei.png" class="card-img-top" alt="Produto 6" style="cursor: pointer;">
 							<div class="card-body">
 								<h5 class="card-title">Tênis Nike Air Max Volêi</h5>
 								<h3 class="card-text">R$315,00</h3>
@@ -102,7 +102,7 @@
 					</div>
 					<div class="col-md-3">
 						<div class="card">
-							<img src="img/testeira-nike.png" class="card-img-top" alt="Produto 2">
+							<img src="img/testeira-nike.png" class="card-img-top" alt="Produto 7" style="cursor: pointer;">
 							<div class="card-body">
 								<h5 class="card-title">Faixa Branca Nike</h5>
 								<h3 class="card-text">R$69,90</h3>
@@ -112,7 +112,7 @@
 					</div>
 					<div class="col-md-3">
 						<div class="card">
-							<img src="img/camiseta-termica.png" class="card-img-top" alt="Produto 3">
+							<img src="img/camiseta-termica.png" class="card-img-top" alt="Produto 8" style="cursor: pointer;">
 							<div class="card-body">
 								<h5 class="card-title">Camiseta Térmica Preta</h5>
 								<h3 class="card-text">R$79,00</h3>
@@ -128,7 +128,7 @@
 				<div class="row">
 					<div class="col-md-3">
 						<div class="card">
-							<img src="img/viseira-nike.png" class="card-img-top" alt="Produto 1">
+							<img src="img/viseira-nike.png" class="card-img-top" alt="Produto 9" style="cursor: pointer;">
 							<div class="card-body">
 								<h5 class="card-title">Viseira Nike Preta</h5>
 								<h3 class="card-text">R$215,00</h3>
@@ -138,7 +138,7 @@
 					</div>
 					<div class="col-md-3">
 						<div class="card">
-							<img src="img/meia-cano-curto.png" class="card-img-top" alt="Produto 1">
+							<img src="img/meia-cano-curto.png" class="card-img-top" alt="Produto 10" style="cursor: pointer;"> 
 							<div class="card-body">
 								<h5 class="card-title">Meias Cano Curto </h5>
 								<h3 class="card-text">R$59,00</h3>
@@ -148,7 +148,7 @@
 					</div>
 					<div class="col-md-3">
 						<div class="card">
-							<img src="img/joelheira-2.png" class="card-img-top" alt="Produto 2">
+							<img src="img/joelheira-2.png" class="card-img-top" alt="Produto 11" style="cursor: pointer;">
 							<div class="card-body">
 								<h5 class="card-title">Joelheira SCALIBU</h5>
 								<h3 class="card-text">R$75,00</h3>
@@ -158,7 +158,7 @@
 					</div>
 					<div class="col-md-3">
 						<div class="card">
-							<img src="img/tenis-volei-2.png" class="card-img-top" alt="Produto 3">
+							<img src="img/tenis-volei-2.png" class="card-img-top" alt="Produto 12" style="cursor: pointer;">
 							<div class="card-body">
 								<h5 class="card-title">Tênis de Vôlei Unissex</h5>
 								<h3 class="card-text">R$339,90</h3>
@@ -174,7 +174,7 @@
 				<div class="row">
 					<div class="col-md-3">
 						<div class="card">
-							<img src="img/colar-volei.png" class="card-img-top" alt="Produto 1">
+							<img src="img/colar-volei.png" class="card-img-top" alt="Produto 13" style="cursor: pointer;">
 							<div class="card-body">
 								<h5 class="card-title">Colar Vôlei</h5>
 								<h3 class="card-text">R$29,90</h3>
@@ -184,7 +184,7 @@
 					</div>
 					<div class="col-md-3">
 						<div class="card">
-							<img src="img/manguito-2.png" class="card-img-top" alt="Produto 1">
+							<img src="img/manguito-2.png" class="card-img-top" alt="Produto 14" style="cursor: pointer;">
 							<div class="card-body">
 								<h5 class="card-title">Manguito Laranja</h5>
 								<h3 class="card-text">R$79,80</h3>
@@ -194,7 +194,7 @@
 					</div>
 					<div class="col-md-3">
 						<div class="card">
-							<img src="img/camiseta-selecao-praia.png" class="card-img-top" alt="Produto 2">
+							<img src="img/camiseta-selecao-praia.png" class="card-img-top" alt="Produto 15" style="cursor: pointer;">
 							<div class="card-body">
 								<h5 class="card-title">Camiseta Seleção de Praia</h5>
 								<h3 class="card-text">R$59,99</h3>
@@ -204,7 +204,7 @@
 					</div>
 					<div class="col-md-3">
 						<div class="card">
-							<img src="img/calca-termica.png" class="card-img-top" alt="Produto 3">
+							<img src="img/calca-termica.png" class="card-img-top" alt="Produto 16" style="cursor: pointer;">
 							<div class="card-body">
 								<h5 class="card-title">Calça Térmica</h5>
 								<h3 class="card-text">R$89,90</h3>
