@@ -382,9 +382,10 @@
 		<li>Hidrate-se na medida certa.</li>
 	</ul>
 	</div>
-
-	?php 
+	-->
+	<br><br><br><br><br>
+	<?php 
     	include 'footer.php';
-  	?> -->
+  	?>
 </body>
 </html>

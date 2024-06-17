@@ -152,6 +152,7 @@ span#title-site2 {
 .carouselDownPics .card img {
   opacity: 0.6;
   box-shadow: 0px 5px 20px #696969;
+  cursor: pointer;
 }
 h1#noticias-sem-title {
   text-align: center;
@@ -214,7 +215,7 @@ h1#noticias-sem-title {
     overflow: hidden;
   }
   .carouselDownPics .card-img-overlay {
-    display: flex;
+    display: none;
   }
   .carouselDownPics img {
     flex-basis: 200px;
@@ -284,6 +285,7 @@ h1#noticias-sem-title {
     color: #f9cc02;
   } */
   /* Fim do carrousel inicial */
+  
 }
 @keyframes slideUp {
   0% {
