@@ -10,64 +10,41 @@
 <body>
 
     <div id="login">
-
             <form class="card">
-
                 <div class="card-header">
-
                     <h1 style="text-align: center; color: #fff; ">Login</h1>
-
                 </div>
 
                 <div class="card-content">
-
                     <div class="card-content-area">
-
                         <label for="e-mail" class="labels" style="font-size: 15px; font-style: italic;">Email</label>
-
-                        <input type="text" id="email" autocomplete="off">
-
+                        <input type="text" id="email" autocomplete="off" name="email">
                     </div>
-
                     <div class="card-content-area">
-
                         <label for="password" class="labels" style="font-size: 15px; font-style: italic;">Senha</label>
-
-                        <input type="password" id="senha" autocomplete="off">
-
+                        <input type="password" id="senha" autocomplete="off" name="senha">
                     </div>
-
                 </div>
 
                 <div class="card-footer">
-
                     <button onclick="login(); return false" type="submit" id="button" class="submit">Login</button>
 
                     <br>
 
                     <a href="#" class="links">Esqueceu a senha?</a>
-
                 </div>
                 
-                <br>
-                <br>
+                <br><br>
 
                 <div class="card-footer">
-
                     <a href="cadastro.php" style="text-shadow: 0px 0px 3px #302f2f;">Não tem login? <span id="cadastrar-se">Cadastrar-se</span></a>
-
                     <br>
-
                     <a href="inicial.php" class="links" id="para-inicial">Ir à página inicial</a>
-
                 </div>
-
-                
                 <h6 style="text-align: center;"><span id="volley">Volleyball</span> <span id="center">Center</span></h6>
-
             </form>
-
         </div>
+
         <script src="login.js"></script>
 </body>
 </html>

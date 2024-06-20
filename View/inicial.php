@@ -41,10 +41,9 @@
           </div>
         </div>
       </div>
-      <br>
-      <br>
-      <br>
-      <br>
+
+      <br><br><br><br>
+
       <div class="carousel-imagesItens d-block justify-content-center">
         <div id="carouselExampleInterval" class="carousel slide d-flex" data-bs-ride="carousel">
           <div class="carousel-inner">
@@ -71,6 +70,7 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
+
         <br><br>
 
         <div class="carouselDownPics">
@@ -98,7 +98,9 @@
           </div>
         </div>
       </div>
+
       <br><br><br><br><br>
+      
       <hr>
       <br><br>
 
