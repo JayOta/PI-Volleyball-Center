@@ -30,79 +30,119 @@
 		</li>
 	</ul>
 
-	<div class="meioDosFundamentos" style="transform: translateX(38rem); ">
+	<div class="meioDosFundamentos" style="transform: translateX(30rem); ">
 		<h1 style="font-size: 50px; position: relative; display: flex;  font-weight: 200;">Saques</h1>
 		<br>
 		<div class="align-text" style="display: flex; flex-direction: row; position: relative;">
 			<div class="card" style="width: 35rem; height: 20rem; display: flex; flex-direction: column;">
 				<img src="img/saque-baixo.jpeg" class="card-img-top" alt="imagem de como é feito passo a passo o saque por baixo no vôlei.">
 				<br>
-				<p class="card-text" style="transform: translateX(3rem); font-size: 20px"><strong>Saque por baixo:</strong></p>
-				<div class="card-body">
-				</div>
+				<p class="card-text" style="transform: translateX(4rem); font-size: 20px"><strong>Saque por baixo:</strong></p>
 			</div>
 			<p style="display: flex; width: 300px; margin: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem quas a fuga cum deleniti explicabo eos, ipsam perferendis quo ea autem eaque laudantium possimus inventore, beatae ex minima voluptatibus repellendus! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 				Dolorum facilis ab quidem, eos eaque nostrum rem fugiat illum eligendi expedita nam placeat blanditiis, animi voluptate, laudantium aut dicta ipsa atque.</p>
 		</div>
+		<p style="max-width: 60rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo corporis qui velit necessitatibus hic perferendis incidunt itaque magni perspiciatis deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo corporis qui velit necessitatibus hic perferendis incidunt itaque magni perspiciatis deleniti. 
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo corporis qui velit necessitatibus hic perferendis incidunt itaque magni perspiciatis deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo corporis qui velit necessitatibus hic perferendis incidunt itaque magni perspiciatis deleniti. Lorem ipsum dolor 
+			sit amet consectetur adipisicing elit. Illo corporis qui velit necessitatibus hic perferendis incidunt itaque magni perspiciatis deleniti.  Aliquid expedita beatae incidunt commodi quis illum ea exercitationem dolor!
+		</p>
+		<br>
+		<hr style="width: 50%; text-align: left; ">
 	</div>
-	<br>
-	<div class="meioDosFundamentos" style="transform: translateX(38rem); ">
+
+			<br>
+	
+	<div class="meioDosFundamentos" style="transform: translateX(30rem); max-width: 60rem;">
 		<br>
 		<div class="align-text" style="display: flex; flex-direction: row; position: relative;">
-			<div class="card" style="width: 35rem; height: 14rem; display: flex; flex-direction: column;">
+			<div class="card" style="height: 20rem; display: flex; flex-direction: column;">
 				<img src="img/saque-cima.jpg" class="card-img-top" alt="imagem de como é feito passo a passo o saque por baixo no vôlei.">
 				<br>
-				<p class="card-text" style="transform: translateX(3rem); font-size: 20px"><strong>Saque por baixo:</strong></p>
-				<div class="card-body">
-				</div>
+				<p class="cardText" style="margin:6%; transform: translateX(3rem); font-size: 20px"><strong>Saque por cima:</strong></p>
 			</div>
-			<p style="display: flex; width: 300px; margin: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem quas a fuga cum deleniti explicabo eos, ipsam perferendis quo ea autem eaque laudantium possimus inventore, beatae ex minima voluptatibus repellendus! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+			<p style="display: flex; width: 270px; margin: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem quas a fuga cum deleniti explicabo eos, ipsam perferendis quo ea autem eaque laudantium possimus inventore, beatae ex minima voluptatibus repellendus! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 				Dolorum facilis ab quidem, eos eaque nostrum rem fugiat illum eligendi expedita nam placeat blanditiis, animi voluptate, laudantium aut dicta ipsa atque.</p>
 		</div>
+		<p style="max-width: 60rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo corporis qui velit necessitatibus hic perferendis incidunt itaque magni perspiciatis deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo corporis qui velit necessitatibus hic perferendis incidunt itaque magni perspiciatis deleniti. 
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo corporis qui velit necessitatibus hic perferendis incidunt itaque magni perspiciatis deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo corporis qui velit necessitatibus hic perferendis incidunt itaque magni perspiciatis deleniti. Lorem ipsum dolor 
+			sit amet consectetur adipisicing elit. Illo corporis qui velit necessitatibus hic perferendis incidunt itaque magni perspiciatis deleniti.  Aliquid expedita beatae incidunt commodi quis illum ea exercitationem dolor!
+		</p>
+			
+				<br>
+
+				<hr style="width: 50%; text-align: left; ">
 	</div>
+
 	<br>
-	<div class="meioDosFundamentos" style="transform: translateX(38rem); ">
+	
+	<div class="meioDosFundamentos" style="transform: translateX(30rem); max-width: 60rem; ">
 		<br>
 		<div class="align-text" style="display: flex; flex-direction: row; position: relative;">
 			<div class="card" style="width: 35rem; display: flex; flex-direction: column;">
 				<img src="img/saque-baixo.jpeg" class="card-img-top" alt="imagem de como é feito passo a passo o saque por baixo no vôlei.">
 				<p class="card-text" style="transform: translateX(3rem); font-size: 20px"><strong>Saque por baixo:</strong></p>
-				<div class="card-body">
-				</div>
 			</div>
 			<p style="display: flex; width: 300px; margin: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem quas a fuga cum deleniti explicabo eos, ipsam perferendis quo ea autem eaque laudantium possimus inventore, beatae ex minima voluptatibus repellendus! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 				Dolorum facilis ab quidem, eos eaque nostrum rem fugiat illum eligendi expedita nam placeat blanditiis, animi voluptate, laudantium aut dicta ipsa atque.</p>
 		</div>
+		<p style="max-width: 60rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo corporis qui velit necessitatibus hic perferendis incidunt itaque magni perspiciatis deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo corporis qui velit necessitatibus hic perferendis incidunt itaque magni perspiciatis deleniti. 
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo corporis qui velit necessitatibus hic perferendis incidunt itaque magni perspiciatis deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo corporis qui velit necessitatibus hic perferendis incidunt itaque magni perspiciatis deleniti. Lorem ipsum dolor 
+			sit amet consectetur adipisicing elit. Illo corporis qui velit necessitatibus hic perferendis incidunt itaque magni perspiciatis deleniti.  Aliquid expedita beatae incidunt commodi quis illum ea exercitationem dolor!
+		</p>
+			
+			<br>
+			
+			<hr style="width: 50%; text-align: left; ">
 	</div>
+
 	<br>
 
-	<div class="meioDosFundamentos" style="transform: translateX(38rem); ">
+	<div class="meioDosFundamentos" style="transform: translateX(30rem); max-width: 60rem; ">
 		<br>
 		<div class="align-text" style="display: flex; flex-direction: row; position: relative;">
 			<div class="card" style="width: 35rem; display: flex; flex-direction: column;">
 				<img src="img/saque-baixo.jpeg" class="card-img-top" alt="imagem de como é feito passo a passo o saque por baixo no vôlei.">
 				<p class="card-text" style="transform: translateX(3rem); font-size: 20px"><strong>Saque por baixo:</strong></p>
-				<div class="card-body">
-				</div>
 			</div>
 			<p style="display: flex; width: 300px; margin: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem quas a fuga cum deleniti explicabo eos, ipsam perferendis quo ea autem eaque laudantium possimus inventore, beatae ex minima voluptatibus repellendus! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-				Dolorum facilis ab quidem, eos eaque nostrum rem fugiat illum eligendi expedita nam placeat blanditiis, animi voluptate, laudantium aut dicta ipsa atque.</p>
+				Dolorum facilis ab quidem, eos eaque nostrum rem fugiat illum eligendi expedita nam placeat blanditiis, animi voluptate, laudantium aut dicta ipsa atque.
+			</p>
+		</div>
+		<p  style="max-width: 60rem;">
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo corporis qui velit necessitatibus hic perferendis incidunt itaque magni perspiciatis deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo corporis qui velit necessitatibus hic perferendis incidunt itaque magni perspiciatis deleniti. 
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo corporis qui velit necessitatibus hic perferendis incidunt itaque magni perspiciatis deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo corporis qui velit necessitatibus hic perferendis incidunt itaque magni perspiciatis deleniti. Lorem ipsum dolor 
+			sit amet consectetur adipisicing elit. Illo corporis qui velit necessitatibus hic perferendis incidunt itaque magni perspiciatis deleniti.  Aliquid expedita beatae incidunt commodi quis illum ea exercitationem dolor!
+		</p>
+			<br>
+				
+			<hr style="width: 50%; text-align: left; ">
 		</div>
 	</div>
+
 	<br>
-	<div class="meioDosFundamentos" style="transform: translateX(38rem); ">
+	
+	<div class="meioDosFundamentos" style="transform: translateX(30rem); max-width: 60rem; ">
 		<br>
 		<div class="align-text" style="display: flex; flex-direction: row; position: relative;">
 			<div class="card" style="width: 35rem; display: flex; flex-direction: column;">
 				<img src="img/saque-baixo.jpeg" class="card-img-top" alt="imagem de como é feito passo a passo o saque por baixo no vôlei.">
 				<p class="card-text" style="transform: translateX(3rem); font-size: 20px"><strong>Saque por baixo:</strong></p>
-				<div class="card-body">
-				</div>
 			</div>
 			<p style="display: flex; width: 300px; margin: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem quas a fuga cum deleniti explicabo eos, ipsam perferendis quo ea autem eaque laudantium possimus inventore, beatae ex minima voluptatibus repellendus! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-				Dolorum facilis ab quidem, eos eaque nostrum rem fugiat illum eligendi expedita nam placeat blanditiis, animi voluptate, laudantium aut dicta ipsa atque.</p>
+				Dolorum facilis ab quidem, eos eaque nostrum rem fugiat illum eligendi expedita nam placeat blanditiis, animi voluptate, laudantium aut dicta ipsa atque.
+			</p>
+		</div>
+		<p  style="max-width: 60rem;">
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo corporis qui velit necessitatibus hic perferendis incidunt itaque magni perspiciatis deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo corporis qui velit necessitatibus hic perferendis incidunt itaque magni perspiciatis deleniti. 
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo corporis qui velit necessitatibus hic perferendis incidunt itaque magni perspiciatis deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo corporis qui velit necessitatibus hic perferendis incidunt itaque magni perspiciatis deleniti. Lorem ipsum dolor 
+			sit amet consectetur adipisicing elit. Illo corporis qui velit necessitatibus hic perferendis incidunt itaque magni perspiciatis deleniti.  Aliquid expedita beatae incidunt commodi quis illum ea exercitationem dolor!
+		</p>
+			<br>
+			
+			<hr style="width: 50%; text-align: left; ">
 		</div>
 	</div>
+
 	<!-- <div class="container">
 		<br>
 		<div class="row row-cols-2 justify-content-center">
@@ -220,7 +260,7 @@
 		<li>Alongue-se antes</li>
 		<li>Hidrate-se na medida certa.</li>
 	</ul>
-	</div>
+	
 
 	<?php 
     	include 'footer.php';
