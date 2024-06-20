@@ -1,0 +1,124 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url("../img/volei-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.card {
+  background-color: #ffffff05;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(25px);
+  border-radius: 15px;
+  padding: 40px;
+  width: 280px;
+  border: solid 3px;
+  border-color: #302f2f;
+  box-shadow: 0px 0px 6px #494848;
+}
+.card-header {
+  padding-bottom: 50px;
+  opacity: 0.8;
+  color: #fff;
+}
+.card-header::after {
+  width: 70px;
+  height: 1px;
+  background-color: #fff;
+  display: block;
+  margin-top: -17px;
+  margin-left: -5px;
+}
+.card-content label {
+  color: #fff;
+  font-size: 12px;
+  opacity: 0.8;
+}
+.card-content-area {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+.card-content-area input {
+  margin-top: 10px;
+  padding: 0 5px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #e1e1e1;
+  outline: none;
+  color: #fff;
+}
+.card-footer {
+  display: flex;
+  flex-direction: column;
+}
+.card-footer .submit {
+  position: relative;
+  left: 33%;
+  width: 90px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 6px;
+  border: solid;
+  border-width: 2px;
+  border-color: #494848;
+  box-shadow: 0px 0px 12px #7c7a7a;
+  color: #494848;
+  margin: 10px 0;
+}
+.card-footer .submit:hover {
+  transition: all 0.4s ease-in;
+  color: #fff;
+  border-color: #fff;
+  box-shadow: 0px 0px 12px #fff;
+  background-color: #494848;
+  border-width: 2px;
+}
+.card-footer .submit:hover::after {
+  transform: scale(0.1, 1);
+}
+.card-footer a {
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.8;
+  color: #fff;
+  text-decoration: none;
+}
+#cadastrar-se {
+  color: #f9cc02;
+  transition: 0.3s ease-in;
+  font-style: italic;
+  font-size: 13px;
+  text-shadow: 0px 0px 5px #302f2f;
+}
+#cadastrar-se:hover {
+  color: #1e90ff;
+}
+.links {
+  transition: 0.3s ease-in;
+  text-shadow: 0px 0px 3px #302f2f;
+}
+.links:hover {
+  color: #1e90ff;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#volley {
+  color: #1e90ff;
+  font-size: 18px;
+}
+#center {
+  color: #f9cc02;
+  font-size: 18px;
+}
+
+#button_cadastro {
+  width: 100px;
+}
