@@ -27,13 +27,13 @@
 			<a class="nav-link" aria-current="page" href="fundamentos.php"  style="color: #363636;">Fundamentos</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link active" aria-current="page" href="historia.php"  style="color: #363636;">História</a>
+			<a class="nav-link" aria-current="true" href="sistema-rodizio.php"  style="color: #363636;">Sistema de Rodízio</a>
 		</li>
 		<li class="nav-item">
 			<a class="nav-link" aria-current="page" href="regras.php"  style="color: #363636;">Regras</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" aria-current="true" href="sistema-rodizio.php"  style="color: #363636;">Sistema de Rodízio</a>
+			<a class="nav-link active" aria-current="page" href="historia.php"  style="color: #363636;">História</a>
 		</li>
 	</ul>
 

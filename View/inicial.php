@@ -110,12 +110,12 @@
       <div class="noticias-align">
         <br>
         <div class="row row-cols-1 row-cols-md-2 g-4">
-          <a href="#" class="" style="text-decoration: none;">
+          <a href="#" style="text-decoration: none;">
             <div class="col">
-              <div class="card">
-                <img class="d-block" src="img/jogo-7.jpg" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title">Porque a seleção da Espanha não existe no volêi?</h5>
+              <div class="card" style="max-height: 435px;">
+                <img class="d-block" src="img\jogo-7.jpg" class="card-img-top" style="width: object-fit; border-radius: 6px;">
+                <div class="card-body" style="display: flex; position: relative; bottom: 15px;">
+                  <h5 class="card-title">Brasil perde para a Polônia e encerra Liga das Nações em quarto</h5>
                   <!-- <p class="card-text">Porque a seleção da Espanha não existe no volêi?</p> -->
                 </div>
               </div>
@@ -126,7 +126,7 @@
               <div class="card">
                 <img src="img/jogo-8.jpg" class="card-img-top">
                 <div class="card-body">
-                  <h5 class="card-title">Argentina perdeu o clássico com o Brasil</h5>
+                  <h5 class="card-title">Argentina perde clássico este fim de semana</h5>
                   <!-- <p class="card-text">Liga das Nações de Vôlei: Argentina perdeu o clássico com o Brasil</p> -->
                 </div>
               </div>

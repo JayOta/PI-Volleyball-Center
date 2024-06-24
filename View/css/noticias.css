@@ -241,6 +241,9 @@ img.aside-imgs:hover {
 .puxar-pra-cima {
   position: relative;
 }
+img.card-img-top {
+  height: fit-content;
+}
 .card {
   background-color: #fff;
 }

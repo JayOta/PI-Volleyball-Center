@@ -60,7 +60,7 @@
 				<div class="col">
 					<div class="card h-100">
 						<a href="#" target="_blank">
-							<img src="img/foto-selecao.png" class="card-img-top d-block" alt="Seleção"></a>
+							<img src="img/foto-selecao.png" class="card-img-top d-block" alt="Seleção" style="height: fit-content; border-radius: 7px;"></a>
 						<div class="card-body">
 							<h5 class="card-title">Brasil vê favoritismo ameaçado contra a Argentina
 								em Sul-Americano</h5>
@@ -75,7 +75,7 @@
 				<div class="col">
 					<div class="card h-100">
 						<a href="#" target="_blank">
-							<img src="img/noticia-2.png" class="card-img-top" alt="Seleção">
+							<img src="img/noticia-2.png" class="card-img-top" alt="Seleção" style="height: fit-content; border-radius: 7px;">
 						</a>
 						<div class="card-body">
 							<h5 class="card-title">Suzano bate o Santo André pelo triangular da série prata do Campeonato Paulista sub-21</h5>
@@ -90,7 +90,7 @@
 				<div class="col">
 					<div class="card h-100">
 						<a href="#" target="_blank">
-							<img src="img/noticia-3.png" class="card-img-top" alt="Seleção"></a>
+							<img src="img/noticia-3.png" class="card-img-top" alt="Seleção" style="height: fit-content; border-radius: 7px;"></a>
 						<div class="card-body">
 							<h5 class="card-title">Paola Egonu está fora do Pré-Olímpico</h5>
 							<p class="card-text"><strong>Por Volleyball Center</strong></p>
@@ -109,7 +109,7 @@
 					<div class="col">
 						<div class="card h-100">
 							<a href="#" target="_blank">
-								<img src="img/noticia-4.png" class="card-img-top" alt="Seleção"></a>
+								<img src="img/noticia-4.png" class="card-img-top" alt="Seleção" style="height: fit-content; border-radius: 7px;"></a>
 							<div class="card-body">
 								<h5 class="card-title">Minas promove jogadora da base para a temporada 2023/24</h5>
 								<p class="card-text"><strong>Por Volleyball Center</strong></p>
@@ -123,7 +123,7 @@
 					<div class="col">
 						<div class="card h-100">
 							<a href="#" target="_blank">
-								<img src="img/noticia-5.png" class="card-img-top" alt="Seleção"></a>
+								<img src="img/noticia-5.png" class="card-img-top" alt="Seleção" style="height: fit-content; border-radius: 7px;"></a>
 							<div class="card-body">
 								<h5 class="card-title">Revelação da SuperLiga, Oppenkoski conta como driblou a ansiedade para dirblar na final</h5>
 								<p class="card-text"><strong>Por Volleyball Center</strong></p>
@@ -137,7 +137,7 @@
 					<div class="col">
 						<div class="card h-100">
 							<a href="#" target="_blank">
-								<img src="img/noticia-6.png" class="card-img-top" alt="Seleção"></a>
+								<img src="img/noticia-6.png" class="card-img-top" alt="Seleção" style="height: fit-content; border-radius: 7px;"></a>
 							<div class="card-body">
 								<h5 class="card-title">Serginho reúne constelação de craques em jogo das estrelas</h5>
 								<p class="card-text"><strong>Por Volleyball Center</strong></p>
@@ -275,7 +275,7 @@
 				<div class="col">
 					<div class="card h-100">
 						<a href="#" target="_blank">
-							<img src="img/noticia-7.png" class="card-img-top" alt="Seleção"></a>
+							<img src="img/noticia-7.png" class="card-img-top" alt="Seleção" style="height: fit-content; border-radius: 7px;"></a>
 						<div class="card-body">
 							<h5 class="card-title">Praia Clube vence Fluminense pela Superliga feminina de vôlei</h5>
 							<p class="card-text"><strong>Por Volleyball Center</strong></p>
@@ -289,7 +289,7 @@
 				<div class="col">
 					<div class="card h-100">
 						<a href="#" target="_blank">
-							<img src="img/noticia-8.png" class="card-img-top" alt="Seleção"></a>
+							<img src="img/noticia-8.png" class="card-img-top" alt="Seleção" style="height: fit-content; border-radius: 7px;"></a>
 						<div class="card-body">
 							<h5 class="card-title">Suzano visita o Minas pela Superliga masculina de vôlei em reedição da última semifinal</h5>
 							<p class="card-text"><strong>Por Volleyball Center</strong></p>
@@ -303,7 +303,7 @@
 				<div class="col">
 					<div class="card h-100">
 						<a href="#" target="_blank">
-							<img src="img/noticia-9.png" class="card-img-top" alt="Seleção"></a>
+							<img src="img/noticia-9.png" class="card-img-top" alt="Seleção" style="height: fit-content; border-radius: 7px;"></a>
 						<div class="card-body">
 							<h5 class="card-title">Com 26 pontos de Darlan, Sesi-Bauru bate Araguari e vence a primeira na Superliga Masculina</h5>
 							<p class="card-text"><strong>Por Volleyball Center</strong></p>
@@ -326,7 +326,7 @@
 				<div class="col">
 					<div class="card h-100">
 						<a href="#" target="_blank">
-							<img src="img/noticia-10.png" class="card-img-top" alt="Seleção"></a>
+							<img src="img/noticia-10.png" class="card-img-top" alt="Seleção" style="height: fit-content; border-radius: 7px;"></a>
 						<div class="card-body">
 							<h5 class="card-title">Joinville e Cruzeiro se enfrentam pela segunda rodada da Superliga Masculina</h5>
 							<p class="card-text"><strong>Por Volleyball Center</strong></p>
@@ -340,7 +340,7 @@
 				<div class="col">
 					<div class="card h-100">
 						<a href="#" target="_blank">
-							<img src="img/noticia-11.png" class="card-img-top" alt="Seleção"></a>
+							<img src="img/noticia-11.png" class="card-img-top" alt="Seleção" style="height: fit-content; border-radius: 7px;"></a>
 						<div class="card-body">
 							<h5 class="card-title">Sesi-Bauru e Araguari duelam em busca da primeira vitória na Superliga Masculina</h5>
 							<p class="card-text"><strong>Por Volleyball Center</strong></p>
@@ -354,7 +354,7 @@
 				<div class="col">
 					<div class="card h-100">
 						<a href="#" target="_blank">
-							<img src="img/noticia-12.png" class="card-img-top" alt="Seleção"></a>
+							<img src="img/noticia-12.png" class="card-img-top" alt="Seleção" style="height: fit-content; border-radius: 7px;"></a>
 						<div class="card-body">
 							<h5 class="card-title">São José vence Guarulhos de virada e conquista a segunda vitória na Superliga</h5>
 							<p class="card-text"><strong>Por Volleyball Center</strong></p>
