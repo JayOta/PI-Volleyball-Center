@@ -142,11 +142,14 @@ span#title-site2 {
   width: auto;
   flex-basis: 600px;
   background-color: transparent;
-  box-shadow:0px 0px 6px#0b0b0b;
+  box-shadow:0px 0px 0px#0b0b0b;
 }
 .carouselDownPics .card img {
-  box-shadow: 0px 5px 20px #696969;
+
   cursor: pointer;
+}
+.carouselDownPics .card img:hover {
+  box-shadow: 0px 5px 20px #696969;
 }
 h1#noticias-sem-title {
   text-align: center;
