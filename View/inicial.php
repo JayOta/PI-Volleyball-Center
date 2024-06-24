@@ -14,7 +14,6 @@
   <title></title>
   <link rel="stylesheet" type="text/css" href="css/inicial.css">
   <link rel="stylesheet" href="css/navbar.css">
-
 </head>
 
 <body>
@@ -82,6 +81,7 @@
             height: 359px; 
             border: none; 
             background: transparent;
+            box-shadow: 0px 0px 6px #696969;
             ">
             <img src="img/jogo-2.jpg" class="card-img d-block">
             <div class="card-img-overlay"></div>
@@ -92,6 +92,7 @@
             height: 359px; 
             border: none; 
             background: transparent;
+            box-shadow: 0px 0px 6px #696969;
           ">
             <img src="img/jogo-3.jpg" class="card-img">
             <div class="card-img-overlay"></div>

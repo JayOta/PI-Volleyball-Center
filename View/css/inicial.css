@@ -142,14 +142,9 @@ span#title-site2 {
   width: auto;
   flex-basis: 600px;
   background-color: transparent;
-  box-shadow:0px 0px 0px#0b0b0b;
 }
 .carouselDownPics .card img {
-
   cursor: pointer;
-}
-.carouselDownPics .card img:hover {
-  box-shadow: 0px 5px 20px #696969;
 }
 h1#noticias-sem-title {
   text-align: center;
@@ -218,7 +213,7 @@ h1#noticias-sem-title {
     max-width: 500px;
     max-height: 260px;
     border: none;
-    box-shadow:0px 0px 6px #0b0b0b;
+    box-shadow: 0px 0px 6px #0b0b0b;
     flex-grow: 1;
   }
   .carouselDownPics img {
@@ -293,7 +288,6 @@ h1#noticias-sem-title {
     color: #f9cc02;
   } */
   /* Fim do carrousel inicial */
-  
 }
 @keyframes slideUp {
   0% {

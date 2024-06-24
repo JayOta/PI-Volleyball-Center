@@ -58,7 +58,9 @@
 			<div class="card m-3" style="width: 550px; display: flex; flex-wrap: wrap;">
 				<div class="row g-0">
 					<div class="col-md-4 d-flex align-items-center justify-content" style="width: 500px; margin-left: 23px; margin-top: 20px;">
-						<img src="img/rod-6x0.jpg" class="img-fluid rounded-start" alt="imagem mostra como executar uma saque por baixo" style="border-radius: 5px;">
+						<img src="img/rod-6x0.jpg" class="img-fluid rounded-start" alt="imagem mostra como executar uma saque por baixo" style="
+						border-radius: 5px; 
+						cursor:pointer;">
 					</div>
 					<div class="col-md-8 d-flex position-relative">
 						<div class="card-body" style="margin-left: 7px;">
@@ -71,7 +73,8 @@
 			<div class="card m-3" style="width: 550px; display: flex; flex-wrap: wrap;">
 				<div class="row g-0">
 					<div class="col-md-4 d-flex align-items-center" style="width: 500px; margin-left: 23px; margin-top: 20px;">
-						<img src="img/rod-6x0-infiltracao.jpg" class="img-fluid rounded-start" alt="imagem mostra como executar uma saque por cima" style="border-radius: 5px; max-height: 281px; width: 500px;">
+						<img src="img/rod-6x0-infiltracao.jpg" class="img-fluid rounded-start" alt="imagem mostra como executar uma saque por cima" style="border-radius: 5px; 
+						cursor:pointer; max-height: 281px; width: 500px;">
 					</div>
 					<div class="col-md-8">
 						<div class="card-body" style="margin-left: 7px;">
@@ -88,7 +91,8 @@
 			<div class="card m-3" style="width: 550px; display: flex; flex-wrap: wrap;">
 				<div class="row g-0">
 					<div class="col-md-4 d-flex align-items-center" style="width: 500px; margin-left: 23px; margin-top: 20px;">
-						<img src="img/rod-4x2.jpg" class="img-fluid rounded-start" alt="imagem mostra como executar um ataque" style="border-radius: 5px;">
+						<img src="img/rod-4x2.jpg" class="img-fluid rounded-start" alt="imagem mostra como executar um ataque" style="border-radius: 5px; 
+						cursor:pointer;">
 					</div>
 					<div class="col-md-8">
 						<div class="card-body" style="margin-left: 7px;">
@@ -101,7 +105,8 @@
 			<div class="card m-3" style="width: 550px; display: flex; flex-wrap: wrap;">
 				<div class="row g-0">
 					<div class="col-md-4 d-flex align-items-center" style="width: 500px; margin-left: 23px; margin-top: 20px;">
-						<img src="img/rod-4x2-infiltracao.jpg" class="img-fluid rounded-start" alt="imagem mostra como executar um bloqueio" style="border-radius: 5px;">
+						<img src="img/rod-4x2-infiltracao.jpg" class="img-fluid rounded-start" alt="imagem mostra como executar um bloqueio" style="border-radius: 5px; 
+						cursor:pointer;">
 					</div>
 					<div class="col-md-8">
 						<div class="card-body" style="margin-left: 7px;">
@@ -118,7 +123,8 @@
 			<div class="card m-3" style="width: 550px; display: flex; flex-wrap: wrap;">
 				<div class="row g-0">
 					<div class="col-md-4 d-flex align-items-center" style="width: 500px; margin-left: 23px; margin-top: 20px;">
-						<img src="img/rod-4x2-libero.jpg" class="img-fluid rounded-start" alt="imagem mostra como executar um levantamento" style="border-radius: 5px;">
+						<img src="img/rod-4x2-libero.jpg" class="img-fluid rounded-start" alt="imagem mostra como executar um levantamento" style="border-radius: 5px; 
+						cursor:pointer;">
 					</div>
 					<div class="col-md-8">
 						<div class="card-body" style="margin-left: 7px;">
@@ -131,7 +137,8 @@
 			<div class="card m-3" style="width: 550px; display: flex; flex-wrap: wrap;">
 				<div class="row g-0">
 					<div class="col-md-4 d-flex align-items-center" style="width: 500px; margin-left: 23px; margin-top: 20px;">
-						<img src="img/rod-5x1.jpg" class="img-fluid rounded-start" alt="imagem mostra como executar uma manchete" style="border-radius: 5px;">
+						<img src="img/rod-5x1.jpg" class="img-fluid rounded-start" alt="imagem mostra como executar uma manchete" style="border-radius: 5px; 
+						cursor:pointer;">
 					</div>
 					<div class="col-md-8">
 						<div class="card-body" style="margin-left: 7px;">

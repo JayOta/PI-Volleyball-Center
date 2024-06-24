@@ -24,4 +24,6 @@ li a.icon {
 a img {
   transition: 0.4s ease-in;
   border-radius: 13px;
+  width: 50px;
+  height: 50px;
 }

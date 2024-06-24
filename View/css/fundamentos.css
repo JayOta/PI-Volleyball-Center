@@ -23,10 +23,10 @@ h1 {
   font-family: Courier New;
 }
 
-.fundamentos_centro { 
-    width: 100rem; 
-    margin-left: auto;
-    margin-right: auto; 
+.fundamentos_centro {
+  width: 100rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #galeria > div {
@@ -36,14 +36,19 @@ h1 {
   box-sizing: border-box;
 }
 
-.foto img{
+.foto img {
   width: 100%;
 }
-.detalhes{display: none;}
+.detalhes {
+  display: none;
+}
 
-.foto:target{
+.foto:target {
   position: fixed;
   width: 50%;
   top: 15%;
-  left: 25%
+  left: 25%;
+}
+.card {
+  box-shadow: 0px 0px 2px #696969;
 }
