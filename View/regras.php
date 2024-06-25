@@ -28,8 +28,35 @@
 			<a class="nav-link" aria-current="page" href="historia.php"  style="color: #363636;">História</a>
 		</li>
 	</ul>
-	
+	<h2>Regras do voleibol</h2>
 
+	<h3>Área de jogo</h3>
+
+	<p>A área de jogo do vôlei é formada pela quadra de jogo e a zona livre.</p>
+	<p>A quadra de vôlei contém 18 metros de comprimento por 9 metros de largura, sendo retangular e simétrica.</p>
+	<p>A superfície da quadra deve ser plana, horizontal e sem quaisquer irregularidades que possam prejudicar a realização da prática.</p>
+	<p>A rede é instalada verticalmente sobre a linha central. Sua altura difere de acordo com o gênero, para homens é de 2,43 metros e para mulheres, 2,24 metros.</p>
+	<p>Os equipamentos necessários no vôlei são:<br>
+	camiseta;<br>
+	calção/shorts;<br>
+	meias (líbero deve usar meia diferente);<br>
+	calçado esportivo (leve e flexível).</p>
+
+	<h3>Quantidade de jogadores no vôlei</h3>
+
+	<p>Uma equipe de vôlei tem 12 jogadores, sendo que entram em quadra 6 jogadores. Além dos competidores, o time é formado por outros profissionais:</p>
+	comissão técnica: um técnico/treinador e até dois assistentes técnicos<br>
+
+	corpo médico: um médico e um fisioterapeuta.<br><br>
+	<p>Um dos atletas é definido como capitão da equipe.<br>
+
+	Ao longo de um set, podem ser realizadas até seis substituições. O set é uma fase de uma partida de vôlei.</p>
+	<h3>Pontuação no vôlei</h3>
+	<p>O jogo de vôlei é formado por sets. A vitória de um set será definida quando uma das equipes atingir 25 pontos.</p>
+	<p>Vence a partida a equipe que ganhar 3 sets. Caso ocorra um empate de 24 a 24 pontos, vence o time que conseguir uma vantagem de 2 pontos primeiro.<br>
+	Quando ocorre um empate de 2 sets a 2 sets, haverá um quinto set com 15 pontos. E o critério do empate é definido em caso de 14 a 14, com a equipe vencedora atingindo primeiro a diferença mínima de 2 pontos.<br>
+	O rally é formado por todas ações de jogo, desde o saque da bola até a marcação de um ponto, seja por um ataque direto, seja porque a bola sai da quadra e gera ponto para o time adversário.</p>
+	
 	<hr style="width: 80%; margin-left: 200px;">
 	<div class="aviso" style="display: flex; flex-direction:column; justify-content: center; align-items: center;">
 		<p>Com o treino frequente desses fundamentos, a sua habilidade irá melhorar aos poucos.</p>
