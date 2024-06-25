@@ -89,9 +89,7 @@
         <h2 class="price-sub__heading">VolleyBall Center</h2>
         <h1 class="price-main__heading">Produtos de Edição Limitada Verão</h1>
         <p class="price-txt">
-          These low-profile sneakers are your perfect casual wear companion.
-          Featuring a durable rubber outer sole, they’ll withstand everything
-          the weather can offer.
+          Estas joelheiras serão perfeitas para você se proteger após cair no chão em uma partida de vôlei, com um ótimo tecido que possui uma parte protetora de joelhoes.
         </p>
         <div class="price-box">
           <div class="price-box__main">
