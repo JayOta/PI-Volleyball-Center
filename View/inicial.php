@@ -47,13 +47,13 @@
         <div id="carouselExampleInterval" class="carousel slide d-flex" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="2000">
-              <img src="img/jogo-5.jpg" class="d-block w-100">
+              <img src="img/main-1.jpg" class="d-block w-100">
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-              <img src="img/jogo-6.jpg" class="d-block w-100">
+              <img src="img/main-2.jpg" class="d-block w-100">
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-              <img src="img/jogo-1.jpg" class="d-block w-100">
+              <img src="img/jogo-3.jpg" class="d-block w-100">
             </div>
           </div>
           <div class="carousel-caption d-none d-md-block m-auto w-auto">

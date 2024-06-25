@@ -27,11 +27,11 @@
 			<div class="section">
 				<section>
 					<h1 id="title-h1" style="text-shadow: 0px 0px 6px #2b2b2b;">
-						Foz do Iguaçu ganha Campeonato Paranaense Feminino!
+					Fim da segunda etapa do Campeonato Paranaense sub-13 feminino, em Guarapuava-PR!
 					</h1>
 					<br>
 					<h2 id="title-h2" style="text-shadow: 0px 0px 6px #2b2b2b;">
-						Time feminino de Foz do Iguaçu Sub-14, ganha Campeonato Paranaense na série B, e sobe para a série A
+					No último domingo (09), a equipe da casa, Voleibol Guarapuava, conquistou a medalha de ouro na etapa. O segundo lugar ficou com o Authentic Vôlei/Maringá e o terceiro, com o Círculo Militar.
 					</h2>
 					<br>
 					<button><a id="saiba-mais" href="#">Saiba mais</a></button>
@@ -41,7 +41,7 @@
 				<div id="carouselExampleSlidesOnly-1" class="carousel slide d-flex" data-bs-ride="carousel">
 					<div class="carousel-inner">
 						<div class="carousel-item active">
-							<img src="img/comunidadeC01.jpg" class="d-block" alt="Imagem do campeonato Paranaense Sub-13 de 2023">
+							<img src="img/main-news.webp" class="d-block" alt="Imagem do campeonato Paranaense Sub-13 de 2023">
 							<div class="carousel-caption d-none d-md-block">
 								<h5 class="justify-content-center"><!--27 de novembro de 2023--></h5>
 								<p><!--PM Foz do Iguaçu/ Smel conquista Paranaense Sub-14 Série B feminino 2023--></p>
@@ -158,7 +158,7 @@
 			<div id="carouselExampleSlidesOnly" id="carousel-slide" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img class="aside-imgs" src="img/comunidadeC01.jpg" class="d-block" alt="Imagem do campeonato Paranaense Sub-13 de 2023"> <!-- Deixar o carrousel mais escuro -->
+						<img class="aside-imgs" src="img/news-1.webp" class="d-block" alt="Imagem do campeonato Paranaense Sub-13 de 2023"> <!-- Deixar o carrousel mais escuro -->
 						<div class="carousel-caption d-flex d-md-block justify-content-center align-items-center">
 							<h5 class="d-flex justify-content-center">27 de novembro de 2023</h5>
 							<p class="d-flex justify-content-center">PM Foz do Iguaçu/ Smel conquista Paranaense Sub-14 Série B feminino 2023</p>
@@ -171,19 +171,19 @@
 				<div id="carouselExampleFade" class="carousel slide carousel-fade d-flex" data-bs-ride="carousel">
 					<div class="carousel-inner">
 						<div class="carousel-item active">
-							<img class="aside-imgs position-relative d-flex" src="img/comunidadeC01.jpg" class="d-block" alt="Imagem do campeonato Paranaense Sub-13 de 2023" style="
+							<img class="aside-imgs position-relative d-flex" src="img/news2_1.webp" class="d-block" alt="Imagem do campeonato Paranaense Sub-13 de 2023" style="
 								width: 620px; 
 								height: 345px; 
 								border-radius: 10px; 
 								transition: 0.3s;
 								">
 							<div class="carousel-caption d-none d-md-block">
-								<h5 class="d-flex justify-content-center position-relative d-flex" style="font-size: 20px;">27 de Novembro de 2023</h5>
-								<p class="d-flex justify-content-center position-relative d-flex" style="font-size: 19px;">PM Foz do Iguaçu/ Smel conquista Paranaense Sub-14 Série B feminino 2023</p>
+								<h5 class="d-flex justify-content-center position-relative d-flex" style="font-size: 20px;">9 de junho de 2024</h5>
+								<p class="d-flex justify-content-center position-relative d-flex" style="font-size: 19px;">Hoje (24), inicia a primeira etapa dos Jogos da Juventude do Paraná 2024!</p>
 							</div>
 						</div>
 						<div class="carousel-item">
-							<img class="aside-imgs" src="img/comunidadeC02.jpg" class="d-block" alt="Imagem de jogadores de volêi" style="
+							<img class="aside-imgs" src="img/news2_2.webp" class="d-block" alt="Imagem de jogadores de volêi" style="
 								display: flex; 
 								width: 620px; 
 								height: 345px; 
@@ -191,12 +191,12 @@
 								transition: 0.3s;
 								">
 							<div class="carousel-caption d-none d-md-block">
-								<h5 class="justify-content-center position-relative d-flex" style="font-size: 20px; text-align: center;">29 de novembro de 2023</h5>
-								<p class="justify-content-center position-relative d-flex" style="font-size: 19px;">Fase final do Paranaense Sub-19 feminino, Série A, começa nesta quinta-feira (30), em Maringá</p>
+								<h5 class="justify-content-center position-relative d-flex" style="font-size: 20px; text-align: center;">12 de junho de 2024</h5>
+								<p class="justify-content-center position-relative d-flex" style="font-size: 19px;">Fim de segunda etapa do Campeonato Paranaense sub-19 série A masculino!</p>
 							</div>
 						</div>
 						<div class="carousel-item">
-							<img class="aside-imgs" src="img/comunidadeC03.jpg" class="d-block" alt="Imagem da equipe de vôlei da smel Araucária de 2023" style="
+							<img class="aside-imgs" src="img/news2_3.webp" class="d-block" alt="Imagem da equipe de vôlei da smel Araucária de 2023" style="
 							display: flex; 
 							width: 620px; 
 							height: 345px; 
@@ -204,8 +204,8 @@
 							transition: 0.3s;
 							">
 							<div class="carousel-caption d-none d-md-block">
-								<h5 class="justify-content-center position-relative d-flex" style="font-size: 20px;">22 de novembro de 2023</h5>
-								<p class="justify-content-center position-relative d-flex" style="font-size: 19px;">Com mais de 500 atletas reunidos, final de semana teve 93 partidas e cinco campeões estaduais da Série A</p>
+								<h5 class="justify-content-center position-relative d-flex" style="font-size: 20px;">15 de junho de 2024</h5>
+								<p class="justify-content-center position-relative d-flex" style="font-size: 19px;">Começou o Campeonato Paranaense Adulto 2024!</p>
 							</div>
 						</div>
 					</div>
@@ -222,7 +222,7 @@
 					">
 					<div class="carousel-inner" style="background-color: black; border-radius: 10px;">
 						<div class="carousel-item active">
-							<img class="aside-imgs" src="img/comunidadeC01.jpg" class="d-block" alt="Imagem do campeonato Paranaense Sub-13 de 2023" style="
+							<img class="aside-imgs" src="img/news3_1.webp" class="d-block" alt="Imagem do campeonato Paranaense Sub-13 de 2023" style="
 								position: relative; 
 								display: flex; 
 								width: 620px; 
@@ -231,12 +231,12 @@
 								transition: 0.3s;
 								">
 							<div class="carousel-caption d-none d-md-block">
-								<h5 class="justify-content-center" style="font-size: 20px; position: relative; display: flex;">27 de novembro de 2023</h5>
-								<p class="justify-content-center" style="font-size: 19px; position: relative; display: flex;">PM Foz do Iguaçu/ Smel conquista Paranaense Sub-14 Série B feminino 2023</p>
+								<h5 class="justify-content-center" style="font-size: 20px; position: relative; display: flex;">18 de junho de 2024</h5>
+								<p class="justify-content-center" style="font-size: 19px; position: relative; display: flex;">Seleção Paranense SUB-18 feminina recebe medalha de bronze no CBS 2024</p>
 							</div>
 						</div>
 						<div class="carousel-item">
-							<img class="aside-imgs" src="img/comunidadeC02.jpg" class="d-block" alt="Imagem de jogadores de volêi" style="
+							<img class="aside-imgs" src="img/news3_2.webp" class="d-block" alt="Imagem de jogadores de volêi" style="
 								display: flex; 
 								width: 620px; 
 								height: 345px; 
@@ -244,12 +244,12 @@
 								transition: 0.3s;
 								">
 							<div class="carousel-caption d-none d-md-block">
-								<h5 class="justify-content-center" style="font-size: 20px; position: relative; display: flex;">29 de novembro de 2023</h5>
-								<p class="justify-content-center" style="font-size: 18px; position: relative; display: flex;">Fase final do Paranaense Sub-19 feminino, Série A, começa nesta quinta-feira (30), em Maringá</p>
+								<h5 class="justify-content-center" style="font-size: 20px; position: relative; display: flex;">20 de junho de 2024</h5>
+								<p class="justify-content-center" style="font-size: 18px; position: relative; display: flex;">Confira como foi a 9ª rodada das equipes paranaenses na Superliga B</p>
 							</div>
 						</div>
 						<div class="carousel-item">
-							<img class="aside-imgs" src="img/comunidadeC03.jpg" class="d-block" alt="Imagem da equipe de vôlei da smel Araucária de 2023" style="
+							<img class="aside-imgs" src="img/news3_3.webp" class="d-block" alt="Imagem da equipe de vôlei da smel Araucária de 2023" style="
 								display: flex; 
 								width: 620px; 
 								height: 345px; 
@@ -257,8 +257,8 @@
 								transition: 0.3s;
 								">
 							<div class="carousel-caption d-none d-md-block">
-								<h5 class="justify-content-center" style="font-size: 20px; position: relative; display: flex;">22 de novembro de 2023</h5>
-								<p class="justify-content-center" style="font-size: 18px; position: relative; display: flex;">Com mais de 500 atletas reunidos, final de semana teve 93 partidas e cinco campeões estaduais da Série A</p>
+								<h5 class="justify-content-center" style="font-size: 20px; position: relative; display: flex;">25 de junho de 2024</h5>
+								<p class="justify-content-center" style="font-size: 18px; position: relative; display: flex;">Confira como foi a última semana do Maringá Vôlei (AMVP) na Superliga B masculina!</p>
 							</div>
 						</div>
 					</div>
