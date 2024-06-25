@@ -1,3 +1,8 @@
+<?php 
+	require "../Service/conexao.php";
+	require "../Controller/cadastro.php";
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +13,7 @@
 </head>
 <body>
 	<div id="login">
-		<form class="card">
+		<form method="post" class="card">
 			<div class="card-header">
 				<h1 style="text-align: center; color: #fff;">Cadastro</h1>
 			</div>
@@ -20,7 +25,7 @@
 				</div>
 				<div class="card-content-area">
 					<label for="email" style="font-size: 15px; font-style: italic;">E-mail</label>
-					<input type="text" id="email" autocomplete="off" name="email">
+					<input type="email" id="email" autocomplete="off" name="email">
 				</div>
 				<div class="card-content-area">
 					<label for="password" style="font-size: 15px; font-style: italic;">Senha</label>
@@ -32,7 +37,7 @@
 				</div>
 				<div class="card-content-area">
 					<label for="password" style="font-size: 15px; font-style: italic;">CPF</label>
-					<input type="password" autocomplete="off" name="cpf">
+					<input type="number" autocomplete="off" name="cpf">
 				</div>
 		
 				<br>
@@ -49,6 +54,6 @@
 		</form>
 	</div>
 
-	<script src= "cadastro.js"></script>
+	<!-- <script src= "cadastro.js"></script> -->
 </body>
 </html>
