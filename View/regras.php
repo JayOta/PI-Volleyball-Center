@@ -37,7 +37,7 @@
 			<a class="nav-link" aria-current="page" href="historia.php"  style="color: #363636;">História</a>
 		</li>
 	</ul>
-	<h2 style="text-align: center;">Regras do voleibol</h2>
+	<h2 style="text-align: center; font-size: 36px; margin-top: 5px;">Regras do voleibol</h2>
 	<div class="card-body">
 		<h3>Área de jogo</h3>
 
@@ -46,7 +46,8 @@
 			<p class="text">A superfície da quadra deve ser plana, horizontal e sem quaisquer irregularidades que possam prejudicar a realização da prática.</p>
 			<p class="text">A rede é instalada verticalmente sobre a linha central. Sua altura difere de acordo com o gênero, para homens é de 2,43 metros e para mulheres, 2,24 metros.</p>
 		
-		
+		<br>
+
 		<h3>Equipamentos</h3>
 			<p class="text">Os equipamentos necessários no vôlei são:<br></p>
 			<ul>
@@ -55,6 +56,8 @@
 					<li class="text">Meias (líbero deve usar meia diferente);<br></li>
 					<li class="text">Calçado esportivo (leve e flexível).</li>
 			</ul>
+
+		<br>
 
 		<h3>Quantidade de jogadores no vôlei</h3>
 
@@ -65,6 +68,8 @@
 
 			<p class="text">Ao longo de um set, podem ser realizadas até seis substituições. O set é uma fase de uma partida de vôlei.</p>
 
+		<br>
+
 		<h3>Pontuação no vôlei</h3>
 
 			<p class="text">O jogo de vôlei é formado por sets. A vitória de um set será definida quando uma das equipes atingir 25 pontos.</p>
@@ -72,6 +77,8 @@
 			<p class="text">Quando ocorre um empate de 2 sets a 2 sets, haverá um quinto set com 15 pontos. E o critério do empate é definido em caso de 14 a 14, com a equipe vencedora atingindo primeiro a diferença mínima de 2 pontos.</p>
 			<p class="text">O rally é formado por todas ações de jogo, desde o saque da bola até a marcação de um ponto, seja por um ataque direto, seja porque a bola sai da quadra e gera ponto para o time adversário.</p>
 		
+		<br>
+
 		<h3>Toques no vôlei</h3>
 
 			<p class="text">Os toques são quaisquer ações de contato realizadas por um jogador com a bola em quadra.</p>
@@ -79,6 +86,8 @@
 			<p class="text">Cada equipe tem o direito de realizar no máximo três toques, além do bloqueio, para arremessar a bola no campo adversário.</p>
 
 			<p class="text">A bola pode tocar em qualquer parte do corpo desde que esse contato seja de forma contínua, ou seja, ela não pode bater em alguma parte e retornar ao corpo do jogador</p>
+
+		<br>
 
 		<h3>Faltas no vôlei</h3>
 			<ul>
@@ -96,6 +105,8 @@
 
 				<li><p class="text">Rede: quando o jogador toca a rede.</p></li>
 			</ul>
+
+		<br>
 
 		<h3>Evolução das regras de vôlei</h3>
 

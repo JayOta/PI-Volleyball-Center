@@ -65,7 +65,7 @@
 					<div class="col-md-8 d-flex position-relative">
 						<div class="card-body" style="margin-left: 7px;">
 							<h5 class="card-title">Rodízio 6x0</h5>
-							<p class="card-text-center">Para execultar o jogador deve segurar a bola com uma mão e bater-lhe com a outra, aberta ou fechada, fazendo um movimento de baixo para cima.</p>
+							<p class="card-text-center" style="width: 400px;">No sistema 6x0, também chamado de sistema 6x6, todos farão a função tanto de levantadores como de atacantes ou defensores. É o sistema mais simples de todos, é normalmente usado em equipes que estão iniciando o treinamento no esporte.</p>
 						</div>
 					</div>
 				</div>
@@ -79,7 +79,7 @@
 					<div class="col-md-8">
 						<div class="card-body" style="margin-left: 7px;">
 							<h5 class="card-title">Rodízio 6x0 com Infiltração</h5>
-							<p class="card-text-center">Para execultar o jogador deve lançar a bola para cima, com uma mão, e bater-lhe com a outra.</p>
+							<p class="card-text-center" style="width: 400px;">A grande inovação do sistema 6×0 com infiltração é exatamente a movimentação de infiltração do jogador da posição 1, que torna-se o Levantador da equipe quando está estiver recebendo o Saque. O jogador que ocupar a posição 1, nesse sistema, nunca deve participar da recepção do Saque.</p>
 						</div>
 					</div>
 				</div>
@@ -97,7 +97,8 @@
 					<div class="col-md-8">
 						<div class="card-body" style="margin-left: 7px;">
 							<h5 class="card-title">Rodízio 4x2</h5>
-							<p class="card-text-center">Para execultar o jogador dá uma série de passos contados "passada", salta e então projeta seu corpo para a frente, transferindo deste modo seu peso para a bola no momento do contato.</p>
+							<p class="card-text-center" style="width: 400px;">O sistema 4x2 pode ser dividido entre o 4x2 simples ou com infiltração.
+							No 4x2 simples há dois levantadores, que se colocam nas posições diagonais da quadra, mais quatro atacantes. Com esse sistema, há sempre um levantador na rede juntamente com dois atacantes.</p>
 						</div>
 					</div>
 				</div>
@@ -111,7 +112,7 @@
 					<div class="col-md-8">
 						<div class="card-body" style="margin-left: 7px;">
 							<h5 class="card-title">Rodízio 4x2 com Infiltração</h5>
-							<p class="card-text-center">Para executar o bloqueio o jogador precisa saltar verticalmente com os braços esticados e apontados para cima, as palmas das mãos voltadas para a quadra adversária.</p>
+							<p class="card-text-center" style="width: 400px;">No 4x2 invertido, também chamado de 4x2 com infiltração, (uma vez que há 4 atacantes e 2 levantadoras em quadra), também há dois levantadores e eles também se posicionam em diagonal. No entanto, o levantador que está na zona de ataque se tornará disponível para o ataque e o que estiver na zona de defesa infiltrará, ou seja, passará da zona em que ele está para a zona de ataque para efetuar o levantamento. Assim, sempre haverá 3 atacantes na rede.</p>
 						</div>
 					</div>
 				</div>
@@ -129,7 +130,7 @@
 					<div class="col-md-8">
 						<div class="card-body" style="margin-left: 7px;">
 							<h5 class="card-title">Rodízio 4x2 com Líbero</h5>
-							<p class="card-text-center">Para execultar o levantamento ao tocar na bola, gire os punhos e as palmas das mãos de dentro para fora, empurre a bola com os dedos com força e ao final do movimento estique os braços para cima.</p>
+							<p class="card-text-center" style="width: 400px;">Neste rodízio, as 4 jogadoras rotativas são as atacantes e as centrais, enquanto as 2 jogadoras fixas são as levantadoras. A cada troca de saque, 2 atacantes e 2 centrais se movimentam no sentido horário, alternando suas posições na quadra. Já as 2 levantadoras ficam sempre nas mesmas posições, 2 e 5, não rodando. O líbero entra na posição mais recuada, substituindo uma das levantadoras.</p>
 						</div>
 					</div>
 				</div>
@@ -143,7 +144,7 @@
 					<div class="col-md-8">
 						<div class="card-body" style="margin-left: 7px;">
 							<h5 class="card-title">Rodízio 5x1</h5>
-							<p class="card-text-center">Para execultar o jogador deve manter os braços e cotovelos estendidos e unidos pelas mãos, a bola deverá acertar os antebraços, além de os joelhos estarem flexionados.</p>
+							<p class="card-text-center" style="width: 400px;">No rodízio 5x1 segue uma ordem fixa de rotações. O levantador começa na posição 1, que é a posição mais próxima ao fundo da quadra, e o líbero entra em quadra na posição 5, que é a posição de defesa. À medida que o jogo progride e o time ganha pontos, o rodízio continua a seguir essa ordem. O objetivo do rodízio 5x1 é otimizar o desempenho do time, garantindo uma defesa sólida e um ataque eficiente.</p>
 						</div>
 					</div>
 				</div>

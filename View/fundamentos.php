@@ -31,7 +31,7 @@
 	</ul>
 
 	<div class="meioDosFundamentos" style="transform: translateX(30rem); ">
-		<h1 style="font-size: 50px; position: relative; display: flex;  font-weight: 200;">Saques</h1>
+		<h2 class="text-align-center" style="font-size: 40px; position: relative; display: flex;">Saques</h2>
 		<br>
 		<div class="align-text" style="display: flex; flex-direction: row; position: relative;">
 			<div class="card" style="max-width: 35rem; height: 20rem; display: flex; flex-direction: column;">
