@@ -1,7 +1,7 @@
-<?php 
-	require "../Service/conexao.php";
-	require "../Controller/cadastro.php";
-?>
+<!-- <?php 
+	// require "../Service/conexao.php";
+	// require "../Controller/cadastro.php";
+?> -->
 
 <!DOCTYPE html>
 <html>
@@ -31,14 +31,14 @@
 					<label for="password" style="font-size: 15px; font-style: italic;">Senha</label>
 					<input type="password" id="senha" autocomplete="off" name="senha">
 				</div>
-				<div class="card-content-area">
+				<!-- <div class="card-content-area">
 					<label for="password" style="font-size: 15px; font-style: italic;">Endereço</label>
 					<input type="text" id="senha" autocomplete="off" name="endereco">
 				</div>
 				<div class="card-content-area">
 					<label for="password" style="font-size: 15px; font-style: italic;">CPF</label>
 					<input type="number" autocomplete="off" name="cpf">
-				</div>
+				</div> -->
 		
 				<br>
 
@@ -54,6 +54,6 @@
 		</form>
 	</div>
 
-	<!-- <script src= "cadastro.js"></script> -->
+	<script src= "cadastro.js"></script>
 </body>
 </html>

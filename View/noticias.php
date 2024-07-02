@@ -160,8 +160,8 @@
 					<div class="carousel-item active">
 						<img class="aside-imgs" src="img/news-1.webp" class="d-block" alt="Imagem do campeonato Paranaense Sub-13 de 2023"> <!-- Deixar o carrousel mais escuro -->
 						<div class="carousel-caption d-flex d-md-block justify-content-center align-items-center">
-							<h5 class="d-flex justify-content-center">27 de novembro de 2023</h5>
-							<p class="d-flex justify-content-center">PM Foz do Iguaçu/ Smel conquista Paranaense Sub-14 Série B feminino 2023</p>
+							<h5 class="d-flex justify-content-center">10 de junho de 2024</h5>
+							<p class="d-flex justify-content-center">Confira como foi o final de semana (07 a 09) no Campeonato Estadual Adulto</p>
 						</div>
 					</div>
 				</div>
