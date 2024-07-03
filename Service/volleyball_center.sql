@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 20/06/2024 às 13:00
+-- Tempo de geração: 03/07/2024 às 17:33
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -35,6 +35,13 @@ CREATE TABLE `clientes` (
   `endereco` varchar(255) NOT NULL,
   `cpf` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `clientes`
+--
+
+INSERT INTO `clientes` (`cliente_id`, `nome`, `email`, `senha`, `endereco`, `cpf`) VALUES
+(15, 'teste', 'teste@teste.com', 12345, '', 0);
 
 -- --------------------------------------------------------
 
@@ -74,7 +81,22 @@ CREATE TABLE `produtos` (
   `nome` varchar(255) NOT NULL,
   `descricao` varchar(255) NOT NULL,
   `preco` int(11) NOT NULL,
-  `qtd_estoque` int(11) NOT NULL
+  `qtd_estoque` int(11) NOT NULL,
+  `tamanho` varchar(255) NOT NULL,
+  `cor` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `usuarios`
+--
+
+CREATE TABLE `usuarios` (
+  `usuario_id` int(11) NOT NULL,
+  `email` varchar(150) NOT NULL,
+  `senha` int(16) NOT NULL,
+  `cliente_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -109,6 +131,13 @@ ALTER TABLE `produtos`
   ADD PRIMARY KEY (`produto_id`);
 
 --
+-- Índices de tabela `usuarios`
+--
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`usuario_id`),
+  ADD KEY `cliente_id` (`cliente_id`);
+
+--
 -- AUTO_INCREMENT para tabelas despejadas
 --
 
@@ -116,7 +145,7 @@ ALTER TABLE `produtos`
 -- AUTO_INCREMENT de tabela `clientes`
 --
 ALTER TABLE `clientes`
-  MODIFY `cliente_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `cliente_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT de tabela `itens_pedidos`
@@ -137,6 +166,12 @@ ALTER TABLE `produtos`
   MODIFY `produto_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT de tabela `usuarios`
+--
+ALTER TABLE `usuarios`
+  MODIFY `usuario_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- Restrições para tabelas despejadas
 --
 
@@ -152,6 +187,12 @@ ALTER TABLE `itens_pedidos`
 --
 ALTER TABLE `pedidos`
   ADD CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`cliente_id`) REFERENCES `clientes` (`cliente_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Restrições para tabelas `usuarios`
+--
+ALTER TABLE `usuarios`
+  ADD CONSTRAINT `usuarios_ibfk_1` FOREIGN KEY (`cliente_id`) REFERENCES `clientes` (`cliente_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
