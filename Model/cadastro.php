@@ -1,10 +1,10 @@
 <?php
     require "../Service/conexao.php";
-    function getCadastro($usuario, $email, $senha, $endereco, $cpf){
+    function getCadastro($usuario, $email, $senha){
         global $conn;
         try {
-            $stmt = $conn->prepare("INSERT INTO `clientes`(`nome`, `email`, `senha`, `endereco`, `cpf`)
-            VALUES (\"$usuario\", \"$email\", \"$senha\", \"$endereco\", \"$cpf\")");
+            $stmt = $conn->prepare("INSERT INTO `clientes`(`nome`, `email`, `senha`)
+            VALUES (\"$usuario\", \"$email\", \"$senha\")");
             $stmt->execute();
             return $stmt->fetchAll();
         } catch (PDOException $e){
