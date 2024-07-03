@@ -1,3 +1,7 @@
+<?php 
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +14,7 @@
 <body>
 
     <div id="login">
-            <form class="card">
+            <form action="../Controller/login.php" method="post" class="card">
                 <div class="card-header">
                     <h1 style="text-align: center; color: #fff; ">Login</h1>
                 </div>
@@ -27,7 +31,7 @@
                 </div>
 
                 <div class="card-footer">
-                    <button onclick="login(); return false" type="submit" id="button" class="submit">Login</button>
+                    <button type="submit" id="button" class="submit" name="login">Login</button>
 
                     <br>
 
@@ -45,6 +49,6 @@
             </form>
         </div>
 
-        <script src="login.js"></script>
+        <!-- <script src="login.js"></script> -->
 </body>
 </html>
