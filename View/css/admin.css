@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #fff;
+}
+.sidebar {
+    width: 250px;
+    height: 100%;
+    background-color: #0ea5e9;
+    position: absolute;
+    box-sizing: border-box;
+    top: 50;
+    left: 0;
+    backdrop-filter: blur(10px);
+    overflow-x: hidden;
+    transition: .5s ease-in;
+    padding: 15px;
+}
+.sidebar button.links{
+    color: #000;
+    cursor: pointer;
+    transition: .2s ease-in;
+    text-decoration: none;
+    border: none;
+    background: transparent;
+    margin: 3px;
+    font-size: 15px;
+    padding: 10px 8px;
+}
+.sidebar button.links:hover {
+    background: #0284c7;
+    border-radius: 4px;
+    opacity: 0.9;
+}
+button#openSidebarBtn {
+    border: none;
+    background: transparent;
+    border-radius: 1px;
+    cursor: pointer;
+    transition: .3s ease-in;
+    margin: 5px;
+    padding: 5px 10px;
+}
+button#openSidebarBtn:hover {
+    border-radius: 30%;
+    background: #0EA5E9;
+}
+button#closeSidebarBtn {
+    border: none;
+    background: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease-in;
+    padding: 5px 10px;
+}
+button#closeSidebarBtn:hover {
+    border-radius: 30%;
+    background: #0284c7;
+}
+.p-img {
+    width: 18px;
+    margin-top: 8px;
+    margin: 0px 10px;
+    transform: translateY(5px);
+
+}
+.line {
+    display: flex;
+    flex-direction: row;
+}
