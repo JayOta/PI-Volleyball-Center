@@ -24,16 +24,14 @@
 
   <form>
     <main>
-
-    
       <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active" id="first-carousel">
-          <img src="img/back_top1.jpg" class="d-block w-100" alt="CarrouselImgTop" height="400px">
+            <img src="img/back_top1.jpg" class="d-block w-100" alt="CarrouselImgTop" height="400px">
             <div class="carousel-caption d-none d-md-block">
               <h1>
-                  <span id="title-site1">Volleyball</span>
-                  <span id="title-site2">Center</span>
+                <span id="title-site1">Volleyball</span>
+                <span id="title-site2">Center</span>
               </h1>
               <p>Seja bem vindo ao melhor site de vôlei do paraná, 
                 aqui você estará por dentro de tudo!
@@ -45,7 +43,7 @@
 
       <br><br><br><br>
 
-      <div class="carousel-imagesItens d-block justify-content-center">
+      <div class="carousel-imagesItens">
         <div id="carouselExampleInterval" class="carousel slide d-flex" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="2000">

@@ -103,10 +103,10 @@ span#title-site2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 20px;
 }
-#carouselExampleInterval {
+.carousel-imagesItens #carouselExampleInterval {
   display: flex;
-  margin-left: 279px;
   max-width: 1303px;
   max-height: 1000px;
   border: none;
