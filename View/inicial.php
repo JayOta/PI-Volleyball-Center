@@ -22,8 +22,8 @@
     include 'navbar.php';
   ?>
 
-  <form>
-    <main>
+  <main>
+    <form>
       <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active" id="first-carousel">
@@ -69,8 +69,6 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-
-        <br><br>
 
         <div class="carouselDownPics">
           <div class="card" style="
@@ -156,12 +154,11 @@
           </a>
         </div>
       </div>
-    </main>
+    </form>
+  </main>
     <br><br><br><br><br><br>
-  </form> 
   <?php 
     include 'footer.php';
   ?>
 </body>
-
 </html>

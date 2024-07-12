@@ -14,11 +14,11 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg bg-body-tertiary p-0 m-0" style="background-color: #F9CC02;">
+	<nav class="navbar navbar-expand-lg p-0 m-0" style="background-color: #F9CC02;">
 		<div class="container-fluid" style="background-color: #F9CC02;">
 		<a href="inicial.php">
-        <img src="img/logo-volei.png" style="width: 87px; margin-bottom: 2px; margin-top: 2px; padding-bottom: 2px; padding-top: 2px;">
-      </a>
+        	<img src="img/logo-volei.png" class="logo-img" style="width: 82px; margin-bottom: 2px; margin-top: 2px; padding-bottom: 2px; padding-top: 2px;">
+      	</a>
 
 			<header>
 				<nav class="navigation">

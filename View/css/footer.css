@@ -28,3 +28,10 @@ a img {
   height: 50px;
   position: relative;
 }
+@media screen and (max-width: 1200px) {
+  footer .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}

@@ -188,17 +188,19 @@ h1#noticias-sem-title {
   #carouselExampleInterval {
     position: relative;
     max-width: 900px;
-    max-height: 500px;
+    height: 450px;
+    margin: 0 15px 0 15px;
   }
   .carousel-caption h5.carousel-title {
     display: flex;
     justify-content: center;
-    font-size: 15px;
+    font-size: 13px;
   }
   .carousel-caption h2.carousel-title {
     display: flex;
+    justify-content: center;
     position: relative;
-    left: 5rem;
+    right: 14em;
     font-size: 15px;
   }
   .carouselDownPics {
@@ -206,6 +208,7 @@ h1#noticias-sem-title {
     position: relative;
     flex-direction: column;
     overflow: hidden;
+    gap: 50px;
   }
   .carouselDownPics .card {
     display: flex;
@@ -226,13 +229,15 @@ h1#noticias-sem-title {
     flex-grow: 1;
   }
 
-  #noticias-sem-title {
+  h1#noticias-sem-title {
     font-size: 28px;
+    display: flex;
+    justify-content: center;
   }
   .row {
-    position: relative;
     display: flex;
-    left: 7rem;
+    flex-direction: column;
+    align-items: center;
   }
   .col {
     width: 350px;
@@ -250,48 +255,21 @@ h1#noticias-sem-title {
     min-height: 200px;
   }
 }
-@media screen and (max-width: 992px) {
-  /* .carouselDownPics img {
+@media screen and (max-width: 986px) {
+  #carouselExample {
     display: flex;
-    flex-direction: column;
-    width: 400px;
-    height: 200px;
-  } */
+  }
+  #carouselExample .carousel-caption {
+    display: flex;
+    top: 6em;
+  }
 }
-@media screen and (max-width: 768px) {
-}
-@media screen and (max-width: 576px) {
-  /* Inicio do carrousel inicial */
-  /* #first-carousel img {
-    display: block !important;
-    width: 100%;
-    height: 100%;
-    opacity: 0.7;
-  }
-  .carousel-item h1 {
-    font-size: 22px;
-    position: relative;
-    display: flex;
-    text-shadow: 0px 0px 8px #0b0b0b;
-    font-weight: 500;
-  }
-  .carousel-caption p {
-    font-size: 17px;
-    position: relative;
-    display: flex;
-    color: #f0f0f0;
-    text-shadow: 0px 0px 8px #0b0b0b;
-  }
-  span#title-site1 {
-    color: #1e90ff;
-  }
-  span#title-site2 {
-    color: #f9cc02;
-  } */
-  /* Fim do carrousel inicial */
+@media screen and (max-width: 750px) {
   #carouselExample {
     display: none;
   }
+}
+@media screen and (max-width: 576px) {
 }
 @keyframes slideUp {
   0% {
