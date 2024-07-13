@@ -8,6 +8,23 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="css/fundamentos.css">
 	<link rel="stylesheet" href="css/navbar.css">
+	<style>
+		@keyframes appear {
+  from {
+    opacity: 0;
+    clip-path: inset(100% 100% 0 0);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+.meioDosFundamentos {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+	</style>
 </head>
 <body>
 	
@@ -30,9 +47,11 @@
 		</li>
 	</ul>
 
-	<div class="meioDosFundamentos" style="transform: translateX(30rem); ">
-		<h2 class="text-align-center" style="font-size: 40px; position: relative; display: flex;">Saques</h2>
-		<br>
+	<br><br>
+
+	<div class="meioDosFundamentos" style="transform: translateX(30rem); max-width: 60rem;">
+		<h2 class="text-align-center" style="font-size: 50px; position: relative; display: flex; justify-content: center;">Saques</h2>
+		<br><br>
 		<div class="align-text" style="display: flex; flex-direction: row; position: relative;">
 			<div class="card" style="max-width: 35rem; height: 20rem; display: flex; flex-direction: column;">
 				<img src="img/saque-baixo.jpeg" class="card-img-top" alt="imagem de como é feito passo a passo o saque por baixo no vôlei." style="width: 550px;">
@@ -47,10 +66,32 @@
 Muitos jogadores iniciantes começam desenvolvendo o saque por baixo antes de progredir para técnicas mais avançadas, como o saque por cima. O importante é que o atleta domine essa habilidade básica antes de evoluir para opções mais complexas e eficazes.
 		</p>
 		<br>
-		<hr style="width: 53%; text-align: left;">
+		<hr style="width: 100%; text-align: left;">
 	</div>
 
 	<br>
+
+	<!-- Avaliar se esta forma comentada abaixo deveria ser incrementada o nao -->
+
+	<!-- <div class="meioDosFundamentos card" style="transform: translateX(30rem); max-width: 60rem; display: flex; justify-content: center; align-items: center;">
+		<h2 class="text-align-center" style="font-size: 40px; position: relative; display: flex; justify-content: center;">Saque por baixo</h2>
+		<br><br>
+		<div class="align-text" style="display: flex; flex-direction: row; position: relative;">
+			<div class="card" style="max-width: 35rem; height: 20rem; display: flex; flex-direction: column;">
+				<img src="img/saque-baixo.jpeg" class="card-img-top" alt="imagem de como é feito passo a passo o saque por baixo no vôlei." style="width: 550px;">
+				<br>
+			</div>
+			<p style="display: flex; width: 300px; margin: 20px;">Na execução do saque por baixo, o jogador posiciona-se de lado para a rede, com os pés afastados na largura dos ombros e o peso do corpo distribuído uniformemente. O braço de saque é mantido estendido ao lado do corpo, com a mão próxima à altura da cintura segurando a bola.</p>
+		</div>
+		<p style="max-width: 55rem; margin-top: 15px;">Para sacar, o jogador flexiona levemente os joelhos e o tronco, realizando um movimento de abaixamento do braço de saque. Nesse momento, a bola é arremessada por baixo da cintura em direção à rede, com uma trajetória relativamente tensa e controlada.
+		Apesar de suas limitações, o saque por baixo ainda é uma técnica válida no voleibol, especialmente em situações nas quais o jogador precisa de mais controle sobre a bola, como em treinos ou jogos com adversários de nível inferior.
+
+Muitos jogadores iniciantes começam desenvolvendo o saque por baixo antes de progredir para técnicas mais avançadas, como o saque por cima. O importante é que o atleta domine essa habilidade básica antes de evoluir para opções mais complexas e eficazes.
+		</p>
+		<br>
+	</div>
+
+	<br> -->
 
 	<div class="meioDosFundamentos" style="transform: translateX(30rem); max-width: 60rem;">
 		<br>
@@ -71,27 +112,6 @@ Muitos jogadores iniciantes começam desenvolvendo o saque por baixo antes de pr
 
 	<br>
 	
-	<!-- <div class="meioDosFundamentos" style="transform: translateX(30rem); max-width: 60rem; ">
-		<br>
-		<div class="align-text" style="display: flex; flex-direction: row; position: relative;">
-			<div class="card" style="max-width: 35rem; height: 350px; display: flex; flex-direction: column;">
-				<img src="img/saque-baixo.jpeg" class="card-img-top" alt="imagem de como é feito passo a passo o saque por baixo no vôlei." style="width: 550px; margin-top: 10px;">
-				<p class="card-text" style="font-size: 20px; margin-top: 30px; margin-left: 20px;"><strong>Saque por baixo:</strong></p>
-			</div>
-			<p style="display: flex; width: 300px; margin: 20px;"> é o saque menos potente. O
-			jogador deve segurar a bola com uma mão e baterlhe com a outra, aberta ou fechada, fazendo um
-			movimento de baixo para cima.</p>
-		</div>
-		<p style="max-width: 60rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo corporis qui velit necessitatibus hic perferendis incidunt itaque magni perspiciatis deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo corporis qui velit necessitatibus hic perferendis incidunt itaque magni perspiciatis deleniti. 
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo corporis qui velit necessitatibus hic perferendis incidunt itaque magni perspiciatis deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo corporis qui velit necessitatibus hic perferendis incidunt itaque magni perspiciatis deleniti. Lorem ipsum dolor 
-			sit amet consectetur adipisicing elit. Illo corporis qui velit necessitatibus hic perferendis incidunt itaque magni perspiciatis deleniti.  Aliquid expedita beatae incidunt commodi quis illum ea exercitationem dolor!
-		</p>
-			<br>
-			<hr style="width: 100%; text-align: left; ">
-	</div>
-
-	<br> -->
-
 	<div class="meioDosFundamentos" style="transform: translateX(30rem); max-width: 60rem; ">
 		<br>
 		<div class="align-text" style="display: flex; flex-direction: row; position: relative;">

@@ -25,7 +25,7 @@
 	?>
 	<ul class="nav nav-tabs d-flex justify-content-center" style="position: relative; margin-top: 20px;" style="text-align: center;" >
 		<li class="nav-item">
-			<a class="nav-link" aria-current="page" href="#"  style="color: #363636;">Fundamentos</a>
+			<a class="nav-link" aria-current="page" href="fundamentos.php"  style="color: #363636;">Fundamentos</a>
 		</li>
 		<li class="nav-item">
 			<a class="nav-link" aria-current="true" href="sistema-rodizio.php"  style="color: #363636;">Sistema de Rodízio</a>
@@ -37,7 +37,7 @@
 			<a class="nav-link" aria-current="page" href="historia.php"  style="color: #363636;">História</a>
 		</li>
 	</ul>
-	<h2 style="text-align: center; font-size: 36px; margin-top: 5px;">Regras do voleibol</h2>
+	<h2 style="text-align: center; font-size: 40px; margin-top: 40px;">Regras do voleibol</h2>
 	<div class="card-body">
 		<h3>Área de jogo</h3>
 
@@ -113,21 +113,10 @@
 			<p class="text">A atualização das regras é fundamental para que a prática esportiva se mantenha atrativa, tanto para jogadores quanto para os espectadores e, consequentemente, para o setor comercial e os diretores das equipes profissionais.</p>
 
 			<p class="text">Uma das mudanças que impactaram o esporte foi a criação da posição do líbero, em 1998. A novidade foi incluída no vôlei, pois o esporte se caracterizava por ataques eficientes, entretanto, carecia de ferramentas de defesa. Nesse sentido, o jogador líbero passou a atuar exclusivamente na assistência e defesa durante as partidas.</p>
-
 	</div>
 
-
-
-	<hr style="width: 80%; margin-left: 200px;">
-		<div class="aviso" style="display: flex; flex-direction:column; justify-content: center; align-items: center;">
-			<p>Com o treino frequente desses fundamentos, a sua habilidade irá melhorar aos poucos.</p>
-			<h6 style="display: flex; margin-right: 100px;"><strong>Não esqueça!</strong></h6>
-			<ul>
-				<li>Alongue-se antes</li>
-				<li>Hidrate-se na medida certa.</li>
-			</ul>
-		</div>
-		<br><br><br><br><br>
+		<br><br><br>
+		
 	<?php 
     	include 'footer.php';
   	?>

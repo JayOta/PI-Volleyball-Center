@@ -28,6 +28,21 @@
 		width: 100%;
 		object-fit: cover;
 	}
+	@keyframes appear {
+		from {
+			opacity: 0;
+			clip-path: inset(100% 100% 0 0);
+		}
+		to {
+			opacity: 1;
+			clip-path: inset(0 0 0 0);
+		}
+	}
+	.row-cols-2 {
+		animation: appear linear;
+		animation-timeline: view();
+		animation-range: entry 0% cover 40%;
+	}
 	</style>
 </head>
 <body>
@@ -86,6 +101,7 @@
 			</div>
 		</div>
 
+		<br><br><br><br><br><br>
 
 		<div class="row-cols-2 justify-content-center" style="display: flex; flex-direction: row;">
 			<div class="card m-3" style="width: 550px; display: flex; flex-wrap: wrap;">
@@ -119,6 +135,7 @@
 			</div>
 		</div>
 
+		<br><br><br><br><br><br>
 
 		<div class="row-cols-2 justify-content-center"  style="display: flex; flex-direction: row;">
 			<div class="card m-3" style="width: 550px; display: flex; flex-wrap: wrap;">

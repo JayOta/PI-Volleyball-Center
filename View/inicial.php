@@ -57,7 +57,7 @@
             </div>
           </div>
           <div class="carousel-caption d-none d-md-block m-auto w-auto">
-            <h5 class="carousel-title">27 de novembro de 2023</h5>
+            <h5 class="carousel-title">29 de junho de 2024</h5>
             <h2 class="carousel-title">Brasil bate Coreia do Sul e pega EUA na final do vôlei feminino!</h2>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -130,6 +130,7 @@
               </div>
             </div>
           </a>
+        
           <a href="#" style="text-decoration: none;">
             <div class="col">
               <div class="card">

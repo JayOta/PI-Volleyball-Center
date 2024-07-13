@@ -31,7 +31,22 @@
 		img:hover {
   			transform: scale(1.02);
   			object-fit: cover;
-}
+		}
+		@keyframes appear {
+		from {
+			opacity: 0;
+			clip-path: inset(100% 100% 0 0);
+		}
+		to {
+			opacity: 1;
+			clip-path: inset(0 0 0 0);
+		}
+		}
+		.jogador {
+		animation: appear linear;
+		animation-timeline: view();
+		animation-range: entry 0% cover 40%;
+		}
 	</style>
 </head>
 <body>
@@ -217,7 +232,7 @@
 		</div>
 </div>
 
-<br><br>
+<br><br><br><br><br>
 
 	<?php 
     	include 'footer.php';
