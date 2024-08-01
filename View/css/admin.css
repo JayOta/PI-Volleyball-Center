@@ -1,3 +1,5 @@
+/* SideBar - início */
+
 body {
     margin: 0;
     font-family: Arial;
@@ -8,6 +10,7 @@ body {
     height: 100%;
     background-color: #0ea5e9;
     position: absolute;
+    z-index: 2;
     box-sizing: border-box;
     top: 50;
     left: 0;
@@ -67,4 +70,42 @@ button#closeSidebarBtn:hover {
 .line {
     display: flex;
     flex-direction: row;
+}
+/* SideBar - fim */
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.mini-aligns{
+    display: flex;
+    margin: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.mini-container {
+    display: flex;
+    width: 300px;
+    height: 200px;
+    box-shadow: 0px 0px 2px #0b0b0b;
+}
+aside {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 10px;
+}
+.aside-containers {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 250px;
+    box-shadow: 0px 0px 2px #0b0b0b;
 }
