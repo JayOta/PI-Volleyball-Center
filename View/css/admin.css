@@ -1,14 +1,19 @@
 /* SideBar - início */
-
+:root {
+    --azul-cor: #0ea5e9;
+}
 body {
     margin: 0;
     font-family: Arial;
-    background-color: #fff;
+    background: #F6F9FF;
+}
+.main-content {
+    margin-left: 0px;
 }
 .sidebar {
     width: 250px;
     height: 100%;
-    background-color: #0ea5e9;
+    background-color: var(--azul-cor);
     position: absolute;
     z-index: 2;
     box-sizing: border-box;
@@ -31,7 +36,7 @@ body {
     padding: 10px 8px;
 }
 .sidebar button.links:hover {
-    background: #0284c7;
+    background: var(--azul-cor);
     border-radius: 4px;
     opacity: 0.9;
 }
@@ -46,7 +51,7 @@ button#openSidebarBtn {
 }
 button#openSidebarBtn:hover {
     border-radius: 30%;
-    background: #0EA5E9;
+    background: var(--azul-cor);
 }
 button#closeSidebarBtn {
     border: none;
@@ -81,31 +86,52 @@ button#closeSidebarBtn:hover {
 section {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 .mini-aligns{
     display: flex;
-    margin: 0;
     flex-direction: row;
-    justify-content: flex-end;
-    gap: 20px;
+    gap: 25px;
 }
 .mini-container {
     display: flex;
-    width: 300px;
-    height: 200px;
+    width: 330px;
+    height: 180px;
+    box-shadow: 0px 0px 1px 0px #1d1d1d;
+    background: #fff;
+    border: #424242;
+    border-radius: 2px;
+}
+.big-aligns {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 32px;
+}
+.big-container {
+    width: 65rem;
+    height: 28rem;
     box-shadow: 0px 0px 2px #0b0b0b;
+    border-radius: 2px;
 }
 aside {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
 }
 .aside-containers {
     display: flex;
     justify-content: center;
-    width: 400px;
-    height: 250px;
-    box-shadow: 0px 0px 2px #0b0b0b;
+    width: 500px;
+    height: 360px;
+    border: #424242;
+    border-radius: 2px;
+    box-shadow: 0px 0px 1px 0px #0b0b0b;
+}
+.perfil-img {
+    border-radius: 100%;
+}
+.perfil-img img {
+    border-radius: 100%;
 }

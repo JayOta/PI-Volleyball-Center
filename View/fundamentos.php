@@ -49,7 +49,7 @@
 
 	<br><br>
 
-	<div class="meioDosFundamentos" style="transform: translateX(30rem); max-width: 60rem;">
+	<div class="meioDosFundamentos" style="transform: translateX(8rem); max-width: 60rem;">
 		<h2 class="text-align-center" style="font-size: 50px; position: relative; display: flex; justify-content: center;">Saques</h2>
 		<br><br>
 		<div class="align-text" style="display: flex; flex-direction: row; position: relative;">
@@ -93,7 +93,7 @@ Muitos jogadores iniciantes começam desenvolvendo o saque por baixo antes de pr
 
 	<br> -->
 
-	<div class="meioDosFundamentos" style="transform: translateX(30rem); max-width: 60rem;">
+	<div class="meioDosFundamentos" style="transform: translateX(50rem); max-width: 60rem;">
 		<br>
 		<div class="align-text" style="display: flex; flex-direction: row; position: relative;">
 			<div class="card" style="max-width: 35rem; height: 350px; display: flex; flex-direction: column;">
@@ -112,7 +112,7 @@ Muitos jogadores iniciantes começam desenvolvendo o saque por baixo antes de pr
 
 	<br>
 	
-	<div class="meioDosFundamentos" style="transform: translateX(30rem); max-width: 60rem; ">
+	<div class="meioDosFundamentos" style="transform: translateX(8rem); max-width: 60rem; ">
 		<br>
 		<div class="align-text" style="display: flex; flex-direction: row; position: relative;">
 			<div class="card" style="max-width: 35rem; display: flex; flex-direction: column;">

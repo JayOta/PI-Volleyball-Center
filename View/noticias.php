@@ -20,12 +20,10 @@
 	<br>
 
 
-	<div class="container"> <!-- isto concerta a largura de alguns containers -->
-		<!-- Arrumar a largura das imagens dos dois carroséis -->
 
-		<div class="blue-back d-flex">
+		<div class="blue-back">
 			<div class="section">
-				<section>
+				<section style="width: fit-content;">
 					<h1 id="title-h1" style="text-shadow: 0px 0px 6px #2b2b2b;">
 					Fim da segunda etapa do Campeonato Paranaense sub-13 feminino, em Guarapuava-PR!
 					</h1>
@@ -37,7 +35,7 @@
 					<button><a id="saiba-mais" href="#">Saiba mais</a></button>
 				</section>
 			</div>
-			<aside>
+			<aside style="height: fit-content;">
 				<div id="carouselExampleSlidesOnly-1" class="carousel slide d-flex" data-bs-ride="carousel">
 					<div class="carousel-inner">
 						<div class="carousel-item active">
@@ -55,53 +53,54 @@
 		<br><br><br><br><br><br><br><br><br><br><br><br><br>
 		<!-- Change this -->
 		<div class="content-cards">
-
-			<div class="row row-cols-1 row-cols-md-3 g-4">
-				<div class="col">
-					<div class="card h-100">
-						<a href="#" target="_blank">
-							<img src="img/foto-selecao.png" class="card-img-top d-block" alt="Seleção" style="height: fit-content; border-radius: 7px;"></a>
-						<div class="card-body">
-							<h5 class="card-title">Brasil vê favoritismo ameaçado contra a Argentina
-								em Sul-Americano</h5>
-							<p class="card-text"><strong>Por Volleyball Center</strong></p>
-						</div>
-						<div class="card-footer">
-							<small class="text-body-secondary">Ultima atualização 3 mins atrás</small>
-						</div>
-					</div>
-				</div>
-
-				<div class="col">
-					<div class="card h-100">
-						<a href="#" target="_blank">
-							<img src="img/noticia-2.png" class="card-img-top" alt="Seleção" style="height: fit-content; border-radius: 7px;">
-						</a>
-						<div class="card-body">
-							<h5 class="card-title">Suzano bate o Santo André pelo triangular da série prata do Campeonato Paulista sub-21</h5>
-							<p class="card-text"><strong>Por Volleyball Center</strong></p>
-						</div>
-						<div class="card-footer">
-							<small class="text-body-secondary">Ultima atualização 3 mins atrás</small>
+			<div class="container">
+				<div class="row row-cols-1 row-cols-md-3 g-4">
+					<div class="col">
+						<div class="card h-100">
+							<a href="#" target="_blank">
+								<img src="img/foto-selecao.png" class="card-img-top" alt="Seleção" style="height: fit-content; border-radius: 7px;">
+							</a>
+							<div class="card-body">
+								<h5 class="card-title">Brasil vê favoritismo ameaçado contra a Argentina
+									em Sul-Americano</h5>
+								<p class="card-text"><strong>Por Volleyball Center</strong></p>
+							</div>
+							<div class="card-footer">
+								<small class="text-body-secondary">Ultima atualização 3 mins atrás</small>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="col">
-					<div class="card h-100">
-						<a href="#" target="_blank">
-							<img src="img/noticia-3.png" class="card-img-top" alt="Seleção" style="height: fit-content; border-radius: 7px;"></a>
-						<div class="card-body">
-							<h5 class="card-title">Paola Egonu está fora do Pré-Olímpico</h5>
-							<p class="card-text"><strong>Por Volleyball Center</strong></p>
+					<div class="col">
+						<div class="card h-100">
+							<a href="#" target="_blank">
+								<img src="img/noticia-2.png" class="card-img-top" alt="Seleção" style="height: fit-content; border-radius: 7px;">
+							</a>
+							<div class="card-body">
+								<h5 class="card-title">Suzano bate o Santo André pelo triangular da série prata do Campeonato Paulista sub-21</h5>
+								<p class="card-text"><strong>Por Volleyball Center</strong></p>
+							</div>
+							<div class="card-footer">
+								<small class="text-body-secondary">Ultima atualização 3 mins atrás</small>
+							</div>
 						</div>
-						<div class="card-footer">
-							<small class="text-body-secondary">Ultima atualização 3 mins atrás</small>
+					</div>
+
+					<div class="col">
+						<div class="card h-100">
+							<a href="#" target="_blank">
+								<img src="img/noticia-3.png" class="card-img-top" alt="Seleção" style="height: fit-content; border-radius: 7px;"></a>
+							<div class="card-body">
+								<h5 class="card-title">Paola Egonu está fora do Pré-Olímpico</h5>
+								<p class="card-text"><strong>Por Volleyball Center</strong></p>
+							</div>
+							<div class="card-footer">
+								<small class="text-body-secondary">Ultima atualização 3 mins atrás</small>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-
 			<br><br><br><br>
 
 			<div class="container">
@@ -150,7 +149,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
 
 	<div class="blue-back2">
 		<aside>
