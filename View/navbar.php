@@ -24,10 +24,9 @@
 						<a id="link-2" href="fundamentos.php">Fundamentos</a>
 						<a id="link-3" href="noticias.php">Notícias</a>
 						<a id="link-4" href="loja.php">Loja</a>
-						<a id="login" href="index.php" style="bottom: 13px;"><button type="submit" class="btnLogin-popup" name="usuario_atual">Login</button></a>
+						<a id="login" href="../View/index.php" style="bottom: 13px;"><button type="submit" class="btnLogin-popup" name="usuario_atual">Login</button></a>
 					</nav>
 				</header>
-			</div>
 			</div>
 		</nav>
 	</form>
