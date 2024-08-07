@@ -48,8 +48,8 @@
 		</div>
 		</div>
 	</nav>
-  <main>  
-    <form>
+  <main class="main-class"> 
+    <div class="separator">
         <button id="openSidebarBtn" onclick="openSidebar()" style="display:none;"><img src="./img/menu-line.png"></button>
         <div id="sidebar" class="sidebar">
                 <button id="closeSidebarBtn" onclick="closeSidebar()"><img src="./img/close-fill.png"></button>
@@ -94,8 +94,9 @@
                 <div class="aside-containers"></div>
             </aside>
         </div>
+    </div> 
 </main>
-    <br><br><br><br><br><br>
+    <br><br><br><br>
   <?php 
     include 'footer.php';
   ?>
