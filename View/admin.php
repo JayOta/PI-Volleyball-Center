@@ -29,18 +29,20 @@
 			<header>
 				<nav class="navigation" style="display: flex; flex-direction: row;">
 					<input class="input-search form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search" style="display: flex; justify-content: flex-end; align-items: flex-end; width: 360px;" />
-                    <div class="perfil" style="display: flex; flex-direction: row;">
-                        <i class='bx bx-bell'></i>
-                        <i class='bx bx-message-detail'></i>
+                    <div class='icones'>
+                            <i class='bx bx-bell'></i>
+                            <i class='bx bx-message-detail'></i>
+                    </div>
+                        <div class="perfil" style="display: flex; flex-direction: row;">
                         <div class="perfil-area" style="display: flex; flex-direction: row;">
-                            <img src="img/logo-volei.png" alt="perfil-img" class="perfil-img" style="width: 40px; height: 40px;">
                             <summary>J. Otávio</summary>
                             <details closed>
                                     <li>Profile</li>
                                     <li>Settings</li>
                                     <li>Sign out</li>
                                 </ul>
-                            </details>
+                            </details> 
+                           
                         </div>
                     </div>
 				</nav>

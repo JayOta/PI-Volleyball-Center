@@ -135,3 +135,9 @@ aside {
 .perfil-img img {
     border-radius: 100%;
 }
+
+.navigation.icones.bx bx-bell{
+    display: flex;
+    margin-left: 16px;
+
+}
