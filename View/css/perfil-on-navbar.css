@@ -3,7 +3,66 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: #f6f9ff;
+}
+.perfil {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
 .perfil img.perfil-img {
   width: 60px;
   height: 60px;
+}
+.perfil details {
+  position: relative;
+  top: 15px;
+}
+.perfil detail summary {
+  font-size: 22px;
+}
+.perfil details ul {
+  position: absolute;
+  display: flex;
+  right: 100%;
+  width: max-content;
+  flex-direction: column;
+  background-color: #fff;
+  gap: 0;
+  border-radius: 4px;
+  box-shadow: 0px 0px 2px #0b0b0b;
+  top: 10px;
+}
+.details-content {
+  display: flex;
+  width: auto;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+  width: 12rem;
+  border-bottom: 1px solid #0b0b0b45;
+}
+.details-content:last-child {
+  border-bottom: none;
+}
+.details-content:hover {
+  background-color: #f6f9ff;
+  margin: 0;
+}
+.perfil details ul i {
+  margin-left: 1rem;
+  font-size: 22px;
+}
+.perfil details ul li.li-perfil {
+  list-style: none;
+  color: #000;
+  padding: 20px 35px;
+  cursor: pointer;
+  position: relative;
+  right: 15px;
+}
+.perfil details ul li.li-perfil::after {
+  background-color: transparent;
 }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Navbar</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../View/css/navbar.css">
     <link rel="stylesheet" href="../View/css/perfil-on-navbar.css">
 </head>
@@ -37,15 +38,15 @@
                             <ul>
                                 <div class="details-content">
                                     <i class='bx bx-user'></i>
-                                    <li>Profile</li>
+                                    <li class="li-perfil">Meu Perfil</li>
                                 </div>
                                 <div class="details-content">
                                     <i class='bx bx-cog'></i>
-                                    <li>Settings</li>
+                                    <li class="li-perfil">Configurações</li>
                                 </div>
                                 <div class="details-content">
                                     <i class='bx bx-log-in'></i>
-                                    <li>Sign out</li>
+                                    <li class="li-perfil">Sair</li>
                                 </div>
                             </ul>
                         </details>

@@ -12,43 +12,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="css/inicial.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/admin.css">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="../View/css/navbar.css">
+    <link rel="stylesheet" href="../View/css/admin.css">
+    <link rel="stylesheet" href="../View/css/perfil-on-navbar.css">
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg p-0 m-0" style="background-color: #F9CC02;">
-        <div class="container-fluid" style="background-color: #F9CC02;">
-            <a href="inicial.php">
-                <img src="img/logo-volei.png" class="logo-img" style="width: 82px; margin-bottom: 2px; margin-top: 2px; padding-bottom: 2px; padding-top: 2px;">
-            </a>
-
-            <header>
-                <nav class="navigation" style="display: flex; flex-direction: row;">
-                    <input class="input-search form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search" style="display: flex; justify-content: flex-end; align-items: flex-end; width: 360px;" />
-                    <div class='icones'>
-                        <i class='bx bx-bell'></i>
-                        <i class='bx bx-message-detail'></i>
-                    </div>
-                    <div class="perfil" style="display: flex; flex-direction: row;">
-                        <div class="perfil-area" style="display: flex; flex-direction: row;">
-                            <summary>J. Otávio</summary>
-                            <details closed>
-                                <li>Profile</li>
-                                <li>Settings</li>
-                                <li>Sign out</li>
-                                </ul>
-                            </details>
-                        </div>
-                    </div>
-                </nav>
-            </header>
-        </div>
-        </div>
-    </nav>
+    <?php include '../View/perfil-on-navbar.php'; ?>
     <main class="main-class">
         <div class="separator">
             <button id="openSidebarBtn" onclick="openSidebar()" style="display:none;"><img src="./img/menu-line.png"></button>
