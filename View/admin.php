@@ -23,27 +23,27 @@
     <?php include '../View/perfil-on-navbar.php'; ?>
     <main class="main-class">
         <div class="separator">
-            <button id="openSidebarBtn" onclick="openSidebar()" style="display:none;"><img src="./img/menu-line.png"></button>
+            <button id="openSidebarBtn" onclick="openSidebar()" style="display:none;"><i class='bx bx-menu'></i></button>
             <div id="sidebar" class="sidebar">
-                <button id="closeSidebarBtn" onclick="closeSidebar()"><img src="./img/close-fill.png"></button>
+                <button id="closeSidebarBtn" onclick="closeSidebar()"><i class='bx bx-x'></i></button>
                 <div class="line">
-                    <button class="links"><img class="p-img" src="./img/dashboard-fill.png" alt="">Painel</button>
+                    <button class="links"><i class='bx bxs-dashboard'></i>Painel</button>
                 </div>
                 <div class="line">
-                    <button class="links"><img class="p-img" src="./img/group-line.png">Clientes</button>
+                    <button class="links"><i class='bx bx-user' ></i>Clientes</button>
                 </div>
                 <div class="line">
-                    <button class="links"><img class="p-img" src="./img/shopping-cart-fill.png" alt="">Produtos</button>
+                    <button class="links"><i class='bx bx-cart'></i>Produtos</button>
                 </div>
                 <div class="line">
-                    <button class="links"><img class="p-img" src="./img/bar-chart-fill.png" alt="">Estatísticas</button>
+                    <button class="links"><i class='bx bx-bar-chart-alt-2'></i>Estatísticas</button>
                 </div>
                 <hr>
                 <div class="line">
-                    <button class="links"><img class="p-img" src="./img/notification-2-fill.png" alt="">Notificações</button>
+                    <button class="links"><i class='bx bx-bell'></i>Notificações</button>
                 </div>
                 <div class="line">
-                    <button class="links"><img class="p-img" src="./img/file-3-fill.png" alt="">Documentos</button>
+                    <button class="links"><i class='bx bx-file-blank'></i>Documentos</button>
                 </div>
             </div>
             <div class="main-content" id="main-content">

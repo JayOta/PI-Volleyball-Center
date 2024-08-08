@@ -17,7 +17,7 @@
             <a href="inicial.php">
                 <img src="img/logo-volei.png" class="logo-img">
             </a>
-            <ul class="links-navigation" style="position: relative; top: 0;">
+            <ul class="links-navigation"">
                 <a href="../View/inicial.php">
                     <li id="inicial">Início</li>
                 </a>
