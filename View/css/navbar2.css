@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI Semibold", Arial, Helvetica, sans-serif;
+}
+nav.navbar {
+  background-color: #f9cc02;
+}
+img.logo-img {
+  width: 85px;
+  height: 81px;
+  margin: 9px 0px 6px 11px;
+}
+nav.navbar .container-fluid {
+  display: flex;
+  flex-direction: row;
+  gap: 8.5rem;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+}
+ul li {
+  display: flex;
+  position: relative;
+  color: #fff;
+  list-style: none;
+  font-size: 17.5px;
+  cursor: pointer;
+}
+.navigation li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  margin-top: 2px;
+  top: 100%;
+  width: 0;
+  height: 3px;
+  background: #fff;
+  transition: 0.3s ease-in-out;
+}
+ul.navigation li:hover::after {
+  width: 100%;
+}
+ul.navigation li:hover {
+  color: #7fb7f0;
+}
+.container-fluid .login-area {
+  display: flex;
+  align-items: center;
+  margin-left: 59rem;
+}
+.container-fluid a#link-5 button {
+  width: 130px;
+  height: 55px;
+  background: transparent;
+  border: 2px solid #fff;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.5s;
+  text-align: center;
+}
+
+.navigation a#link-5 button:hover {
+  background-color: #fff;
+  color: #1e90ff;
+}

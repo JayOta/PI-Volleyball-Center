@@ -14,12 +14,13 @@
   <title></title>
   <link rel="stylesheet" type="text/css" href="css/inicial.css">
   <link rel="stylesheet" href="css/navbar.css">
+  <!-- <link rel="stylesheet" href="css/navbar2.css"> -->
 </head>
 
 <body>
 
-  <?php 
-    include 'navbar.php';
+  <?php
+  include 'navbar.php';
   ?>
 
   <main>
@@ -33,7 +34,7 @@
                 <span id="title-site1">Volleyball</span>
                 <span id="title-site2">Center</span>
               </h1>
-              <p>Seja bem vindo ao melhor site de vôlei do paraná, 
+              <p>Seja bem vindo ao melhor site de vôlei do paraná,
                 aqui você estará por dentro de tudo!
               </p>
             </div>
@@ -99,7 +100,7 @@
       </div>
 
       <br><br><br><br><br>
-      
+
       <hr>
       <br><br>
 
@@ -130,7 +131,7 @@
               </div>
             </div>
           </a>
-        
+
           <a href="#" style="text-decoration: none;">
             <div class="col">
               <div class="card">
@@ -157,9 +158,10 @@
       </div>
     </form>
   </main>
-    <br><br><br><br><br><br>
-  <?php 
-    include 'footer.php';
+  <br><br><br><br><br><br>
+  <?php
+  include 'footer.php';
   ?>
 </body>
+
 </html>

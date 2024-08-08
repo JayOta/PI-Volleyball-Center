@@ -11,25 +11,23 @@
 </head>
 
 <body>
-	<form method="post">
-		<nav class="navbar navbar-expand-lg p-0 m-0" style="background-color: #F9CC02;">
-			<div class="container-fluid" style="background-color: #F9CC02;">
-				<a href="inicial.php">
-					<img src="img/logo-volei.png" class="logo-img" style="width: 82px; margin-bottom: 2px; margin-top: 2px; padding-bottom: 2px; padding-top: 2px;">
-				</a>
+	<nav class="navbar navbar-expand-lg p-0 m-0" style="background-color: #F9CC02;">
+		<div class="container-fluid" style="background-color: #F9CC02;">
+			<a href="inicial.php">
+				<img src="img/logo-volei.png" class="logo-img" style="width: 82px; margin-bottom: 2px; margin-top: 2px; padding-bottom: 2px; padding-top: 2px;">
+			</a>
 
-				<header>
-					<nav class="navigation">
-						<a id="inicial" href="inicial.php">Início</a>
-						<a id="link-2" href="fundamentos.php">Fundamentos</a>
-						<a id="link-3" href="noticias.php">Notícias</a>
-						<a id="link-4" href="loja.php">Loja</a>
-						<a id="login" href="../View/index.php" style="bottom: 13px;"><button type="submit" class="btnLogin-popup" name="usuario_atual">Login</button></a>
-					</nav>
-				</header>
-			</div>
-		</nav>
-	</form>
+			<header>
+				<nav class="navigation">
+					<a id="inicial" href="inicial.php">Início</a>
+					<a id="link-2" href="fundamentos.php">Fundamentos</a>
+					<a id="link-3" href="noticias.php">Notícias</a>
+					<a id="link-4" href="loja.php">Loja</a>
+					<a id="login" href="../View/index.php" style="bottom: 13px;"><button type="submit" class="btnLogin-popup" name="usuario_atual">Login</button></a>
+				</nav>
+			</header>
+		</div>
+	</nav>
 </body>
 
 </html>
