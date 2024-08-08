@@ -1,131 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI Semibold", Arial, Helvetica, sans-serif;
+}
 nav.navbar {
-  height: 100px;
+  background-color: #f9cc02;
 }
-header {
-  position: relative;
-  top: 10%;
-  left: 0;
-  width: 100%;
-  padding: 20px 100px;
+img.logo-img {
+  width: 85px;
+  height: 81px;
+  margin: 6px 0px 6px 11px;
+}
+nav.navbar .container-navbar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 99;
+  flex-direction: row;
+  gap: 8.5rem;
 }
-.navbar img {
-  transition: 0.3s;
-  width: 100%;
-  height: 100%;
-}
-.navbar img:hover {
-  transform: scale(1.05);
-  width: 100%;
-  object-fit: cover;
-}
-.navigation a {
-  position: relative;
-  font-size: 1.1em;
-  color: #fff;
+nav.navbar .container-navbar a {
   text-decoration: none;
-  font-weight: 500;
-  margin-left: 40px;
 }
-.navigation a::after {
-  content: " ";
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  position: relative;
+  top: 8px;
+}
+ul li {
+  display: flex;
+  position: relative;
+  color: #fff;
+  list-style: none;
+  font-size: 17.5px;
+  cursor: pointer;
+}
+.links-navigation li::after {
+  content: "";
   position: absolute;
   left: 0;
-  bottom: -6px;
-  width: 100%;
-  height: 3px;
+  margin-top: 2px;
+  top: 100%;
+  width: 0;
+  height: 2px;
   background: #fff;
-  border-radius: 5px;
-  transform-origin: right;
-  transform: scaleX(0);
-  transition: transform 0.5s;
+  transition: 0.4s ease-in-out;
 }
-.navigation a:hover::after {
-  transform: scaleX(1);
+ul.links-navigation li:hover::after {
+  width: 100%;
 }
-.navigation a:hover {
+ul.links-navigation li:hover {
   color: #7fb7f0;
 }
-.navigation .btnLogin-popup {
+.container-navbar .login-area {
+  display: flex;
+  align-items: center;
+  margin-left: 56rem;
+}
+.container-navbar a#link-5 button {
   width: 130px;
   height: 55px;
   background: transparent;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   outline: none;
   border-radius: 6px;
   cursor: pointer;
   font-size: 1.1em;
   color: #fff;
   font-weight: 500;
-  margin-left: 100px;
-  margin-bottom: 20px;
   transition: 0.5s;
-  position: absolute;
-  left: 55em;
+  text-align: center;
+  position: relative;
 }
-.navigation .btnLogin-popup:hover {
+
+.links-navigation a#link-5 button:hover {
   background-color: #fff;
   color: #1e90ff;
 }
+
 @media screen and (max-width: 1965px) {
-  .navigation .btnLogin-popup {
-    left: 45em;
+  .links-navigation a#link-5 button {
+    right: 0em;
   }
 }
 @media screen and (max-width: 1765px) {
-  .navigation .btnLogin-popup {
-    left: 40em;
+  .links-navigation a#link-5 button {
+    right: 8em;
   }
 }
 @media screen and (max-width: 1665px) {
-  .navigation .btnLogin-popup {
-    left: 30em;
+  img.logo-img {
+    width: 75px;
+    max-height: 71px;
+  }
+  .links-navigation a#link-5 button {
+    right: 18em;
   }
 }
 @media screen and (max-width: 1465px) {
-  .navigation .btnLogin-popup {
-    left: 22em;
+  img.logo-img {
+    width: 70px;
+    max-height: 66px;
+  }
+  .links-navigation a#link-5 button {
+    right: 24em;
+    width: 110px;
+    height: 50px;
+  }
+  ul.links-navigation li {
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 1365px) {
-  .navigation .btnLogin-popup {
-    left: 16em;
+  img.logo-img {
+    width: 70px;
+    max-height: 66px;
+  }
+  .links-navigation a#link-5 button {
+    right: 30em;
+    width: 110px;
+    height: 50px;
+  }
+  ul.links-navigation li {
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 1200px) {
-  nav.navbar {
-    height: 180px;
-    margin-bottom: 20px;
+  img.logo-img {
+    width: 70px;
+    height: 65px;
   }
-  nav.navbar .container-fluid {
-    display: flex;
-    position: relative;
-    bottom: 40px;
-  }
-  a img.logo-img {
-    display: flex;
-    position: relative;
-    bottom: 40px;
-  }
-
-  .navigation .btnLogin-popup {
-    display: flex;
-    width: 100px;
+  .links-navigation a#link-5 button {
+    right: 38em;
+    width: 105px;
     height: 45px;
-    left: 19em;
-    position: relative;
-    bottom: 25px;
-    justify-content: center;
-    align-items: center;
   }
 }
 @media screen and (max-width: 991px) {
-  a img.logo-img {
-    display: flex;
-    position: relative;
-    top: 80px;
-  }
 }

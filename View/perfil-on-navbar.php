@@ -1,39 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Notícias</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navbar</title>
     <link rel="stylesheet" href="../View/css/navbar.css">
-    <link rel="stylesheet" href="../View/css/perfil.css">
     <link rel="stylesheet" href="../View/css/perfil-on-navbar.css">
 </head>
 
 <body>
-    <form method="post">
-        <nav class="navbar navbar-expand-lg p-0 m-0" style="background-color: #F9CC02; width: 100%;">
-            <div class="container-fluid" style="background-color: #F9CC02;">
-                <a href="inicial.php">
-                    <img src="img/logo-volei.png" class="logo-img" style="width: 82px; margin-bottom: 2px; margin-top: 2px; padding-bottom: 2px; padding-top: 2px;">
+    <nav class="navbar">
+        <div class="container-navbar">
+            <a href="inicial.php">
+                <img src="img/logo-volei.png" class="logo-img">
+            </a>
+            <ul class="links-navigation" style="position: relative; top: 0;">
+                <a href="../View/inicial.php">
+                    <li id="inicial">Início</li>
                 </a>
-
-                <header>
-                    <nav class="navigation">
-                        <a id="inicial" href="inicial.php">Início</a>
-                        <a id="link-2" href="fundamentos.php">Fundamentos</a>
-                        <a id="link-3" href="noticias.php">Notícias</a>
-                        <a id="link-4" href="loja.php">Loja</a>
-                        <?php
-                        include "../View/perfil.php";
-                        ?>
-                    </nav>
-                </header>
-            </div>
-        </nav>
-    </form>
+                <a href="../View/fundamentos.php">
+                    <li id="link-2">Fundamentos</li>
+                </a>
+                <a href="../View/noticias.php">
+                    <li id="link-3">Notícias</li>
+                </a>
+                <a href="../View/loja.php">
+                    <li id="link-4">Loja</li>
+                </a>
+                <div class="login-area">
+                    <div class="perfil">
+                        <img src="img/logo-volei.png" alt="perfil-img" class="perfil-img">
+                        <details closed>
+                            <summary>J. Otávio</summary>
+                            <ul>
+                                <div class="details-content">
+                                    <i class='bx bx-user'></i>
+                                    <li>Profile</li>
+                                </div>
+                                <div class="details-content">
+                                    <i class='bx bx-cog'></i>
+                                    <li>Settings</li>
+                                </div>
+                                <div class="details-content">
+                                    <i class='bx bx-log-in'></i>
+                                    <li>Sign out</li>
+                                </div>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
 </body>
 
 </html>

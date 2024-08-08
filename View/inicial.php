@@ -14,7 +14,6 @@
   <title></title>
   <link rel="stylesheet" type="text/css" href="css/inicial.css">
   <link rel="stylesheet" href="css/navbar.css">
-  <!-- <link rel="stylesheet" href="css/navbar2.css"> -->
 </head>
 
 <body>

@@ -1,33 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Notícias</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="css/navbar.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="../View/css/navbar.css">
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg p-0 m-0" style="background-color: #F9CC02;">
-		<div class="container-fluid" style="background-color: #F9CC02;">
-			<a href="inicial.php">
-				<img src="img/logo-volei.png" class="logo-img" style="width: 82px; margin-bottom: 2px; margin-top: 2px; padding-bottom: 2px; padding-top: 2px;">
-			</a>
-
-			<header>
-				<nav class="navigation">
-					<a id="inicial" href="inicial.php">Início</a>
-					<a id="link-2" href="fundamentos.php">Fundamentos</a>
-					<a id="link-3" href="noticias.php">Notícias</a>
-					<a id="link-4" href="loja.php">Loja</a>
-					<a id="login" href="../View/index.php" style="bottom: 13px;"><button type="submit" class="btnLogin-popup" name="usuario_atual">Login</button></a>
-				</nav>
-			</header>
-		</div>
-	</nav>
+    <nav class="navbar">
+        <div class="container-navbar">
+            <a href="inicial.php">
+                <img src="img/logo-volei.png" class="logo-img">
+            </a>
+            <ul class="links-navigation">
+                <a href="../View/inicial.php">
+                    <li id="inicial">Início</li>
+                </a>
+                <a href="../View/fundamentos.php">
+                    <li id="link-2">Fundamentos</li>
+                </a>
+                <a href="../View/noticias.php">
+                    <li id="link-3">Notícias</li>
+                </a>
+                <a href="../View/loja.php">
+                    <li id="link-4">Loja</li>
+                </a>
+                <div class="login-area">
+                    <a href="../View/index.php" id="link-5">
+                        <button class="LoginBtn">Login</button>
+                    </a>
+                </div>
+            </ul>
+        </div>
+    </nav>
 </body>
 
 </html>
