@@ -15,8 +15,8 @@ if ($_POST) {
             $usuario = getLogin($email, $senha);
             if (!strcasecmp($usuario['email'], $email) && !strcasecmp($usuario['senha'], $senha)) {
                 $_SESSION['usuario_atual'] = $usuario;
-                // $perfil_butao = $_POST['usuario_atual'];
-                header("Location: http://localhost/GitHub/PI-Volleyball-Center/View/inicial.php");
+                $perfil_butao = $_POST['usuario_atual'];
+                header("Location: http://localhost/../PI-Volleyball-Center/View//inicial.php");
                 
                 
             } else {

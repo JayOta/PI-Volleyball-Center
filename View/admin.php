@@ -46,7 +46,7 @@
                     <button class="links"><i class='bx bx-file-blank'></i>Documentos</button>
                 </div>
             </div>
-            <div class="main-content" id="main-content">
+            <div class="main-content" id="main-content" style="margin-top: 20px;">
                 <section>
                     <div class="mini-aligns">
                         <div class="mini-container">Vendas</div>
