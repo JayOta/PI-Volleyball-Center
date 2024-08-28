@@ -14,9 +14,6 @@ body {
 .main-class {
   display: flex;
 }
-.main-content {
-  margin-left: 0px;
-}
 .sidebar {
   width: 16rem;
   height: 100%;
@@ -130,6 +127,7 @@ section {
   border: #424242;
   border-radius: 2px;
   transition: .3s ease-in-out;
+  justify-content: center;
 }
 .big-aligns {
   display: flex;
