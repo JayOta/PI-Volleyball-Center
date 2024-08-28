@@ -29,9 +29,12 @@
                     <li id="link-4">Loja</li>
                 </a>
                 <div class="login-area">
-                    <a href="../View/index.php" id="link-5">
+                    <?php 
+                        include "../View/perfil.php";
+                    ?>
+                    <!-- <a href="../View/index.php" id="link-5">
                         <button class="LoginBtn">Login</button>
-                    </a>
+                    </a> -->
                 </div>
             </ul>
         </div>

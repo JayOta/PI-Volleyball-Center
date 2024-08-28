@@ -2,31 +2,84 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Segoe UI Semibold", Arial, Helvetica, sans-serif;
 }
 footer {
-  padding-left: 20em;
   background-color: #f9cc02;
   width: 100% auto;
   position: relative;
   bottom: 0;
   left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 5rem;
 }
-li.nav-link a {
+footer ul.col-num1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+footer ul.col-num1 li {
+  text-decoration: none;
+  list-style: none;
+}
+footer ul.col-num1 li a {
   text-decoration: none;
   color: #fff;
+  font-size: 15px;
 }
-p.nav-link {
-  color: #fff;
-}
-li a.icon {
+footer ul li a.icon {
   background: transparent;
 }
-a img {
+.col-num2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.col-num2 p.footer-link-title{
+  color: #fff;
+}
+.col-num2 ul.ul-list {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.col-num2 ul.ul-list li {
+  font-size: 30px;
+  font-weight: 300;
+}
+.col-num2 ul.ul-list li a img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.col-num2 ul.ul-list li { 
+list-style: none;
+}
+.col-num2 
+footer a img {
   transition: 0.4s ease-in;
   border-radius: 13px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   position: relative;
+}
+.bx {
+  font-size: 35px;
+  transition: .3s ease-in-out;
+  border-radius: 6px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 0.7rem;
+}
+.bx:hover {
+  background-color: #fff;
 }
 @media screen and (max-width: 1200px) {
   footer .row {

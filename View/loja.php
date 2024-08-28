@@ -11,14 +11,14 @@
 		integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
 		crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="css/loja.css">
-	<link rel="stylesheet" href="css/navbar.css">
+	<link rel="stylesheet" href="../View/css/perfil-on-navbar.css">
 	<title>Loja</title>
 </head>
 
 <body>
 
 	<?php 
-    	include 'navbar.php';
+    	include '../View/perfil-on-navbar.php';
     ?>
 	<br>
 	
