@@ -36,7 +36,7 @@
                             <details closed>
                                 <summary> <?php
                                             session_start();
-                                            echo $_SESSION['usuario_atual']['nome'] ?? "Not exits";
+                                            echo $_SESSION['usuario_atual']['nome'] ?? "Undefined";
                                             ?></summary>
                                 <ul>
                                     <div class="details-content">
@@ -48,7 +48,7 @@
                                         <li class="li-perfil">Configurações</li>
                                     </div>
                                     <form method="post" action="../Controller/login.php">
-                                        <button type="submit" name="logout">
+                                        <button type="submit" name="logout" style="width: 99.5%; border: none; background: transparent; border-radius: 2px;">
                                             <div class="details-content">
                                                 <i class='bx bx-log-in'></i>
                                                 <li class="li-perfil">Sair</li>

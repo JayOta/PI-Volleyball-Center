@@ -16,16 +16,13 @@ if ($_POST) {
             if (!strcasecmp($usuario['email'], $email) && !strcasecmp($usuario['senha'], $senha)) {
                 $_SESSION['usuario_atual'] = $usuario;
                 $perfil_butao = $_POST['usuario_atual'];
-                header("Location: http://localhost/../PI-Volleyball-Center/View//inicial.php");
-                
-                
+                header("Location: http://localhost/../PI-Volleyball-Center/View//inicial.php");                
             } else {
                 echo "<script>alert('Senha ou Email incorretos!');</script>";
             }
         }
     }
     else {
-        echo "nao foi";
         unset($_SESSION['usuario_atual']);
         header("Location: http://localhost/GitHub/PI-Volleyball-Center/View/index.php");
     }

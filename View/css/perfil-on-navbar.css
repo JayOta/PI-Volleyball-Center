@@ -103,7 +103,7 @@ ul.links-navigation li:hover {
   position: absolute;
   display: flex;
   right: 100%;
-  width: max-content;
+  width: 15rem;
   flex-direction: column;
   background-color: #fff;
   gap: 0;
@@ -115,13 +115,19 @@ ul.links-navigation li:hover {
 }
 .details-content {
   display: flex;
-  width: 100%;
+  width: 116%;
+  margin-right: 2.1rem;
+  border-radius: 1px;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   transition: 0.3s ease-in-out;
   border-bottom: 1px solid #0b0b0b45;
   position: relative;
+  margin-left: 0;
+}
+.perfil details ul button {
+  margin-right: 4.1rem;
 }
 .details-content:last-child {
   border-bottom: none;
@@ -130,8 +136,11 @@ ul.links-navigation li:hover {
   background-color: var(--azul);
 }
 .perfil details ul i {
-  margin-left: 1rem;
   font-size: 22px;
+  margin-left: 1.5rem;
+}
+.perfil details ul i:hover {
+  background-color: transparent;
 }
 .perfil details ul li.li-perfil {
   list-style: none;
