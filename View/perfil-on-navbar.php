@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <form method="post">
+    <form method="post" action="../Controller/login.php">
         <nav class="navbar">
             <div class="container-navbar">
                 <a href="inicial.php">
@@ -41,20 +41,18 @@
                                 <ul>
                                     <div class="details-content">
                                         <i class='bx bx-user'></i>
-                                        <li class="li-perfil">Meu Perfil</li>
+                                        <a href="../View/index.php"><li class="li-perfil">Meu Perfil</li></a>
                                     </div>
                                     <div class="details-content">
                                         <i class='bx bx-cog'></i>
                                         <li class="li-perfil">Configurações</li>
                                     </div>
-                                    <form method="post" action="../Controller/login.php">
                                         <button type="submit" name="logout" style="width: 99.5%; border: none; background: transparent; border-radius: 2px;">
                                             <div class="details-content">
                                                 <i class='bx bx-log-in'></i>
                                                 <li class="li-perfil">Sair</li>
                                             </div>
                                         </button>
-                                    </form>
                                 </ul>
                             </details>
                         </div>
