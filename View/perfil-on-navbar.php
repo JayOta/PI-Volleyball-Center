@@ -17,7 +17,7 @@
                 <a href="inicial.php">
                     <img src="img/logo-volei.png" class="logo-img">
                 </a>
-                <ul class="links-navigation"">
+                <ul class="links-navigation">
                 <a href=" ../View/inicial.php">
                     <li id="inicial">Início</li>
                     </a>
@@ -32,7 +32,7 @@
                     </a>
                     <div class="login-area">
                         <div class="perfil">
-                            <img src="img/logo-volei.png" alt="perfil-img" class="perfil-img">
+                            <img src="img/perfil.png" alt="perfil-img" class="perfil-img">
                             <details closed>
                                 <summary> <?php
                                             session_start();
