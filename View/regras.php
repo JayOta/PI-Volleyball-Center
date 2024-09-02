@@ -50,7 +50,7 @@
 
 		<h3>Equipamentos</h3>
 			<p class="text">Os equipamentos necessários no vôlei são:<br></p>
-			<ul>
+			<ul class="faltas">
 					<li class="text">Camiseta;<br></li>
 					<li class="text">Calção/shorts;<br></li>
 					<li class="text">Meias (líbero deve usar meia diferente);<br></li>
@@ -90,7 +90,7 @@
 		<br>
 
 		<h3>Faltas no vôlei</h3>
-			<ul>
+			<ul class="faltas">
 				<li><p class="text">Dois toques: quando o jogador toca duas vezes na bola ou ela toca em partes de seu corpo (duas vezes, sem continuar o contato).</p></li>
 
 				<li><p class="text">De posição: quando o jogador não ocupa corretamente sua posição na quadra.</p></li>

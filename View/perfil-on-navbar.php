@@ -22,13 +22,13 @@
                     <li id="inicial">Início</li>
                     </a>
                     <a href="../View/fundamentos.php">
-                        <li id="link-2">Fundamentos</li>
+                        <li id="inicial">Fundamentos</li>
                     </a>
                     <a href="../View/noticias.php">
-                        <li id="link-3">Notícias</li>
+                        <li id="inicial">Notícias</li>
                     </a>
                     <a href="../View/loja.php">
-                        <li id="link-4">Loja</li>
+                        <li id="inicial">Loja</li>
                     </a>
                     <div class="login-area">
                         <div class="perfil">

@@ -24,7 +24,7 @@ nav.navbar .container-navbar {
 nav.navbar .container-navbar a {
   text-decoration: none;
 }
-ul {
+.links-navigation {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -33,13 +33,17 @@ ul {
   position: relative;
   top: 8px;
 }
-ul li {
+#inicial{
   display: flex;
   position: relative;
   color: #fff;
   list-style: none;
   font-size: 17.5px;
   cursor: pointer;
+}
+.faltas{
+  list-style: none;
+  font-size: 17.5px;
 }
 .links-navigation li::after {
   content: "";
