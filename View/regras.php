@@ -39,7 +39,7 @@
 	</ul>
 	<h2 style="text-align: center; font-size: 40px; margin-top: 40px;">Regras do voleibol</h2>
 	<div class="card-body">
-		<h3>Área de jogo</h3>
+		<h3 style="color:  #1e90ff;">Área de jogo</h3>
 
 			<p class="text">A área de jogo do vôlei é formada pela quadra de jogo e a zona livre.</p>
 			<p class="text">A quadra de vôlei contém 18 metros de comprimento por 9 metros de largura, sendo retangular e simétrica.</p>
@@ -48,7 +48,7 @@
 		
 		<br>
 
-		<h3>Equipamentos</h3>
+		<h3 style="color:  #1e90ff;">Equipamentos</h3>
 			<p class="text">Os equipamentos necessários no vôlei são:<br></p>
 			<ul class="faltas">
 					<li class="text">Camiseta;<br></li>
@@ -59,7 +59,7 @@
 
 		<br>
 
-		<h3>Quantidade de jogadores no vôlei</h3>
+		<h3 style="color:  #1e90ff;">Quantidade de jogadores no vôlei</h3>
 
 			<p class="text">Uma equipe de vôlei tem 12 jogadores, sendo que entram em quadra 6 jogadores. Além dos competidores, o time é formado por outros profissionais:</p>
 			<p class="text">comissão técnica: um técnico/treinador e até dois assistentes técnicos<br></p>
@@ -70,7 +70,7 @@
 
 		<br>
 
-		<h3>Pontuação no vôlei</h3>
+		<h3 style="color:  #1e90ff;">Pontuação no vôlei</h3>
 
 			<p class="text">O jogo de vôlei é formado por sets. A vitória de um set será definida quando uma das equipes atingir 25 pontos.</p>
 			<p class="text">Vence a partida a equipe que ganhar 3 sets. Caso ocorra um empate de 24 a 24 pontos, vence o time que conseguir uma vantagem de 2 pontos primeiro.</p>
@@ -79,7 +79,7 @@
 		
 		<br>
 
-		<h3>Toques no vôlei</h3>
+		<h3 style="color:  #1e90ff;">Toques no vôlei</h3>
 
 			<p class="text">Os toques são quaisquer ações de contato realizadas por um jogador com a bola em quadra.</p>
 
@@ -89,7 +89,7 @@
 
 		<br>
 
-		<h3>Faltas no vôlei</h3>
+		<h3 style="color:  #1e90ff;">Faltas no vôlei</h3>
 			<ul class="faltas">
 				<li><p class="text">Dois toques: quando o jogador toca duas vezes na bola ou ela toca em partes de seu corpo (duas vezes, sem continuar o contato).</p></li>
 
@@ -108,7 +108,7 @@
 
 		<br>
 
-		<h3>Evolução das regras de vôlei</h3>
+		<h3 style="color:  #1e90ff;">Evolução das regras de vôlei</h3>
 
 			<p class="text">A atualização das regras é fundamental para que a prática esportiva se mantenha atrativa, tanto para jogadores quanto para os espectadores e, consequentemente, para o setor comercial e os diretores das equipes profissionais.</p>
 

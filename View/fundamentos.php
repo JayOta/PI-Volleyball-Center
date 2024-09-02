@@ -57,7 +57,7 @@
 			<div class="card" style="max-width: 35rem; height: 20rem; display: flex; flex-direction: column;">
 				<img src="img/saque-baixo.jpeg" class="card-img-top" alt="imagem de como é feito passo a passo o saque por baixo no vôlei." style="width: 550px;">
 				<br>
-				<p class="card-text" style="font-size: 20px; margin-left: 20px;"><strong>Saque por baixo:</strong></p>
+				<p class="card-text" style="font-size: 20px; margin-left: 20px; color:  #1e90ff;"><strong>Saque por baixo:</strong></p>
 			</div>
 			<p style="display: flex; width: 300px; margin: 20px;">Na execução do saque por baixo, o jogador posiciona-se de lado para a rede, com os pés afastados na largura dos ombros e o peso do corpo distribuído uniformemente. O braço de saque é mantido estendido ao lado do corpo, com a mão próxima à altura da cintura segurando a bola.</p>
 		</div>
@@ -100,7 +100,7 @@ Muitos jogadores iniciantes começam desenvolvendo o saque por baixo antes de pr
 			<div class="card" style="max-width: 35rem; height: 350px; display: flex; flex-direction: column;">
 				<img src="img/saque-cima.jpg" class="card-img-top" alt="imagem de como é feito passo a passo o saque por baixo no vôlei." style="width: 550px; height: 200px; margin-top: 60px;">
 				<br>
-				<p class="cardText" style=" font-size: 20px; margin-left: 20px;"><strong>Saque por cima:</strong></p>
+				<p class="cardText" style=" font-size: 20px; margin-left: 20px;color:  #1e90ff;"><strong>Saque por cima:</strong></p>
 			</div>
 			<p style="display: flex; width: 270px; margin: 20px;">A execução técnica do saque por cima começa com o jogador adotando uma posição inicial adequada, com os pés afastados na largura dos ombros, joelhos levemente flexionados e o tronco inclinado levemente à frente. Nesse momento, o braço de saque é levantado acima da cabeça, com a mão posicionada atrás da bola, pronta para o movimento de contato.</p>
 		</div>
@@ -118,7 +118,7 @@ Muitos jogadores iniciantes começam desenvolvendo o saque por baixo antes de pr
 		<div class="align-text" style="display: flex; flex-direction: row; position: relative;">
 			<div class="card" style="max-width: 35rem; display: flex; flex-direction: column;">
 				<img src="img/saque-flutuante.png" class="card-img-top" alt="imagem de como é feito passo a passo o saque por baixo no vôlei." style="width: 550px; margin-top: 20px;">
-				<p class="card-text" style="font-size: 20px; margin-top: 20px; margin-left: 20px;"><strong>Saque flutuante:</strong></p>
+				<p class="card-text" style="font-size: 20px; margin-top: 20px; margin-left: 20px;color:  #1e90ff;"><strong>Saque flutuante:</strong></p>
 			</div>
 			<p style="display: flex; width: 300px; margin: 20px;">O saque flutuante é uma variação do saque por cima que visa imprimir um efeito impreciso e imprevisível na trajetória da bola, dificultando a recepção do time adversário.
 
@@ -144,7 +144,7 @@ Essa execução mais sutil e delicada faz com que a bola ganhe um efeito flutuan
 			<div class="card" style="width: 34rem; display: flex; flex-direction: column;">
 				<img src="img/saque-viagem.jpg" class="card-img-top" alt="imagem de como é feito passo a passo o saque por baixo no vôlei." style="
 				height: 310px; width: 400px; position: relative; left: 100px;">
-				<p class="card-text" style="font-size: 20px; margin-left: 20px;"><strong>Saque viagem:</strong></p> <br>
+				<p class="card-text" style="font-size: 20px; margin-left: 20px; color:  #1e90ff;"><strong>Saque viagem:</strong></p> <br>
 			</div>
 			<p style="display: flex; width: 300px; margin: 20px;">O saque viagem é uma variação do saque por cima que busca imprimir um efeito lateral na trajetória da bola, fazendo com que ela "viaje" de forma inesperada para o adversário.
 

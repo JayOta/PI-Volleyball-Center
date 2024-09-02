@@ -70,7 +70,7 @@
 	</ul>
 
 	<div class="card-body">
-		<h1>Origem do Voleibol</h1>
+		<h1 style="color:  #1e90ff;">Origem do Voleibol</h1>
 
 		<p class="text">William George Morgan, professor e diretor de Educação Física na Associação Cristã de Moços (ACM), idealizou um jogo em que as probabilidades dos participantes se machucarem, em detrimento de contato físico, fossem baixas. Outro fator importante - e pensado nos jogadores mais velhos - era que o esporte não fosse fisicamente tão exigente.</p>
 		<p class="text">Na época, o basquetebol estava na moda. Havia sido criado 4 anos antes, em 1891, também por um professor de educação física da Associação Cristã dos Moços.</p>
@@ -81,7 +81,7 @@
 		
 		<br><br>
 
-		<h1>A chegada do vôlei em vários países do mundo</h1>
+		<h1 style="color:  #1e90ff;">A chegada do vôlei em vários países do mundo</h1>
 
 		<p class="text">Dos Estados Unidos da América, o vôlei seguiu para o Canadá, chegando à América do Sul em 1910. O primeiro país sul-americano a conhecê-lo foi o Peru, e em 1915 foi a vez do Brasil. Em 1951, foi no Brasil que o primeiro campeonato sul-americano de vôlei foi disputado.</p>
 		<p class="text">Em 20 de abril de 1947 foi fundada a Federação Internacional de Voleibol (FIVB), que teve como primeiro presidente Paul Libaud. Quando fundada, tinha 14 membros: Brasil, Bélgica, Egito, Estados Unidos, França, Holanda, Hungria, Itália, Iugoslávia, Polônia, Portugal, Romênia, Checoslováquia e Uruguai.
@@ -92,7 +92,7 @@
 
 		<br><br>
 
-		<h1>Os 10 melhores jogadores brasileiros de vôlei de todos os tempos</h1> <br>
+		<h1 style="color:  #1e90ff;">Os 10 melhores jogadores brasileiros de vôlei de todos os tempos</h1> <br>
 
 		<div class="jogador" style="display: flex; flex-direction: row; box-shadow: 0px 0px 4px #696969; border-radius: 6px;"> 
 			<img class="img" src="img/giba-1.jpg" alt="Jogador 1" style="border: none; border-radius: 4px; box-shadow: 0px 0px 4px #696969; margin: 20px;"> <!-- Colocar a imagem do jogador ao lado direito dos textos -->

@@ -42,7 +42,6 @@ nav.navbar .container-navbar a {
   cursor: pointer;
 }
 .faltas{
-  list-style: none;
   font-size: 17.5px;
 }
 .links-navigation li::after {
@@ -157,7 +156,9 @@ ul.links-navigation li:hover {
 .perfil details ul li.li-perfil::after {
   background-color: transparent;
 }
-
+.text{
+  margin-left: 20px;
+}
 @media screen and (max-width: 1965px) {
   .links-navigation a#link-5 button {
     right: 0em;
