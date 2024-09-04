@@ -33,7 +33,11 @@
 
 
 	<div class="meioDosFundamentos">
-		<div class="espacoentrediv">
+		<?php 
+		 	for($i = 0; $i < 10; $i++){
+				
+		?>
+		<div class="espacoentrediv" >
 			<h2 class="text-align-center">SAQUES</h2>
 			<div class="card">
 				<img src="imgfund/saque-baixo.jpeg" class="card-img-top" alt="imagem de como é feito o passo a passo do saque por baixo no vôlei.">
@@ -41,15 +45,16 @@
 			<br>
 			<div class="align-text">
 				<p><strong>Saque por baixo:</strong></p>
-				<p class="fundamentosaolado">Na execução do saque por baixo, o jogador posiciona-se de lado para a rede, com os pés afastados na largura dos ombros e o peso do corpo distribuído uniformemente. O braço de saque é mantido estendido ao lado do corpo, com a mão próxima à altura da cintura segurando a bola. Para sacar, o jogador flexiona levemente os joelhos e o tronco, realizando um movimento de abaixamento do braço de saque. Nesse momento, a bola é arremessada por baixo da cintura em direção à rede, com uma trajetória relativamente tensa e controlada.
-			Apesar de suas limitações, o saque por baixo ainda é uma técnica válida no voleibol, especialmente em situações nas quais o jogador precisa de mais controle sobre a bola, como em treinos ou jogos com adversários de nível inferior.
-			Muitos jogadores iniciantes começam desenvolvendo o saque por baixo antes de progredir para técnicas mais avançadas, como o saque por cima. O importante é que o atleta domine essa habilidade básica antes de evoluir para opções mais complexas e eficazes.</p>
+				<p class="fundamentosaolado"></p>
 			</div>
 			<p class="restotexto">
 			</p>
 			<br>
 		</div>
-		<div class="espacoentrediv">
+			<?php 
+				}
+			?>
+		<!-- <div class="espacoentrediv">
 			<div class="card">
 				<img src="imgfund/saque-cima.jpg" class="card-img-top" alt="imagem de como é feito o passo a passo do saque por cima no vôlei.">
 			</div>
@@ -78,8 +83,8 @@
 			<p class="restotexto">
 			</p>
 			<br>
-		</div>
-		<div class="espacoentrediv">
+		</div> -->
+		<!-- <div class="espacoentrediv">
 			<h2 class="text-align-center">RECEPÇÃO</h2>
 			<div class="card">
 				<img src="imgfund/levantamento.jpg" class="card-img-top" alt="imagem de como é feito o passo a passo do levantamento no vôlei.">
@@ -124,7 +129,7 @@
 			<p class="restotexto">
 			</p>
 			<br>
-		</div>
+		</div> -->
 	</div>
 
 		
