@@ -6,3 +6,9 @@
 a#link-4 {
   color: #7fb7f0;
 }
+.row {
+  display: flex;
+}
+.card {
+  margin-top: 2.5rem;
+}

@@ -9,7 +9,7 @@ if ($_POST) {
         $senha = $_POST['senha'];
 
         $adminEmail = 'admin@admin.com';
-        $adminSenha = '10';
+        $adminSenha = '10' ?? empty($adminSenha);
     }
     if (isset($_POST['login'])) {
         if (strlen($_POST['email']) == 0 || $_POST['email'] == '') {

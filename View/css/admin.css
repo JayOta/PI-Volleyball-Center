@@ -21,7 +21,7 @@ body {
   box-sizing: border-box;
   backdrop-filter: blur(10px);
   overflow-x: hidden;
-  transition: 0.5s ease-in;
+  transition: 0.8s ease-in-out;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -78,9 +78,8 @@ button#openSidebarBtn {
   padding: 5px 10px;
   height: 30px;
 }
-button#openSidebarBtn:hover {
-  border-radius: 30%;
-  background: var(--azul-cor);
+button#openSidebarBtn .bx:hover {
+  background: #0ea5e9;
 }
 button#closeSidebarBtn {
   display: flex;
@@ -91,13 +90,17 @@ button#closeSidebarBtn {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s ease-in;
-  padding: 5px 10px;
-}
-button#closeSidebarBtn:hover {
-  border-radius: 30%;
-  background: #0284c7;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
 }
 
+button#closeSidebarBtn .bx {
+  font-size: 22px;
+}
+button#closeSidebarBtn .bx:hover {
+  background: #0d91ce;
+  opacity: 0.8;
+}
 
 /* SideBar - fim */
 

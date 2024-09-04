@@ -62,17 +62,17 @@
       </p>
       <ul class="ul-list">
         <li class="li-list">
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="icon text-decoration-none">
+          <a href="https://www.facebook.com/volleyball_center" target="_blank" rel="noopener noreferrer" class="icon text-decoration-none">
             <i class='bx bxl-facebook'></i>
           </a>
         </li>
         <li class="li-list">
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="icon text-decoration-none">
+          <a href="https://www.instagram.com/volleyball_center" target="_blank" rel="noopener noreferrer" class="icon text-decoration-none">
             <i class='bx bxl-instagram'></i>
           </a>
         </li>
         <li class="li-list">
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="icon text-decoration-none">
+          <a href="https://twitter.com/volleyball_center" target="_blank" rel="noopener noreferrer" class="icon text-decoration-none">
             <i class='bx bxl-twitter'></i>
           </a>
         </li>

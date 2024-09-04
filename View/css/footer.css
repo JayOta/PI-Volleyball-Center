@@ -78,7 +78,7 @@ footer a img {
   position: relative;
   right: 0.7rem;
 }
-.bx:hover {
+.bxl-facebook:hover, .bxl-instagram:hover, .bxl-twitter:hover {
   background-color: #fff;
 }
 @media screen and (max-width: 1200px) {

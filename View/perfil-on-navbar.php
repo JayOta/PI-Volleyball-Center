@@ -34,7 +34,7 @@
                         <div class="perfil">
                             <img src="img/perfil.png" alt="perfil-img" class="perfil-img">
                             <details closed>
-                                <summary> <?php
+                                <summary style="color: #fff; display: flex; flex-direction: row;"> <?php
                                             session_start();
                                             echo $_SESSION['usuario_atual']['nome'] ?? "Undefined";
                                             ?></summary>

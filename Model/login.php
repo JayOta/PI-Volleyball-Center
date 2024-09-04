@@ -14,7 +14,7 @@ function getLogin($email, $senha)
             $email = $conn->quote($_POST['email']);
             $senha = $conn->quote($_POST['senha']);
 
-            $stmt = $conn->prepare("SELECT * FROM `clientes` WHERE `email` = $email");
+            $stmt = $conn->prepare("SELECT * FROM `usuarios` WHERE `email` = $email");
             $stmt->execute();
 
             $usuario = $stmt->fetchAll()[0]; // usuario = [1], email = [2], senha = [3];

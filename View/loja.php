@@ -1,3 +1,8 @@
+<?php
+require '../Controller/produto_cadastro.php';
+$getAllProdutos = getAllProdutos();
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -11,39 +16,44 @@
 		integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
 		crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="css/loja.css">
+	<link rel="stylesheet" href="css/navbar.css">
 	<link rel="stylesheet" href="../View/css/perfil-on-navbar.css">
 	<title>Loja</title>
 </head>
 
 <body>
 
-	<?php 
-    	include '../View/perfil-on-navbar.php';
-    ?>
+	<?php
+	include '../View/perfil-on-navbar.php';
+	?>
 	<br>
-	
+
 	<form class="d-flex position-relative" role="search" style="margin-left: 1115px; transform: translateY(30px);">
-        <input class="input-search form-control me-2" type="search" placeholder="Pesquise o produto" aria-label="Search" style="width: 360px;">
-        <button class="btn btn-outline-success" type="submit">Pesquisar</button>
-      </form>
+		<input class="input-search form-control me-2" type="search" placeholder="Pesquise o produto" aria-label="Search" style="width: 360px;">
+		<button class="btn btn-outline-success" type="submit">Pesquisar</button>
+	</form>
 
 	<br><br><br><br><br>
-	<form>
+	<form method="post" action="../Controller/produto_cadastro.php">
 		<main>
 			<div class="container">
 				<h2 style="text-align: center;">Catálogo de produtos</h2>
 				<br><br>
 				<div class="row">
-					<div class="col-md-3">
-						<div class="card">
-							<img src="img/manguito.png" class="card-img-top" alt="Produto 1" style="cursor: pointer;">
-							<div class="card-body">
-								<h5 class="card-title">Manguito</h5>
-								<h3 class="card-text">R$70,00</h3>
-								<a href="manguito-page.php" class="btn btn-success card-button">Comprar</a>
+					<?php
+						for ($i = 0; $i < count($getAllProdutos); $i++) { ?>
+					<div class="col-md-3">	
+							<div class="card">
+								<img src="img/manguito.png" class="card-img-top" alt="Produto 1" style="cursor: pointer;">
+								<div class="card-body">
+									<h5 class="card-title"><?php echo $getAllProdutos[$i][1]; ?><!--Manguito--></h5>
+									<h3 class="card-text">R$<?php echo $getAllProdutos[$i][3]; ?></h3>
+									<a href="manguito-page.php" class="btn btn-success card-button">Comprar</a>
+								</div>
 							</div>
-						</div>
 					</div>
+				<?php } ?>
+				<!-- </div>
 					<div class="col-md-3">
 						<div class="card">
 							<img src="img/joelheira.png" class="card-img-top" alt="Produto 2" style="cursor: pointer;">
@@ -66,7 +76,7 @@
 					</div>
 					<div class="col-md-3">
 						<div class="card">
-							<img src="img/calca-compressao.png" class="card-img-top" alt="Produto 4" style="cursor: pointer;" >
+							<img src="img/calca-compressao.png" class="card-img-top" alt="Produto 4" style="cursor: pointer;">
 							<div class="card-body">
 								<h5 class="card-title">Calça de compressão</h5>
 								<h3 class="card-text">R$115,00</h3>
@@ -74,7 +84,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				 </div>
 			</div>
 
 			<div class="container">
@@ -138,7 +148,7 @@
 					</div>
 					<div class="col-md-3">
 						<div class="card">
-							<img src="img/meia-cano-curto.png" class="card-img-top" alt="Produto 10" style="cursor: pointer;"> 
+							<img src="img/meia-cano-curto.png" class="card-img-top" alt="Produto 10" style="cursor: pointer;">
 							<div class="card-body">
 								<h5 class="card-title">Meias Cano Curto </h5>
 								<h3 class="card-text">R$59,00</h3>
@@ -213,14 +223,14 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</main>
 	</form>
 	<br><br><br><br><br><br><br>
 
-	<?php 
-    	include 'footer.php';
-  	?>
+	<?php
+	include 'footer.php';
+	?>
 </body>
 
 </html>

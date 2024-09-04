@@ -90,17 +90,16 @@ ul.links-navigation li:hover {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  position: relative;
+  transition: .4s ease-in-out;
 }
 .perfil img.perfil-img {
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
 }
 .perfil details {
   position: relative;
   top: 15px;
-}
-.perfil detail summary {
-  font-size: 22px;
 }
 .perfil details ul {
   position: absolute;
@@ -165,7 +164,7 @@ ul.links-navigation li:hover {
   }
 }
 @media screen and (max-width: 1765px) {
-  .links-navigation a#link-5 button {
+  .links-navigation a#link-5 button, .perfil {
     right: 8em;
   }
 }
@@ -174,7 +173,7 @@ ul.links-navigation li:hover {
     width: 75px;
     max-height: 71px;
   }
-  .links-navigation a#link-5 button {
+  .links-navigation a#link-5 button, .perfil {
     right: 18em;
   }
 }
@@ -183,7 +182,7 @@ ul.links-navigation li:hover {
     width: 70px;
     max-height: 66px;
   }
-  .links-navigation a#link-5 button {
+  .links-navigation a#link-5 button, .perfil {
     right: 24em;
     width: 110px;
     height: 50px;
@@ -197,7 +196,7 @@ ul.links-navigation li:hover {
     width: 70px;
     max-height: 66px;
   }
-  .links-navigation a#link-5 button {
+  .links-navigation a#link-5 button, .perfil {
     right: 30em;
     width: 110px;
     height: 50px;
@@ -211,7 +210,7 @@ ul.links-navigation li:hover {
     width: 70px;
     height: 65px;
   }
-  .links-navigation a#link-5 button {
+  .links-navigation a#link-5 button, .perfil {
     right: 38em;
     width: 105px;
     height: 45px;
