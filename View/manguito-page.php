@@ -21,7 +21,7 @@
       href="./images/favicon-32x32.png"
     />
     <?php 
-    include 'navbar.php';
+          include '../View/perfil-on-navbar.php';
     ?>
     <title>Produto Page</title>
 <link rel="stylesheet" href="css/navbar.css">

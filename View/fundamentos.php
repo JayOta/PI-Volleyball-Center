@@ -11,7 +11,7 @@
 <body>
 	
 	<?php 
-		include 'navbar.php';
+		include '../View/perfil-on-navbar.php';
 	?>
 
 	<ul class="nav nav-tabs d-flex justify-content-center" style="position: relative; margin-top: 20px;">
