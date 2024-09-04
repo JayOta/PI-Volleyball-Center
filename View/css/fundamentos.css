@@ -41,8 +41,13 @@ body {
   margin-left: 30px;
   margin-right: 30px;
   text-align: justify;
+  font-weight: bold;
 }
 
+
+.fundamentosalado{
+  color: #777777;
+}
 
 .card{
   width: 550px; 
