@@ -15,13 +15,11 @@
 <body>
 	<?php
 		include '../View/perfil-on-navbar.php';
+		// $noticias = buscarnoticias();
 	?>
 
 	<br>
 	<br>
-
-
-
 		<div class="blue-back">
 			<div class="section">
 				<section style="width: fit-content;">
