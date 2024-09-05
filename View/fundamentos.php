@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<?php 
+	require "../Controller/fundamentos.php";
+
+	$fundamentos = buscarfundamentos();
+?>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -34,18 +39,32 @@
 
 	<div class="meioDosFundamentos">
 		<?php 
-		 	for($i = 0; $i < 10; $i++){
+			// print_r($fundamentos);
+			// echo $fundamentos['titulo_fundamento'];
+			// echo count($fundamentos);
+		?>
+		<?php 
+		 	for($i = 0; $i < count($fundamentos); $i++){
 				
 		?>
-		<div class="espacoentrediv" >
-			<h2 class="text-align-center">SAQUES</h2>
+		<div class="espacoentrediv">
 			<div class="card">
-				<img src="imgfund/saque-baixo.jpeg" class="card-img-top" alt="imagem de como é feito o passo a passo do saque por baixo no vôlei.">
+				<img src="<?php 
+				$imagem = base64_encode($fundamentos[$i]['imagem_fundamento']); 
+				echo "data:image/jpeg;base64," . $imagem;
+				?>" class="card-img-top" alt="imagem de como é feito o passo a passo do saque por baixo no vôlei.">
+				
 			</div>
 			<br>
-			<div class="align-text">
-				<p><strong>Saque por baixo:</strong></p>
-				<p class="fundamentosaolado"></p>
+			<div>
+				<p class="align-text"><?php 
+					echo $fundamentos[$i]['titulo_fundamento'];
+				?></p>
+				<p class="fundamentosaolado">
+				<?php 
+				echo $fundamentos[$i]['descricao'];
+				?>
+				</p>
 			</div>
 			<p class="restotexto">
 			</p>
