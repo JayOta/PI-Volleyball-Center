@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 03/07/2024 às 17:33
+-- Tempo de geração: 09/09/2024 às 15:45
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -41,7 +41,9 @@ CREATE TABLE `clientes` (
 --
 
 INSERT INTO `clientes` (`cliente_id`, `nome`, `email`, `senha`, `endereco`, `cpf`) VALUES
-(15, 'teste', 'teste@teste.com', 12345, '', 0);
+(26, 'teste', 'teste@teste.com', 123, '', 0),
+(29, 'João ', 'joao@gmail.com', 123, '', 0),
+(30, 'eu', 'eu@gmail.com', 321, '', 0);
 
 -- --------------------------------------------------------
 
@@ -80,11 +82,25 @@ CREATE TABLE `produtos` (
   `produto_id` int(11) NOT NULL,
   `nome` varchar(255) NOT NULL,
   `descricao` varchar(255) NOT NULL,
-  `preco` int(11) NOT NULL,
+  `preco` float NOT NULL,
   `qtd_estoque` int(11) NOT NULL,
   `tamanho` varchar(255) NOT NULL,
   `cor` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `produtos`
+--
+
+INSERT INTO `produtos` (`produto_id`, `nome`, `descricao`, `preco`, `qtd_estoque`, `tamanho`, `cor`) VALUES
+(1, 'Manguito', 'Este manguito é o companheiro perfeito para uso no vôlei. Apresentando um\r\ntecido de Poliamida, que resistirá ao uso prolongado durante os jogos.', 52, 1, 'Grande', 'Preto'),
+(2, 'Joelheira', 'Estas joelheiras serão perfeitas para você se proteger após cair no chão em uma partida de vôlei, com um ótimo tecido que possui uma parte protetora de joelhoes.', 27.8, 0, 'Medio', 'Preta'),
+(3, 'Bola Penalty VP5000M', 'Colocar..', 86.7, 0, 'Normal', 'Azul e Amarelo'),
+(5, 'Calça de compressão', 'Colocar..', 115, 0, 'Grande', 'Preta'),
+(7, 'Meias Nike', 'Colocar..', 60, 0, 'Cano Alto', 'Preta, Cinza, Branca'),
+(8, 'Tênis Nike Air Max Volêi', 'Colocar..', 315, 0, '41', 'Branco'),
+(9, 'Faixa Branca Nike', '', 69.9, 0, '', ''),
+(10, 'Camiseta Térmica Preta', '', 79, 0, '', '');
 
 -- --------------------------------------------------------
 
@@ -94,10 +110,20 @@ CREATE TABLE `produtos` (
 
 CREATE TABLE `usuarios` (
   `usuario_id` int(11) NOT NULL,
-  `email` varchar(150) NOT NULL UNIQUE,
-  `senha` int(16) NOT NULL UNIQUE,
+  `nome` varchar(255) NOT NULL,
+  `email` varchar(150) NOT NULL,
+  `senha` int(16) NOT NULL,
   `cliente_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `usuarios`
+--
+
+INSERT INTO `usuarios` (`usuario_id`, `nome`, `email`, `senha`, `cliente_id`) VALUES
+(3, 'teste', 'teste@teste.com', 123, 26),
+(6, 'João ', 'joao@gmail.com', 123, 29),
+(7, 'eu', 'eu@gmail.com', 321, 30);
 
 --
 -- Índices para tabelas despejadas
@@ -145,7 +171,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de tabela `clientes`
 --
 ALTER TABLE `clientes`
-  MODIFY `cliente_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `cliente_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT de tabela `itens_pedidos`
@@ -163,13 +189,13 @@ ALTER TABLE `pedidos`
 -- AUTO_INCREMENT de tabela `produtos`
 --
 ALTER TABLE `produtos`
-  MODIFY `produto_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `produto_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `usuario_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `usuario_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Restrições para tabelas despejadas
