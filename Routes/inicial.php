@@ -19,7 +19,7 @@
 <body>
 
   <?php
-  include '../View/perfil-on-navbar.php';
+  include '../Routes/perfil-on-navbar.php';
   ?>
 
   <main>

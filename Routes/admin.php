@@ -13,14 +13,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Admin Page</title>
-    <link rel="stylesheet" href="../View/css/navbar.css">
-    <link rel="stylesheet" href="../View/css/admin.css">
-    <link rel="stylesheet" href="../View/css/perfil-on-navbar.css">
+    <link rel="stylesheet" href="../Routes/css/navbar.css">
+    <link rel="stylesheet" href="../Routes/css/admin.css">
+    <link rel="stylesheet" href="../Routes/css/perfil-on-navbar.css">
 </head>
 
 <body>
 
-    <?php include '../View/perfil-on-navbar.php'; ?>
+    <?php include '../Routes/perfil-on-navbar.php'; ?>
     <main class="main-class">
         <div class="separator">
             <button id="openSidebarBtn" onclick="openSidebar()" style="display:none;"><i class='bx bx-menu'></i></button>

@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Navbar</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="../View/css/perfil-on-navbar.css">
+    <link rel="stylesheet" href="../Routes/css/perfil-on-navbar.css">
 </head>
 
 <body>
@@ -18,16 +18,16 @@
                     <img src="img/logo-volei.png" class="logo-img">
                 </a>
                 <ul class="links-navigation">
-                <a href=" ../View/inicial.php">
+                <a href=" ../Routes/inicial.php">
                     <li id="inicial">Início</li>
                     </a>
-                    <a href="../View/fundamentos.php">
+                    <a href="../Routes/fundamentos.php">
                         <li id="inicial">Fundamentos</li>
                     </a>
-                    <a href="../View/noticias.php">
+                    <a href="../Routes/noticias.php">
                         <li id="inicial">Notícias</li>
                     </a>
-                    <a href="../View/loja.php">
+                    <a href="../Routes/loja.php">
                         <li id="inicial">Loja</li>
                     </a>
                     <div class="login-area">
@@ -41,7 +41,7 @@
                                 <ul>
                                     <div class="details-content">
                                         <i class='bx bx-user'></i>
-                                        <a href="../View/index.php"><li class="li-perfil">Meu Perfil</li></a>
+                                        <a href="../Routes/index.php"><li class="li-perfil">Meu Perfil</li></a>
                                     </div>
                                     <div class="details-content">
                                         <i class='bx bx-cog'></i>

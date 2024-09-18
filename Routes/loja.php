@@ -17,14 +17,14 @@ $getAllProdutos = getAllProdutos();
 		crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="css/loja.css">
 	<link rel="stylesheet" href="css/navbar.css">
-	<link rel="stylesheet" href="../View/css/perfil-on-navbar.css">
+	<link rel="stylesheet" href="../Routes/css/perfil-on-navbar.css">
 	<title>Loja</title>
 </head>
 
 <body>
 
 	<?php
-	include '../View/perfil-on-navbar.php';
+	include '../Routes/perfil-on-navbar.php';
 	?>
 	<br>
 

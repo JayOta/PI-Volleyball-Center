@@ -41,7 +41,7 @@
                 <br><br>
 
                 <div class="card-footer">
-                    <a href="../View/cadastro.php" style="text-shadow: 0px 0px 3px #302f2f;">Não tem login? <span id="cadastrar-se">Cadastrar-se</span></a>
+                    <a href="../Routes/cadastro.php" style="text-shadow: 0px 0px 3px #302f2f;">Não tem login? <span id="cadastrar-se">Cadastrar-se</span></a>
                     <br>
                     <a href="inicial.php" class="links" id="para-inicial" style="display: none;">Ir à página inicial</a>
                 </div>

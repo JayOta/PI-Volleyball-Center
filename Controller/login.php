@@ -20,13 +20,13 @@ if ($_POST) {
             $usuario = getLogin($email, $senha);
             if (strcasecmp($email, $adminEmail) == 0 && strcasecmp($senha, $adminSenha) == 0) {
                 $_SESSION['usuario_atual'] = ['nome' => 'Admin','email' => $adminEmail, 'senha' => $adminSenha];
-                header("Location: http://localhost/GitHub/PI-Volleyball-Center/View/admin.php");
+                header("Location: http://localhost/GitHub/PI-Volleyball-Center/Routes/admin.php");
                 exit; // Certifica-se de que o script não continue após o redirecionamento
             }
             if (!strcasecmp($usuario['email'], $email) && !strcasecmp($usuario['senha'], $senha)) {
                 $_SESSION['usuario_atual'] = $usuario;
                 $perfil_butao = $_POST['usuario_atual'];
-                header("Location: http://localhost/GitHub/PI-Volleyball-Center/View/inicial.php");
+                header("Location: http://localhost/GitHub/PI-Volleyball-Center/Routes/inicial.php");
                 exit; // Certifica-se de que o script não continue após o redirecionamento
             } else {
                 echo "<script>alert('Senha ou Email incorretos!');</script>";
@@ -35,7 +35,7 @@ if ($_POST) {
     } else {
         session_unset();
         session_destroy();
-        header("Location: http://localhost/GitHub/PI-Volleyball-Center/View/index.php");
+        header("Location: http://localhost/GitHub/PI-Volleyball-Center/Routes/index.php");
     }
 }
 

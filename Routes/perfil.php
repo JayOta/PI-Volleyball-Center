@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="../View/css/navbar.css">
-    <link rel="stylesheet" href="../View/css/perfil-on-navbar.css">
+    <link rel="stylesheet" href="../Routes/css/navbar.css">
+    <link rel="stylesheet" href="../Routes/css/perfil-on-navbar.css">
     <title>Document</title>
 </head>
 
