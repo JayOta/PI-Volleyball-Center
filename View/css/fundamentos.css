@@ -1,21 +1,10 @@
-* {
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
   overflow-x: hidden;
-}
-
-.meioDosFundamentos{
-  margin-top: 50px;
-  border-radius: 20px;
-  box-shadow: 0px 0px 15px rgba(189, 171, 171, 0.507);
-  animation: appear linear;
-  height: 180rem;
-  width: 70rem;
-  position: relative;
-  left: 420px;
 }
 
 .nav-link {
@@ -25,28 +14,43 @@ body {
   text-decoration: none;
 }
 
-.espacoentrediv{
-  margin-bottom: 20px;
+.meioDosFundamentos{
+  margin-top: 50px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px rgba(189, 171, 171, 0.507);
+  height: 180rem;
+  width: 70rem;
+  position: relative;
+  left: 420px;
 }
 
 .text-align-center{
-  font-size: 50px; 
+  
   position: relative;
   left: 30px; 
   display: flex;
-  font-family: 'Segoe UI', sans-serif;
+ 
 }
 
 .align-text{
   margin-left: 30px;
   margin-right: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
   text-align: justify;
-  font-weight: bold;
+  color: #495057;
 }
 
 
-.fundamentosalado{
-  color: #777777;
+
+
+.fundamentosaolado{
+  text-align: justify;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  
 }
 
 .card{
@@ -70,4 +74,4 @@ body {
   max-width: 60rem; 
   margin-top: 15px;
 }
-
+ 
