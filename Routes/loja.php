@@ -41,19 +41,22 @@ $getAllProdutos = getAllProdutos();
 				<br><br>
 				<div class="row">
 					<?php
-						for ($i = 0; $i < count($getAllProdutos); $i++) { ?>
-					<div class="col-md-3">	
-							<div class="card">
-								<img src="img/manguito.png" class="card-img-top" alt="Produto 1" style="cursor: pointer;">
-								<div class="card-body">
-									<h5 class="card-title"><?php echo $getAllProdutos[$i][1]; ?><!--Manguito--></h5>
-									<h3 class="card-text">R$<?php echo $getAllProdutos[$i][3]; ?></h3>
-									<a href="manguito-page.php" class="btn btn-success card-button">Comprar</a>
+					for ($i = 0; $i < count($getAllProdutos); $i++) { ?>
+						<div class="col-md-3">
+							<a href="manguito-page.php" style="text-decoration: none; list-style: none; color: #0b0b0b;">
+								<div class="card">
+								<a href="manguito-page.php" style="text-decoration: none; list-style: none; color: #0b0b0b;">
+									<img src="img/manguito.png" class="card-img-top" alt="Produto 1" style="cursor: pointer;">
+								</a>
+									<div class="card-body">
+										<h5 class="card-title"><?php echo $getAllProdutos[$i][1]; ?><!--Manguito--></h5>
+										<h3 class="card-text">R$<?php echo number_format($getAllProdutos[$i][3], 2, ',', ''); ?></h3>
+										<a href="manguito-page.php" class="btn btn-success card-button">Comprar</a>
+									</div>
 								</div>
-							</div>
-					</div>
-				<?php } ?>
-				<!-- </div>
+						</div>
+					<?php } ?>
+					<!-- </div>
 					<div class="col-md-3">
 						<div class="card">
 							<img src="img/joelheira.png" class="card-img-top" alt="Produto 2" style="cursor: pointer;">
