@@ -52,7 +52,7 @@ nav.navbar .container-navbar a {
   top: 100%;
   width: 0;
   height: 2px;
-  background: #fff;
+  
   transition: 0.4s ease-in-out;
 }
 ul.links-navigation li:hover::after {
