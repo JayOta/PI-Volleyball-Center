@@ -17,7 +17,7 @@ function getLogin($email, $senha)
             $stmt = $conn->prepare("SELECT * FROM `usuarios` WHERE `email` = $email");
             $stmt->execute();
 
-            $usuario = $stmt->fetchAll()[0]; // usuario = [1], email = [2], senha = [3];
+            $usuario = $stmt->fetchAll(PDO::FETCH_ASSOC)[0]; // usuario = [1], email = [2], senha = [3];
             return $usuario;
         }
     } catch (PDOException $e) {
