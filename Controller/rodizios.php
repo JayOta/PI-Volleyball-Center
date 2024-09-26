@@ -3,7 +3,7 @@
     require "../Model/rodizios.php";
 
     function buscarRodizios(){
-        $rodizios = buscarRodiziosmodel()
+        $rodizios = buscarRodiziosmodel();
         return $rodizios;
     }
 ?>

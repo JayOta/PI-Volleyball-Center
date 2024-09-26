@@ -5,7 +5,7 @@
     function buscarRodiziosmodel() {
         global $conn;
         try {
-            $stmt = $conn->prepare("SELECT * FROM `rodizio` ");
+            $stmt = $conn->prepare("SELECT * FROM `rodizios` ");
             $stmt->execute();
 
             $rodizios = $stmt->fetchAll();

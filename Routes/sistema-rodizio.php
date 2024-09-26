@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<?php
+	require "../Controller/rodizios.php";
+
+	$rodizios = buscarRodizios();
+?>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -199,8 +204,8 @@
 			</div>
 		</div>
 	</div> -->
-<!-- 
-		<br>
+
+		 <br>
 		<hr style="width: 80%; margin-left: 200px;">
 		<div class="aviso" style="display: flex; flex-direction:column; justify-content: center; align-items: center;">
 			<p>Com o treino frequente desses fundamentos, a sua habilidade irá melhorar aos poucos.</p>
@@ -209,8 +214,7 @@
 				<li>Alongue-se antes</li>s
 				<li>Hidrate-se na medida certa.</li>
 			</ul>
-		</div> -->
-
+		</div> 
 		<br><br>
 	<?php 
     	include 'footer.php';
