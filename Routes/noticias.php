@@ -54,9 +54,9 @@
 		<div class="content-cards">
 			<div class="container">
 				<!-- <?php
-					for($i = 0; $i < count($noticias); $i++){
+					// for($i = 0; $i < count($noticias); $i++){
 
-					}
+					// }
 				?> -->
 				<div class="row row-cols-1 row-cols-md-3 g-4">
 					<div class="col">

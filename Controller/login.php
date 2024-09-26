@@ -9,7 +9,7 @@ if ($_POST) {
         $senha = $_POST['senha'];
 
         $adminEmail = 'admin@admin.com';
-        $adminSenha = '10' ?? empty($adminSenha);
+        $adminSenha = 'admin';
     }
     if (isset($_POST['login'])) {
         if (strlen($_POST['email']) == 0 || $_POST['email'] == '') {
@@ -29,6 +29,7 @@ if ($_POST) {
                 header("Location: http://localhost/GitHub/PI-Volleyball-Center/Routes/inicial.php");
                 exit; // Certifica-se de que o script não continue após o redirecionamento
             } else {
+                print_r($usuario);
                 echo "<script>alert('Senha ou Email incorretos!');</script>";
             }
         }
