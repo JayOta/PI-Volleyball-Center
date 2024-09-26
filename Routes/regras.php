@@ -6,7 +6,6 @@
 	<title>Treine em casa</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="css/fundamentos.css">
 	<link rel="stylesheet" href="css/navbar.css">
 	<link rel="stylesheet" href="../Routes/css/perfil-on-navbar.css">
 	<style>
@@ -15,6 +14,9 @@
 		}
 		.text{
 			font-size: 22px;
+		}
+		li p.text {
+
 		}
 	</style>
 
@@ -92,7 +94,7 @@
 
 		<h3 style="color:  #1e90ff;">Faltas no vôlei</h3>
 			<ul class="faltas">
-				<li><p class="text">Dois toques: quando o jogador toca duas vezes na bola ou ela toca em partes de seu corpo (duas vezes, sem continuar o contato).</p></li>
+				<li><p class="text" style="color: #000; ">Dois toques: quando o jogador toca duas vezes na bola ou ela toca em partes de seu corpo (duas vezes, sem continuar o contato).</p></li>
 
 				<li><p class="text">De posição: quando o jogador não ocupa corretamente sua posição na quadra.</p></li>
 
