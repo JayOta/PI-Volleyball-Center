@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <?php
 	require "../Controller/rodizios.php";
-
 	$rodizios = buscarRodizios();
 ?>
 <html>

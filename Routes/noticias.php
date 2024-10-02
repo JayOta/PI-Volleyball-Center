@@ -1,6 +1,9 @@
+	<?php
+		require "../Controller/noticias.php";
+		$noticias = buscarnoticias();
+	?>
 <!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,8 +14,7 @@
 	<link rel="stylesheet" href="../Routes/css/perfil-on-navbar.css">
 	<link rel="stylesheet" href="css/perfil-on-navbar.css">
 </head>
-
-<body>
+<body>	
 	<?php
 		include '../Routes/perfil-on-navbar.php';
 		require "../Controller/noticias.php";
