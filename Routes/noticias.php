@@ -9,12 +9,13 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="css/noticias.css">
 	<link rel="stylesheet" href="../Routes/css/perfil-on-navbar.css">
-	<link rel="stylesheet" href="css/navbar.css">
+	<link rel="stylesheet" href="css/perfil-on-navbar.css">
 </head>
 
 <body>
 	<?php
 		include '../Routes/perfil-on-navbar.php';
+		require "../Controller/noticias.php";
 		$noticias = buscarnoticias();
 	?>
 
@@ -31,8 +32,7 @@
 							<h5 class="card-title" style="color:  #1e90ff;"><?php echo $noticias[$i]['titulo_noticias'];?></h5>
 							<p class="card-text-center" style="width: 400px;"><?php echo $noticias[$i]['descricao_noticias'];?></p>
 						</div>
-				<?php }
-				?>
+				<?php } ?>
 				<!-- <section style="width: fit-content;">
 					<h1 id="title-h1" style="text-shadow: 0px 0px 6px #2b2b2b;">
 					Fim da segunda etapa do Campeonato Paranaense sub-13 feminino, em Guarapuava-PR!

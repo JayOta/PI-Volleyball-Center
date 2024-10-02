@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
   <title></title>
   <link rel="stylesheet" type="text/css" href="css/inicial.css">
-  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/perfil-on-navbar.css">
 </head>
 
 <body>

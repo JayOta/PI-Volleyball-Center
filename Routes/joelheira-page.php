@@ -22,7 +22,7 @@
     />
 
     <title>Produto Page</title>
-<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/perfil-on-navbar.css">
 <link rel="stylesheet" href="css/produto-page.css">
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>

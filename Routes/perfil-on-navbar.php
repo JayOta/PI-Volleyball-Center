@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <?php 
-session_start();
-
-    // print_r($_SESSION['usuario_atual']);
-   // $imagem = base64_encode($_SESSION['usuario_atual']['imagem_perfil']); 
+    session_start();
+   $imagem = base64_encode($_SESSION['usuario_atual']['imagem_perfil']); 
 ?>
 <html lang="pt-br">
 
@@ -38,7 +36,7 @@ session_start();
                     </a>
                     <div class="login-area">
                         <div class="perfil">
-                            <img src="<?php // echo "data:image/jpeg;base64" . $imagem;?>" alt="perfil-img" class="perfil-img" name="perfil-img">
+                            <img src="<?php echo "data:image/jpeg;base64," . $imagem;?>" alt="perfil-img" class="perfil-img" name="perfil-img">
                             <details closed>
                                 <summary style="color: #fff; display: flex; flex-direction: row;"> <?php
                                             echo $_SESSION['usuario_atual']['nome'] ?? "Undefined";
@@ -52,7 +50,7 @@ session_start();
                                         <i class='bx bx-cog'></i>
                                         <li class="li-perfil">Configurações</li>
                                     </div>
-                                        <button type="submit" name="logout" style="width: 99.5%; border: none; background: transparent; border-radius: 2px;">
+                                        <button type="submit" name="logout" style="width: 100%; border: none; background: transparent; border-radius: 2px;">
                                             <div class="details-content">
                                                 <i class='bx bx-log-in'></i>
                                                 <li class="li-perfil">Sair</li>

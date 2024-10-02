@@ -24,7 +24,7 @@
           include '../Routes/perfil-on-navbar.php';
     ?>
     <title>Produto Page</title>
-<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/perfil-on-navbar.css">
 <link rel="stylesheet" href="css/produto-page.css">
 
   </head>
@@ -39,7 +39,7 @@
         <section class="img">
           <button class="img-main__btnlft img-main__btn">
             <img
-              src="images/icon-next.svg"
+              src="images/icon-next.svg" 
               alt="next symbol image"
               class="img-main__btnlft-img img-main__btn-img"
             />
@@ -51,7 +51,7 @@
               class="img-main__btnrgt-img img-main__btn-img"
             />
           </button>
-          <img src="img/manguito.png" alt="#" class="img-main" />
+          <img src="img/manguito.png" alt="#" class="img-main" /> <!-- Imagem Principal -->
           <div class="img-btns">
             <button class="img-btn">
               <img

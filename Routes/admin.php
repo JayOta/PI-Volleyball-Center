@@ -13,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Admin Page</title>
-    <link rel="stylesheet" href="../Routes/css/navbar.css">
     <link rel="stylesheet" href="../Routes/css/admin.css">
     <link rel="stylesheet" href="../Routes/css/perfil-on-navbar.css">
 </head>
