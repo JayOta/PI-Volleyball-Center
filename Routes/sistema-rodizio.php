@@ -34,7 +34,7 @@
 		width: 100%;
 		object-fit: cover;
 	}
-	@keyframes appear {
+	/* @keyframes appear {
 		from {
 			opacity: 0;
 			clip-path: inset(100% 100% 0 0);
@@ -43,7 +43,7 @@
 			opacity: 1;
 			clip-path: inset(0 0 0 0);
 		}
-	}
+	} */
 	.row-cols-2 {
 		animation: appear linear;
 		animation-timeline: view();
@@ -71,57 +71,38 @@
 		</li>
 	</ul>
 
-	<div class="container">
-		<br><br>
-		<h1 style="transform: translateX(400px);">Rodízios e Suas alterações</h1>
-		<br>
-		<div class=" row-cols-2 justify-content-center" style="display: flex; flex-direction: row;">
-			<!-- <div class="card m-3" style="width: 550px; display: flex; flex-wrap: wrap;">
+	<div class="container" style="display: flex; flex-direction: column;"><br><br>
+		<h1 style="transform: translateX(400px);">Rodízios e Suas alterações</h1><br>
+			<?php for($i = 0; $i < count($rodizios); $i++){?>
+		<div class="row-cols-2 d-flex flex-row justify-content-center" style="display: flex; flex-direction: row;">
+			<div class="card m-3" style="width: 550px; display: flex; flex-wrap: wrap;">
 				<div class="row g-0">
 					<div class="col-md-4 d-flex align-items-center justify-content" style="width: 500px; margin-left: 23px; margin-top: 20px;">
-						<img src="img/rod-6x0.jpg" class="img-fluid rounded-start" alt="imagem mostra como executar uma saque por baixo" style="
-						border-radius: 5px; 
-						cursor:pointer;">
-					</div> -->
-				<?php
-
-					for($i = 0; $i < count($rodizios); $i++){
-
-					?>
-
-					<div class="col-md-8 d-flex position-relative">
-					<div class="card">
 						<img src="<?php
 						$imagem = base64_encode($rodizios[$i]['imagem_rodizio']);
 						echo "data:image/jpeg;base64," . $imagem;
-						?>" class="" alt="">
-					
+						?>" class="img-fluid rounded-start" alt=""  style="border-radius: 5px; 
+						cursor:pointer; max-height: 281px; width: 500px;">
 					</div>
-					<br>
-            		<div>
-					<p class="align-text"><?php
-						echo $rodizios[$i]['titulo_rodizio'];
-					?></p>
-					<p class="rodiziosaolado">
-					<?php
-					echo $rodizios[$i]['descricao_rodizio'];
-					?>
-					</p>
-					</div>
-					<p class="restotexto">
-					</p>
-					<br>
-					</div>
-					<?php
-						}
-					?>
-										<!-- <h5 class="card-title" style="color:  #1e90ff;">Rodízio 6x0</h5>
-							<p class="card-text-center" style="width: 400px;">No sistema 6x0, também chamado de sistema 6x6, todos farão a função tanto de levantadores como de atacantes ou defensores. É o sistema mais simples de todos, é normalmente usado em equipes que estão iniciando o treinamento no esporte.</p>
+					<div class="col-md-8">
+						<div class="card-body" style="margin-left: 7px;">
+							<h5 class="card-title" style="color:  #1e90ff;"><?php echo $rodizios[$i]['titulo_rodizio'];?></h5>
+							<p class="card-text-center" style="width: 400px;"><?php echo $rodizios[$i]['descricao_rodizio'];?></p>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="card m-3" style="width: 550px; display: flex; flex-wrap: wrap;">
+			</div> 
+		</div><?php } ?>
+	</div>
+						<!-- <div class="card m-3" style="width: 550px; display: flex; flex-wrap: wrap;">
+							<div class="row g-0">
+								<div class="col-md-4 d-flex align-items-center justify-content" style="width: 500px; margin-left: 23px; margin-top: 20px;">
+									<img src="img/rod-6x0.jpg" class="img-fluid rounded-start" alt="imagem mostra como executar uma saque por baixo" style="
+									border-radius: 5px; 
+									cursor:pointer;">
+								</div> -->
+
+			<!-- <div class="card m-3" style="width: 550px; display: flex; flex-wrap: wrap;">
 				<div class="row g-0">
 					<div class="col-md-4 d-flex align-items-center" style="width: 500px; margin-left: 23px; margin-top: 20px;">
 						<img src="img/rod-6x0-infiltracao.jpg" class="img-fluid rounded-start" alt="imagem mostra como executar uma saque por cima" style="border-radius: 5px; 
@@ -135,13 +116,13 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
-		<br><br><br><br><br><br>
+	<!--	<br><br><br><br><br><br>
 
 		<div class="row-cols-2 justify-content-center" style="display: flex; flex-direction: row;">
 			<div class="card m-3" style="width: 550px; display: flex; flex-wrap: wrap;">
-				<div class="row g-0">
+				<div class="row g-0">	
 					<div class="col-md-4 d-flex align-items-center" style="width: 500px; margin-left: 23px; margin-top: 20px;">
 						<img src="img/rod-4x2.jpg" class="img-fluid rounded-start" alt="imagem mostra como executar um ataque" style="border-radius: 5px; 
 						cursor:pointer;">
@@ -211,7 +192,7 @@
 			<p>Com o treino frequente desses fundamentos, a sua habilidade irá melhorar aos poucos.</p>
 			<h6 style="display: flex; margin-right: 100px;"><strong>Não esqueça!</strong></h6>
 			<ul>
-				<li>Alongue-se antes</li>s
+				<li>Alongue-se antes.</li>
 				<li>Hidrate-se na medida certa.</li>
 			</ul>
 		</div> 

@@ -15,14 +15,25 @@
 <body>
 	<?php
 		include '../Routes/perfil-on-navbar.php';
-		// $noticias = buscarnoticias();
+		$noticias = buscarnoticias();
 	?>
 
 	<br>
 	<br>
 		<div class="blue-back">
 			<div class="section">
-				<section style="width: fit-content;">
+				<?php
+				    for($i = 0; $i < count($noticias); $i++){?>
+					<img src="<?php
+						$imagem = base64_encode($noticias[$i]['imagem_noticia']);
+						echo "data:image/jpeg;base64,". $imagem;?>" class='' alt="">
+						<div class="card-body" style="margin-left: 7px;">
+							<h5 class="card-title" style="color:  #1e90ff;"><?php echo $noticias[$i]['titulo_noticias'];?></h5>
+							<p class="card-text-center" style="width: 400px;"><?php echo $noticias[$i]['descricao_noticias'];?></p>
+						</div>
+				<?php }
+				?>
+				<!-- <section style="width: fit-content;">
 					<h1 id="title-h1" style="text-shadow: 0px 0px 6px #2b2b2b;">
 					Fim da segunda etapa do Campeonato Paranaense sub-13 feminino, em Guarapuava-PR!
 					</h1>
@@ -40,9 +51,9 @@
 						<div class="carousel-item active">
 							<img src="img/main-news.webp" class="d-block" alt="Imagem do campeonato Paranaense Sub-13 de 2023">
 							<div class="carousel-caption d-none d-md-block">
-								<h5 class="justify-content-center"><!--27 de novembro de 2023--></h5>
-								<p><!--PM Foz do Iguaçu/ Smel conquista Paranaense Sub-14 Série B feminino 2023--></p>
-							</div>
+								<h5 class="justify-content-center">27 de novembro de 2023</h5>-->
+								<!-- <p>PM Foz do Iguaçu/ Smel conquista Paranaense Sub-14 Série B feminino 2023</p> -->
+							<!-- </div>
 						</div>
 					</div>
 				</div>
@@ -50,14 +61,10 @@
 		</div>
 
 		<br><br><br><br><br><br><br><br><br><br><br><br><br>
-		<!-- Change this -->
+
 		<div class="content-cards">
 			<div class="container">
-				<!-- <?php
-					// for($i = 0; $i < count($noticias); $i++){
-
-					// }
-				?> -->
+		
 				<div class="row row-cols-1 row-cols-md-3 g-4">
 					<div class="col">
 						<div class="card h-100">
@@ -160,8 +167,8 @@
 			<div id="carouselExampleSlidesOnly" id="carousel-slide" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img class="aside-imgs" src="img/news-1.webp" class="d-block" alt="Imagem do campeonato Paranaense Sub-13 de 2023"> <!-- Deixar o carrousel mais escuro -->
-						<div class="carousel-caption d-flex d-md-block justify-content-center align-items-center">
+						<img class="aside-imgs" src="img/news-1.webp" class="d-block" alt="Imagem do campeonato Paranaense Sub-13 de 2023"> < Deixar o carrousel mais escuro -->
+						<!-- <div class="carousel-caption d-flex d-md-block justify-content-center align-items-center">
 							<h5 class="d-flex justify-content-center">10 de junho de 2024</h5>
 							<p class="d-flex justify-content-center">Confira como foi o final de semana (07 a 09) no Campeonato Estadual Adulto</p>
 						</div>
@@ -369,7 +376,7 @@
 			</div>
 		</div>
 	</div>
-	<br><br><br><br>
+	<br><br><br><br>  --> 
 
 	<?php 
     	include 'footer.php';
