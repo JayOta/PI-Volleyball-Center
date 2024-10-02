@@ -4,21 +4,12 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Treine em casa</title>
+	<link rel="stylesheet" href="../View/css/regras.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="css/navbar.css">
-	<link rel="stylesheet" href="../Routes/css/perfil-on-navbar.css">
-	<style>
-		.card-body{
-			margin: 25px;
-		}
-		.text{
-			font-size: 22px;
-		}
-		li p.text {
+	<link rel="stylesheet" type="text/css" href="css/fundamentos.css">
+	<link rel="stylesheet" href="../View/css/perfil-on-navbar.css">
 
-		}
-	</style>
 
 </head>
 <body>
@@ -40,8 +31,33 @@
 			<a class="nav-link" aria-current="page" href="historia.php"  style="color: #363636;">História</a>
 		</li>
 	</ul>
-	<h2 style="text-align: center; font-size: 40px; margin-top: 40px;">Regras do voleibol</h2>
-	<div class="card-body">
+
+	<div class="meioRegras">
+		<?php 
+			for($i = 0; $i< count($regras); $i++){
+
+		?>
+			<div>
+				<p class="titulodaregras"><?php 
+					echo $regras[$i]['titulo_regras'];
+				?></p>
+				<p class="descricao_regras"><?php 
+					echo $regras[$i]['descricao']
+				?></p>
+			</div>
+			<div class="imagem_regras">
+				<img src="<?php
+					$imagem = base64_encode($regras[$i]['imagem_regras']);
+					echo "data:image/jpeg;base64," . $imagem;
+				?>" >
+			</div>
+
+		<?php 
+			}
+		?>
+	</div>
+
+	<!-- <div class="card-body">
 		<h3 style="color:  #1e90ff;">Área de jogo</h3>
 
 			<p class="text">A área de jogo do vôlei é formada pela quadra de jogo e a zona livre.</p>
@@ -116,7 +132,7 @@
 			<p class="text">A atualização das regras é fundamental para que a prática esportiva se mantenha atrativa, tanto para jogadores quanto para os espectadores e, consequentemente, para o setor comercial e os diretores das equipes profissionais.</p>
 
 			<p class="text">Uma das mudanças que impactaram o esporte foi a criação da posição do líbero, em 1998. A novidade foi incluída no vôlei, pois o esporte se caracterizava por ataques eficientes, entretanto, carecia de ferramentas de defesa. Nesse sentido, o jogador líbero passou a atuar exclusivamente na assistência e defesa durante as partidas.</p>
-	</div>
+	</div> -->
 
 		<br><br><br>
 		
