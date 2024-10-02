@@ -40,68 +40,29 @@
 
 	<div class="meioDosFundamentos">
 		<?php 
-			// print_r($fundamentos);
-			// echo $fundamentos['titulo_fundamento'];
-			// echo count($fundamentos);
-		?>
-		<?php 
 		 	for($i = 0; $i < count($fundamentos); $i++){
 				
 		?>
-		<div class="espacoentrediv">
-			<div class="card">
-				<img src="<?php 
+		<div class="card">
+			<img src="<?php 
 				$imagem = base64_encode($fundamentos[$i]['imagem_fundamento']); 
 				echo "data:image/jpeg;base64," . $imagem;
-				?>" class="card-img-top" alt="imagem de como é feito o passo a passo do saque por baixo no vôlei.">
-				
-			</div>
-			<br>
-			<div>
-				<p class="align-text"><?php 
+			?>" class="card-img-top"">
+		</div>
+		<br>
+		<div>
+			<p class="align-text"><?php 
 					echo $fundamentos[$i]['titulo_fundamento'];
 				?></p>
-				<p class="fundamentosaolado">
-				<?php 
+			<p class="fundamentosaolado"><?php 
 				echo $fundamentos[$i]['descricao'];
-				?>
-				</p>
-			</div>
-			<br>
+			?></p>
 		</div>
+		<br>
+
 			<?php 
 				}
 			?>
-		<!-- <div class="espacoentrediv">
-			<div class="card">
-				<img src="imgfund/saque-cima.jpg" class="card-img-top" alt="imagem de como é feito o passo a passo do saque por cima no vôlei.">
-			</div>
-			<br>
-			<div class="align-text">
-				<p><strong>Saque por cima:</strong></p>
-				<p class="fundamentosaolado">Na execução do saque por baixo, o jogador posiciona-se de lado para a rede, com os pés afastados na largura dos ombros e o peso do corpo distribuído uniformemente. O braço de saque é mantido estendido ao lado do corpo, com a mão próxima à altura da cintura segurando a bola. Para sacar, o jogador flexiona levemente os joelhos e o tronco, realizando um movimento de abaixamento do braço de saque. Nesse momento, a bola é arremessada por baixo da cintura em direção à rede, com uma trajetória relativamente tensa e controlada.
-			Apesar de suas limitações, o saque por baixo ainda é uma técnica válida no voleibol, especialmente em situações nas quais o jogador precisa de mais controle sobre a bola, como em treinos ou jogos com adversários de nível inferior.
-			Muitos jogadores iniciantes começam desenvolvendo o saque por baixo antes de progredir para técnicas mais avançadas, como o saque por cima. O importante é que o atleta domine essa habilidade básica antes de evoluir para opções mais complexas e eficazes.</p>
-			</div>
-			<p class="restotexto">
-			</p>
-			<br>
-		</div>
-		<div class="espacoentrediv">
-			<div class="card">
-				<img src="imgfund/saque-viagem.jpg" class="card-img-top" alt="imagem de como é feito o passo a passo do saque viagem no vôlei.">
-			</div>
-			<br>
-			<div class="align-text">
-				<p><strong>Saque viagem:</strong></p>
-				<p class="fundamentosaolado">Na execução do saque por baixo, o jogador posiciona-se de lado para a rede, com os pés afastados na largura dos ombros e o peso do corpo distribuído uniformemente. O braço de saque é mantido estendido ao lado do corpo, com a mão próxima à altura da cintura segurando a bola. Para sacar, o jogador flexiona levemente os joelhos e o tronco, realizando um movimento de abaixamento do braço de saque. Nesse momento, a bola é arremessada por baixo da cintura em direção à rede, com uma trajetória relativamente tensa e controlada.
-			Apesar de suas limitações, o saque por baixo ainda é uma técnica válida no voleibol, especialmente em situações nas quais o jogador precisa de mais controle sobre a bola, como em treinos ou jogos com adversários de nível inferior.
-			Muitos jogadores iniciantes começam desenvolvendo o saque por baixo antes de progredir para técnicas mais avançadas, como o saque por cima. O importante é que o atleta domine essa habilidade básica antes de evoluir para opções mais complexas e eficazes.</p>
-			</div>
-			<p class="restotexto">
-			</p>
-			<br>
-		</div> -->
 		<!-- <div class="espacoentrediv">
 			<h2 class="text-align-center">RECEPÇÃO</h2>
 			<div class="card">
