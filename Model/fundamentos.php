@@ -10,7 +10,7 @@
             $fundamentos = $stmt->fetchAll();
             return $fundamentos;
         }catch(PDOException $e){
- 
+            
         }
  
      
