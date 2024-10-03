@@ -21,18 +21,30 @@
 	?>
 	<br>
 	<br>
-		<div class="blue-back">
-			<div class="section">
-				<?php
-				    for($i = 0; $i < count($noticias); $i++){?>
-					<img src="<?php
-						$imagem = base64_encode($noticias[$i]['imagem_noticia']);
-						echo "data:image/jpeg;base64,". $imagem;?>" class='' alt="">
-						<div class="card-body" style="margin-left: 7px;">
-							<h5 class="card-title" style="color:  #1e90ff;"><?php echo $noticias[$i]['titulo_noticias'];?></h5>
-							<p class="card-text-center" style="width: 400px;"><?php echo $noticias[$i]['descricao_noticias'];?></p>
-						</div>
-				<?php } ?>
+	<div class="container" style="display: flex; flex-direction: column;">
+		<?php for($i = 0; $i < count($noticias); $i++){?>		
+			<div class="row-cols-2 d-flex flex-row justify-content-center" style="flex-direction: row;">
+				<div class="card m-3" style="width: 500px; flex-wrap: wrap; ">
+					<div class="row g-0">
+						<a href="#" target="_blank">
+							<img src="<?php
+								$imagem = base64_encode($noticias[$i]['imagem_noticias']);
+								echo "data:image/jpeg;base64,". $imagem;?>" class='card-img-top' alt="" style= 'height: fit-content; border-radius: 7px; cursor:pointer; max-height: 281px; width: 500px;'>
+						</a>	
+							<div class="col-md-8">
+								<div class="card-body" style="margin-left: 7px;">
+									<h5 class="card-title" style="text-shadow: 0px 0px 6px #2b2b2b;"><?php echo $noticias[$i]['titulo_noticias'];?></h5>
+									<p class="card-text" style="width: 400px;"><strong><?php echo $noticias[$i]['descricao_noticias'];?><strong></p>
+									<section>
+										<button><a id="saiba-mais" href="#">Saiba mais</a></button>	
+									</section>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	<?php } ?>
 				<!-- <section style="width: fit-content;">
 					<h1 id="title-h1" style="text-shadow: 0px 0px 6px #2b2b2b;">
 					Fim da segunda etapa do Campeonato Paranaense sub-13 feminino, em Guarapuava-PR!

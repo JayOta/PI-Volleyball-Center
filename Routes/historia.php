@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+ <?php
+		// require "../Controller/historia.php";
+		// $historia = buscarhistoria();
+?>  
 <html>
 <head>
 	<meta charset="utf-8">
@@ -74,6 +78,10 @@
 	</ul>
 
 	<div class="card-body">
+		<?php
+		    // for($i = 0; $i< count($historia); $i++){
+			// }
+			?>
 		<h1 style="color:  #1e90ff;">Origem do Voleibol</h1>
 
 		<p class="text">William George Morgan, professor e diretor de Educação Física na Associação Cristã de Moços (ACM), idealizou um jogo em que as probabilidades dos participantes se machucarem, em detrimento de contato físico, fossem baixas. Outro fator importante - e pensado nos jogadores mais velhos - era que o esporte não fosse fisicamente tão exigente.</p>
