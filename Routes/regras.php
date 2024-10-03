@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?php
+		require "../Controller/regras.php";
+		$regras = buscarregras();
+?>
 <html>
 <head>
 	<meta charset="utf-8">
