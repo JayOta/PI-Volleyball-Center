@@ -1,8 +1,9 @@
-	<?php
+	
+<!DOCTYPE html>
+<?php
 		require "../Controller/noticias.php";
 		$noticias = buscarnoticias();
-	?>
-<!DOCTYPE html>
+?>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -17,10 +18,7 @@
 <body>	
 	<?php
 		include '../Routes/perfil-on-navbar.php';
-		require "../Controller/noticias.php";
-		$noticias = buscarnoticias();
 	?>
-
 	<br>
 	<br>
 		<div class="blue-back">
