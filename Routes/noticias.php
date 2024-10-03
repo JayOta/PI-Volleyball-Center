@@ -17,8 +17,6 @@
 <body>	
 	<?php
 		include '../Routes/perfil-on-navbar.php';
-		require "../Controller/noticias.php";
-		$noticias = buscarnoticias();
 	?>
 
 	<br>
