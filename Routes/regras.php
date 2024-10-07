@@ -108,7 +108,7 @@
 
 			<p class="text">Cada equipe tem o direito de realizar no máximo três toques, além do bloqueio, para arremessar a bola no campo adversário.</p>
 
-			<p class="text">A bola pode tocar em qualquer parte do corpo desde que esse contato seja de forma contínua, ou seja, ela não pode bater em alguma parte e retornar ao corpo do jogador</p>
+			<p class="text">A bola pode tocar em qualquer parte do corpo desde que esse contato seja de forma contínua, ou seja, ela não pode bater em alguma parte e retornar ao corpo do jogador.</p>
 
 		<br>
 

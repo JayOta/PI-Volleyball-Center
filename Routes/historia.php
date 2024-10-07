@@ -80,7 +80,7 @@
 	<div class="card-body">
 		<?php
 		    // for($i = 0; $i< count($historia); $i++){
-			// }
+			// }	
 			?>
 		<h1 style="color:  #1e90ff;">Origem do Voleibol</h1>
 

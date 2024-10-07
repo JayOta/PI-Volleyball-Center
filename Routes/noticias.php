@@ -23,7 +23,7 @@
 	<br>
 	<div class="container" style="display: flex; flex-direction: column;">
 		<?php for($i = 0; $i < count($noticias); $i++){?>		
-			<div class="row-cols-2 d-flex flex-row justify-content-center" style="flex-direction: row;">
+			<div class="row-cols-2 d-flex flex-row justify-content-center" style="display: flex;">
 				<div class="card m-3" style="width: 500px; flex-wrap: wrap; ">
 					<div class="row g-0">
 						<a href="#" target="_blank">
