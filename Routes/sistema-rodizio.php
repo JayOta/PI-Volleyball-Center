@@ -84,8 +84,7 @@ $rodizios = buscarRodizios();
 					<img src="<?php
 								$imagem = base64_encode($rodizios[$i]['imagem_rodizio']);
 								echo "data:image/jpeg;base64," . $imagem;
-								?>" class="img-fluid rounded-start" alt="" style="border-radius: 5px; 
-				                cursor:pointer; height: 20rem;">
+								?>" class="img-fluid rounded-start" alt="" style="border-radius: 5px; cursor:pointer; height: 20rem;">
 				</div>
 				<div class="desciption">
 					<div class="card-body" style="margin-left: 7px;">
