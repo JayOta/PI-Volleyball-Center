@@ -38,6 +38,32 @@ $regras = buscarregras();
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/fundamentos.css">
     <link rel="stylesheet" href="../View/css/perfil-on-navbar.css">
+    <style>	
+        * {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		img {
+			transition: 0.4s ease-in-out;
+			width: 100%;
+			height: 100%;
+		}
+
+		img:hover {
+			box-shadow: 4px 4px 0px #363636;
+			transform: scale(1.01);
+			width: 100%;
+			object-fit: cover;
+		}
+
+        .row-cols-2 {
+			animation: appear linear;
+			animation-timeline: view();
+			animation-range: entry 0% cover 40%;
+		}
+    </style>
 </head>
 <body>
     <?php include '../Routes/perfil-on-navbar.php'; ?>
@@ -58,6 +84,7 @@ $regras = buscarregras();
     </ul>
 
     <div class="container"><br><br>
+    <h1 style="transform: translateX(560px);">Regras</h1><br>
         <?php for ($i = 0; $i < count($regras); $i++) { ?>
         <div class="justify-content-center" style="position: relative; left: 3.2rem;">
             <div class="card m-3" style="display: flex; flex-direction: column; height: 42rem;">
@@ -70,7 +97,7 @@ $regras = buscarregras();
                 <div class="desciption">
                     <div class="card-body" style="margin-left: 7px;">
                         <h5 class="card-title" style="color: #1e90ff;"><?php echo $regras[$i]['titulo_regras']; ?></h5>
-                        <p class="card-text-center"><?php echo $regras[$i]['descricao'];// quebraLinha($regras[$i]['descricao'], $limiteCaracteres); ?></p>
+                        <p class="card-text-center" style="text-align: justify;"><?php echo $regras[$i]['descricao'];// quebraLinha($regras[$i]['descricao'], $limiteCaracteres); ?></p>
                     </div>
                 </div>
             </div>

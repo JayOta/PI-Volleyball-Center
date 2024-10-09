@@ -89,7 +89,7 @@ $rodizios = buscarRodizios();
 				<div class="desciption">
 					<div class="card-body" style="margin-left: 7px;">
 						<h5 class="card-title" style="color:  #1e90ff;"><?php echo $rodizios[$i]['titulo_rodizio']; ?></h5>
-						<p class="card-text-center" style="width: 400px;"><?php echo $rodizios[$i]['descricao_rodizio']; ?></p>
+						<p class="card-text-center" style="text-align: justify;"><?php echo $rodizios[$i]['descricao_rodizio']; ?></p>
 					</div>
 				</div>
 			</div>
