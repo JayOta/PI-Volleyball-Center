@@ -55,7 +55,7 @@ $getAllProdutos = getAllProdutos();
 									</div>
 								</div>
 						</div>
-					<?php } ?> <center><br><br><h2>Adicionar o resto dos produtos..</h2></center>
+					<?php } ?>
 					<!-- </div>
 					<div class="col-md-3">
 						<div class="card">
