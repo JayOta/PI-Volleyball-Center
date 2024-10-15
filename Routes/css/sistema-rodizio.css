@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+.container {
+}
 img.img-fluid {
   transition: 0.4s ease-in-out;
   width: 100%;

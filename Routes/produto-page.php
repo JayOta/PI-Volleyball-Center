@@ -1,3 +1,4 @@
+<?php require '../Controller/produto-page.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,6 +24,7 @@
   include '../Routes/perfil-on-navbar.php';
   ?>
   <title>Produto Page</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="css/perfil-on-navbar.css">
   <link rel="stylesheet" href="css/produto-page.css">
 
@@ -122,29 +124,29 @@
 
           <div class="price-btnbox">
             <div class="price-btns">
-              <button type="button" class="price-btn__add price-btn" name="add_to_cart">
+              <button class="price-btn__add price-btn" name="add_to_cart" type="submit">
                 <img
                   src="img/add-line.png"
                   alt="+"
                   class="price-btn__add-img price-btn__img" />
               </button>
 
-              <span class="price-btn__txt" type="text" name="quantity">0</span>
-              
-              <button type="button" class="price-btn__remove price-btn" name="remove_to_cart">
+              <input type="text" name="quantity_cart" value="<?php echo $_SESSION['quantity_cart']; ?>" style="font-size: 42px; background: transparent; outline: none; border: none; width: 17%;">
+
+              <button class="price-btn__remove price-btn" name="remove_to_cart" type="submit">
                 <img
                   src="img/subtract-line.png"
                   alt="-"
                   class="price-btn__remove-img price-btn__img" />
               </button>
             </div>
-            <button type="submit" class="price-cart__btn btn--blue" style="display: flex; margin-top: 30px;"><a href="carrinho.php" style="text-decoration: none; color:#fff;">
-                <img
-                  src="img/shopping-cart-2-fill (1).png" height="40px"
-                  alt="Imagem do carrinho"
-                  class="price-cart__btn-img" />
-                Adicionar ao carrinho
-              </a></button>
+
+            <button type="submit" class="price-cart__btn btn--blue" style="display: flex; justify-content: center; align-items: center; height: 8rem; z-index: 1;">
+              <a href="carrinho.php" style="display: flex; flex-direction: row; align-items: center; justify-content: center; text-decoration: none; color:#fff; z-index: 2;">
+                <i class='bx bxs-cart price-cart__btn-img'></i>
+                <p>Adicionar ao carrinho</p>
+              </a>
+            </button>
           </div>
       </section>
     </main>

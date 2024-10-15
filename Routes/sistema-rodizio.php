@@ -10,12 +10,12 @@ $rodizios = buscarRodizios();
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Sistema de Rodízio</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="css/fundamentos.css">
 	<link rel="stylesheet" href="../Routes/css/perfil-on-navbar.css">
 	<link rel="stylesheet" href="css/perfil-on-navbar.css">
-	<link rel="stylesheet" href="sistema-rodizio.css">
+	<link rel="stylesheet" href="../Routes/css/sistema-rodizio.css">
 
 	<style>
 		* {
@@ -37,20 +37,22 @@ $rodizios = buscarRodizios();
 			object-fit: cover;
 		}
 
-		/* @keyframes appear {
-		from {
-			opacity: 0;
-			clip-path: inset(100% 100% 0 0);
+		@keyframes appear {
+			from {
+				opacity: 0;
+				clip-path: inset(100% 100% 0 0);
+			}
+
+			to {
+				opacity: 1;
+				clip-path: inset(0 0 0 0);
+			}
 		}
-		to {
-			opacity: 1;
-			clip-path: inset(0 0 0 0);
-		}
-	} */
-		.row-cols-2 {
+
+		.card {
 			animation: appear linear;
 			animation-timeline: view();
-			animation-range: entry 0% cover 40%;
+			animation-range: entry 0% cover 30%;
 		}
 	</style>
 </head>
@@ -78,25 +80,25 @@ $rodizios = buscarRodizios();
 	<div class="container"><br><br>
 		<h1 style="transform: translateX(400px);">Rodízios e Suas alterações</h1><br>
 		<?php for ($i = 0; $i < count($rodizios); $i++) { ?>
-		<div class="justify-content-center" style="position: relative; left: 3.2rem;">
-			<div class="card m-3" style=" display: flex; flex-wrap: wrap; flex-direction: column; height: 42rem;">
-				<div class="col-md-4 d-flex align-items-center justify-content" style="width: 500px; margin-left: 23px; margin-top: 20px; height: auto;">
-					<img src="<?php
-								$imagem = base64_encode($rodizios[$i]['imagem_rodizio']);
-								echo "data:image/jpeg;base64," . $imagem;
-								?>" class="img-fluid rounded-start" alt="" style="border-radius: 5px; cursor:pointer; height: 20rem;">
-				</div>
-				<div class="desciption">
-					<div class="card-body" style="margin-left: 7px;">
-						<h5 class="card-title" style="color:  #1e90ff;"><?php echo $rodizios[$i]['titulo_rodizio']; ?></h5>
-						<p class="card-text-center" style="text-align: justify;"><?php echo $rodizios[$i]['descricao_rodizio']; ?></p>
+			<div class="linha-col justify-content-center" style="position: relative; left: 3.2rem;">
+				<div class="card m-3" style=" display: flex; flex-wrap: wrap; flex-direction: column; height: 42rem;">
+					<div class="col-md-4 d-flex align-items-center justify-content" style="width: 500px; margin-left: 23px; margin-top: 20px; height: auto;">
+						<img src="<?php
+									$imagem = base64_encode($rodizios[$i]['imagem_rodizio']);
+									echo "data:image/jpeg;base64," . $imagem;
+									?>" class="img-fluid rounded-start" alt="" style="border-radius: 5px; cursor:pointer; height: 20rem;">
+					</div>
+					<div class="desciption">
+						<div class="card-body" style="margin-left: 7px;">
+							<h5 class="card-title" style="color:  #1e90ff;"><?php echo $rodizios[$i]['titulo_rodizio']; ?></h5>
+							<p class="card-text-center" style="text-align: justify;"><?php echo $rodizios[$i]['descricao_rodizio']; ?></p>
+						</div>
 					</div>
 				</div>
-			</div>
-		</div><?php } ?>
+			</div><?php } ?>
 	</div>
 	<br><br><br><br>
-	<hr style="width: 80%; margin-left: 200px;">
+	<hr style="width: 80%; margin-left: 10.5rem;">
 	<div class="aviso" style="display: flex; flex-direction:column; justify-content: center; align-items: center;">
 		<p>Com o treino frequente desses fundamentos, a sua habilidade irá melhorar aos poucos.</p>
 		<h6 style="display: flex; margin-right: 100px;"><strong>Não esqueça!</strong></h6>

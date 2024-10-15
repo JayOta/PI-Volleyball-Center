@@ -8,12 +8,12 @@ a#inicial {
 }
 
 img {
-  transition: 0.7s ease-in-out;
+  transition: 0.8s ease-in-out;
   width: 100%;
   height: 100%;
 }
 img:hover {
-  transform: scale(1.05);
+  transform: scale(1.04);
   width: 100%;
   object-fit: cover;
 }
