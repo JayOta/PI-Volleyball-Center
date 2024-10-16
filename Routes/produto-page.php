@@ -131,7 +131,7 @@
                   class="price-btn__add-img price-btn__img" />
               </button>
 
-              <input type="text" name="quantity_cart" value="<?php echo $_SESSION['quantity_cart']; ?>" style="font-size: 42px; background: transparent; outline: none; border: none; width: 17%;">
+              <input type="text" name="quantity_cart" value="<?php // echo $_SESSION['quantity_cart']; ?>0" style="font-size: 42px; background: transparent; outline: none; border: none; width: 17%;">
 
               <button class="price-btn__remove price-btn" name="remove_to_cart" type="submit">
                 <img

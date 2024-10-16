@@ -184,11 +184,11 @@
 								transition: 0.3s;
 								">
 								<div class="carousel-caption d-none d-md-block">
-									<h5 class="d-flex justify-content-center position-relative d-flex" style="font-size: 20px;">9 de junho de 2024</h5>
-									<p class="d-flex justify-content-center position-relative d-flex" style="font-size: 19px;">Hoje (24), inicia a primeira etapa dos Jogos da Juventude do Paraná 2024!</p>
-								</div>
+									<h5 class="d-flex justify-content-center position-relative d-flex" style="font-size: 20px;">9 de junho de 2024</h5> <!-- inserido -->
+									<p class="d-flex justify-content-center position-relative d-flex" style="font-size: 19px;">Hoje (24), inicia a primeira etapa dos Jogos da Juventude do Paraná 2024!</p> <!-- inserido -->
+								</div> 
 							</div>
-							<div class="carousel-item">
+							<div class="carousel-item active">
 								<img class="aside-imgs" src="img/news2_2.webp" class="d-block" alt="Imagem de jogadores de volêi" style="
 								display: flex; 
 								width: 620px; 
@@ -197,8 +197,8 @@
 								transition: 0.3s;
 								">
 								<div class="carousel-caption d-none d-md-block">
-									<h5 class="justify-content-center position-relative d-flex" style="font-size: 20px; text-align: center;">12 de junho de 2024</h5>
-									<p class="justify-content-center position-relative d-flex" style="font-size: 19px;">Fim de segunda etapa do Campeonato Paranaense sub-19 série A masculino!</p>
+									<h5 class="justify-content-center position-relative d-flex" style="font-size: 20px; text-align: center;">12 de junho de 2024</h5> <!-- inserido -->
+									<p class="justify-content-center position-relative d-flex" style="font-size: 19px;">Fim de segunda etapa do Campeonato Paranaense sub-19 série A masculino!</p> <!-- inserido -->
 								</div>
 							</div>
 							<div class="carousel-item">
@@ -210,8 +210,8 @@
 							transition: 0.3s;
 							">
 								<div class="carousel-caption d-none d-md-block">
-									<h5 class="justify-content-center position-relative d-flex" style="font-size: 20px;">15 de junho de 2024</h5>
-									<p class="justify-content-center position-relative d-flex" style="font-size: 19px;">Começou o Campeonato Paranaense Adulto 2024!</p>
+									<h5 class="justify-content-center position-relative d-flex" style="font-size: 20px;">15 de junho de 2024</h5> <!-- inserido -->
+									<p class="justify-content-center position-relative d-flex" style="font-size: 19px;">Começou o Campeonato Paranaense Adulto 2024!</p> <!-- inserido -->
 								</div>
 							</div>
 						</div>
