@@ -206,7 +206,10 @@
 								</div>
 							</div> <?php } ?>
 						</div> <?php } ?>
-
+					</div>
+				</div>
+			</aside>
+		</div>
 							<!-- <div class="carousel-item">
 								<img class="aside-imgs" src="img/news2_3.webp" class="d-block" alt="Imagem da equipe de vôlei da smel Araucária de 2023" style="
 							display: flex; 
@@ -273,9 +276,7 @@
 							</div>
 						</div>
 					</div> -->
-				</div>
-			</aside>
-		</div>
+
 
 		<br><br><br><br><br><br><br><br><br><br>
 
