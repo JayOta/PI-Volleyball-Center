@@ -61,7 +61,7 @@
 			<div class="container">
 				<?php for($i = 0; $i < 2; $i++){ ?>
 				<div class="row row-cols-1 row-cols-md-3 g-4">
-				<?php for($i = 1; $i < count($noticias) - 13; $i++){ ?>
+				<?php for($i = 1; $i < 7; $i++){ ?>
 					<div class="col">
 						<div class="card h-100">
 							<a href="#" target="_blank">
@@ -160,7 +160,7 @@
 		<div class="blue-back2"> <!-- Inserir o banco aqui -->
 			<aside>
 				<h1 class="second-title">Campeonato Paranaense!</h1>
-				<?php for($i = count($noticias) - 7; $i < count($noticias) - 6; $i++) { ?>
+				<?php for($i = count($noticias) - 7; $i < 10; $i++) { ?>
 				<div id="carouselExampleSlidesOnly" id="carousel-slide" class="carousel slide" data-bs-ride="carousel">
 					<div class="carousel-inner">
 						<div class="carousel-item active">
