@@ -160,7 +160,7 @@
 		<div class="blue-back2"> <!-- Inserir o banco aqui -->
 			<aside>
 				<h1 class="second-title">Campeonato Paranaense!</h1>
-				<?php for($i = count($noticias) - 7; $i < 10; $i++) { ?>
+				<?php for($i = 14; $i < count($noticias) - 13; $i++) { ?>
 				<div id="carouselExampleSlidesOnly" id="carousel-slide" class="carousel slide" data-bs-ride="carousel">
 					<div class="carousel-inner">
 						<div class="carousel-item active">
@@ -205,8 +205,9 @@
 									<p class="justify-content-center position-relative d-flex" style="font-size: 19px;"><!-- Fim de segunda etapa do Campeonato Paranaense sub-19 série A masculino! --><?php echo $noticias[$i][3]; ?></p>
 								</div>
 							</div> <?php } ?>
-						</div> <?php } ?>
+						</div> 
 					</div>
+					<?php } ?>
 				</div>
 			</aside>
 		</div>
