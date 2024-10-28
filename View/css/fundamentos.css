@@ -1,4 +1,4 @@
- * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,7 +18,7 @@ body {
   margin-top: 50px;
   border-radius: 20px;
   box-shadow: 0px 0px 15px rgba(189, 171, 171, 0.507);
-  height: 180rem;
+  height: 500rem;
   width: 70rem;
   position: relative;
   left: 420px;
