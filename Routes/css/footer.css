@@ -15,6 +15,7 @@ footer {
   align-items: center;
   flex-direction: row;
   gap: 5rem;
+  padding: 1.2rem;
 }
 footer ul.col-num1 {
   display: flex;
@@ -28,7 +29,11 @@ footer ul.col-num1 li {
 footer ul.col-num1 li a {
   text-decoration: none;
   color: #fff;
-  font-size: 15px;
+  font-size: 16.3px;
+  transition: 0.25s ease-in-out;
+}
+footer ul.col-num1 li a:hover {
+  color: #3482f7;
 }
 footer ul li a.icon {
   background: transparent;
@@ -40,6 +45,8 @@ footer ul li a.icon {
 }
 .col-num2 p.footer-link-title{
   color: #fff;
+  font-size: 18px;
+  color: #3482f7;
 }
 .col-num2 ul.ul-list {
   display: flex;
