@@ -112,7 +112,7 @@
               <div class="card" style="max-height: 435px;">
                 <img class="d-block" src="img\jogo-7.jpg" class="card-img-top" style="width: object-fit; border-radius: 6px;">
                 <div class="card-body" style="display: flex; position: relative; bottom: 15px;">
-                  <h5 class="card-title">Brasil perde para a Polônia e encerra Liga das Nações em quarto</h5>
+                  <h5 class="card-title">Brasil perde para a Polônia e encerra Liga das Nações em quarto lugar</h5>
                   <!-- <p class="card-text">Porque a seleção da Espanha não existe no volêi?</p> -->
                 </div>
               </div>

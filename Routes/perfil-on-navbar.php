@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php 
-    session_start();
-   $imagem = base64_encode($_SESSION['usuario_atual']['imagem_perfil']); 
+    require '../Controller/login.php';
+    $imagem = base64_encode($_SESSION['usuario_atual']['imagem_perfil']);
 ?>
 <html lang="pt-br">
 
