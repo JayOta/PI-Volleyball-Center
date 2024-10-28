@@ -13,43 +13,6 @@
 </head>
 
 <body>
-  <!-- <footer>
-    <div class="container-fluid py-3">
-      <div class="row">
-        <div class="col-4">
-          <ul class="nav flex-column">
-            <li class="nav-link"><a href="#">Retornar ao início</a></li>
-            <li class="nav-link"><a href="#">Sobre</a></li>
-            <li class="nav-link"><a href="#">Suporte</a></li>
-          </ul>
-        </div>
-        <div class="col-6">
-          <p class="nav-link">
-            Aqui estão as nossas redes sociais:
-          </p>
-          <ul class="list-inline mb-2 mb-md-0">
-            <li class="list-inline-item">
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="icon text-decoration-none">
-                <img src="img/facebook.png" alt="ícone Facebook" title="Facebook Melhor do Vôlei" width="50">
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="icon text-decoration-none">
-                <img src="img/instagram.png" alt="ícone Instagram" title="Instagram Melhor do Vôlei" width="50">
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="icon text-decoration-none">
-                <img src="img/twitter.png" alt="ícone Twitter" title="Twitter Melhor do Vôlei" width="50">
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <br>
-  </footer>
-  <br><br> -->
   <footer>
     <ul class="col-num1">
       <li class="footer-links"><a href="#">Retornar ao início</a></li>

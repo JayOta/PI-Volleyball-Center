@@ -1,3 +1,7 @@
+<?php 
+    require '../Controller/produto-page.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
