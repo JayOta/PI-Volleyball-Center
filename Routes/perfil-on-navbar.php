@@ -47,7 +47,7 @@
                                     </div>
                                     <div class="details-content">
                                         <i class='bx bx-cog'></i>
-                                        <li class="li-perfil">Configurações</li>
+                                        <li class="li-perfil">Configurações</li> <!-- https://www.bootdey.com/snippets/view/profile-edit-settings -->
                                     </div>
                                         <button type="submit" name="logout" style="width: 100%; border: none; background: transparent; border-radius: 2px;">
                                             <div class="details-content">
