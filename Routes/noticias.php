@@ -81,87 +81,13 @@
 				</div>
 			</div>
 		</div>
-					 <!-- <div class="col">
-						<div class="card h-100">
-							<a href="#" target="_blank">
-								<img src="img/noticia-2.png" class="card-img-top" alt="Seleção" style="height: fit-content; border-radius: 7px;">
-							</a>
-							<div class="card-body">
-								<h5 class="card-title">Suzano bate o Santo André pelo triangular da série prata do Campeonato Paulista sub-21</h5>
-								<p class="card-text"><strong>Por Volleyball Center</strong></p>
-							</div>
-							<div class="card-footer">
-								<small class="text-body-secondary">Ultima atualização 3 mins atrás</small>
-							</div>
-						</div>
-					</div>
-
-					<div class="col">
-						<div class="card h-100">
-							<a href="#" target="_blank">
-								<img src="img/noticia-3.png" class="card-img-top" alt="Seleção" style="height: fit-content; border-radius: 7px;"></a>
-							<div class="card-body">
-								<h5 class="card-title">Paola Egonu está fora do Pré-Olímpico</h5>
-								<p class="card-text"><strong>Por Volleyball Center</strong></p>
-							</div>
-							<div class="card-footer">
-								<small class="text-body-secondary">Ultima atualização 3 mins atrás</small>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<br><br><br><br>
-
-			<div class="container">
-				<div class="row row-cols-1 row-cols-md-3 g-4">
-					<div class="col">
-						<div class="card h-100">
-							<a href="#" target="_blank">
-								<img src="img/noticia-4.png" class="card-img-top" alt="Seleção" style="height: fit-content; border-radius: 7px;"></a>
-							<div class="card-body">
-								<h5 class="card-title">Minas promove jogadora da base para a temporada 2023/24</h5>
-								<p class="card-text"><strong>Por Volleyball Center</strong></p>
-							</div>
-							<div class="card-footer">
-								<small class="text-body-secondary">Ultima atualização 3 mins atrás</small>
-							</div>
-						</div>
-					</div>
-
-					<div class="col">
-						<div class="card h-100">
-							<a href="#" target="_blank">
-								<img src="img/noticia-5.png" class="card-img-top" alt="Seleção" style="height: fit-content; border-radius: 7px;"></a>
-							<div class="card-body">
-								<h5 class="card-title">Revelação da SuperLiga, Oppenkoski conta como driblou a ansiedade para dirblar na final</h5>
-								<p class="card-text"><strong>Por Volleyball Center</strong></p>
-							</div>
-							<div class="card-footer">
-								<small class="text-body-secondary">Ultima atualização 3 mins atrás</small>
-							</div>
-						</div>
-					</div>
-
-					<div class="col">
-						<div class="card h-100">
-							<a href="#" target="_blank">
-								<img src="img/noticia-6.png" class="card-img-top" alt="Seleção" style="height: fit-content; border-radius: 7px;"></a>
-							<div class="card-body">
-								<h5 class="card-title">Serginho reúne constelação de craques em jogo das estrelas</h5>
-								<p class="card-text"><strong>Por Volleyball Center</strong></p>
-							</div>
-							<div class="card-footer">
-								<small class="text-body-secondary">Ultima atualização 3 mins atrás</small>
-							</div>
-						</div>
-					</div> -->
 
 		<div class="blue-back2"> <!-- Inserir o banco aqui -->
 			<aside>
 				<h1 class="second-title">Campeonato Paranaense!</h1>
 				<?php for($i = 14; $i < count($noticias) - 13; $i++) { ?>
 				<div id="carouselExampleSlidesOnly" id="carousel-slide" class="carousel slide" data-bs-ride="carousel">
+					<br><br><br><h1 style="font-size: 40px;">Erro!</h1><br><br>
 					<div class="carousel-inner">
 						<div class="carousel-item active">
 							<img class="aside-imgs" src="<?php $imagem = base64_encode($noticias[$i]['imagem_noticias']); echo "data:image/jpeg;base64," . $imagem;?>" class="d-block" alt="Imagem do campeonato Paranaense Sub-13 de 2023"> <!-- Deixar o carrousel mais escuro -->
@@ -211,74 +137,7 @@
 				</div>
 			</aside>
 		</div>
-							<!-- <div class="carousel-item">
-								<img class="aside-imgs" src="img/news2_3.webp" class="d-block" alt="Imagem da equipe de vôlei da smel Araucária de 2023" style="
-							display: flex; 
-							width: 620px; 
-							height: 345px; 
-							border-radius: 10px; 
-							transition: 0.3s;
-							">
-								<div class="carousel-caption d-none d-md-block">
-									<h5 class="justify-content-center position-relative d-flex" style="font-size: 20px;">15 de junho de 2024</h5>
-									<p class="justify-content-center position-relative d-flex" style="font-size: 19px;">Começou o Campeonato Paranaense Adulto 2024!</p>
-								</div>
-							</div> -->
-
-					<!-- <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" style="
-						display: flex; 
-						border-radius: 10px; 
-						width: 620px; 
-						height: 345px; 
-							margin-top: 70px; 
-						transition: 0.3s; 
-						box-shadow: 0px 3px 8px #000;
-						">
-						<div class="carousel-inner" style="background-color: black; border-radius: 10px;">
-							<div class="carousel-item active">
-								<img class="aside-imgs" src="img/news3_1.webp" class="d-block" alt="Imagem do campeonato Paranaense Sub-13 de 2023" style="
-								position: relative; 
-								display: flex; 
-								width: 620px; 
-								height: 345px; 
-								border-radius: 10px; 
-								transition: 0.3s;
-								">
-								<div class="carousel-caption d-none d-md-block">
-									<h5 class="justify-content-center" style="font-size: 20px; position: relative; display: flex;">18 de junho de 2024</h5>
-									<p class="justify-content-center" style="font-size: 19px; position: relative; display: flex;">Seleção Paranense SUB-18 feminina recebe medalha de bronze no CBS 2024</p>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<img class="aside-imgs" src="img/news3_2.webp" class="d-block" alt="Imagem de jogadores de volêi" style="
-								display: flex; 
-								width: 620px; 
-								height: 345px; 
-								border-radius: 10px; 
-								transition: 0.3s;
-								">
-								<div class="carousel-caption d-none d-md-block">
-									<h5 class="justify-content-center" style="font-size: 20px; position: relative; display: flex;">20 de junho de 2024</h5>
-									<p class="justify-content-center" style="font-size: 18px; position: relative; display: flex;">Confira como foi a 9ª rodada das equipes paranaenses na Superliga B</p>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<img class="aside-imgs" src="img/news3_3.webp" class="d-block" alt="Imagem da equipe de vôlei da smel Araucária de 2023" style="
-								display: flex; 
-								width: 620px; 
-								height: 345px; 
-								border-radius: 10px; 
-								transition: 0.3s;
-								">
-								<div class="carousel-caption d-none d-md-block">
-									<h5 class="justify-content-center" style="font-size: 20px; position: relative; display: flex;">25 de junho de 2024</h5>
-									<p class="justify-content-center" style="font-size: 18px; position: relative; display: flex;">Confira como foi a última semana do Maringá Vôlei (AMVP) na Superliga B masculina!</p>
-								</div>
-							</div>
-						</div>
-					</div> -->
-
-
+				
 		<br><br><br><br><br><br><br><br><br><br>
 
 		<div class="content-cards">

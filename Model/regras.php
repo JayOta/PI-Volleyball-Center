@@ -10,7 +10,7 @@
             $regras = $stmt->fetchAll();
             return $regras;
         }catch (PDOException $e) {
-            # code...
+            return "Erro ao mostrar informações -> ". $e;
         }
     }
 ?>
