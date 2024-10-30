@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
-
+<?php
+		require "../Controller/noticias2.php";
+		$noticias2 = buscarnoticias2();
+?>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -103,17 +106,30 @@
       <br><br>
 
       <h1 id="noticias-sem-title">Notícias semanais</h1>
-      <br><br>
-      <div class="noticias-align">
-        <br>
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-          <a href="#" style="text-decoration: none;">
-            <div class="col">
+      <br><br> 
+      <?php for($i = 0; $i < count($noticias2); $i++) { ?>
+        <div id="carouselExampleSlidesOnly" id="carousel-slide" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img class="aside-imgs" src="<?php $imagem = base64_encode($noticias2[$i]['imagem_noticias2']); echo "data:image/jpeg;base64," . $imagem;?>" class="d-block" alt="Imagem do campeonato Paranaense Sub-13 de 2023"> <!-- Deixar o carrousel mais escuro -->
+							<div class="carousel-caption d-flex d-md-block justify-content-center align-items-center">
+								<h5 class="d-flex justify-content-center"><!--10 de junho de 2024 --> <?php echo $noticias2[$i][2]; ?></h5>
+								<p class="d-flex justify-content-center"><!-- Confira como foi o final de semana (07 a 09) no Campeonato Estadual Adulto --><?php echo $noticias2[$i][3]; ?></p>
+							</div>
+						</div>
+					</div>
+          <?php } ?>
+
+          <!-- <div class="noticias-align">
+            <br>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+            <a href="#" style="text-decoration: none;">
+              <div class="col">
               <div class="card" style="max-height: 435px;">
                 <img class="d-block" src="img\jogo-7.jpg" class="card-img-top" style="width: object-fit; border-radius: 6px;">
                 <div class="card-body" style="display: flex; position: relative; bottom: 15px;">
                   <h5 class="card-title">Brasil perde para a Polônia e encerra Liga das Nações em quarto lugar</h5>
-                  <!-- <p class="card-text">Porque a seleção da Espanha não existe no volêi?</p> -->
+                  <p class="card-text">Porque a seleção da Espanha não existe no volêi?</p> 
                 </div>
               </div>
             </div>
@@ -124,7 +140,7 @@
                 <img src="img/jogo-8.jpg" class="card-img-top">
                 <div class="card-body">
                   <h5 class="card-title">Argentina perde clássico este fim de semana</h5>
-                  <!-- <p class="card-text">Liga das Nações de Vôlei: Argentina perdeu o clássico com o Brasil</p> -->
+                  <p class="card-text">Liga das Nações de Vôlei: Argentina perdeu o clássico com o Brasil</p> 
                 </div>
               </div>
             </div>
@@ -136,7 +152,7 @@
                 <img src="img/jogo-4.jpg" class="card-img-top">
                 <div class="card-body">
                   <h5 class="card-title">Brasil ganha seu terceiro amistoso consecutivo</h5>
-                  <!-- <p class="card-text">Brasil ganha seu terceiro amistoso consecutivo</p> -->
+                  <p class="card-text">Brasil ganha seu terceiro amistoso consecutivo</p> 
                 </div>
               </div>
             </div>
@@ -147,7 +163,7 @@
                 <img src="img/jogo-1-official.jpg" class="card-img-top">
                 <div class="card-body">
                   <h5 class="card-title">López, do Cruzeiro, inicia a temporada em alto nível</h5>
-                  <!-- <p class="card-text">Brasil bate Coreia do Sul e pega EUA na final do vôlei feminino</p> -->
+                  <p class="card-text">Brasil bate Coreia do Sul e pega EUA na final do vôlei feminino</p>
                 </div>
               </div>
             </div>
@@ -156,7 +172,7 @@
       </div>
     </form>
   </main>
-  <br><br><br><br><br><br>
+  <br><br><br><br><br><br> -->
   <?php
   include 'footer.php';
   ?>
