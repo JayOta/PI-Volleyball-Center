@@ -42,29 +42,20 @@ $fundamentos = buscarfundamentos();
 
 	<div class="meioDosFundamentos">
 		<?php
-		for ($i = 0; $i < count($fundamentos); $i++) {
-
-		?>
+		for ($i = 0; $i < count($fundamentos); $i++) {?>
 			<div class="card">
 				<img src="<?php
-							$imagem = base64_encode($fundamentos[$i]['imagem_fundamento']);
-							echo "data:image/jpeg;base64," . $imagem;
-							?>" class="card-img-top"">
-		</div>
-		<br>
-		<div>
-			<p class=" align-text"><?php
-									echo $fundamentos[$i]['titulo_fundamento'];
-									?></p>
-				<p class="fundamentosaolado"><?php
-												echo $fundamentos[$i]['descricao'];
-												?></p>
+				$imagem = base64_encode($fundamentos[$i]['imagem_fundamento']);
+				echo "data:image/jpeg;base64," . $imagem;
+				?>" class="card-img-top"">
 			</div>
 			<br>
-
-		<?php
-		}
-		?>
+			<div>
+				<p class=" align-text"><?php echo $fundamentos[$i]['titulo_fundamento'];?></p>
+				<p class="fundamentosaolado"><?php echo $fundamentos[$i]['descricao'];?></p>
+			</div>
+			<br>
+		<?php } ?>
 		<!-- <div class="espacoentrediv">
 			<h2 class="text-align-center">RECEPÇÃO</h2>
 			<div class="card">

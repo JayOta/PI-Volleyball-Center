@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
-		require "../Controller/noticias2.php";
-		$noticias2 = buscarnoticias2();
+		require "../Controller/inicial.php";
+		$inicial = buscarnoticias2();
 ?>
 <html>
 <head>
@@ -106,18 +106,18 @@
       <br><br>
 
       <h1 id="noticias-sem-title">Notícias semanais</h1>
-      <div class="content-cards d-flex justify-content-center" style="display: flex; justify-content: center; align-items: center;">
-        <div class="container" style="margin-top: 3rem; display: flex; justify-content: center; align-items: center;">
+      <div class="content-cards d-flex justify-content-center" style="margin-left: 5.2rem;">
+        <div class="container" style="margin-top: 3rem;">
           <div class="row row-cols-1 row-cols-md-2 g-4">
-            <?php for($i = 0; $i < count($noticias2); $i++){ ?>
+            <?php for($i = 0; $i < count($inicial); $i++){ ?>
             <div class="col" style=" margin-bottom: 3rem;">
-              <div class="card h-100" style="width: 31rem; height: 98%;">
+              <div class="card h-100" style="width: 33rem; height: 98%;">
                 <a href="#" target="_blank">
-                  <img src="<?php $imagem = base64_encode($noticias2[$i]['imagem_noticias2']); echo "data:image/jpeg;base64," . $imagem;?>" class="card-img-top" alt="Seleção" style="border-radius: 7px;">
+                  <img src="<?php $imagem = base64_encode($inicial[$i]['imagem_noticias2']); echo "data:image/jpeg;base64," . $imagem;?>" class="card-img-top" alt="Seleção" style="border-radius: 7px;">
                 </a>
                 <div class="card-body" style="height: 8rem;">
-                  <h5 class="card-title"><?php echo $noticias2[$i]['titulo_noticias2']?></h5>
-                  <p class="card-text"><strong><?php echo $noticias2[$i]['descricao_noticias2']?></strong></p>
+                  <h5 class="card-title"><?php echo $inicial[$i]['titulo_noticias2']?></h5>
+                  <p class="card-text"><strong><?php echo $inicial[$i]['descricao_noticias2']?></strong></p>
                 </div>
                 <div class="card-footer">
                   <small class="text-body-secondary">Ultima atualização 3 mins atrás</small>
@@ -128,7 +128,8 @@
           </div>
         </div>
       </div>  
-    </div>
+    </form>
+  </main>
 <br><br><br><br><br><br><br>
           <!-- <div class="noticias-align">
             <br>
@@ -180,8 +181,7 @@
           </a>
         </div>
       </div>
-    </form>
-  </main>
+
   <br><br><br><br><br><br> -->
   <?php
   include 'footer.php';

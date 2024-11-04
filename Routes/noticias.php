@@ -85,9 +85,8 @@
 		<div class="blue-back2"> <!-- Inserir o banco aqui -->
 			<aside>
 				<h1 class="second-title">Campeonato Paranaense!</h1>
-				<?php for($i = 14; $i < count($noticias) - 13; $i++) { ?>
 				<div id="carouselExampleSlidesOnly" id="carousel-slide" class="carousel slide" data-bs-ride="carousel">
-					<br><br><br><h1 style="font-size: 40px;">Erro!</h1><br><br>
+					<?php for($i = count($noticias) - 7; $i < count($noticias) - 6; $i++) { ?>
 					<div class="carousel-inner">
 						<div class="carousel-item active">
 							<img class="aside-imgs" src="<?php $imagem = base64_encode($noticias[$i]['imagem_noticias']); echo "data:image/jpeg;base64," . $imagem;?>" class="d-block" alt="Imagem do campeonato Paranaense Sub-13 de 2023"> <!-- Deixar o carrousel mais escuro -->
@@ -96,28 +95,34 @@
 								<p class="d-flex justify-content-center"><!-- Confira como foi o final de semana (07 a 09) no Campeonato Estadual Adulto --><?php echo $noticias[$i][3]; ?></p>
 							</div>
 						</div>
+					</div> <?php } ?>
 					</div>
-				</div> <?php } ?>
 
-				<div class="carousel-sides d-flex position-absolute">
-					<?php for($i = 0; $i < 2; $i++) { ?>
+				<div class="carousel-sides d-flex">
 					<div id="carouselExampleFade" class="carousel slide carousel-fade d-flex" data-bs-ride="carousel">
 						<div class="carousel-inner">
-							<?php for($i = 15; $i < count($noticias) - 3; $i++) { ?>
+							<?php for($i = 16; $i > 13; $i--) { ?>
 							<div class="carousel-item active">
-								<img class="aside-imgs position-relative d-flex" src="<?php $imagem = base64_encode($noticias[$i]['imagem_noticias']); echo "data:image/jpeg;base64," . $imagem;?>" class="d-block" alt="Imagem do campeonato Paranaense Sub-13 de 2023" style="
+								<img class="aside-imgs d-flex" src="<?php $imagem = base64_encode($noticias[$i]['imagem_noticias']); echo "data:image/jpeg;base64," . $imagem;?>" class="d-block" alt="Imagem do campeonato Paranaense Sub-13 de 2023" style="
 								width: 620px; 
 								height: 345px; 
 								border-radius: 10px; 
 								transition: 0.3s;
 								">
 								<div class="carousel-caption d-none d-md-block">
-									<h5 class="d-flex justify-content-center position-relative d-flex" style="font-size: 20px;"> <!-- 9 de junho de 2024 --><?php echo $noticias[$i][2]; ?></h5> <!-- inserido -->
-									<p class="d-flex justify-content-center position-relative d-flex" style="font-size: 19px;"><!-- Hoje (24), inicia a primeira etapa dos Jogos da Juventude do Paraná 2024! --><?php echo $noticias[$i][3]; ?></p> <!-- inserido -->
+									<h5 class="d-flex justify-content-center d-flex" style="font-size: 20px;"> <!-- 9 de junho de 2024 --><?php echo $noticias[$i][2]; ?></h5> <!-- inserido -->
+									<p class="d-flex justify-content-center d-flex" style="font-size: 19px;"><!-- Hoje (24), inicia a primeira etapa dos Jogos da Juventude do Paraná 2024! --><?php echo $noticias[$i][3]; ?></p> <!-- inserido -->
 								</div> 
 							</div>
 							<?php } ?>
-							<?php for($i = 18; $i < count($noticias); $i++) { ?>
+						</div> 
+					</div>
+				</div>
+
+				<div class="carousel-sides d-flex">
+					<div id="carouselExampleFade" class="carousel slide carousel-fade d-flex" data-bs-ride="carousel">
+						<div class="carousel-inner">
+							<?php for($i = 19; $i > 16; $i--) { ?>
 							<div class="carousel-item active">
 								<img class="aside-imgs" src="<?php $imagem = base64_encode($noticias[$i]['imagem_noticias']); echo "data:image/jpeg;base64," . $imagem;?>" class="d-block" alt="Imagem de jogadores de volêi" style="
 								display: flex; 
@@ -127,13 +132,12 @@
 								transition: 0.3s;
 								">
 								<div class="carousel-caption d-none d-md-block">
-									<h5 class="justify-content-center position-relative d-flex" style="font-size: 20px; text-align: center;"><!-- 12 de junho de 2024 --><?php echo $noticias[$i][2]; ?></h5>
-									<p class="justify-content-center position-relative d-flex" style="font-size: 19px;"><!-- Fim de segunda etapa do Campeonato Paranaense sub-19 série A masculino! --><?php echo $noticias[$i][3]; ?></p>
+									<h5 class="justify-content-center d-flex" style="font-size: 20px; text-align: center;"><!-- 12 de junho de 2024 --><?php echo $noticias[$i][2]; ?></h5>
+									<p class="justify-content-center d-flex" style="font-size: 19px;"><!-- Fim de segunda etapa do Campeonato Paranaense sub-19 série A masculino! --><?php echo $noticias[$i][3]; ?></p>
 								</div>
 							</div> <?php } ?>
 						</div> 
 					</div>
-					<?php } ?>
 				</div>
 			</aside>
 		</div>
