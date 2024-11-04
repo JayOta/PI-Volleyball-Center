@@ -115,9 +115,6 @@ $fundamentos = buscarfundamentos();
 
 
 
-
-
-
 	<hr style="width: 80%; margin-left: 200px;">
 	<div class="aviso" style="display: flex; flex-direction:column; justify-content: center; align-items: center;">
 		<p>Com o treino frequente desses fundamentos, a sua habilidade irá melhorar aos poucos.</p>
