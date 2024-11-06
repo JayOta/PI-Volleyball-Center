@@ -1,6 +1,8 @@
 <?php
 require "../Controller/produto_cadastro.php";
+require "../Controller/categorias.php";
 $getAllProdutos = getAllProdutos();
+$getAllCategorias = buscarCategoria();
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +30,13 @@ $getAllProdutos = getAllProdutos();
 	?>
 	<br>
 
-	<form class="d-flex position-relative" role="search" style="margin-left: 1115px; transform: translateY(30px);">
+	<div class="categoria">
+		<?php for($i = 0; $i < count($getAllCategorias); $i++){?>
+		<a href="<?php echo @$link;?>"><?php echo $getAllCategorias[$i]['nome_categoria'];?></a>
+		<?php } ?>
+	</div>
+
+	<form class="d-flex position-relative" role="search" style="margin-left: 83rem; bottom: 3.3rem;">
 		<input class="input-search form-control me-2" type="search" placeholder="Pesquise o produto" aria-label="Search" style="width: 360px;">
 		<button class="btn btn-outline-success" type="submit">Pesquisar</button>
 	</form>

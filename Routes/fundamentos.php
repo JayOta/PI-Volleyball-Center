@@ -56,70 +56,23 @@ $fundamentos = buscarfundamentos();
 			</div>
 			<br>
 		<?php } ?>
-		<!-- <div class="espacoentrediv">
-			<h2 class="text-align-center">RECEPÇÃO</h2>
-			<div class="card">
-				<img src="imgfund/levantamento.jpg" class="card-img-top" alt="imagem de como é feito o passo a passo do levantamento no vôlei.">
-			</div>
-			<br>
-			<div class="align-text">
-				<p><strong>Levantamento:</strong></p>
-				<p class="fundamentosaolado">Na execução do saque por baixo, o jogador posiciona-se de lado para a rede, com os pés afastados na largura dos ombros e o peso do corpo distribuído uniformemente. O braço de saque é mantido estendido ao lado do corpo, com a mão próxima à altura da cintura segurando a bola. Para sacar, o jogador flexiona levemente os joelhos e o tronco, realizando um movimento de abaixamento do braço de saque. Nesse momento, a bola é arremessada por baixo da cintura em direção à rede, com uma trajetória relativamente tensa e controlada.
-			Apesar de suas limitações, o saque por baixo ainda é uma técnica válida no voleibol, especialmente em situações nas quais o jogador precisa de mais controle sobre a bola, como em treinos ou jogos com adversários de nível inferior.
-			Muitos jogadores iniciantes começam desenvolvendo o saque por baixo antes de progredir para técnicas mais avançadas, como o saque por cima. O importante é que o atleta domine essa habilidade básica antes de evoluir para opções mais complexas e eficazes.</p>
-			</div>
-			<p class="restotexto">
-			</p>
-			<br>
-		</div>
-		<div class="espacoentrediv">
-			<div class="card">
-				<img src="img/saque-baixo.jpeg" class="card-img-top" alt="imagem de como é feito passo a passo o saque por baixo no vôlei.">
-			</div>
-			<br>
-			<div class="align-text">
-				<p><strong>Saque por baixo:</strong></p>
-				<p class="fundamentosaolado">Na execução do saque por baixo, o jogador posiciona-se de lado para a rede, com os pés afastados na largura dos ombros e o peso do corpo distribuído uniformemente. O braço de saque é mantido estendido ao lado do corpo, com a mão próxima à altura da cintura segurando a bola. Para sacar, o jogador flexiona levemente os joelhos e o tronco, realizando um movimento de abaixamento do braço de saque. Nesse momento, a bola é arremessada por baixo da cintura em direção à rede, com uma trajetória relativamente tensa e controlada.
-			Apesar de suas limitações, o saque por baixo ainda é uma técnica válida no voleibol, especialmente em situações nas quais o jogador precisa de mais controle sobre a bola, como em treinos ou jogos com adversários de nível inferior.
-			Muitos jogadores iniciantes começam desenvolvendo o saque por baixo antes de progredir para técnicas mais avançadas, como o saque por cima. O importante é que o atleta domine essa habilidade básica antes de evoluir para opções mais complexas e eficazes.</p>
-			</div>
-			<p class="restotexto">
-			</p>
-			<br>
-		</div>
-		<div class="espacoentrediv">
-			<div class="card">
-				<img src="img/saque-baixo.jpeg" class="card-img-top" alt="imagem de como é feito passo a passo o saque por baixo no vôlei.">
-			</div>
-			<br>
-			<div class="align-text">
-				<p><strong>Saque por baixo:</strong></p>
-				<p class="fundamentosaolado">Na execução do saque por baixo, o jogador posiciona-se de lado para a rede, com os pés afastados na largura dos ombros e o peso do corpo distribuído uniformemente. O braço de saque é mantido estendido ao lado do corpo, com a mão próxima à altura da cintura segurando a bola. Para sacar, o jogador flexiona levemente os joelhos e o tronco, realizando um movimento de abaixamento do braço de saque. Nesse momento, a bola é arremessada por baixo da cintura em direção à rede, com uma trajetória relativamente tensa e controlada.
-			Apesar de suas limitações, o saque por baixo ainda é uma técnica válida no voleibol, especialmente em situações nas quais o jogador precisa de mais controle sobre a bola, como em treinos ou jogos com adversários de nível inferior.
-			Muitos jogadores iniciantes começam desenvolvendo o saque por baixo antes de progredir para técnicas mais avançadas, como o saque por cima. O importante é que o atleta domine essa habilidade básica antes de evoluir para opções mais complexas e eficazes.</p>
-			</div>
-			<p class="restotexto">
-			</p>
-			<br>
-		</div> -->
 	</div>
 
 
+		<hr style="width: 80%; margin-left: 200px;">
+		<div class="aviso" style="display: flex; flex-direction:column; justify-content: center; align-items: center;">
+			<p>Com o treino frequente desses fundamentos, a sua habilidade irá melhorar aos poucos.</p>
+			<h6 style="display: flex; margin-right: 100px;"><strong>Não esqueça!</strong></h6>
+			<ul>
+				<li>Alongue-se antes</li>
+				<li>Hidrate-se na medida certa.</li>
+			</ul>
+		</div>
 
-	<hr style="width: 80%; margin-left: 200px;">
-	<div class="aviso" style="display: flex; flex-direction:column; justify-content: center; align-items: center;">
-		<p>Com o treino frequente desses fundamentos, a sua habilidade irá melhorar aos poucos.</p>
-		<h6 style="display: flex; margin-right: 100px;"><strong>Não esqueça!</strong></h6>
-		<ul>
-			<li>Alongue-se antes</li>
-			<li>Hidrate-se na medida certa.</li>
-		</ul>
-	</div>
-
-	<br><br>
-	<?php
-	include 'footer.php';
-	?>
+		<br><br>
+		<?php
+		include 'footer.php';
+		?>
 </body>
 
 </html>
