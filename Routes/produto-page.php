@@ -1,4 +1,7 @@
-<?php require '../Controller/produto-page.php'; ?>
+<?php 
+require '../Controller/produto-page.php'; 
+      $produto = buscarProduto($_GET['id']);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -51,51 +54,31 @@
             alt="next symbol image"
             class="img-main__btnrgt-img img-main__btn-img" />
         </button>
-        <img src="img/manguito.png" alt="#" class="img-main" /> <!-- Imagem Principal -->
-        <div class="img-btns">
-          <button class="img-btn" type="button">
-            <img
-              src="img/manguito2.png"
-              alt="produto imagem 1"
-              class="img-btn__img" /> <!-- Imagens Secundárias -->
-          </button>
-          <button class="img-btn" type="button">
-            <img
-              src="img/manguito3.png"
-              alt="produto imagem 2"
-              class="img-btn__img" /> <!-- Imagens Secundárias -->
-          </button>
-          <button class="img-btn" type="button">
-            <img
-              src="img/manguito4.png"
-              alt="produto imagem 3"
-              class="img-btn__img" /> <!-- Imagens Secundárias -->
-          </button>
-          <button class="img-btn" type="button">
-            <img
-              src="img/manguito5.png"
-              alt="produto imagem 4"
-              class="img-btn__img" /> <!-- Imagens Secundárias -->
-          </button>
-        </div>
+        <img src="<?php echo 'data:image/jpeg;base64,'.base64_encode($produto['imagem_produto']) ?>" alt="#" class="img-main" /> <!-- Imagem Principal -->
       </section>
 
       <section class="price">
         <h2 class="price-sub__heading">VolleyBall Center</h2>
         <h1 class="price-main__heading">Produtos de Edição Limitada Verão</h1>
-        <h1 class="price-name__heading" name="nome">Manguito</h2>
+
+       
+
+        <div class="price-name__heading"><?php echo $produto['nome']?></div>
+        <!-- <h1 class="price-name__heading" name="nome">Manguito</h2>
           <p class="price-txt" name="description">
-            Este manguito é o companheiro perfeito para uso no vôlei.
+         -->
+          <div class="price-txt" name="description"><?php echo $produto['descricao']?></div>
+            <!-- Este manguito é o companheiro perfeito para uso no vôlei.
             Apresentando um <br /> tecido de Poliamida, que resistirá ao uso prolongado durante os jogos.
-          </p>
+          </p> -->
           <div class="price-box">
             <div class="price-box__main">
-              <span class="price-box__main-new" name="price">R$52.00</span>
-              <span class="price-box__main-discount" name="percent_discount"> 25%</span>
-            </div>
-            <span class="price-box__old" name="old_price">R$70.00</span> <!-- Preço dos Produtos -->
+              <div class="price-box__old" name="old_price"><?php echo $produto['preco']?></div>
+                <!-- <span class="price-box__main-discount" name="percent_discount"> 25%</span>
+              </div>
+              <span class="price-box__old" name="old_price">R$70.00</span>  Preço dos Produtos -->
+            </div> 
           </div>
-
           <div class="color-box">
             <p class="color-title">Cor</p>
             <div class="images-box">
@@ -122,7 +105,7 @@
             </div>
           </div>
 
-          <div class="price-btnbox">
+          <a href="carrinho.php" class="price-btnbox">
             <div class="price-btns">
               <button class="price-btn__add price-btn" name="add_to_cart" type="submit">
                 <img
@@ -142,12 +125,12 @@
             </div>
 
             <button type="submit" class="price-cart__btn btn--blue" style="display: flex; justify-content: center; align-items: center; height: 8rem; z-index: 1;">
-              <a href="carrinho.php" style="display: flex; flex-direction: row; align-items: center; justify-content: center; text-decoration: none; color:#fff; z-index: 2;">
+              <div  style="display: flex; flex-direction: row; align-items: center; justify-content: center; text-decoration: none; color:#fff; z-index: 2;">
                 <i class='bx bxs-cart price-cart__btn-img'></i>
                 <p>Adicionar ao carrinho</p>
-              </a>
+</div>
             </button>
-          </div>
+</a>
       </section>
     </main>
   </form>
