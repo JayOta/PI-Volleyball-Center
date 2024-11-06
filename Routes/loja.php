@@ -51,7 +51,7 @@ $getAllProdutos = getAllProdutos();
 									<div class="card-body">
 										<h5 class="card-title"><?php echo $getAllProdutos[$i][2]; ?><!--Manguito--></h5>
 										<h3 class="card-text"><?php echo "R$". number_format($getAllProdutos[$i][4], 2, ',', ''); ?></h3>
-										<a href="produto-page.php" class="btn btn-success card-button">Comprar</a>
+										<a href="produto-page.php?id=<?php echo $getAllProdutos[$i]['produto_id']; ?>" class="btn btn-success card-button">Comprar</a>
 									</div>
 								</div>
 						</div>
