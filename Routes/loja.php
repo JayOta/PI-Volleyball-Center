@@ -51,7 +51,7 @@ $getAllCategorias = buscarCategoria();
 					<?php
 					for ($i = 0; $i < count($getAllProdutos); $i++) { ?>
 						<div class="col-md-3">
-								<div class="card">
+								<div class="card" style="border-color:#F9CC02;">
 								<a href="produto-page.php?id=<?php echo $getAllProdutos[$i]['produto_id'];?>" style="text-decoration: none; list-style: none; color: #0b0b0b;">
 									<img src="<?php $imagem = base64_encode($getAllProdutos[$i]['imagem_produto']); echo "data:image/jpeg;base64," . $imagem;?>" class="card-img-top" alt="Produto 1" style="cursor: pointer;">
 								</a>

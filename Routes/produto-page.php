@@ -54,7 +54,7 @@ require '../Controller/produto-page.php';
             alt="next symbol image"
             class="img-main__btnrgt-img img-main__btn-img" />
         </button>
-        <img src="<?php echo 'data:image/jpeg;base64,'.base64_encode($produto['imagem_produto']); ?>" alt="#" class="img-main" /> <!-- Imagem Principal -->
+        <img src="<?php echo 'data:image/jpeg;base64,'.base64_encode($produto['imagem_produto']); ?>" alt="#" class="img-main" style="width: 500px; height: 500px; margin-top: 70px;"> 
       </section>
 
       <section class="price">

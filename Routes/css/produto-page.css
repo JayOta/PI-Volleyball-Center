@@ -161,7 +161,7 @@ Product section stylling
   margin-top: 0.5rem;
   margin-right: 30px;
   font-size: 1.4rem;
-  color: var(--dark-grayish-blue);
+  color: #000;
   line-height: 1.5;
 }
 
@@ -396,6 +396,7 @@ Media Queries
 
   .img-main {
     border-radius: 0;
+
   }
 
   .img-main__btn {
