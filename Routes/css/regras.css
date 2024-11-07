@@ -1,9 +1,64 @@
+.pagina {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  /* Faz a altura ocupar a página inteira */
+}
+
+
 .meioRegras{
-    margin-top: 50px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 15px rgba(189, 171, 171, 0.507);
-    height: 180rem;
-    width: 70rem;
+  margin-top: 50px;
+  display: flex;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px rgba(189, 171, 171, 0.507);
+  height: 180rem;
+  width: 70rem;
+  display: flex;
+  align-items: flex-start; /* Alinha o título ao topo */
+  justify-content: center; /* Centraliza horizontalmente */
+  position: relative;
+  }
+
+  .text-align-center{
     position: relative;
-    left: 420px;
+    left: 30px; 
+    display: flex;
+   
+  }
+
+  .align-text{
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: justify;
+    color: #495057;
+  }
+  
+  
+  
+  .regrasaolado{
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
+  
+    
+  }
+  
+  .card{
+    width: 550px; 
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+    float: left; 
+    margin-right: 20px;
+  }
+  
+  
+  .card-text{
+    display: flex;
+    width: 300px;
+    margin: 20px;
+    font-size: 20px; 
   }
