@@ -54,7 +54,7 @@ require '../Controller/produto-page.php';
             alt="next symbol image"
             class="img-main__btnrgt-img img-main__btn-img" />
         </button>
-        <img src="<?php echo 'data:image/jpeg;base64,'.base64_encode($produto['imagem_produto']) ?>" alt="#" class="img-main" /> <!-- Imagem Principal -->
+        <img src="<?php echo 'data:image/jpeg;base64,'.base64_encode($produto['imagem_produto']); ?>" alt="#" class="img-main" style="width: 500px; height: 500px; margin-top: 70px;"> 
       </section>
 
       <section class="price">
@@ -63,17 +63,17 @@ require '../Controller/produto-page.php';
 
        
 
-        <div class="price-name__heading"><?php echo $produto['nome']?></div>
+        <div class="price-name__heading" style="font-size: 32px; color:#1e90ff;"><?php echo $produto['nome']?></div>
         <!-- <h1 class="price-name__heading" name="nome">Manguito</h2>
           <p class="price-txt" name="description">
          -->
-          <div class="price-txt" name="description"><?php echo $produto['descricao']?></div>
+          <div class="price-txt" name="description" style="color: var(--cinza-escurin); font-size: 25px; text-align: justify;"><?php echo $produto['descricao']?></div>
             <!-- Este manguito é o companheiro perfeito para uso no vôlei.
             Apresentando um <br /> tecido de Poliamida, que resistirá ao uso prolongado durante os jogos.
           </p> -->
           <div class="price-box">
             <div class="price-box__main">
-              <div class="price-box__old" name="old_price"><?php echo $produto['preco']?></div>
+             <div class="price-box__old" name="old_price"  style="color: #000;"><?php echo $produto['preco']?></div>
                 <!-- <span class="price-box__main-discount" name="percent_discount"> 25%</span>
               </div>
               <span class="price-box__old" name="old_price">R$70.00</span>  Preço dos Produtos -->

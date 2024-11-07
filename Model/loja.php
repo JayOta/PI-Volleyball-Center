@@ -17,7 +17,7 @@ function getAllProdutos() {
 function buscarCategoriasModel() {
     global $conn;
     try {
-        $stmt = $conn->prepare("SELECT * FROM `categorias` ");
+        $stmt = $conn->prepare("SELECT * FROM `categoria` ");
         $stmt->execute();
 
         $categorias = $stmt->fetchAll();
