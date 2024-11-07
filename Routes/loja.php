@@ -32,7 +32,7 @@ $getAllCategorias = buscarCategoria();
 
 	<div class="categoria">
 		<?php for($i = 0; $i < count($getAllCategorias); $i++){?>
-		<a href="<?php echo @$link;?>"><?php echo $getAllCategorias[$i]['nome_categoria'];?></a>
+		<a href="<?php echo @$link;?>"><?php echo $getAllCategorias[$i]['nome'];?></a>
 		<?php } ?>
 	</div>
 
@@ -51,14 +51,13 @@ $getAllCategorias = buscarCategoria();
 					<?php
 					for ($i = 0; $i < count($getAllProdutos); $i++) { ?>
 						<div class="col-md-3">
-							<a href="produto-page.php" style="text-decoration: none; list-style: none; color: #0b0b0b;">
 								<div class="card">
-								<a href="produto-page.php" style="text-decoration: none; list-style: none; color: #0b0b0b;">
+								<a href="produto-page.php?id=<?php echo $getAllProdutos[$i]['produto_id'];?>" style="text-decoration: none; list-style: none; color: #0b0b0b;">
 									<img src="<?php $imagem = base64_encode($getAllProdutos[$i]['imagem_produto']); echo "data:image/jpeg;base64," . $imagem;?>" class="card-img-top" alt="Produto 1" style="cursor: pointer;">
 								</a>
 									<div class="card-body">
-										<h5 class="card-title"><?php echo $getAllProdutos[$i][2]; ?><!--Manguito--></h5>
-										<h3 class="card-text"><?php echo "R$". number_format($getAllProdutos[$i][4], 2, ',', ''); ?></h3>
+										<h5 class="card-title"><?php echo $getAllProdutos[$i]['nome']; ?><!--Manguito--></h5>
+										<h3 class="card-text"><?php echo "R$". number_format($getAllProdutos[$i]['preco'], 2, ',', ''); ?></h3>
 										<a href="produto-page.php?id=<?php echo $getAllProdutos[$i]['produto_id']; ?>" class="btn btn-success card-button">Comprar</a>
 									</div>
 								</div>
