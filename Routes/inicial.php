@@ -26,7 +26,7 @@
   ?>
 
   <main>
-    <form>
+    <form class="main">
       <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active" id="first-carousel">
@@ -45,7 +45,9 @@
       </div>
       <br><br><br><br>
 
-      <div class="carousel-imagesItens">
+      <!-- <div class="background"> -->
+      <div class="carousel-imagesItens" style="display: flex; flex-direction: column;">
+        <center><h1 class="border-title" style="font-size: 32px;">Seleção Brasileira!</h1></center>
         <div id="carouselExampleInterval" class="carousel slide d-flex" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="2000">
@@ -99,14 +101,12 @@
           </div>
         </div>
       </div>
-
-      <br><br><br><br><br>
-
-      <hr>
-      <br><br>
-
-      <h1 id="noticias-sem-title">Notícias semanais</h1>
-      <div class="content-cards d-flex justify-content-center" style="margin-left: 5.2rem;">
+      <!-- </div> -->
+      <br><br><br><br><br> <hr> <br><br>
+      
+      <!-- <div class="background"> -->
+        <div class="content-cards d-flex " style=" flex-direction: column; margin-left: 5.2rem;">
+          <h1 id="noticias-sem-title">Sobre as Seleções</h1>
         <div class="container" style="margin-top: 3rem;">
           <div class="row row-cols-1 row-cols-md-2 g-4">
             <?php for($i = 0; $i < count($inicial); $i++){ ?>
@@ -128,61 +128,10 @@
           </div>
         </div>
       </div>  
+      <!-- </div> -->
     </form>
   </main>
 <br><br><br><br><br><br><br>
-          <!-- <div class="noticias-align">
-            <br>
-          <div class="row row-cols-1 row-cols-md-2 g-4">
-              <a href="#" style="text-decoration: none;">
-                <div class="col">
-                <div class="card" style="max-height: 435px;">
-                  <img class="d-block" src="img\jogo-7.jpg" class="card-img-top" style="width: object-fit; border-radius: 6px;">
-                  <div class="card-body" style="display: flex; position: relative; bottom: 15px;">
-                    <h5 class="card-title">Brasil perde para a Polônia e encerra Liga das Nações em quarto lugar</h5>
-                    <p class="card-text">Porque a seleção da Espanha não existe no volêi?</p> 
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="#" style="text-decoration: none;">
-              <div class="col">
-                <div class="card">
-                  <img src="img/jogo-8.jpg" class="card-img-top">
-                  <div class="card-body">
-                    <h5 class="card-title">Argentina perde clássico este fim de semana</h5>
-                    <p class="card-text">Liga das Nações de Vôlei: Argentina perdeu o clássico com o Brasil</p> 
-                  </div>
-                </div>
-              </div>
-            </a>
-
-            <a href="#" style="text-decoration: none;">
-              <div class="col">
-                <div class="card">
-                  <img src="img/jogo-4.jpg" class="card-img-top">
-                  <div class="card-body">
-                    <h5 class="card-title">Brasil ganha seu terceiro amistoso consecutivo</h5>
-                    <p class="card-text">Brasil ganha seu terceiro amistoso consecutivo</p> 
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="#" style="text-decoration: none;">
-              <div class="col">
-                <div class="card">
-                  <img src="img/jogo-1-official.jpg" class="card-img-top">
-                  <div class="card-body">
-                    <h5 class="card-title">López, do Cruzeiro, inicia a temporada em alto nível</h5>
-                    <p class="card-text">Brasil bate Coreia do Sul e pega EUA na final do vôlei feminino</p>
-                  </div>
-                </div>
-              </div>
-          </a>
-        </div>
-      </div>
-
-  <br><br><br><br><br><br> -->
   <?php
   include 'footer.php';
   ?>
