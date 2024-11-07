@@ -1,7 +1,7 @@
 <?php 
     require "../Service/conexao.php";
 
-    function buscarregrasmodel(){
+    function buscarRegrasModel(){
         global $conn;
         try{
             $stmt = $conn->prepare("SELECT * FROM `regras` ");

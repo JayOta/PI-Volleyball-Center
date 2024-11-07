@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 require "../Controller/regras.php";
-$regras = buscarregras();
+$regra = buscarRegras();
 
 // // Função para quebrar a linha
 // function quebraLinha($descricao, $limite) {
@@ -87,19 +87,19 @@ $regras = buscarregras();
 
     <div class="container"><br><br>
         <h1 style="transform: translateX(560px);">Regras</h1><br>
-        <?php for ($i = 0; $i < count($regras); $i++) { ?>
+        <?php for ($i = 0; $i < count($regra); $i++) { ?>
             <div class="justify-content-center" style="position: relative; left: 3.2rem;">
                 <div class="card m-3" style="display: flex; flex-direction: column; height: 42rem;">
                     <div class="col-md-4 d-flex align-items-center justify-content" style="width: 500px; margin-left: 23px; margin-top: 20px; height: auto;">
                         <img src="<?php
-                                    $imagem = base64_encode($regras[$i]['imagem_regras']);
+                                    $imagem = base64_encode($regra[$i]['imagem_regras']);
                                     echo "data:image/jpeg;base64," . $imagem;
                                     ?>" class="img-fluid rounded-start" alt="" style="border-radius: 5px; cursor:pointer; height: 20rem;">
                     </div>
                     <div class="desciption">
                         <div class="card-body" style="margin-left: 7px;">
-                            <h5 class="card-title" style="color: #1e90ff;"><?php echo $regras[$i]['titulo_regras']; ?></h5>
-                            <p class="card-text-center" style="text-align: justify;"><?php echo $regras[$i]['descricao']; // quebraLinha($regras[$i]['descricao'], $limiteCaracteres); 
+                            <h5 class="card-title" style="color: #1e90ff;"><?php echo $regra[$i]['titulo_regras']; ?></h5>
+                            <p class="card-text-center" style="text-align: justify;"><?php echo $regra[$i]['descricao']; // quebraLinha($regras[$i]['descricao'], $limiteCaracteres); 
                                                                                         ?></p>
                         </div>
                     </div>

@@ -1,8 +1,8 @@
 <?php
     require "../Model/historia.php";
 
-    function buscarhistoria(){
-        $historia = buscarhistoriaModel();
+    function buscarHistoria(){
+        $historia = buscarHistoriaModel();
         return $historia;
     }
 ?>

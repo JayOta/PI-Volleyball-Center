@@ -1,8 +1,8 @@
 <?php
-require "../Controller/produto_cadastro.php";
-require "../Controller/categorias.php";
+require "../Controller/loja.php";
 $getAllProdutos = getAllProdutos();
 $getAllCategorias = buscarCategoria();
+
 ?>
 
 <!DOCTYPE html>
@@ -42,7 +42,7 @@ $getAllCategorias = buscarCategoria();
 	</form>
 
 	<br><br><br><br><br>
-	<form method="post" action="../Controller/produto_cadastro.php">
+	<form method="post" action="../Controller/loja.php">
 		<main>
 			<div class="container">
 				<h2 style="text-align: center;">Catálogo de produtos</h2>
