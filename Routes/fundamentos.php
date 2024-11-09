@@ -40,34 +40,35 @@ $fundamentos = buscarfundamentos();
 
 
 
-
-	<div class="meioDosFundamentos">
-		<?php
-		for ($i = 0; $i < count($fundamentos); $i++) { ?>
-			<div class="card">
-				<img src="<?php
-							$imagem = base64_encode($fundamentos[$i]['imagem_fundamento']);
-							echo "data:image/jpeg;base64," . $imagem;
-							?>" class="card-img-top"">
+	<main style="display: flex; justify-content: center; align-items: center;">
+		<div class="meio-dos-fundamentos">
+			<?php
+			for ($i = 0; $i < count($fundamentos); $i++) { ?>
+				<div class="conteudo">
+					<div class="cardinho">
+						<img src="<?php $imagem = base64_encode($fundamentos[$i]['imagem_fundamento']);
+									echo "data:image/jpeg;base64," . $imagem; ?>" class="card-img-top"">
 			</div>
 			<br>
-			<div>
-				<p class=" align-text"><?php echo $fundamentos[$i]['titulo_fundamento']; ?></p>
-				<p class="fundamentosaolado"><?php echo $fundamentos[$i]['descricao']; ?></p>
-			</div>
-			<br>
-		<?php } ?>
-	</div>
+			<div class=" card-texto">
+						<p class=" align-text"><?php echo $fundamentos[$i]['titulo_fundamento']; ?></p>
+						<p class="fundamentosaolado"><?php echo $fundamentos[$i]['descricao']; ?></p>
+					</div>
+				</div>
+			<?php } ?>
+		</div>
+	</main>
 
-
-	<hr style="width: 80%; margin-left: 200px;">
-	<div class="aviso" style="display: flex; flex-direction:column; justify-content: center; align-items: center;">
-		<p>Com o treino frequente desses fundamentos, a sua habilidade irá melhorar aos poucos.</p>
-		<h6 style="display: flex; margin-right: 100px;"><strong>Não esqueça!</strong></h6>
-		<ul>
-			<li>Alongue-se antes</li>
-			<li>Hidrate-se na medida certa.</li>
-		</ul>
+	<div class="parte-baixo">
+		<hr style="width: 80%; margin-left: 200px;">
+		<div class="aviso" style="display: flex; flex-direction:column; justify-content: center; align-items: center;">
+			<p>Com o treino frequente desses fundamentos, a sua habilidade irá melhorar aos poucos.</p>
+			<h6 style="display: flex; margin-right: 100px;"><strong>Não esqueça!</strong></h6>
+			<ul>
+				<li>Alongue-se antes</li>
+				<li>Hidrate-se na medida certa.</li>
+			</ul>
+		</div>
 	</div>
 
 	<br><br>

@@ -113,13 +113,21 @@ span#title-site2 {
   max-height: 1000px;
   border: none;
   border-radius: 11px;
-  background-color: black;
   flex-grow: 1;
+  background-color: #0b0b0b;
+  transition: 0.6s ease-in-out;
+}
+.carousel-imagesItens #carouselExampleInterval img:hover {
+  filter: brightness(60%);
 }
 #carouselExampleInterval .carousel-inner {
   border-radius: 10px;
   opacity: 0.6;
   box-shadow: 0px 5px 30px #696969;
+  transition: 0.6s ease-in-out;
+}
+#carouselExampleInterval .carousel-inner:hover {
+  box-shadow: 0px 5px 32px #0b0b0b;
 }
 .carousel-item img {
   height: 690px;
@@ -170,8 +178,7 @@ span#title-site2 {
   transition: 0.3s ease-in-out;
 }
 .anuncio-produtos:hover {
-  cursor: pointer;
-  box-shadow: 0px 1px 14px #222222;
+  box-shadow: 0px 1px 12px #222222;
 }
 .anuncio-produtos .descricao-anuncio button {
   width: 7rem;

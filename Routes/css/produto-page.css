@@ -286,6 +286,7 @@ Product section stylling
   background-color: var(--light-grayish-blue);
   border-radius: 1rem;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   gap: 3.5rem;
@@ -303,7 +304,11 @@ span.price-btn__txt {
   font-weight: 700;
   color: #000;
 }
-
+.buy-part {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
 .price-cart__btn {
   width: 40%;
   height: 70%;

@@ -109,7 +109,7 @@ button#closeSidebarBtn .bx:hover {
   justify-content: center;
   gap: 40px;
   width: 100%;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 section {
   display: flex;
@@ -129,7 +129,7 @@ section {
   background: #fff;
   border: #424242;
   border-radius: 2px;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
   justify-content: center;
 }
 .big-aligns {
@@ -143,7 +143,7 @@ section {
   height: 28rem;
   box-shadow: 0px 0px 2px #0b0b0b;
   border-radius: 2px;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 aside {
   display: flex;

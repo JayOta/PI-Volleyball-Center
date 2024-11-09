@@ -1,6 +1,7 @@
 <?php
 require '../Controller/produto-page.php';
 $produto = buscarProduto($_GET['id']);
+$_SESSION['value'] = 0;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -73,13 +74,13 @@ $produto = buscarProduto($_GET['id']);
           <p class="color-title">Cor</p>
           <div class="images-box">
             <button type="button" class="image-box">
-              <img src="../Routes/img/manguito.png" alt="Manguito"> <!-- add a imagem do BD-->
+              <img src="<?php echo 'data:image/jpeg;base64,' . base64_encode($produto['imagem_produto']); ?>" alt="Manguito"> <!-- add a imagem do BD-->
             </button>
             <button type="button" class="image-box">
-              <img src="../Routes/img/manguito.png" alt="Manguito"> <!-- add a imagem do BD-->
+              <img src="<?php echo 'data:image/jpeg;base64,' . base64_encode($produto['imagem_produto']); ?>" alt="Manguito"> <!-- add a imagem do BD-->
             </button>
             <button type="button" class="image-box">
-              <img src="../Routes/img/manguito.png" alt="Manguito"> <!-- add a imagem do BD-->
+              <img src="<?php echo 'data:image/jpeg;base64,' . base64_encode($produto['imagem_produto']); ?>" alt="Manguito"> <!-- add a imagem do BD-->
             </button>
           </div>
         </div>
@@ -87,31 +88,34 @@ $produto = buscarProduto($_GET['id']);
         <div class="size-box">
           <p class="title-size-box">Tamanho</p>
           <div class="buttons-box">
-            <button type="button" class="button-size">PP</button>
-            <button type="button" class="button-size">P</button>
-            <button type="button" class="button-size">M</button>
-            <button type="button" class="button-size">G</button>
-            <button type="button" class="button-size">GG</button>
+            <?php if ($produto['categorias_id'] == 1) { ?>
+              <button type="button" class="button-size">37</button>
+              <button type="button" class="button-size">38</button>
+              <button type="button" class="button-size">39</button>
+              <button type="button" class="button-size">40</button>
+              <button type="button" class="button-size">41</button>
+              <button type="button" class="button-size">42</button>
+              <button type="button" class="button-size">43</button>
+            <?php } ?>
+            <?php if ($produto['categorias_id'] == 2 || $produto['categorias_id'] == 3 || $produto['categorias_id'] == 4) { ?>
+              <button type="button" class="button-size">PP</button>
+              <button type="button" class="button-size">P</button>
+              <button type="button" class="button-size">M</button>
+              <button type="button" class="button-size">G</button>
+              <button type="button" class="button-size">GG</button>
+            <?php } ?>
           </div>
         </div>
 
-        <a href="carrinho.php" class="price-btnbox" style="text-decoration: none; z-index: 2;">
+        <div class="buy-part">
           <div class="price-btns">
-            <button class="price-btn__add price-btn" name="add_to_cart" type="submit">
-              <img
-                src="img/add-line.png"
-                alt="+"
-                class="price-btn__add-img price-btn__img" />
+            <button type="submit" class="price-btn__add price-btn" name="add_cart" type="submit">
+              <i class='bx bx-plus'></i>
             </button>
-
-            <input type="text" name="quantity_cart" value="<?php // echo $_SESSION['quantity_cart']; 
-                                                            ?>0" style="font-size: 42px; background: transparent; outline: none; border: none; width: 17%;">
-
-            <button class="price-btn__remove price-btn" name="remove_to_cart" type="submit">
-              <img
-                src="img/subtract-line.png"
-                alt="-"
-                class="price-btn__remove-img price-btn__img" />
+            <input name="quantity_cart" value="<?php // echo $_SESSION['value']; 
+                                                ?>0" style="font-size: 42px; background: transparent; outline: none; border: none; width: 17%;">
+            <button type="button" class="price-btn__remove price-btn" name="sub_cart" type="submit">
+              <i class='bx bx-minus'></i>
             </button>
           </div>
 
@@ -121,7 +125,7 @@ $produto = buscarProduto($_GET['id']);
               <p>Adicionar ao carrinho</p>
             </div>
           </button>
-        </a>
+        </div>
       </section>
     </main>
   </form>

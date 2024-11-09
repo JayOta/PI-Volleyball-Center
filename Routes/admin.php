@@ -27,7 +27,7 @@
             <div id="sidebar" class="sidebar">
                 <button id="closeSidebarBtn" onclick="closeSidebar()"><i class='bx bx-x'></i></button>
                 <div class="line">
-                    <button class="links"><i class='bx bxs-dashboard'></i>Painel</button>
+                    <button class="links"><i class='bx bxs-dashboard'></i>Categorias</button>
                 </div>
                 <div class="line">
                     <button class="links"><i class='bx bx-user'></i>Clientes</button>
@@ -36,14 +36,14 @@
                     <button class="links"><i class='bx bx-cart'></i>Produtos</button>
                 </div>
                 <div class="line">
-                    <button class="links"><i class='bx bx-bar-chart-alt-2'></i>Estatísticas</button>
+                    <a style="text-decoration: none;" href="./admin_crud_produtos.php" target="_blank"><button class="links"><i class='bx bx-bar-chart-alt-2'></i>CRUD Produtos</button></a>
                 </div>
                 <hr>
                 <div class="line">
                     <button class="links"><i class='bx bx-bell'></i>Notificações</button>
                 </div>
                 <div class="line">
-                    <button class="links"><i class='bx bx-file-blank'></i>Documentos</button>
+                    <button class="links"><i class='bx bx-file-blank'></i>Páginas</button>
                 </div>
             </div>
             <div class="main-content" id="main-content" style="margin-top: 20px;">

@@ -9,7 +9,6 @@ $rodizios = buscarRodizios();
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="shortcut icon" href="../Routes/img/logo-volei.png" type="image/x-icon">
 	<title>Sistema de Rodízio</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -79,7 +78,10 @@ $rodizios = buscarRodizios();
 	</ul>
 
 	<div class="container"><br><br>
-		<h1 style="transform: translateX(400px);">Rodízios e Suas alterações</h1><br>
+		<center>
+			<h1>Rodízios e Suas alterações</h1>
+		</center>
+		<br>
 		<?php for ($i = 0; $i < count($rodizios); $i++) { ?>
 			<div class="linha-col justify-content-center" style="position: relative; left: 3.2rem;">
 				<div class="card m-3" style=" display: flex; flex-wrap: wrap; flex-direction: column; height: 42rem;">
@@ -89,7 +91,7 @@ $rodizios = buscarRodizios();
 									echo "data:image/jpeg;base64," . $imagem;
 									?>" class="img-fluid rounded-start" alt="" style="border-radius: 5px; cursor:pointer; height: 20rem;">
 					</div>
-					<div class="desciption">
+					<div class="description">
 						<div class="card-body" style="margin-left: 7px;">
 							<h5 class="card-title" style="color:  #1e90ff;"><?php echo $rodizios[$i]['titulo_rodizio']; ?></h5>
 							<p class="card-text-center" style="text-align: justify;"><?php echo $rodizios[$i]['descricao_rodizio']; ?></p>

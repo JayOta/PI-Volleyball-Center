@@ -50,41 +50,47 @@ $inicial = buscarnoticias2();
       <!-- <div class="background"> -->
       <div class="carousel-imagesItens" style="display: flex; flex-direction: column;">
         <!-- <center><h1 class="border-title" style="font-size: 32px;">Seleção Brasileira!</h1></center> -->
-        <div id="carouselExampleInterval" class="carousel slide d-flex" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="2000">
-              <img src="img/main-1.jpg" class="d-block w-100">
+        <a href="#">
+          <div id="carouselExampleInterval" class="carousel slide d-flex" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2000">
+                <img src="img/main-1.jpg" class="d-block w-100">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="img/main-2.jpg" class="d-block w-100">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="img/jogo-3.jpg" class="d-block w-100">
+              </div>
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <img src="img/main-2.jpg" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block m-auto w-auto">
+              <h5 class="carousel-title">29 de junho de 2024</h5>
+              <h2 class="carousel-title">Brasil bate Coreia do Sul e pega EUA na final do vôlei feminino!</h2>
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <img src="img/jogo-3.jpg" class="d-block w-100">
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div class="carousel-caption d-none d-md-block m-auto w-auto">
-            <h5 class="carousel-title">29 de junho de 2024</h5>
-            <h2 class="carousel-title">Brasil bate Coreia do Sul e pega EUA na final do vôlei feminino!</h2>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
+        </a>
 
         <div class="carouselDownPics">
-          <div class="card">
-            <img src="img/jogo-2.jpg" class="card-img d-block">
-            <div class="card-img-overlay"></div>
-          </div>
-          <div class="card">
-            <img src="img/jogo-3.jpg" class="card-img">
-            <div class="card-img-overlay"></div>
-          </div>
+          <a href="#">
+            <div class="card">
+              <img src="img/jogo-2.jpg" class="card-img d-block">
+              <div class="card-img-overlay"></div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="card">
+              <img src="img/jogo-3.jpg" class="card-img">
+              <div class="card-img-overlay"></div>
+            </div>
+          </a>
         </div>
       </div>
       <!-- </div> -->
@@ -94,7 +100,7 @@ $inicial = buscarnoticias2();
         <div class="descricao-anuncio" style="display: flex; flex-direction: column; gap: 1rem;">
           <h1 style="font-size: 45px; width: 30rem; font-family:'Segoe UI Semibold', sans-serif; text-shadow: 0px 0px 2px #0b0b0b;">VENHA VER NOSSOS PRODUTOS!</h1>
           <h2 style="font-size: 25px; color: #f9cc02; text-shadow: 0px 0px 3px #f9cc02;"><span style="color: #fff; text-shadow: 0px 0px 3px #fff;">Meias Nike</span> por apenas <span style="color: #fff; text-shadow: 0px 0px 3px #fff;">R$60,00<span>!!</h2>
-          <button>Saiba Mais</button>
+          <a href="../Routes/loja.php" target="_blank"><button type="button">Saiba Mais</button></a>
         </div>
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style="width: 36rem; height: 36rem; position: relative; top: 3.5rem;">
           <div class="carousel-inner" style="transition: 0.5s ease-in-out; width: 30rem; height: 28rem; box-shadow: 0px 0px 12px #fff; border-radius: 6px;">
@@ -105,12 +111,12 @@ $inicial = buscarnoticias2();
             </a>
             <a href="">
               <div class="carousel-item" style="width: 36rem; height: 36rem;">
-                <img class="anuncio" src="../Routes/img/viseira-nike.png" class="d-block w-100" alt="..." style="width: 30rem; height: 32rem;">
+                <img class="anuncio" src="../Routes/img/viseira-nike.png" class="d-block w-100" alt="..." style="width: 30rem; height: 34rem;">
               </div>
             </a>
             <a href="">
               <div class="carousel-item" style="width: 36rem; height: 36rem; background: #fff;">
-                <img class="anuncio" src="../Routes/img/meias-nike.png" class="d-block w-100" alt="..." style="width: 30rem; height: 32rem;">
+                <img class="anuncio" src="../Routes/img/meias-nike.png" class="d-block w-100" alt="..." style="width: 30rem; height: 34rem;">
               </div>
             </a>
           </div>

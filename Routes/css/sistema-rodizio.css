@@ -3,8 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-.container {
-}
 img.img-fluid {
   transition: 0.4s ease-in-out;
   width: 100%;
@@ -14,4 +12,12 @@ img.img-fluid:hover {
   transform: scale(1.05);
   width: 100%;
   object-fit: cover;
+}
+.card {
+  width: 550px;
+  height: 300px;
+  margin-top: 20px;
+  margin-left: 20px;
+  float: left;
+  margin-right: 20px;
 }

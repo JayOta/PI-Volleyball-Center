@@ -1,9 +1,49 @@
-.meioRegras{
-    margin-top: 50px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 15px rgba(189, 171, 171, 0.507);
-    height: 180rem;
-    width: 70rem;
-    position: relative;
-    left: 420px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+
+.nav-link {
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+}
+.meioRegras {
+  margin-top: 50px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px rgba(189, 171, 171, 0.507);
+  height: 180rem;
+  width: 70rem;
+  position: relative;
+  left: 420px;
+}
+.card {
+  width: 550px;
+  height: 300px;
+  margin-top: 20px;
+  margin-left: 20px;
+  float: left;
+  margin-right: 20px;
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    clip-path: inset(100% 100% 0 0);
   }
+
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.card {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}

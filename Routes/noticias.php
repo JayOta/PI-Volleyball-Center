@@ -40,7 +40,7 @@ $noticias = buscarnoticias();
 						} ?>
 					</h2>
 					<br>
-					<button><a id="saiba-mais" href="#">Saiba mais</a></button>
+					<a id="saiba-mais" href="#"><button type="button">Saiba mais</button></a>
 				</section>
 			</div>
 			<aside style="height: fit-content;">
@@ -69,19 +69,21 @@ $noticias = buscarnoticias();
 					<div class="row row-cols-1 row-cols-md-3 g-4">
 						<?php for ($i = 1; $i < 7; $i++) { ?>
 							<div class="col">
-								<div class="card h-100">
-									<a href="#" target="_blank">
-										<img src="<?php $imagem = base64_encode($noticias[$i]['imagem_noticias']);
-													echo "data:image/jpeg;base64," . $imagem; ?>" class="card-img-top" alt="Seleção" style="height: fit-content; border-radius: 7px;">
-									</a>
-									<div class="card-body">
-										<h5 class="card-title"><?php echo $noticias[$i]['titulo_noticias'] ?></h5>
-										<p class="card-text"><strong><?php echo $noticias[$i]['descricao_noticias'] ?></strong></p>
+								<a href="./noticias.php" style="z-index: 2;">
+									<div class="card h-100">
+										<a href="#" target="_blank">
+											<img src="<?php $imagem = base64_encode($noticias[$i]['imagem_noticias']);
+														echo "data:image/jpeg;base64," . $imagem; ?>" class="card-img-top" alt="Seleção" style="height: fit-content; border-radius: 7px;">
+										</a>
+										<div class="card-body">
+											<h5 class="card-title"><?php echo $noticias[$i]['titulo_noticias'] ?></h5>
+											<p class="card-text"><strong><?php echo $noticias[$i]['descricao_noticias'] ?></strong></p>
+										</div>
+										<div class="card-footer">
+											<small class="text-body-secondary">Ultima atualização 3 mins atrás</small>
+										</div>
 									</div>
-									<div class="card-footer">
-										<small class="text-body-secondary">Ultima atualização 3 mins atrás</small>
-									</div>
-								</div>
+								</a>
 							</div>
 						<?php } ?>
 					<?php } ?>

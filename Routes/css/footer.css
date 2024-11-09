@@ -4,19 +4,19 @@
   box-sizing: border-box;
   font-family: "Segoe UI Semibold", Arial, Helvetica, sans-serif;
 }
+
 footer {
   background-color: #f9cc02;
-  width: 100% auto;
-  position: relative;
-  bottom: 0;
-  left: 0;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   gap: 5rem;
   padding: 1.2rem;
+  position: absolute;
 }
+
 footer ul.col-num1 {
   display: flex;
   flex-direction: column;
@@ -43,7 +43,7 @@ footer ul li a.icon {
   flex-direction: column;
   align-items: center;
 }
-.col-num2 p.footer-link-title{
+.col-num2 p.footer-link-title {
   color: #fff;
   font-size: 18px;
   color: #3482f7;
@@ -62,11 +62,10 @@ footer ul li a.icon {
   width: 2.5rem;
   height: 2.5rem;
 }
-.col-num2 ul.ul-list li { 
-list-style: none;
+.col-num2 ul.ul-list li {
+  list-style: none;
 }
-.col-num2 
-footer a img {
+.col-num2 footer a img {
   transition: 0.4s ease-in;
   border-radius: 13px;
   width: 40px;
@@ -75,7 +74,7 @@ footer a img {
 }
 .bx {
   font-size: 35px;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
   border-radius: 6px;
   width: 40px;
   height: 40px;
@@ -85,7 +84,9 @@ footer a img {
   position: relative;
   right: 0.7rem;
 }
-.bxl-facebook:hover, .bxl-instagram:hover, .bxl-twitter:hover {
+.bxl-facebook:hover,
+.bxl-instagram:hover,
+.bxl-twitter:hover {
   background-color: #fff;
 }
 @media screen and (max-width: 1200px) {
