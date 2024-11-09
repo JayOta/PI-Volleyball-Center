@@ -154,14 +154,17 @@ Product section stylling
 }
 
 .price-name__heading {
+  font-family: "Segoe UI Semibold", sans-serif;
   margin-top: 2rem;
-  color: #000;
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #1e90ff;
 }
 .price-txt {
   margin-top: 0.5rem;
   margin-right: 30px;
   font-size: 1.4rem;
-  color: #000;
+  color: var(--dark-grayish-blue);
   line-height: 1.5;
 }
 
@@ -194,8 +197,8 @@ Product section stylling
 }
 
 .price-box__old {
-  font-size: 1.4rem;
-  color: var(--grayish-blue);
+  font-size: 3.2rem;
+  color: var(--black);
   position: relative;
 }
 
@@ -396,7 +399,6 @@ Media Queries
 
   .img-main {
     border-radius: 0;
-
   }
 
   .img-main__btn {

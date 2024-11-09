@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="../Routes/img/logo-volei.png" type="image/x-icon">
     <title>Admin Page</title>
     <link rel="stylesheet" href="../Routes/css/admin.css">
     <link rel="stylesheet" href="../Routes/css/perfil-on-navbar.css">
@@ -29,7 +30,7 @@
                     <button class="links"><i class='bx bxs-dashboard'></i>Painel</button>
                 </div>
                 <div class="line">
-                    <button class="links"><i class='bx bx-user' ></i>Clientes</button>
+                    <button class="links"><i class='bx bx-user'></i>Clientes</button>
                 </div>
                 <div class="line">
                     <button class="links"><i class='bx bx-cart'></i>Produtos</button>

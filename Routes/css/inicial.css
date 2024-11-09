@@ -29,6 +29,7 @@ img {
   width: 100%;
   height: 100%;
 }
+
 img:hover {
   transform: scale(1.04);
   width: 100%;
@@ -140,17 +141,57 @@ span#title-site2 {
 }
 .carouselDownPics .card {
   position: relative;
-  width: auto;
   flex-basis: 600px;
   background-color: transparent;
+  transition: 0.5s ease-in-out;
+  box-shadow: 0px 2px 5px #0b0b0b;
+  min-width: 200px;
+  width: 600px;
+  height: 359px;
+  border: none;
+  background: transparent;
+}
+.carouselDownPics .card:hover {
   box-shadow: 0px 5px 10px #0b0b0b;
+  filter: brightness(50%);
 }
 .carouselDownPics .card img {
   cursor: pointer;
 }
+.anuncio-produtos {
+  display: flex;
+  gap: 6rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #1e90ff;
+  box-shadow: 0px 1px 8px #222222;
+  transition: 0.3s ease-in-out;
+}
+.anuncio-produtos:hover {
+  cursor: pointer;
+  box-shadow: 0px 1px 14px #222222;
+}
+.anuncio-produtos .descricao-anuncio button {
+  width: 7rem;
+  height: 3rem;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  box-shadow: 0px 0px 3px #fff;
+  transition: 0.3s ease-in-out;
+}
+.descricao-anuncio button:hover {
+  box-shadow: 0px 0px 7px #fff;
+  background: #f9cc02;
+}
 h1#noticias-sem-title {
   font-size: 32px;
   font-style: italic;
+  position: relative;
+  left: 0.9rem;
 }
 .noticias-align {
   display: flex;
@@ -163,11 +204,22 @@ h1#noticias-sem-title {
   justify-content: center;
 }
 .col .card {
+  transition: 0.6s ease-in-out;
+}
+.col .card:hover {
   box-shadow: 0px 0px 10px #696969;
+  filter: brightness(80%);
 }
 .col .card img {
   height: 350px;
   width: 100%;
+  transition: 0.6s ease-in-out;
+}
+.col .card img:hover {
+  filter: brightness(50%);
+}
+.col .card p.card-text {
+  color: #1e90ff;
 }
 
 @media screen and (max-width: 1200px) {

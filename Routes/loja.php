@@ -17,8 +17,8 @@ $getAllCategorias = buscarCategoria();
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
 		crossorigin="anonymous"></script>
+	<link rel="shortcut icon" href="../Routes/img/logo-volei.png" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="css/loja.css">
-
 	<link rel="stylesheet" href="../Routes/css/perfil-on-navbar.css">
 	<title>Loja</title>
 </head>
@@ -30,16 +30,17 @@ $getAllCategorias = buscarCategoria();
 	?>
 	<br>
 
-	<div class="categoria">
-		<?php for($i = 0; $i < count($getAllCategorias); $i++){?>
-		<a href="<?php echo @$link;?>"><?php echo $getAllCategorias[$i]['nome'];?></a>
-		<?php } ?>
+	<div class="top-part" style="display: flex; flex-direction: row; gap: 4rem; justify-content: center; align-items: center;">
+		<div class="categoria">
+			<?php for ($i = 0; $i < count($getAllCategorias); $i++) { ?>
+				<a href="<?php echo @$link; ?>"><?php echo $getAllCategorias[$i]['nome']; ?></a>
+			<?php } ?>
+		</div>
+		<form class="d-flex position-relative" role="search">
+			<input class="input-search form-control me-2" type="search" placeholder="Pesquise o produto" aria-label="Search" style="width: 360px;">
+			<button class="btn btn-outline-success" type="submit">Pesquisar</button>
+		</form>
 	</div>
-
-	<form class="d-flex position-relative" role="search" style="margin-left: 83rem; bottom: 3.3rem;">
-		<input class="input-search form-control me-2" type="search" placeholder="Pesquise o produto" aria-label="Search" style="width: 360px;">
-		<button class="btn btn-outline-success" type="submit">Pesquisar</button>
-	</form>
 
 	<br><br><br><br><br>
 	<form method="post" action="../Controller/loja.php">
@@ -51,16 +52,17 @@ $getAllCategorias = buscarCategoria();
 					<?php
 					for ($i = 0; $i < count($getAllProdutos); $i++) { ?>
 						<div class="col-md-3">
-								<div class="card" style="border-color:#F9CC02;">
-								<a href="produto-page.php?id=<?php echo $getAllProdutos[$i]['produto_id'];?>" style="text-decoration: none; list-style: none; color: #0b0b0b;">
-									<img src="<?php $imagem = base64_encode($getAllProdutos[$i]['imagem_produto']); echo "data:image/jpeg;base64," . $imagem;?>" class="card-img-top" alt="Produto 1" style="cursor: pointer;">
+							<div class="card">
+								<a href="produto-page.php?id=<?php echo $getAllProdutos[$i]['produto_id']; ?>" style="text-decoration: none; list-style: none; color: #0b0b0b;">
+									<img src="<?php $imagem = base64_encode($getAllProdutos[$i]['imagem_produto']);
+												echo "data:image/jpeg;base64," . $imagem; ?>" class="card-img-top" alt="Produto 1" style="cursor: pointer;">
 								</a>
-									<div class="card-body">
-										<h5 class="card-title"><?php echo $getAllProdutos[$i]['nome']; ?><!--Manguito--></h5>
-										<h3 class="card-text"><?php echo "R$". number_format($getAllProdutos[$i]['preco'], 2, ',', ''); ?></h3>
-										<a href="produto-page.php?id=<?php echo $getAllProdutos[$i]['produto_id']; ?>" class="btn btn-success card-button">Comprar</a>
-									</div>
+								<div class="card-body">
+									<h5 class="card-title"><?php echo $getAllProdutos[$i]['nome']; ?><!--Manguito--></h5>
+									<h3 class="card-text"><?php echo "R$" . number_format($getAllProdutos[$i]['preco'], 2, ',', ''); ?></h3>
+									<a href="produto-page.php?id=<?php echo $getAllProdutos[$i]['produto_id']; ?>" class="btn btn-success card-button">Comprar</a>
 								</div>
+							</div>
 						</div>
 					<?php } ?>
 					<!-- </div>
