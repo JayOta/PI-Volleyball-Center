@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Routes/css/admin.css">
     <link rel="stylesheet" href="./css/admin_crud_produtos.css">
+    <link rel="stylesheet" href="../Routes/css/perfil-on-navbar.css">
     <title>CRUD PRODUTOS</title>
 </head>
 
@@ -19,6 +20,9 @@
     <button id="openSidebarBtn" onclick="openSidebar()" style="display:none;"><i class='bx bx-menu'></i></button>
     <div id="sidebar" class="sidebar">
         <button id="closeSidebarBtn" onclick="closeSidebar()"><i class='bx bx-x'></i></button>
+        <div class="line">
+            <a href="./admin.php" style="text-decoration: none;"><button class="links"><i class='bx bx-left-arrow'></i>Voltar</button></a>
+        </div>
         <div class="line">
             <button class="links"><i class='bx bxs-dashboard'></i>Categorias</button>
         </div>

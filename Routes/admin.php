@@ -1,3 +1,11 @@
+<?php
+require '../Controller/admin.php';
+require '../Controller/loja.php';
+
+$produtos = buscarProdutos();
+$clientes = buscarCliente();
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -51,12 +59,34 @@
                     <div class="mini-aligns">
                         <div class="mini-container">Vendas</div>
                         <div class="mini-container">Receita</div>
-                        <div class="mini-container">Clientes</div>
+                        <div class="mini-container">Relatórios</div>
                     </div>
 
                     <div class="big-aligns">
-                        <div class="big-container">Relatórios</div>
-                        <div class="big-container">Vendas recentes | Hoje</div>
+                        <div class="big-container">
+                            <table class="clientes-container">
+                                <tr>
+                                    <th>Clientes</th>
+                                </tr>
+                                <?php for ($i = 0; $i < count($clientes); $i++) { ?>
+                                    <tr>
+                                        <td><?php echo $clientes[$i]['nome']; ?></td>
+                                    </tr>
+                                <?php } ?>
+                            </table>
+                        </div>
+                        <div class="big-container">
+                            <table class="clientes-container">
+                                <tr>
+                                    <th>Produtos</th>
+                                </tr>
+                                <?php for ($i = 0; $i < count($produtos); $i++) { ?>
+                                    <tr>
+                                        <td><?php echo $produtos[$i]['nome']; ?></td>
+                                    </tr>
+                                <?php } ?>
+                            </table>
+                        </div>
                         <div class="big-container">Mais vendidos | Hoje</div>
                     </div>
                 </section>

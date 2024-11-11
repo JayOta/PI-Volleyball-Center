@@ -17,7 +17,7 @@ $inicial = buscarnoticias2();
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
   <title></title>
   <link rel="shortcut icon" href="../Routes/img/logo-volei.png" type="image/x-icon">
-  <link rel="stylesheet" type="text/css" href="css/inicial.css">
+  <link rel="stylesheet" type="text/css" href="../Routes/css/inicial.css">
   <link rel="stylesheet" href="css/perfil-on-navbar.css">
 </head>
 

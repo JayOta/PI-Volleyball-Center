@@ -1,7 +1,23 @@
 <?php
 require '../Controller/produto-page.php';
 $produto = buscarProduto($_GET['id']);
-$_SESSION['value'] = 0;
+// $getAllCategorias = getAllCategorias();
+
+if ($produto['categorias_id'] == 1) {
+  $produto['categorias_id'] = "Calçados";
+} else if ($produto['categorias_id'] == 2) {
+  $produto['categorias_id'] = "Acessórios";
+} else if ($produto['categorias_id'] == 3) {
+  $produto['categorias_id'] = "Camisetas";
+} else if ($produto['categorias_id'] == 4) {
+  $produto['categorias_id'] = "Shorts";
+} else if ($produto['categorias_id'] == 5) {
+  $produto['categorias_id'] = "Meia";
+} else if ($produto['categorias_id'] == 6) {
+  $produto['categorias_id'] = "Calças";
+} else if ($produto['categorias_id'] == 7) {
+  $produto['categorias_id'] = "Bolas";
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -63,6 +79,15 @@ $_SESSION['value'] = 0;
         <h2 class="price-sub__heading">VolleyBall Center</h2>
         <h1 class="price-main__heading">Produtos de Edição Limitada Verão</h1>
         <div class="price-name__heading"><?php echo $produto['nome'] ?></div>
+        <div style="position: relative; bottom: 2rem; font-size: 20px;" class="price-category__heading"><?php echo $produto['categorias_id']; ?></div>
+        <div class="rating-stars__heading" style="display: flex; align-items: center;">
+          <button type="button" class='bx bx-star'></button>
+          <button type="button" class='bx bx-star'></button>
+          <button type="button" class='bx bx-star'></button>
+          <button type="button" class='bx bx-star'></button>
+          <button type="button" class='bx bx-star'></button>
+          <span><-Arrumar..</span>
+        </div>
         <div class="price-txt" name="description"><?php echo $produto['descricao'] ?></div>
         <div class="price-box">
           <div class="price-box__main">
@@ -112,8 +137,7 @@ $_SESSION['value'] = 0;
             <button type="submit" class="price-btn__add price-btn" name="add_cart" type="submit">
               <i class='bx bx-plus'></i>
             </button>
-            <input name="quantity_cart" value="<?php // echo $_SESSION['value']; 
-                                                ?>0" style="font-size: 42px; background: transparent; outline: none; border: none; width: 17%;">
+            <input name="quantity_cart" value="<?php //echo $_SESSION['quantity_cart']; ?>0" style="font-size: 42px; background: transparent; outline: none; border: none; width: 17%;">
             <button type="button" class="price-btn__remove price-btn" name="sub_cart" type="submit">
               <i class='bx bx-minus'></i>
             </button>
@@ -134,7 +158,16 @@ $_SESSION['value'] = 0;
   <?php
   include 'footer.php';
   ?>
-
+  <?php
+  if ($_POST['add_cart']) {
+    $_SESSION['quantity_cart']++;
+    header("Location: http://localhost/GitHub/PI-Volleyball-Center/Routes/produto-page.php?id=1");
+  } elseif ($_POST['sub_cart'] && $_SESSION['quantity_cart'] > 0) {
+    $_SESSION['quantity_cart']--;
+  }
+  header("Location: http://localhost/GitHub/PI-Volleyball-Center/Routes/produto-page.php?id=1");
+  exit();
+  ?>
 </body>
 
 </html>

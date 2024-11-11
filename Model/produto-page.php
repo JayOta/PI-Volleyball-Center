@@ -27,3 +27,16 @@ function buscarId($id)
         return "Erro ao mostrar informações -> " . $e;
     }
 }
+function buscarCategoria()
+{
+    global $conn;
+    try {
+        $stmt = $conn->prepare("SELECT * FROM `categoria` ");
+        $stmt->execute();
+
+        $categoria = $stmt->fetchAll();
+        return $categoria;
+    } catch (PDOException $e) {
+        return "Erro ao mostrar informações -> " . $e;
+    }
+}

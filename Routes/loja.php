@@ -33,7 +33,7 @@ $getAllCategorias = buscarCategoria();
 	<div class="top-part" style="display: flex; flex-direction: row; gap: 4rem; justify-content: center; align-items: center;">
 		<div class="categoria">
 			<?php for ($i = 0; $i < count($getAllCategorias); $i++) { ?>
-				<a href="<?php echo @$link; ?>"><?php echo $getAllCategorias[$i]['nome']; ?></a>
+				<a name="categorias" href="<?php echo @$link; ?>"><?php echo $getAllCategorias[$i]['nome']; ?></a>
 			<?php } ?>
 		</div>
 		<form class="d-flex position-relative" role="search">
@@ -65,177 +65,6 @@ $getAllCategorias = buscarCategoria();
 							</div>
 						</div>
 					<?php } ?>
-					<!-- </div>
-					<div class="col-md-3">
-						<div class="card">
-							<img src="img/joelheira.png" class="card-img-top" alt="Produto 2" style="cursor: pointer;">
-							<div class="card-body">
-								<h5 class="card-title">Joelheira</h5>
-								<h3 class="card-text">R$55,60</h3>
-								<a href="joelheira-page.php" class="btn btn-success card-button">Comprar</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="card">
-							<img src="img/bola-de-volei.png" class="card-img-top" alt="Produto 3" style="cursor: pointer;">
-							<div class="card-body">
-								<h5 class="card-title">Bola Penalty VP5000M</h5>
-								<h3 class="card-text">R$86,70</h3>
-								<a href="bola-penalty-page.php" class="btn btn-success card-button">Comprar</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="card">
-							<img src="img/calca-compressao.png" class="card-img-top" alt="Produto 4" style="cursor: pointer;">
-							<div class="card-body">
-								<h5 class="card-title">Calça de compressão</h5>
-								<h3 class="card-text">R$115,00</h3>
-								<a href="calca-compressao-page.php" class="btn btn-success card-button">Comprar</a>
-							</div>
-						</div>
-					</div>
-				 </div>
-			</div>
-
-			<div class="container">
-				<br><br>
-				<div class="row">
-					<div class="col-md-3">
-						<div class="card">
-							<img src="img/meias-nike.png" class="card-img-top" alt="Produto 5" style="cursor: pointer;">
-							<div class="card-body">
-								<h5 class="card-title">Meias Nike</h5>
-								<h3 class="card-text">R$60,00</h3>
-								<a href="#" class="btn btn-success card-button">Comprar</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="card">
-							<img src="img/tenis-volei.png" class="card-img-top" alt="Produto 6" style="cursor: pointer;">
-							<div class="card-body">
-								<h5 class="card-title">Tênis Nike Air Max Volêi</h5>
-								<h3 class="card-text">R$315,00</h3>
-								<a href="#" class="btn btn-success card-button">Comprar</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="card">
-							<img src="img/testeira-nike.png" class="card-img-top" alt="Produto 7" style="cursor: pointer;">
-							<div class="card-body">
-								<h5 class="card-title">Faixa Branca Nike</h5>
-								<h3 class="card-text">R$69,90</h3>
-								<a href="#" class="btn btn-success card-button">Comprar</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="card">
-							<img src="img/camiseta-termica.png" class="card-img-top" alt="Produto 8" style="cursor: pointer;">
-							<div class="card-body">
-								<h5 class="card-title">Camiseta Térmica Preta</h5>
-								<h3 class="card-text">R$79,00</h3>
-								<a href="#" class="btn btn-success card-button">Comprar</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="container">
-				<br><br>
-				<div class="row">
-					<div class="col-md-3">
-						<div class="card">
-							<img src="img/viseira-nike.png" class="card-img-top" alt="Produto 9" style="cursor: pointer;">
-							<div class="card-body">
-								<h5 class="card-title">Viseira Nike Preta</h5>
-								<h3 class="card-text">R$215,00</h3>
-								<a href="#" class="btn btn-success card-button">Comprar</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="card">
-							<img src="img/meia-cano-curto.png" class="card-img-top" alt="Produto 10" style="cursor: pointer;">
-							<div class="card-body">
-								<h5 class="card-title">Meias Cano Curto </h5>
-								<h3 class="card-text">R$59,00</h3>
-								<a href="#" class="btn btn-success card-button">Comprar</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="card">
-							<img src="img/joelheira-2.png" class="card-img-top" alt="Produto 11" style="cursor: pointer;">
-							<div class="card-body">
-								<h5 class="card-title">Joelheira SCALIBU</h5>
-								<h3 class="card-text">R$75,00</h3>
-								<a href="#" class="btn btn-success card-button">Comprar</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="card">
-							<img src="img/tenis-volei-2.png" class="card-img-top" alt="Produto 12" style="cursor: pointer;">
-							<div class="card-body">
-								<h5 class="card-title">Tênis de Vôlei Unissex</h5>
-								<h3 class="card-text">R$339,90</h3>
-								<a href="#" class="btn btn-success card-button">Comprar</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="container">
-				<br><br>
-				<div class="row">
-					<div class="col-md-3">
-						<div class="card">
-							<img src="img/colar-volei.png" class="card-img-top" alt="Produto 13" style="cursor: pointer;">
-							<div class="card-body">
-								<h5 class="card-title">Colar Vôlei</h5>
-								<h3 class="card-text">R$29,90</h3>
-								<a href="#" class="btn btn-success card-button">Comprar</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="card">
-							<img src="img/manguito-2.png" class="card-img-top" alt="Produto 14" style="cursor: pointer;">
-							<div class="card-body">
-								<h5 class="card-title">Manguito Laranja</h5>
-								<h3 class="card-text">R$79,80</h3>
-								<a href="#" class="btn btn-success card-button">Comprar</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="card">
-							<img src="img/camiseta-selecao-praia.png" class="card-img-top" alt="Produto 15" style="cursor: pointer;">
-							<div class="card-body">
-								<h5 class="card-title">Camiseta Seleção de Praia</h5>
-								<h3 class="card-text">R$59,99</h3>
-								<a href="#" class="btn btn-success card-button">Comprar</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="card">
-							<img src="img/calca-termica.png" class="card-img-top" alt="Produto 16" style="cursor: pointer;">
-							<div class="card-body">
-								<h5 class="card-title">Calça Térmica</h5>
-								<h3 class="card-text">R$89,90</h3>
-								<a href="#" class="btn btn-success card-button">Comprar</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div> -->
 		</main>
 	</form>
 	<br><br><br><br><br><br><br>
@@ -246,3 +75,9 @@ $getAllCategorias = buscarCategoria();
 </body>
 
 </html>
+
+<?php 
+//		if(isset($_POST['categoria'][0])) {
+//			$getAllCategorias[$i] = $getAllProdutos[$i][1];
+//}
+?>
