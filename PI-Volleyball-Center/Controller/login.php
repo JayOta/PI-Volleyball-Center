@@ -1,8 +1,8 @@
 <?php
 require '../Model/login.php';
-session_start();
 
 if ($_POST) {
+    session_start();
 
     if (isset($_POST['email']) && isset($_POST['senha'])) {
         $email = $_POST['email'];

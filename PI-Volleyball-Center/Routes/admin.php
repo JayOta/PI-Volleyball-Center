@@ -92,7 +92,11 @@ $clientes = buscarCliente();
                 </section>
                 <aside>
                     <div class="aside-containers">Atividade Recente | Hoje</div>
-                    <div class="aside-containers">Notícias e Atualizações | Hoje</div>
+
+                    <div class="aside-containers">Notícias e Atualizações | Hoje </div>
+                        <table class="noticias-container">
+
+                    </div>
                     <div class="aside-containers"></div>
                     <div class="aside-containers"></div>
                 </aside>
