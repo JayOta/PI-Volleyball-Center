@@ -3,21 +3,26 @@ require '../Controller/produto-page.php';
 $produto = buscarProduto($_GET['id']);
 // $getAllCategorias = getAllCategorias();
 
-if ($produto['categorias_id'] == 1) {
-  $produto['categorias_id'] = "Calçados";
-} else if ($produto['categorias_id'] == 2) {
-  $produto['categorias_id'] = "Acessórios";
-} else if ($produto['categorias_id'] == 3) {
-  $produto['categorias_id'] = "Camisetas";
-} else if ($produto['categorias_id'] == 4) {
-  $produto['categorias_id'] = "Shorts";
-} else if ($produto['categorias_id'] == 5) {
-  $produto['categorias_id'] = "Meia";
-} else if ($produto['categorias_id'] == 6) {
-  $produto['categorias_id'] = "Calças";
-} else if ($produto['categorias_id'] == 7) {
-  $produto['categorias_id'] = "Bolas";
-}
+  // function getCategoriaProduto(){
+  //   global $produto;
+
+  // if ($produto['categorias_id'] == 1) {
+  //   $produto['categorias_id'] = "Calçados";
+  // } else if ($produto['categorias_id'] == 2) {
+  //   $produto['categorias_id'] = "Acessórios";
+  // } else if ($produto['categorias_id'] == 3) {
+  //   $produto['categorias_id'] = "Camisetas";
+  // } else if ($produto['categorias_id'] == 4) {
+  //   $produto['categorias_id'] = "Shorts";
+  // } else if ($produto['categorias_id'] == 5) {
+  //   $produto['categorias_id'] = "Meia";
+  // } else if ($produto['categorias_id'] == 6) {
+  //   $produto['categorias_id'] = "Calças";
+  // } else if ($produto['categorias_id'] == 7) {
+  //   $produto['categorias_id'] = "Bolas";
+  // }
+  // echo $produto['categorias_id'];
+  // }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -79,15 +84,15 @@ if ($produto['categorias_id'] == 1) {
         <h2 class="price-sub__heading">VolleyBall Center</h2>
         <h1 class="price-main__heading">Produtos de Edição Limitada Verão</h1>
         <div class="price-name__heading"><?php echo $produto['nome'] ?></div>
-        <div style="position: relative; bottom: 2rem; font-size: 20px;" class="price-category__heading"><?php echo $produto['categorias_id']; ?></div>
-        <div class="rating-stars__heading" style="display: flex; align-items: center;">
+        <!--<div style="position: relative; bottom: 2rem; font-size: 20px;" class="price-category__heading"><?php // getCategoriaProduto(); ?></div> -->
+        <!--<div class="rating-stars__heading" style="display: flex; align-items: center;">
           <button type="button" class='bx bx-star'></button>
           <button type="button" class='bx bx-star'></button>
           <button type="button" class='bx bx-star'></button>
           <button type="button" class='bx bx-star'></button>
           <button type="button" class='bx bx-star'></button>
           <span><-Arrumar..</span>
-        </div>
+        </div> -->
         <div class="price-txt" name="description"><?php echo $produto['descricao'] ?></div>
         <div class="price-box">
           <div class="price-box__main">
