@@ -1,6 +1,7 @@
 <?php
 require '../Controller/produto-page.php';
 $produto = buscarProduto($_GET['id']);
+<<<<<<< HEAD
 // $getAllCategorias = getAllCategorias();
 
   // function getCategoriaProduto(){
@@ -23,6 +24,9 @@ $produto = buscarProduto($_GET['id']);
   // }
   // echo $produto['categorias_id'];
   // }
+=======
+$_SESSION['value'] = 0;
+>>>>>>> parent of ba617af (Update 'admin.php', 'loja.php')
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -84,6 +88,7 @@ $produto = buscarProduto($_GET['id']);
         <h2 class="price-sub__heading">VolleyBall Center</h2>
         <h1 class="price-main__heading">Produtos de Edição Limitada Verão</h1>
         <div class="price-name__heading"><?php echo $produto['nome'] ?></div>
+<<<<<<< HEAD
         <!--<div style="position: relative; bottom: 2rem; font-size: 20px;" class="price-category__heading"><?php // getCategoriaProduto(); ?></div> -->
         <!--<div class="rating-stars__heading" style="display: flex; align-items: center;">
           <button type="button" class='bx bx-star'></button>
@@ -93,6 +98,8 @@ $produto = buscarProduto($_GET['id']);
           <button type="button" class='bx bx-star'></button>
           <span><-Arrumar..</span>
         </div> -->
+=======
+>>>>>>> parent of ba617af (Update 'admin.php', 'loja.php')
         <div class="price-txt" name="description"><?php echo $produto['descricao'] ?></div>
         <div class="price-box">
           <div class="price-box__main">
@@ -142,7 +149,8 @@ $produto = buscarProduto($_GET['id']);
             <button type="submit" class="price-btn__add price-btn" name="add_cart" type="submit">
               <i class='bx bx-plus'></i>
             </button>
-            <input name="quantity_cart" value="<?php //echo $_SESSION['quantity_cart']; ?>0" style="font-size: 42px; background: transparent; outline: none; border: none; width: 17%;">
+            <input name="quantity_cart" value="<?php // echo $_SESSION['value']; 
+                                                ?>0" style="font-size: 42px; background: transparent; outline: none; border: none; width: 17%;">
             <button type="button" class="price-btn__remove price-btn" name="sub_cart" type="submit">
               <i class='bx bx-minus'></i>
             </button>
@@ -163,16 +171,7 @@ $produto = buscarProduto($_GET['id']);
   <?php
   include 'footer.php';
   ?>
-  <?php
-  if ($_POST['add_cart']) {
-    $_SESSION['quantity_cart']++;
-    header("Location: http://localhost/GitHub/PI-Volleyball-Center/Routes/produto-page.php?id=1");
-  } elseif ($_POST['sub_cart'] && $_SESSION['quantity_cart'] > 0) {
-    $_SESSION['quantity_cart']--;
-  }
-  header("Location: http://localhost/GitHub/PI-Volleyball-Center/Routes/produto-page.php?id=1");
-  exit();
-  ?>
+
 </body>
 
 </html>

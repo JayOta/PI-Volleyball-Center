@@ -19,7 +19,6 @@ if ($_POST) {
         } else {
             $usuario = getLogin($email, $senha);
             if (strcasecmp($email, $adminEmail) == 0 && strcasecmp($senha, $adminSenha) == 0) {
-                $_SESSION['usuario_atual'] = ['nome' => 'Admin','email' => $adminEmail, 'senha' => $adminSenha, 'imagem_perfil' => '../Routes/img/logo-volei.png'];
                 header("Location: http://localhost/GitHub/PI-Volleyball-Center/Routes/admin.php");
                 exit; // Certifica-se de que o script não continue após o redirecionamento
             }
