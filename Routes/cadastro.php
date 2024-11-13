@@ -1,16 +1,19 @@
-<?php 
-	require "../Service/conexao.php";
-	require "../Controller/cadastro.php";
+<?php
+require "../Service/conexao.php";
+require "../Controller/cadastro.php";
 ?>
 
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style2.css">
+	<link rel="shortcut icon" href="../Routes/img/logo-volei.png" type="image/x-icon">
 	<title></title>
 </head>
+
 <body>
 	<div id="login">
 		<form method="post" class="card">
@@ -35,7 +38,7 @@
 				<br>
 
 				<div class="card-footer">
-					<button type="submit"  id="button_cadastro" class="submit">Cadastrar-se</button>
+					<button type="submit" id="button_cadastro" class="submit">Cadastrar-se</button>
 
 					<br>
 
@@ -48,4 +51,5 @@
 
 	<!-- <script src= "cadastro.js"></script> -->
 </body>
+
 </html>

@@ -154,14 +154,27 @@ Product section stylling
 }
 
 .price-name__heading {
+  font-family: "Segoe UI Semibold", sans-serif;
   margin-top: 2rem;
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #1e90ff;
+}
+.bx-star {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+.bx-star:focus {
+  background: #000;
   color: #000;
+  border-radius: 80px 80px 80px 80px;
 }
 .price-txt {
   margin-top: 0.5rem;
   margin-right: 30px;
   font-size: 1.4rem;
-  color: #000;
+  color: var(--dark-grayish-blue);
   line-height: 1.5;
 }
 
@@ -194,8 +207,8 @@ Product section stylling
 }
 
 .price-box__old {
-  font-size: 1.4rem;
-  color: var(--grayish-blue);
+  font-size: 3.2rem;
+  color: var(--black);
   position: relative;
 }
 
@@ -283,6 +296,7 @@ Product section stylling
   background-color: var(--light-grayish-blue);
   border-radius: 1rem;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   gap: 3.5rem;
@@ -300,7 +314,11 @@ span.price-btn__txt {
   font-weight: 700;
   color: #000;
 }
-
+.buy-part {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
 .price-cart__btn {
   width: 40%;
   height: 70%;
@@ -396,7 +414,6 @@ Media Queries
 
   .img-main {
     border-radius: 0;
-
   }
 
   .img-main__btn {

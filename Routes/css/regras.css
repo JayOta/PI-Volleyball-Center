@@ -1,23 +1,37 @@
 .pagina {
   display: flex;
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
-  /* Faz a altura ocupar a página inteira */
+  justify-content: center;
+  align-items: center; 
 }
 
 
 .meioRegras{
   margin-top: 50px;
   display: flex;
+  flex-direction: column; /* Organiza os elementos em coluna */
   border-radius: 20px;
   box-shadow: 0px 0px 15px rgba(189, 171, 171, 0.507);
-  height: 180rem;
+  height: auto; /* Deixe a altura automática para se ajustar ao conteúdo */
   width: 70rem;
-  display: flex;
-  align-items: flex-start; /* Alinha o título ao topo */
-  justify-content: center; /* Centraliza horizontalmente */
+  align-items: flex-start; /* Alinha o conteúdo à esquerda */
+  justify-content: flex-start;
+  padding-top: 60px; /* Espaçamento interno do container */
   position: relative;
+
   }
+
+  .text-align{
+    position: absolute;
+    top: 20px; /* Ajuste a posição vertical do título */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza o título horizontalmente */
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+  }
+
+ 
 
   .text-align-center{
     position: relative;
@@ -27,32 +41,31 @@
   }
 
   .align-text{
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 30px;
     text-align: justify;
-    color: #495057;
+    color: #333;
   }
   
   
   
   .regrasaolado{
     text-align: justify;
-    padding-left: 30px;
-    padding-right: 30px;
-  
-    
+    padding-left: 50px;
+    padding-right: 50px;
   }
   
   .card{
-    width: 550px; 
-    height: 300px;
+    display: block; /* Necessário para que o `margin` funcione corretamente */
+    margin: 0 auto;
+    width: 60rem;
+    height: auto;
     margin-top: 20px;
-    margin-left: 20px;
-    float: left; 
-    margin-right: 20px;
+    
+    
   }
   
   

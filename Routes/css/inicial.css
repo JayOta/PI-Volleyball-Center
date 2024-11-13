@@ -6,12 +6,30 @@
 a#inicial {
   color: #7fb7f0;
 }
+form.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* main .background {
+  width: 80%; 
+  border: 1px solid #cecece; 
+  border-radius: 5px;
+  box-shadow: 0px 0px 1px #0b0b0b; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column;
+  padding: 2rem;
+} */
 
 img {
   transition: 0.8s ease-in-out;
   width: 100%;
   height: 100%;
 }
+
 img:hover {
   transform: scale(1.04);
   width: 100%;
@@ -47,7 +65,7 @@ img:hover {
 /* Inicio do carrousel inicial */
 #carouselExample .carousel-inner {
   background-color: black;
-  box-shadow: 0px 0px 4px #787878;
+  box-shadow: 0px 0px 7px #787878;
 }
 #first-carousel img {
   display: block !important;
@@ -95,13 +113,21 @@ span#title-site2 {
   max-height: 1000px;
   border: none;
   border-radius: 11px;
-  background-color: black;
   flex-grow: 1;
+  background-color: #0b0b0b;
+  transition: 0.6s ease-in-out;
+}
+.carousel-imagesItens #carouselExampleInterval img:hover {
+  filter: brightness(60%);
 }
 #carouselExampleInterval .carousel-inner {
   border-radius: 10px;
   opacity: 0.6;
   box-shadow: 0px 5px 30px #696969;
+  transition: 0.6s ease-in-out;
+}
+#carouselExampleInterval .carousel-inner:hover {
+  box-shadow: 0px 5px 32px #0b0b0b;
 }
 .carousel-item img {
   height: 690px;
@@ -118,22 +144,61 @@ span#title-site2 {
 }
 .carouselDownPics {
   display: flex;
-  gap: 100px;
+  gap: 93px;
   justify-content: center;
 }
 .carouselDownPics .card {
   position: relative;
-  width: auto;
   flex-basis: 600px;
   background-color: transparent;
+  transition: 0.5s ease-in-out;
+  box-shadow: 0px 2px 5px #0b0b0b;
+  min-width: 200px;
+  width: 600px;
+  height: 359px;
+  border: none;
+  background: transparent;
+}
+.carouselDownPics .card:hover {
   box-shadow: 0px 5px 10px #0b0b0b;
+  filter: brightness(50%);
 }
 .carouselDownPics .card img {
   cursor: pointer;
 }
+.anuncio-produtos {
+  display: flex;
+  gap: 6rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #1e90ff;
+  box-shadow: 0px 1px 8px #222222;
+  transition: 0.3s ease-in-out;
+}
+.anuncio-produtos:hover {
+  box-shadow: 0px 1px 12px #222222;
+}
+.anuncio-produtos .descricao-anuncio button {
+  width: 7rem;
+  height: 3rem;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  box-shadow: 0px 0px 3px #fff;
+  transition: 0.3s ease-in-out;
+}
+.descricao-anuncio button:hover {
+  box-shadow: 0px 0px 7px #fff;
+  background: #f9cc02;
+}
 h1#noticias-sem-title {
-  text-align: center;
+  font-size: 32px;
   font-style: italic;
+  position: relative;
+  left: 0.9rem;
 }
 .noticias-align {
   display: flex;
@@ -146,11 +211,22 @@ h1#noticias-sem-title {
   justify-content: center;
 }
 .col .card {
-  box-shadow: 0px 0px 6px #696969;
+  transition: 0.6s ease-in-out;
+}
+.col .card:hover {
+  box-shadow: 0px 0px 10px #696969;
+  filter: brightness(80%);
 }
 .col .card img {
   height: 350px;
   width: 100%;
+  transition: 0.6s ease-in-out;
+}
+.col .card img:hover {
+  filter: brightness(50%);
+}
+.col .card p.card-text {
+  color: #1e90ff;
 }
 
 @media screen and (max-width: 1200px) {

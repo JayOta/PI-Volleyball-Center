@@ -19,7 +19,7 @@ if ($_POST) {
         } else {
             $usuario = getLogin($email, $senha);
             if (strcasecmp($email, $adminEmail) == 0 && strcasecmp($senha, $adminSenha) == 0) {
-                $_SESSION['usuario_atual'] = ['nome' => 'Admin','email' => $adminEmail, 'senha' => $adminSenha];
+                $_SESSION['usuario_atual'] = ['nome' => 'Admin','email' => $adminEmail, 'senha' => $adminSenha, 'imagem_perfil' => '../Routes/img/logo-volei.png'];
                 header("Location: http://localhost/GitHub/PI-Volleyball-Center/Routes/admin.php");
                 exit; // Certifica-se de que o script não continue após o redirecionamento
             }
@@ -53,4 +53,4 @@ De forma similar, esta função compara a senha fornecida pelo usuário ($senha)
 /* "$_SESSION['usuario_atual'] = ['email' => $adminEmail, 'senha' => $adminSenha];"
 
 Se as credenciais fornecidas forem as do administrador, a linha acima armazena essas credenciais em uma variável de sessão ($_SESSION['usuario_atual']).
-Uma sessão é usada para manter o estado de autenticação do usuário enquanto ele navega pelo site. Neste caso, o usuário autenticado como administrador tem suas credenciais armazenadas na sessão. */ 
+Uma sessão é usada para manter o estado de autenticação do usuário enquanto ele navega pelo site. Neste caso, o usuário autenticado como administrador tem suas credenciais armazenadas na sessão. */

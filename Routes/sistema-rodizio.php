@@ -78,7 +78,10 @@ $rodizios = buscarRodizios();
 	</ul>
 
 	<div class="container"><br><br>
-		<h1 style="transform: translateX(400px);">Rodízios e Suas alterações</h1><br>
+		<center>
+			<h1>Rodízios e Suas alterações</h1>
+		</center>
+		<br>
 		<?php for ($i = 0; $i < count($rodizios); $i++) { ?>
 			<div class="linha-col justify-content-center" style="position: relative; left: 3.2rem;">
 				<div class="card m-3" style=" display: flex; flex-wrap: wrap; flex-direction: column; height: 42rem;">
@@ -88,7 +91,7 @@ $rodizios = buscarRodizios();
 									echo "data:image/jpeg;base64," . $imagem;
 									?>" class="img-fluid rounded-start" alt="" style="border-radius: 5px; cursor:pointer; height: 20rem;">
 					</div>
-					<div class="desciption">
+					<div class="description">
 						<div class="card-body" style="margin-left: 7px;">
 							<h5 class="card-title" style="color:  #1e90ff;"><?php echo $rodizios[$i]['titulo_rodizio']; ?></h5>
 							<p class="card-text-center" style="text-align: justify;"><?php echo $rodizios[$i]['descricao_rodizio']; ?></p>

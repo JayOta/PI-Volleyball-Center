@@ -9,6 +9,7 @@ $fundamentos = buscarfundamentos();
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="../Routes/img/logo-volei.png" type="image/x-icon">
 	<title>Treine em casa</title>
 	<link rel="stylesheet" href="../View/css/fundamentos.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -39,26 +40,26 @@ $fundamentos = buscarfundamentos();
 
 
 
-
-	<div class="meioDosFundamentos">
-		<?php
-		for ($i = 0; $i < count($fundamentos); $i++) {?>
-			<div class="card">
-				<img src="<?php
-				$imagem = base64_encode($fundamentos[$i]['imagem_fundamento']);
-				echo "data:image/jpeg;base64," . $imagem;
-				?>" class="card-img-top"">
+	<main style="display: flex; justify-content: center; align-items: center;">
+		<div class="meio-dos-fundamentos">
+			<?php
+			for ($i = 0; $i < count($fundamentos); $i++) { ?>
+				<div class="conteudo">
+					<div class="cardinho">
+						<img src="<?php $imagem = base64_encode($fundamentos[$i]['imagem_fundamento']);
+									echo "data:image/jpeg;base64," . $imagem; ?>" class="card-img-top"">
 			</div>
 			<br>
-			<div>
-				<p class=" align-text"><?php echo $fundamentos[$i]['titulo_fundamento'];?></p>
-				<p class="fundamentosaolado"><?php echo $fundamentos[$i]['descricao'];?></p>
-			</div>
-			<br>
-		<?php } ?>
-	</div>
+			<div class=" card-texto">
+						<p class=" align-text"><?php echo $fundamentos[$i]['titulo_fundamento']; ?></p>
+						<p class="fundamentosaolado"><?php echo $fundamentos[$i]['descricao']; ?></p>
+					</div>
+				</div>
+			<?php } ?>
+		</div>
+	</main>
 
-
+	<div class="parte-baixo">
 		<hr style="width: 80%; margin-left: 200px;">
 		<div class="aviso" style="display: flex; flex-direction:column; justify-content: center; align-items: center;">
 			<p>Com o treino frequente desses fundamentos, a sua habilidade irá melhorar aos poucos.</p>
@@ -68,11 +69,12 @@ $fundamentos = buscarfundamentos();
 				<li>Hidrate-se na medida certa.</li>
 			</ul>
 		</div>
+	</div>
 
-		<br><br>
-		<?php
-		include 'footer.php';
-		?>
+	<br><br>
+	<?php
+	include 'footer.php';
+	?>
 </body>
 
 </html>

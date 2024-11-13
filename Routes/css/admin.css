@@ -109,7 +109,7 @@ button#closeSidebarBtn .bx:hover {
   justify-content: center;
   gap: 40px;
   width: 100%;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 section {
   display: flex;
@@ -129,7 +129,7 @@ section {
   background: #fff;
   border: #424242;
   border-radius: 2px;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
   justify-content: center;
 }
 .big-aligns {
@@ -141,9 +141,49 @@ section {
 .big-container {
   width: 65rem;
   height: 28rem;
+  max-height: 28rem;
   box-shadow: 0px 0px 2px #0b0b0b;
   border-radius: 2px;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+table {
+  overflow-y: auto;
+  max-height: 28rem;
+}
+.clientes-container {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.clientes-container tbody{
+  max-height: 28rem;
+  overflow-y: auto;
+}
+.clientes-container td, .clientes-container th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.clientes-container tr {
+  width: 100%;
+
+}
+.clientes-container tr:first-child {
+  border-radius: 10px;
+}
+.clientes-container tr:nth-child(even){background-color: #f2f2f2;}
+
+.clientes-container tr:hover {background-color: #ddd;}
+
+.clientes-container th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+
 }
 aside {
   display: flex;
