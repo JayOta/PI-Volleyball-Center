@@ -2,7 +2,13 @@
 require "../Controller/loja.php";
 $getAllProdutos = getAllProdutos();
 $getAllCategorias = buscarCategoria();
-
+session_start();
+$busca = $_SESSION['produtos'];
+if(count($busca) > 1){
+	$getAllProdutos = $busca;
+}else{
+	$getAllProdutos = $busca;
+}
 ?>
 
 <!DOCTYPE html>
@@ -36,10 +42,12 @@ $getAllCategorias = buscarCategoria();
 				<a name="categorias" href="<?php echo @$link; ?>"><?php echo $getAllCategorias[$i]['nome']; ?></a>
 			<?php } ?>
 		</div>
-		<form class="d-flex position-relative" role="search">
-			<input class="input-search form-control me-2" type="search" placeholder="Pesquise o produto" aria-label="Search" style="width: 360px;">
-			<button class="btn btn-outline-success" type="submit">Pesquisar</button>
-		</form>
+	
+			<form action="busca.php" method="post" class="d-flex position-relative" role="search">
+				<input class="input-search form-control me-2" type="search" name="nome" placeholder="Digite o nome do produto" aria-label="Search" style="width: 360px;">
+				<button class="btn btn-outline-success" type="submit">Pesquisar</button>
+			</form>
+
 	</div>
 
 	<br><br><br><br><br>

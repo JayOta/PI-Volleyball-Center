@@ -64,7 +64,7 @@ $clientes = buscarCliente();
 
                     <div class="big-aligns">
                         <div class="big-container">
-                            <table class="clientes-container">
+                            <table class="clientes-container um">
                                 <tr>
                                     <th>Clientes</th>
                                 </tr>
@@ -76,7 +76,7 @@ $clientes = buscarCliente();
                             </table>
                         </div>
                         <div class="big-container">
-                            <table class="clientes-container">
+                            <table class="clientes-container dois">
                                 <tr>
                                     <th>Produtos</th>
                                 </tr>
@@ -87,12 +87,26 @@ $clientes = buscarCliente();
                                 <?php } ?>
                             </table>
                         </div>
-                        <div class="big-container">Mais vendidos | Hoje</div>
+                        <div class="big-container">
+                            <table class="clientes-container tres">
+                                <tr>
+                                    <th>Vendidos Hoje</th>
+                                </tr>
+                                <tr>
+                                    <td>Produto 1</td>
+                                    <td>Produto 2</td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
                 </section>
                 <aside>
                     <div class="aside-containers">Atividade Recente | Hoje</div>
-                    <div class="aside-containers">Notícias e Atualizações | Hoje</div>
+
+                    <div class="aside-containers">Notícias e Atualizações | Hoje </div>
+                        <table class="noticias-container">
+
+                    </div>
                     <div class="aside-containers"></div>
                     <div class="aside-containers"></div>
                 </aside>

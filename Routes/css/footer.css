@@ -15,6 +15,7 @@ footer {
   gap: 5rem;
   padding: 1.2rem;
   position: absolute;
+  z-index: 2;
 }
 
 footer ul.col-num1 {
