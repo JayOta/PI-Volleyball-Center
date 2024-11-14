@@ -6,8 +6,6 @@ session_start();
 $busca = $_SESSION['produtos'];
 if(count($busca) > 1){
 	$getAllProdutos = $busca;
-}else{
-	$getAllProdutos = $busca;
 }
 ?>
 
