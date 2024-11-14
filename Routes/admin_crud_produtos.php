@@ -67,40 +67,80 @@
                 </div>
             </div>
         </div>
+
+        <div style="display: inline-block">
         <main style="padding: 2rem 0 0 0.6rem;">
             <div class="inputs" style="display: flex; flex-direction: column;">
                 <div class="crud-opcoes" style="display: flex; flex-direction: row; gap: 1rem;">
                     <h1 style="margin-bottom: 1rem; font-size: 2.5rem;">Adicionar Produtos</h1>
-                    <div class="botoes" style="display: flex; flex-direction: row; gap: 0.2rem;">
+                   
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1" style="border: 1px solid #0ea5e9; ">Nome</span>
+                    <input type="text" class="form-control" name="" aria-describedby="basic-addon1" style="width: 30rem; border: 1px solid #0ea5e9; ">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1" style="border: 1px solid #0ea5e9; ;">Descrição</span>
+                    <input type="text" class="form-control" name="" aria-describedby="basic-addon1" style="width: 30rem; border: 1px solid #0ea5e9; ">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1" style="border: 1px solid #0ea5e9; ">Preço</span>
+                    <input type="number" class="form-control" name="" aria-describedby="basic-addon1" style="width: 30rem; border: 1px solid #0ea5e9; ">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1" style="border: 1px solid #0ea5e9; ">Imagem</span>
+                    <input type="image" class="form-control" name="" aria-describedby="basic-addon1" style="width: 30rem; border: 1px solid #0ea5e9; ">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1" style="border: 1px solid #0ea5e9;" >Categoria</span>
+                    <input type="text" class="form-control" name="" aria-describedby="basic-addon1" style="width: 30rem; border: 1px solid #0ea5e9; ">
+                    <!-- <input class="send-crud btn btn-outline-success" type="submit" value="Aplicar"> -->
+                </div>
+            </div> 
+            <div class="botoes" style="display: flex; flex-direction: row; gap: 0.2rem;">
                         <button class="btn btn-outline-dark active">Adicionar</button>
-                        <button class="btn btn-outline-dark">Editar</button>
-                        <button class="btn btn-outline-dark">Remover</button>
-                    </div>
-                </div>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">Nome</span>
-                    <input type="text" class="form-control" name="" aria-describedby="basic-addon1" style="width: 30rem;">
-                </div>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">Descrição</span>
-                    <input type="text" class="form-control" name="" aria-describedby="basic-addon1">
-                </div>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">Preço</span>
-                    <input type="number" class="form-control" name="" aria-describedby="basic-addon1">
-                </div>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">Imagem</span>
-                    <input type="image" class="form-control" name="" aria-describedby="basic-addon1">
-                </div>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">Categoria</span>
-                    <input type="text" class="form-control" name="" aria-describedby="basic-addon1">
-                    <input class="send-crud btn btn-outline-success" type="submit" value="Aplicar">
-                </div>
+                        <!-- <button class="btn btn-outline-dark">Editar</button>
+                        <button class="btn btn-outline-dark">Remover</button> -->
             </div>
         </main>
     </div>
+
+    <main style="padding: 2rem 0 0 0.6rem;">
+            <div class="inputs" style="display: flex; flex-direction: column;">
+                <div class="crud-opcoes" style="display: flex; flex-direction: row; gap: 1rem;">
+                    <h1 style="margin-bottom: 1rem; font-size: 2.5rem;">Editar Produtos</h1>
+                   
+                </div>
+                <div class="input-group mb-3" >
+                    <span class="input-group-text" id="basic-addon1" style="border: 1px solid #0ea5e9;">Nome</span>
+                    <input type="text" class="form-control" name="" aria-describedby="basic-addon1" style="width: 30rem; border: 1px solid #0ea5e9;">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1" style="border: 1px solid #0ea5e9;">Descrição</span>
+                    <input type="text" class="form-control" name="" aria-describedby="basic-addon1"  style="width: 30rem; border: 1px solid #0ea5e9;">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1" style="border: 1px solid #0ea5e9;">Preço</span>
+                    <input type="number" class="form-control" name="" aria-describedby="basic-addon1"  style="width: 30rem; border: 1px solid #0ea5e9;">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1" style="border: 1px solid #0ea5e9;;">Imagem</span>
+                    <input type="image" class="form-control" name="" aria-describedby="basic-addon1"  style="width: 30rem; border: 1px solid #0ea5e9;">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1" style="border: 1px solid #0ea5e9;">Categoria</span>
+                    <input type="text" class="form-control" name="" aria-describedby="basic-addon1"  style="width: 30rem; border: 1px solid #0ea5e9;">
+                    <!-- <input class="send-crud btn btn-outline-success" type="submit" value="Aplicar"> -->
+                </div>
+            </div> 
+            <div class="botoes" style="display: flex; flex-direction: row; gap: 0.2rem;">
+                        <!-- <button class="btn btn-outline-dark active">Adicionar</button> -->
+                        <button class="btn btn-outline-dark active">Editar</button>
+                        <!--<button class="btn btn-outline-dark">Remover</button> -->
+            </div>
+        </main>
+         </div>
+   
     <div class="footer-admin" style="position: relative; top: 15.2  rem;">
         <?php include '../Routes/footer.php'; ?>
     </div>
