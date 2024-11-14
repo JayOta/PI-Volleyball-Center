@@ -12,5 +12,7 @@
         }catch(PDOException $e){
             echo json_encode(['erro ao mostrar fundamento' => $e->getMessage()]);
         }
+ 
+     
     }
 ?>

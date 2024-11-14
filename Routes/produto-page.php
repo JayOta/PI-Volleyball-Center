@@ -23,6 +23,7 @@ $produto = buscarProduto($_GET['id']);
   // }
   // echo $produto['categorias_id'];
   // }
+$_SESSION['value'] = 0;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -142,7 +143,8 @@ $produto = buscarProduto($_GET['id']);
             <button type="submit" class="price-btn__add price-btn" name="add_cart" type="submit">
               <i class='bx bx-plus'></i>
             </button>
-            <input name="quantity_cart" value="<?php //echo $_SESSION['quantity_cart']; ?>0" style="font-size: 42px; background: transparent; outline: none; border: none; width: 17%;">
+            <input name="quantity_cart" value="<?php // echo $_SESSION['value']; 
+                                                ?>0" style="font-size: 42px; background: transparent; outline: none; border: none; width: 17%;">
             <button type="button" class="price-btn__remove price-btn" name="sub_cart" type="submit">
               <i class='bx bx-minus'></i>
             </button>
@@ -163,16 +165,7 @@ $produto = buscarProduto($_GET['id']);
   <?php
   include 'footer.php';
   ?>
-  <?php
-  if ($_POST['add_cart']) {
-    $_SESSION['quantity_cart']++;
-    header("Location: http://localhost/GitHub/PI-Volleyball-Center/Routes/produto-page.php?id=1");
-  } elseif ($_POST['sub_cart'] && $_SESSION['quantity_cart'] > 0) {
-    $_SESSION['quantity_cart']--;
-  }
-  header("Location: http://localhost/GitHub/PI-Volleyball-Center/Routes/produto-page.php?id=1");
-  exit();
-  ?>
+
 </body>
 
 </html>

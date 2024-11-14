@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php  session_start(); ?>
 <html lang="pt-br">
 
 <head>
@@ -13,13 +14,13 @@
     <link rel="stylesheet" href="../Routes/css/admin.css">
     <link rel="stylesheet" href="./Routes/css/admin-crud-produtos.css">
     <link rel="stylesheet" href="../Routes/css/perfil-on-navbar.css">
+    <link rel="stylesheet" href="./css/admin_crud_produtos.css">
     <title>CRUD PRODUTOS</title>
 
     <style>
         .crud-opcoes {
             display: flex;
             flex-direction: row;
-            gap: ;
             justify-content: center;
             align-items: center;
         }

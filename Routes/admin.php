@@ -1,11 +1,3 @@
-<?php
-require '../Controller/admin.php';
-require '../Controller/loja.php';
-
-$produtos = buscarProdutos();
-$clientes = buscarCliente();
-?>
-
 <!DOCTYPE html>
 <html>
 
@@ -59,7 +51,7 @@ $clientes = buscarCliente();
                     <div class="mini-aligns">
                         <div class="mini-container">Vendas</div>
                         <div class="mini-container">Receita</div>
-                        <div class="mini-container">Relatórios</div>
+                        <div class="mini-container">Clientes</div>
                     </div>
 
                     <div class="big-aligns">
@@ -98,6 +90,9 @@ $clientes = buscarCliente();
                                 </tr>
                             </table>
                         </div>
+                        <div class="big-container">Relatórios</div>
+                        <div class="big-container">Vendas recentes | Hoje</div>
+                        <div class="big-container">Mais vendidos | Hoje</div>
                     </div>
                 </section>
                 <aside>

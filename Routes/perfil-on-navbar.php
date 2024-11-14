@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <?php 
+session_start();
     require '../Controller/login.php';
-    $imagem = base64_encode($_SESSION['usuario_atual']['imagem_perfil']) ?? 'image error';
+    if(isset($_SESSION['usuario_atual']['imagem_perfil'])){
+        $imagem = base64_encode($_SESSION['usuario_atual']['imagem_perfil']) ?? 'image error';
+    }
 ?>
 <html lang="pt-br">
 
@@ -35,7 +38,11 @@
                     </a>
                     <div class="login-area">
                         <div class="perfil">
+                            <?php if(isset($imagem)) {?>
                             <img src="<?php echo "data:image/jpeg;base64," . $imagem;?>" alt="perfil-img" class="perfil-img" name="perfil-img">
+                            <?php }  else {?>
+                                <img src="../Routes/img/logo-volei.png" alt="perfil-img" class="perfil-img" name="perfil-img"> 
+                            <?php } ?>
                             <details closed>
                                 <summary style="color: #fff; display: flex; flex-direction: row;"> <?php
                                             echo $_SESSION['usuario_atual']['nome'] ?? "Undefined";
