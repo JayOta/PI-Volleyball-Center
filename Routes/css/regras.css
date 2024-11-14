@@ -8,27 +8,26 @@
 .meioRegras{
   margin-top: 50px;
   display: flex;
-  flex-direction: column; /* Organiza os elementos em coluna */
+  flex-direction: column; /* Isso faz com que fique os elementos aqui dentro fiquem como uma coluna */
   border-radius: 20px;
   box-shadow: 0px 0px 15px rgba(189, 171, 171, 0.507);
-  height: auto; /* Deixe a altura automática para se ajustar ao conteúdo */
+  height: auto;
   width: 70rem;
-  align-items: flex-start; /* Alinha o conteúdo à esquerda */
+  align-items: flex-start; 
   justify-content: flex-start;
-  padding-top: 60px; /* Espaçamento interno do container */
+  padding-top: 60px;
   position: relative;
 
   }
 
   .text-align{
     position: absolute;
-    top: 20px; /* Ajuste a posição vertical do título */
+    top: 20px; 
     left: 50%;
-    transform: translateX(-50%); /* Centraliza o título horizontalmente */
+    transform: translateX(-50%);
     text-align: center;
     font-size: 40px;
     font-weight: bold;
-    color: #333;
   }
 
  
@@ -47,7 +46,7 @@
     font-weight: 700;
     font-size: 30px;
     text-align: justify;
-    color: #333;
+
   }
   
   
@@ -59,16 +58,15 @@
   }
   
   .card{
-    display: block; /* Necessário para que o `margin` funcione corretamente */
-    margin: 0 auto;
-    width: 60rem;
+    display: flex; 
+    margin: auto ;/* Necessário para que o `margin` funcione corretamente */
+    width: 50rem;
     height: auto;
     margin-top: 20px;
-    
-    
   }
   
-  
+
+
   .card-text{
     display: flex;
     width: 300px;
