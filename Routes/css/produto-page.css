@@ -160,16 +160,6 @@ Product section stylling
   font-weight: 600;
   color: #1e90ff;
 }
-.bx-star {
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-}
-.bx-star:focus {
-  background: #000;
-  color: #000;
-  border-radius: 80px 80px 80px 80px;
-}
 .price-txt {
   margin-top: 0.5rem;
   margin-right: 30px;
