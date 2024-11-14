@@ -1,7 +1,6 @@
 <?php
 require '../Controller/produto-page.php';
 $produto = buscarProduto($_GET['id']);
-<<<<<<< HEAD
 // $getAllCategorias = getAllCategorias();
 
   // function getCategoriaProduto(){
@@ -24,9 +23,7 @@ $produto = buscarProduto($_GET['id']);
   // }
   // echo $produto['categorias_id'];
   // }
-=======
 $_SESSION['value'] = 0;
->>>>>>> parent of ba617af (Update 'admin.php', 'loja.php')
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -88,7 +85,6 @@ $_SESSION['value'] = 0;
         <h2 class="price-sub__heading">VolleyBall Center</h2>
         <h1 class="price-main__heading">Produtos de Edição Limitada Verão</h1>
         <div class="price-name__heading"><?php echo $produto['nome'] ?></div>
-<<<<<<< HEAD
         <!--<div style="position: relative; bottom: 2rem; font-size: 20px;" class="price-category__heading"><?php // getCategoriaProduto(); ?></div> -->
         <!--<div class="rating-stars__heading" style="display: flex; align-items: center;">
           <button type="button" class='bx bx-star'></button>
@@ -98,8 +94,6 @@ $_SESSION['value'] = 0;
           <button type="button" class='bx bx-star'></button>
           <span><-Arrumar..</span>
         </div> -->
-=======
->>>>>>> parent of ba617af (Update 'admin.php', 'loja.php')
         <div class="price-txt" name="description"><?php echo $produto['descricao'] ?></div>
         <div class="price-box">
           <div class="price-box__main">

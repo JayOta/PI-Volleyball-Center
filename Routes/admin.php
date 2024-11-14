@@ -55,7 +55,6 @@
                     </div>
 
                     <div class="big-aligns">
-<<<<<<< HEAD
                         <div class="big-container">
                             <table class="clientes-container um">
                                 <tr>
@@ -91,11 +90,9 @@
                                 </tr>
                             </table>
                         </div>
-=======
                         <div class="big-container">Relatórios</div>
                         <div class="big-container">Vendas recentes | Hoje</div>
                         <div class="big-container">Mais vendidos | Hoje</div>
->>>>>>> parent of ba617af (Update 'admin.php', 'loja.php')
                     </div>
                 </section>
                 <aside>

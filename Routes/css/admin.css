@@ -142,7 +142,6 @@ section {
 .big-container {
   width: 65rem;
   height: 28rem;
-<<<<<<< HEAD
   max-height: 28rem;
   max-height: 28rem;
   box-shadow: 0px 0px 2px #0b0b0b;
@@ -187,11 +186,12 @@ table.clientes-container {
   background-color: #04AA6D;
   color: white;
   width: 100%;
-=======
   box-shadow: 0px 0px 2px #0b0b0b;
   border-radius: 2px;
   transition: 0.3s ease-in-out;
->>>>>>> parent of ba617af (Update 'admin.php', 'loja.php')
+  box-shadow: 0px 0px 2px #0b0b0b;
+  border-radius: 2px;
+  transition: 0.3s ease-in-out;
 }
 aside {
   display: flex;
