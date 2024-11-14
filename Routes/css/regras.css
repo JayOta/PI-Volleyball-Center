@@ -22,7 +22,7 @@
 
   .text-align{
     position: absolute;
-    top: 20px; 
+    top: 25px; 
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -60,7 +60,7 @@
   .card{
     display: flex; 
     margin: auto ;/* Necessário para que o `margin` funcione corretamente */
-    width: 50rem;
+    width: 45rem;
     height: auto;
     margin-top: 20px;
   }
