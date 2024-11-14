@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <?php 
-session_start();
     require '../Controller/login.php';
     if(isset($_SESSION['usuario_atual']['imagem_perfil'])){
         $imagem = base64_encode($_SESSION['usuario_atual']['imagem_perfil']) ?? 'image error';

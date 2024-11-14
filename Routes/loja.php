@@ -2,6 +2,7 @@
 require "../Controller/loja.php";
 $getAllProdutos = getAllProdutos();
 $getAllCategorias = buscarCategoria();
+session_start();
 if(isset($_SESSION['produtos'])){
 	$busca = $_SESSION['produtos'];
 	if(count($busca) > 1){
