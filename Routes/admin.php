@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<?php
+require '../Controller/admin.php';
+require '../Controller/loja.php';
+$cliente = buscarCliente();
+$produtos = buscarProdutos();
+?>
 <html>
 
 <head>
@@ -60,9 +66,9 @@
                                 <tr>
                                     <th>Clientes</th>
                                 </tr>
-                                <?php for ($i = 0; $i < count($clientes); $i++) { ?>
+                                <?php for ($i = 0; $i < count($cliente); $i++) { ?>
                                     <tr>
-                                        <td><?php echo $clientes[$i]['nome']; ?></td>
+                                        <td><?php echo $cliente[$i]['nome']; ?></td>
                                     </tr>
                                 <?php } ?>
                             </table>
@@ -90,29 +96,25 @@
                                 </tr>
                             </table>
                         </div>
-                        <div class="big-container">Relatórios</div>
-                        <div class="big-container">Vendas recentes | Hoje</div>
-                        <div class="big-container">Mais vendidos | Hoje</div>
                     </div>
                 </section>
                 <aside>
                     <div class="aside-containers">Atividade Recente | Hoje</div>
 
                     <div class="aside-containers">Notícias e Atualizações | Hoje </div>
-                        <table class="noticias-container">
+                    <table class="noticias-container">
 
-                    </div>
-                    <div class="aside-containers"></div>
-                    <div class="aside-containers"></div>
-                </aside>
             </div>
+            <div class="aside-containers"></div>
+            <div class="aside-containers"></div>
+            </aside>
+        </div>
         </div>
     </main>
-    <br><br><br><br>
-    <?php
-    include 'footer.php';
-    ?>
-
+    <br><br><br><br><br><br><br><br><br><br><br>
+        <?php
+        include 'footer.php';
+        ?>
     <script src="admin.js"></script>
 </body>
 

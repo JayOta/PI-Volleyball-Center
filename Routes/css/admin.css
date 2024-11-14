@@ -16,7 +16,7 @@ body {
 }
 .sidebar {
   width: 16rem;
-  height: 100%;
+  height: 51.5rem;
   background-color: var(--azul-cor);
   box-sizing: border-box;
   backdrop-filter: blur(10px);
