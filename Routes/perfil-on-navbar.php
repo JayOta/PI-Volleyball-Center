@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<?php 
-    require '../Controller/login.php';
-    if(isset($_SESSION['usuario_atual']['imagem_perfil'])){
-        $imagem = base64_encode($_SESSION['usuario_atual']['imagem_perfil']) ?? 'image error';
-    }
+<?php
+session_start();
+require '../Controller/login.php';
+if (isset($_SESSION['usuario_atual']['imagem_perfil'])) {
+    $imagem = base64_encode($_SESSION['usuario_atual']['imagem_perfil']) ?? 'image error';
+}
 ?>
 <html lang="pt-br">
 
@@ -23,8 +24,8 @@
                     <img src="img/logo-volei.png" class="logo-img">
                 </a>
                 <ul class="links-navigation">
-                <a href=" ../Routes/inicial.php">
-                    <li id="inicial">Início</li>
+                    <a href=" ../Routes/inicial.php">
+                        <li id="inicial">Início</li>
                     </a>
                     <a href="../Routes/fundamentos.php">
                         <li id="inicial">Fundamentos</li>
@@ -37,30 +38,32 @@
                     </a>
                     <div class="login-area">
                         <div class="perfil">
-                            <?php if(isset($imagem)) {?>
-                            <img src="<?php echo "data:image/jpeg;base64," . $imagem;?>" alt="perfil-img" class="perfil-img" name="perfil-img">
-                            <?php }  else {?>
-                                <img src="../Routes/img/logo-volei.png" alt="perfil-img" class="perfil-img" name="perfil-img"> 
+                            <?php if (isset($imagem)) { ?>
+                                <img src="<?php echo "data:image/jpeg;base64," . $imagem; ?>" alt="perfil-img" class="perfil-img" name="perfil-img">
+                            <?php } else { ?>
+                                <img src="../Routes/img/logo-volei.png" alt="perfil-img" class="perfil-img" name="perfil-img">
                             <?php } ?>
                             <details closed>
                                 <summary style="color: #fff; display: flex; flex-direction: row;"> <?php
-                                            echo $_SESSION['usuario_atual']['nome'] ?? "Undefined";
-                                            ?></summary>
+                                                                                                    echo $_SESSION['usuario_atual']['nome'] ?? "Undefined";
+                                                                                                    ?></summary>
                                 <ul>
                                     <div class="details-content">
                                         <i class='bx bx-user'></i>
-                                        <a href="../Routes/index.php"><li class="li-perfil">Meu Perfil</li></a>
+                                        <a href="../Routes/index.php">
+                                            <li class="li-perfil">Meu Perfil</li>
+                                        </a>
                                     </div>
                                     <div class="details-content">
                                         <i class='bx bx-cog'></i>
                                         <li class="li-perfil">Configurações</li> <!-- https://www.bootdey.com/snippets/view/profile-edit-settings -->
                                     </div>
-                                        <button type="submit" name="logout" style="width: 100%; border: none; background: transparent; border-radius: 2px;">
-                                            <div class="details-content">
-                                                <i class='bx bx-log-in'></i>
-                                                <li class="li-perfil">Sair</li>
-                                            </div>
-                                        </button>
+                                    <button type="submit" name="logout" style="width: 100%; border: none; background: transparent; border-radius: 2px;">
+                                        <div class="details-content">
+                                            <i class='bx bx-log-in'></i>
+                                            <li class="li-perfil">Sair</li>
+                                        </div>
+                                    </button>
                                 </ul>
                             </details>
                         </div>

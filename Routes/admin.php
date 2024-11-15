@@ -42,7 +42,7 @@ $produtos = buscarProdutos();
                     <button class="links"><i class='bx bx-cart'></i>Produtos</button>
                 </div>
                 <div class="line">
-                    <a style="text-decoration: none;" href="./admin_crud_produtos.php" target="_blank"><button class="links"><i class='bx bx-bar-chart-alt-2'></i>CRUD Produtos</button></a>
+                    <a style="text-decoration: none;" href="./admin_crud_adicionar.php" target="_blank"><button class="links"><i class='bx bx-bar-chart-alt-2'></i>CRUD Produtos</button></a>
                 </div>
                 <hr>
                 <div class="line">
@@ -112,9 +112,9 @@ $produtos = buscarProdutos();
         </div>
     </main>
     <br><br><br><br><br><br><br><br><br><br><br>
-        <?php
-        include 'footer.php';
-        ?>
+    <?php
+    include 'footer.php';
+    ?>
     <script src="admin.js"></script>
 </body>
 

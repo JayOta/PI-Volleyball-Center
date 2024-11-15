@@ -9,3 +9,25 @@ input.form-control {
 button.btn {
   height: 2rem;
 }
+button.remove {
+  border: none;
+  background: transparent;
+  width: 2.5rem;
+  border-radius: 50%;
+}
+button.remove:hover {
+  background: #ebebeb;
+}
+.crud-opcoes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+button.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+}

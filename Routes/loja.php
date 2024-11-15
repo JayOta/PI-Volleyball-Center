@@ -1,11 +1,12 @@
 <?php
-require "../Controller/loja.php";
 require '../Routes/busca.php';
+require "../Controller/loja.php";
+
 $getAllCategorias = buscarCategoria();
-session_start();
-if(isset($_SESSION['produtos'])){
+$getAllProdutos = buscarProdutos();
+if (isset($_SESSION['produtos'])) {
 	$busca = $_SESSION['produtos'];
-	if(count($busca) > 1){
+	if (count($busca) > 1) {
 		$getAllProdutos = $busca;
 	}
 }
@@ -42,11 +43,11 @@ if(isset($_SESSION['produtos'])){
 				<a name="categorias" href="<?php echo @$link; ?>"><?php echo $getAllCategorias[$i]['nome']; ?></a>
 			<?php } ?>
 		</div>
-	
-			<form action="busca.php" method="post" class="d-flex position-relative" role="search">
-				<input class="input-search form-control me-2" type="search" name="nome" placeholder="Digite o nome do produto" aria-label="Search" style="width: 360px;">
-				<button class="btn btn-outline-success" type="submit">Pesquisar</button>
-			</form>
+
+		<form action="busca.php" method="post" class="d-flex position-relative" role="search">
+			<input class="input-search form-control me-2" type="search" name="nome" placeholder="Digite o nome do produto" aria-label="Search" style="width: 360px;">
+			<button class="btn btn-outline-success" type="submit">Pesquisar</button>
+		</form>
 
 	</div>
 
@@ -84,7 +85,7 @@ if(isset($_SESSION['produtos'])){
 
 </html>
 
-<?php 
+<?php
 //		if(isset($_POST['categoria'][0])) {
 //			$getAllCategorias[$i] = $getAllProdutos[$i][1];
 //}
