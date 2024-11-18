@@ -5,7 +5,7 @@ function buscarClientes()
 {
     global $conn;
     try {
-        $stmt = $conn->prepare("SELECT * FROM `clientes` ");
+        $stmt = $conn->prepare("SELECT * FROM `usuarios` ");
         $stmt->execute();
 
         $clientes = $stmt->fetchAll();
@@ -58,10 +58,12 @@ function buscarId($id)
         return "Erro ao mostrar informações -> " . $e;
     }
 }
-function editarProduto($categoria_id, $imagem, $nome, $descricao, $preco, $qtd_estoque){
+function editarProduto($categoria_id, $imagem, $nome, $descricao, $preco, $qtd_estoque)
+{
     global $conn;
     try {
-        /* Rever esta parte -> */ $stmt = $conn->prepare("UPDATE produtos SET categorias_id = :categoria, imagem_produto = :imagem, nome = :nome, descricao = :descricao, preco = :preco, qtd_estoque = :qtd_estoque");
+        /* Rever esta parte -> */
+        $stmt = $conn->prepare("UPDATE produtos SET categorias_id = :categoria, imagem_produto = :imagem, nome = :nome, descricao = :descricao, preco = :preco, qtd_estoque = :qtd_estoque");
         $stmt->bindParam(':categoria', $categoria_id);
         $stmt->bindParam(':imagem', $imagem, PDO::PARAM_LOB);
         $stmt->bindParam(':nome', $nome);
@@ -69,7 +71,6 @@ function editarProduto($categoria_id, $imagem, $nome, $descricao, $preco, $qtd_e
         $stmt->bindParam(':preco', $preco);
         $stmt->bindParam(':qtd_estoque', $qtd_estoque);
         $stmt->execute();
-
     } catch (PDOException $e) {
         return "Erro ao mostrar informações -> " . $e;
     }

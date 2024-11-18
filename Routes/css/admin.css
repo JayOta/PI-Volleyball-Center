@@ -160,8 +160,42 @@ table.clientes-container {
   min-width: 100%;
   overflow: hidden;
   overflow-y: auto;
+  overflow-x: auto;
 }
-.clientes-container td, .clientes-container th {
+table.todos {
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  flex-direction: row;
+}
+table.todos tr {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: transparent;
+  height: 30rem;
+}
+table.todos tr:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+}
+table.todos td {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120%;
+}
+table.todos td,
+table.todos th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  width: 100%;
+}
+.clientes-container td,
+.clientes-container th {
   border: 1px solid #ddd;
   padding: 8px;
   width: 64rem;
@@ -175,15 +209,19 @@ table.clientes-container {
 .clientes-container tr:first-child {
   border-radius: 10px;
 }
-.clientes-container tr:nth-child(even){background-color: #f2f2f2;}
+.clientes-container tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 
-.clientes-container tr:hover {background-color: #ddd;}
+.clientes-container tr:hover {
+  background-color: #ddd;
+}
 
 .clientes-container th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #04AA6D;
+  background-color: #04aa6d;
   color: white;
   width: 100%;
   box-shadow: 0px 0px 2px #0b0b0b;

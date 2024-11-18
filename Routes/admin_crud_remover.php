@@ -29,7 +29,9 @@ $produtos = buscarProdutos();
             <div id="sidebar" class="sidebar">
                 <button id="closeSidebarBtn" onclick="closeSidebar()"><i class='bx bx-x'></i></button>
                 <div class="line">
-                    <a href="../Routes/admin.php" style="text-decoration: none;" target="_blank"><button class="links"><i class='bx bx-left-arrow'></i>Voltar</button></a>
+                    <a href="./admin.php" style="text-decoration: none; width: 100%;">
+                        <button class="links"><i class='bx bx-left-arrow'></i>Voltar</button>
+                    </a>
                 </div>
                 <div class="line">
                     <button class="links"><i class='bx bxs-dashboard'></i>Categorias</button>
@@ -38,10 +40,9 @@ $produtos = buscarProdutos();
                     <button class="links"><i class='bx bx-user'></i>Clientes</button>
                 </div>
                 <div class="line">
-                    <button class="links"><i class='bx bx-cart'></i>Produtos</button>
-                </div>
-                <div class="line">
-                    <button class="links"><i class='bx bx-bar-chart-alt-2'></i>CRUD Produtos</button>
+                    <a style="text-decoration: none;" href="./admin_produtos.php" target="_blank">
+                        <button class="links"><i class='bx bx-cart'></i>Produtos</button>
+                    </a>
                 </div>
                 <hr>
                 <div class="line">
