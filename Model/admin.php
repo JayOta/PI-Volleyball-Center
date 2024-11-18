@@ -45,3 +45,32 @@ function deletarProduto($id)
         echo "Erro ao deletar o produto: " . $e->getMessage();
     }
 }
+function buscarId($id)
+{
+    global $conn;
+    try {
+        $stmt = $conn->prepare("SELECT * FROM `produtos` where `produto_id` = '$id'");
+        $stmt->execute();
+
+        $produtos = $stmt->fetchAll()[0];
+        return $produtos;
+    } catch (PDOException $e) {
+        return "Erro ao mostrar informações -> " . $e;
+    }
+}
+function editarProduto($categoria_id, $imagem, $nome, $descricao, $preco, $qtd_estoque){
+    global $conn;
+    try {
+        /* Rever esta parte -> */ $stmt = $conn->prepare("UPDATE produtos SET categorias_id = :categoria, imagem_produto = :imagem, nome = :nome, descricao = :descricao, preco = :preco, qtd_estoque = :qtd_estoque");
+        $stmt->bindParam(':categoria', $categoria_id);
+        $stmt->bindParam(':imagem', $imagem, PDO::PARAM_LOB);
+        $stmt->bindParam(':nome', $nome);
+        $stmt->bindParam(':descricao', $descricao);
+        $stmt->bindParam(':preco', $preco);
+        $stmt->bindParam(':qtd_estoque', $qtd_estoque);
+        $stmt->execute();
+
+    } catch (PDOException $e) {
+        return "Erro ao mostrar informações -> " . $e;
+    }
+}

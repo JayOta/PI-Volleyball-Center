@@ -1,9 +1,10 @@
 <?php
-require '../Routes/busca.php';
+require "../Routes/busca.php";
 require "../Controller/loja.php";
 
 $getAllCategorias = buscarCategoria();
 $getAllProdutos = buscarProdutos();
+
 if (isset($_SESSION['produtos'])) {
 	$busca = $_SESSION['produtos'];
 	if (count($busca) > 1) {

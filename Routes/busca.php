@@ -18,7 +18,7 @@ if (isset($_POST['nome'])) {
         $produtos = $resultado->fetchAll(PDO::FETCH_ASSOC);
         $_SESSION['produtos'] = $produtos;
 
-        header("Location: loja.php");
+        header("Location: http://localhost/GitHub/PI-Volleyball-Center/Routes/loja.php" );
     } else {
         echo json_encode(['mensagem' => 'Nenhum produto encontrado com esse nome.']);
     }

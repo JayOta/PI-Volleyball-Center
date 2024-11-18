@@ -52,7 +52,7 @@ $produtos = buscarProdutos();
                 </div>
             </div>
         </div>
-        <form action="../Controller/admin.php" method="post" onsubmit="return confirm('Você tem certeza que deseja remover este produto?');">
+        <form action="../Controller/admin.php" method="post" onsubmit="return confirm('Você tem certeza desta ação?');">
             <main style="padding: 2rem 0 0 0.6rem;">
                 <div class="inputs" style="display: flex; flex-direction: column;">
                     <div class="crud-opcoes" style="display: flex; flex-direction: row; gap: 1rem;">

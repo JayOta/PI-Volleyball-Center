@@ -36,13 +36,19 @@ $produtos = buscarProdutos();
                     <button class="links"><i class='bx bxs-dashboard'></i>Categorias</button>
                 </div>
                 <div class="line">
-                    <button class="links"><i class='bx bx-user'></i>Clientes</button>
+                    <a style="text-decoration: none;" href="./admin_clientes.php" target="_blank">
+                        <button class="links"><i class='bx bx-user'></i>Clientes</button>
+                    </a>
                 </div>
                 <div class="line">
+                <a style="text-decoration: none;" href="./admin_produtos.php" target="_blank">
                     <button class="links"><i class='bx bx-cart'></i>Produtos</button>
+                </a>
                 </div>
                 <div class="line">
-                    <a style="text-decoration: none;" href="./admin_crud_adicionar.php" target="_blank"><button class="links"><i class='bx bx-bar-chart-alt-2'></i>CRUD Produtos</button></a>
+                    <a style="text-decoration: none;" href="./admin_crud_adicionar.php" target="_blank">
+                        <button class="links"><i class='bx bx-bar-chart-alt-2'></i>CRUD Produtos</button>
+                    </a>
                 </div>
                 <hr>
                 <div class="line">
@@ -91,8 +97,10 @@ $produtos = buscarProdutos();
                                     <th>Vendidos Hoje</th>
                                 </tr>
                                 <tr>
-                                    <td>Produto 1</td>
-                                    <td>Produto 2</td>
+                                    <td>Finalizar..</td>
+                                </tr>
+                                <tr>
+                                    <td>Finalizar..</td>
                                 </tr>
                             </table>
                         </div>
