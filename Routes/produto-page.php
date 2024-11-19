@@ -58,7 +58,7 @@ $_SESSION['value'] = 0;
             alt="next symbol image"
             class="img-main__btnrgt-img img-main__btn-img" />
         </button>
-        <img src="<?php echo 'data:image/jpeg;base64,' . base64_encode($produto['imagem_produto']); ?>" alt="#" class="img-main" style="width: 49rem; height: 48rem; margin-top: 70px;">
+        <img src="<?php echo 'data:image/jpeg;base64,' . base64_encode($produto['imagem_produto']); ?>" alt="#" class="img-main" style="width: 30rem; height: 29rem; margin-top: 70px;">
       </section>
 
       <section class="price">

@@ -1,6 +1,7 @@
 <?php
 
 require '../Service/conexao.php';
+global $conn; 
 
 if (!isset($_SESSION['busca'])) {
     $_SESSION['busca'] = array();
@@ -10,7 +11,7 @@ if (isset($_POST['nome'])) {
     $nome = $_POST['nome'];
 
 
-    $sql = "SELECT * FROM produtos WHERE `nome` LIKE '%$nome%'";
+    $sql = "SELECT * FROM produtos LIKE '%$nome%'";
     $resultado = $conn->query($sql);
 
 
