@@ -6,7 +6,6 @@ $categoria = buscarCategoria();
 
 ?>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +21,6 @@ $categoria = buscarCategoria();
     <title>CRUD PRODUTOS</title>
 
 </head>
-
 <body>
     <?php include '../Routes/perfil-on-navbar.php'; ?>
     <div style="display: flex; flex-direction: row; gap: 1rem;">
@@ -31,18 +29,20 @@ $categoria = buscarCategoria();
             <div id="sidebar" class="sidebar">
                 <button id="closeSidebarBtn" onclick="closeSidebar()"><i class='bx bx-x'></i></button>
                 <div class="line">
-                    <a href="./admin.php" style="text-decoration: none; width: 100%;">
+                    <a href="./admin_produtos.php" style="text-decoration: none; width: 100%;">
                         <button class="links"><i class='bx bx-left-arrow'></i>Voltar</button>
                     </a>
                 </div>
                 <div class="line">
-                    <button class="links"><i class='bx bxs-dashboard'></i>Categorias</button>
+                    <a href="./admin.php" style="text-decoration: none; width: 100%;">
+                        <button class="links"><i class='bx bx-home'></i>Início</button>
+                    </a>
                 </div>
                 <div class="line">
                     <button class="links"><i class='bx bx-user'></i>Clientes</button>
                 </div>
                 <div class="line">
-                    <a style="text-decoration: none;" href="./admin_produtos.php" target="_blank">
+                    <a style="text-decoration: none; width: 100%;" href="./admin_produtos.php" target="_blank">
                         <button class="links"><i class='bx bx-cart'></i>Produtos</button>
                     </a>
                 </div>
@@ -98,8 +98,8 @@ $categoria = buscarCategoria();
                                         echo $produtos[$i]['categorias_id']; ?>
                                     </td>
                                     <td style="display: flex; justify-content: center; align-items: center;">
-                                        <?php echo "imagem"; // htmlspecialchars($produtos[$i]['imagem_produto']); 
-                                        ?>
+                                        <img src="<?php $imagem = base64_encode($produtos[$i]['imagem_produto']);
+                                                    echo "data:image/jpeg;base64," . $imagem; ?>" alt="Imagem Produto" width="180px" height="180px">
                                     </td>
                                     <td style="display: flex; justify-content: center; align-items: center;">
                                         <?php echo htmlspecialchars($produtos[$i]['nome']); ?>
@@ -118,6 +118,7 @@ $categoria = buscarCategoria();
             </main>
         </form>
     </div>
+    <br><br><br><br><br>
     <?php include '../Routes/footer.php'; ?>
     <script src="admin.js"></script>
 </body>

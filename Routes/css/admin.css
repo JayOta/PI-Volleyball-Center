@@ -164,23 +164,23 @@ table.clientes-container {
 }
 table.todos {
   width: 100%;
-  height: 40rem;
+  height: 50rem;
   display: flex;
   flex-direction: row;
-}
-table.todos tr {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: transparent;
-  height: 30rem;
 }
 table.todos tr:first-child {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 3rem;
+}
+table.todos tr {
+  width: 99%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: transparent;
+  height: 30rem;
 }
 table.todos td {
   display: flex;

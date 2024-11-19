@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <?php
-require '../Controller/loja.php';
 require '../Controller/admin.php';
 
-$produtos = produtoID($_GET['id']);
-$categorias = buscarCategoria();
+$clientes = clienteID($_GET['id']);
 ?>
 <html lang="pt-br">
 
@@ -21,7 +19,7 @@ $categorias = buscarCategoria();
     <link rel="stylesheet" href="./Routes/css/admin-crud-produtos.css">
     <link rel="stylesheet" href="../Routes/css/perfil-on-navbar.css">
     <link rel="stylesheet" href="./css/admin_produtos_adicionar.php.css">
-    <title>CRUD PRODUTOS</title>
+    <title>CRUD CLIENTES</title>
     <style>
         .crud-opcoes {
             display: flex;
@@ -76,42 +74,30 @@ $categorias = buscarCategoria();
             <main style="padding: 2rem 0 0 0.6rem;">
                 <div class="inputs" style="display: flex; flex-direction: column;">
                     <div class="crud-opcoes" style="display: flex; flex-direction: row; gap: 1rem;">
-                        <h1 style="margin-bottom: 1rem; font-size: 2.5rem;" name="title-crud">Editar Produto</h1>
+                        <h1 style="margin-bottom: 1rem; font-size: 2.5rem;" name="title-crud">Editar Cliente</h1>
                         <div class="botoes" style="display: flex; flex-direction: row; gap: 0.2rem;">
-                            <button class="btn btn-outline-dark" name="adicionar">Adicionar</button>
-                            <button class="btn btn-outline-dark active" name="editar">Editar</button>
-                            <button class="btn btn-outline-dark" name="remover">Remover</button>
+                            <button class="btn btn-outline-dark" name="adicionar_cliente">Adicionar</button>
+                            <button class="btn btn-outline-dark active" name="editar_cliente">Editar</button>
+                            <button class="btn btn-outline-dark" name="remover_cliente">Remover</button>
                         </div>
                     </div>
                     <div class="inputs-area">
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1">Nome</span>
-                            <input type="text" class="form-control" name="nome" aria-describedby="basic-addon1" style="width: 30rem;" value="<?php echo $produtos['nome'];?>">
+                            <input type="text" class="form-control" name="nome_cliente" aria-describedby="basic-addon1" style="width: 30rem;" value="<?php echo $clientes['nome'];?>">
                         </div>
                         <div class="input-group mb-3">
-                            <span class="input-group-text" id="basic-addon1">Descrição</span>
-                            <input type="text" class="form-control" name="descricao" aria-describedby="basic-addon1" value="<?php echo $produtos['descricao'];?>">
+                            <span class="input-group-text" id="basic-addon1">Email</span>
+                            <input type="email" class="form-control" name="senha_cliente" aria-describedby="basic-addon1" value="<?php echo $clientes['email'];?>">
                         </div>
                         <div class="input-group mb-3">
-                            <span class="input-group-text" id="basic-addon1">Preço</span>
-                            <input type="number" class="form-control" name="preco" aria-describedby="basic-addon1" step="0.01" value="<?php echo number_format($produtos['preco'], 2, '.', '');?>">
+                            <span class="input-group-text" id="basic-addon1">Senha</span>
+                            <input type="text" class="form-control" name="senha_cliente" aria-describedby="basic-addon1" step="0.01" value="<?php echo number_format($clientes['senha'], 2, '.', '');?>">
                         </div>
                         <div class="input-group mb-3">
-                            <span class="input-group-text" id="basic-addon1">Imagem</span>
+                            <span class="input-group-text" id="basic-addon1">Imagem do Perfil</span>
                             <input type="file" class="form-control" name="imagem" aria-describedby="basic-addon1" placeholder="Selecione">
-                        </div>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text" id="basic-addon1">Quantidade de Estoque</span>
-                            <input type="number" class="form-control" name="qtd_estoque" aria-describedby="basic-addon1" value="<?php echo $produtos['qtd_estoque'];?>">
-                        </div>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text" id="basic-addon1">Categoria</span>
-                            <select class="form-control" name="categoria" aria-describedby="basic-addon1">
-                                <?php for ($i = 0; $i < count($categorias); $i++) { ?>
-                                    <option><?php echo $categorias[$i]['nome']; ?></option>
-                                <?php } ?>
-                            </select>
-                            <input class="send-crud btn btn-outline-success" name="update" type="submit" value="editar">
+                            <input class="send-crud btn btn-outline-success" name="inserir_cliente" type="submit" value="Inserir">
                         </div>
                     </div>
                 </div>

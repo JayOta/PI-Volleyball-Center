@@ -75,3 +75,18 @@ function editarProduto($categoria_id, $imagem, $nome, $descricao, $preco, $qtd_e
         return "Erro ao mostrar informações -> " . $e;
     }
 }
+
+
+function buscarIdCliente($id)
+{
+    global $conn;
+    try {
+        $stmt = $conn->prepare("SELECT * FROM `usuarios` where `usuario_id` = '$id'");
+        $stmt->execute();
+
+        $clientes = $stmt->fetchAll()[0];
+        return $clientes;
+    } catch (PDOException $e) {
+        return "Erro ao mostrar informações -> " . $e;
+    }
+}

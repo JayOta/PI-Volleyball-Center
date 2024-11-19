@@ -57,7 +57,7 @@ $produtos = buscarProdutos();
             <main style="padding: 2rem 0 0 0.6rem;">
                 <div class="inputs" style="display: flex; flex-direction: column;">
                     <div class="crud-opcoes" style="display: flex; flex-direction: row; gap: 1rem;">
-                        <h1 style="margin-bottom: 1rem; font-size: 2.5rem;" name="title-crud">Remover Produtos</h1>
+                        <h1 style="margin-bottom: 1rem; font-size: 2.5rem;" name="title-crud">Editar Produtos</h1>
                         <div class="botoes" style="display: flex; flex-direction: row; gap: 0.2rem;">
                             <button class="btn btn-outline-dark" name="adicionar">Adicionar</button>
                             <button class="btn btn-outline-dark" name="editar">Editar</button>

@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <?php
 require '../Controller/admin.php';
-$clientes = buscarCliente();
-
+$cliente = buscarCliente();
 ?>
 <html lang="pt-br">
 
@@ -19,6 +18,7 @@ $clientes = buscarCliente();
     <link rel="stylesheet" href="../Routes/css/admin.css">
     <link rel="stylesheet" href="../Routes/css/admin_crud_produtos.css">
     <title>CRUD CLIENTES</title>
+
 </head>
 
 <body>
@@ -29,20 +29,18 @@ $clientes = buscarCliente();
             <div id="sidebar" class="sidebar">
                 <button id="closeSidebarBtn" onclick="closeSidebar()"><i class='bx bx-x'></i></button>
                 <div class="line">
-                    <a href="./admin_clientes.php" style="text-decoration: none; width: 100%;">
+                    <a href="./admin.php" style="text-decoration: none; width: 100%;">
                         <button class="links"><i class='bx bx-left-arrow'></i>Voltar</button>
                     </a>
                 </div>
                 <div class="line">
-                    <a href="./admin.php" style="text-decoration: none; width: 100%;">
-                        <button class="links"><i class='bx bx-home'></i>Início</button>
-                    </a>
+                    <button class="links"><i class='bx bxs-dashboard'></i>Categorias</button>
                 </div>
                 <div class="line">
                     <button class="links"><i class='bx bx-user'></i>Clientes</button>
                 </div>
                 <div class="line">
-                    <a style="text-decoration: none; width: 100%;" href="./admin_produtos.php" target="_blank">
+                    <a style="text-decoration: none;" href="./admin_produtos.php" target="_blank">
                         <button class="links"><i class='bx bx-cart'></i>Produtos</button>
                     </a>
                 </div>
@@ -55,53 +53,40 @@ $clientes = buscarCliente();
                 </div>
             </div>
         </div>
-        <form class="todos" action="../Controller/admin.php" method="post">
-            <main class="todos" style="padding: 2rem 0 0 0.6rem; height: 130%;">
+        <form action="../Controller/admin.php" method="post" onsubmit="return confirm('Você tem certeza desta ação?');">
+            <main style="padding: 2rem 0 0 0.6rem;">
                 <div class="inputs" style="display: flex; flex-direction: column;">
-                    <div class="crud-opcoes" style="display: flex; flex-direction: row; gap: 1rem; justify-content: center; position: relative; left: 19.5rem;">
-                        <h1 style="margin-bottom: 1rem; font-size: 2.5rem;" name="title-crud">CRUD Clientes</h1>
+                    <div class="crud-opcoes" style="display: flex; flex-direction: row; gap: 1rem;">
+                        <h1 style="margin-bottom: 1rem; font-size: 2.5rem;" name="title-crud">Remover Clientes</h1>
                         <div class="botoes" style="display: flex; flex-direction: row; gap: 0.2rem;">
                             <button class="btn btn-outline-dark" name="adicionar_cliente">Adicionar</button>
                             <button class="btn btn-outline-dark" name="editar_cliente">Editar</button>
                             <button class="btn btn-outline-dark remover" name="remover_cliente">Remover</button>
                         </div>
                     </div>
-                    <div class="inputs-area-todos">
-                        <table class="clientes-container todos" style="display: flex; flex-direction: row; width: 232.6%;">
-                            <tr class="clientes" style="width: 82.5%;">
-                                <th>usuario_id</th>
-                                <th>nome</th>
-                                <th>email</th>
-                                <th>senha</th>
-                                <th>imagem_perfil</th>
-                            </tr>
-                            <?php for ($i = 0; $i < count($clientes); $i++) { ?>
-                                <tr class="clientes" style="width: 82.5%;">
-                                    <td style="display: flex; justify-content:center; align-items: center;">
-                                        <?php echo htmlspecialchars($clientes[$i]['usuario_id']); ?>
-                                    </td>
-                                    <td style="display: flex; justify-content: center; align-items: center;">
-                                        <?php echo htmlspecialchars($clientes[$i]['nome']); ?>
-                                    </td>
-                                    <td style="display: flex; justify-content: center; align-items: center;">
-                                        <?php echo htmlspecialchars($clientes[$i]['email']); ?>
-                                    </td>
-                                    <td style="display: flex; justify-content: center; align-items: center;">
-                                        <?php echo htmlspecialchars($clientes[$i]['senha']); ?>
-                                    </td>
-                                    <td style="display: flex; justify-content: center; align-items: center;">
-                                        <img src="<?php $imagem = base64_encode($clientes[$i]['imagem_perfil']);
-                                                    echo "data:image/jpeg;base64," . $imagem; ?>" alt="Imagem Produto" width="180px" height="180px">
-                                    </td>
+                    <div class="inputs-area">
+                        <div class="big-container">
+                            <table class="clientes-container dois">
+                                <tr>
+                                    <th><?php echo "Clientes";?></th>
                                 </tr>
-                            <?php } ?>
-                        </table>
+                                <?php for ($i = 0; $i < count($cliente); $i++) { ?>
+                                    <tr>
+                                        <td style="display: flex; justify-content:space-between; align-items: center;">
+                                            <?php echo htmlspecialchars($cliente[$i]['nome']); ?>
+                                            <button name="delete" class="remove" value="<?php echo $cliente[$i]['usuario_id']; ?>">
+                                                <i class='bx bxs-trash' style="font-size: 21px;"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                <?php } ?>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </main>
         </form>
     </div>
-    <br><br><br><br><br>
     <?php include '../Routes/footer.php'; ?>
     <script src="admin.js"></script>
 </body>
