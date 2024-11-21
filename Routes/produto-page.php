@@ -2,8 +2,22 @@
 require '../Controller/produto-page.php';
 $produto = buscarProduto($_GET['id']);
 $categoria = buscarCategoria();
+ session_start();
+            if (!isset($_SESSION['contador'])) {
+                $_SESSION['contador'] = 0;
+            }
 
-$_SESSION['value'] = 0;
+            if (isset($_POST['add'])) {
+                $_SESSION['contador']++;
+            }
+            if (isset($_POST['sub'])) {
+              // Evita que o contador fique negativo
+              if ($_SESSION['contador'] > 0) {
+                  $_SESSION['contador']--;
+              }
+          }
+
+// $_SESSION['value'] = 0;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -120,15 +134,17 @@ $_SESSION['value'] = 0;
 
         <div class="buy-part">
           <div class="price-btns">
-            <button type="submit" class="price-btn__add price-btn" name="add_cart" type="submit">
-              <i class='bx bx-plus'></i>
+            <button type="submit" class="price-btn__add price-btn" name="add" >
+            <i class='bx bx-plus'></i>
             </button>
-            <input name="quantity_cart" value="<?php // echo $_SESSION['value']; 
-                                                ?>0" style="font-size: 42px; background: transparent; outline: none; border: none; width: 17%;">
+
+         <form action="POST">
+            <input name="quantity_cart" value = "<?php echo $_SESSION['contador']; ?>" style="font-size: 30px; background: transparent; outline: none; border: none; width: 17%;">
             <button type="button" class="price-btn__remove price-btn" name="sub_cart" type="submit">
               <i class='bx bx-minus'></i>
-            </button>
-          </div>
+            </button> 
+          </form>
+          </div>          
 
           <button type="submit" class="price-cart__btn btn--blue" style="display: flex; justify-content: center; align-items: center; height: 8rem;">
             <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; text-decoration: none; color:#fff;">

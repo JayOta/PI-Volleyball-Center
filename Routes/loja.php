@@ -7,7 +7,7 @@ $getAllProdutos = buscarProdutos();
 
 if (isset($_SESSION['produtos'])) {
 	$busca = $_SESSION['produtos'];
-	if (count($busca) > 1) {
+	if (count($busca) > 0) {
 		$getAllProdutos = $busca;
 	}
 }
