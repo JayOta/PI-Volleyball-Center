@@ -47,18 +47,22 @@ $categorias = buscarCategoria();
             <div id="sidebar" class="sidebar">
                 <button id="closeSidebarBtn" onclick="closeSidebar()"><i class='bx bx-x'></i></button>
                 <div class="line">
-                    <a href="./admin.php" style="text-decoration: none; width: 100%;">
+                    <a href="./admin_clientes.php" style="text-decoration: none; width: 100%;">
                         <button class="links"><i class='bx bx-left-arrow'></i>Voltar</button>
                     </a>
                 </div>
                 <div class="line">
-                    <button class="links"><i class='bx bxs-dashboard'></i>Categorias</button>
+                    <a href="./admin.php" style="text-decoration: none; width: 100%;">
+                        <button class="links"><i class='bx bx-home'></i>Início</button>
+                    </a>
                 </div>
                 <div class="line">
-                    <button class="links"><i class='bx bx-user'></i>Clientes</button>
+                    <a href="./admin_clientes.php" style="text-decoration: none; width: 100%;">
+                        <button class="links"><i class='bx bx-user'></i>Clientes</button>
+                    </a>
                 </div>
                 <div class="line">
-                    <a style="text-decoration: none;" href="./admin_produtos.php" target="_blank">
+                    <a style="text-decoration: none; width: 100%;" href="./admin_produtos.php" target="_blank">
                         <button class="links"><i class='bx bx-cart'></i>Produtos</button>
                     </a>
                 </div>

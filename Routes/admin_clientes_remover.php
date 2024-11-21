@@ -29,18 +29,22 @@ $cliente = buscarCliente();
             <div id="sidebar" class="sidebar">
                 <button id="closeSidebarBtn" onclick="closeSidebar()"><i class='bx bx-x'></i></button>
                 <div class="line">
-                    <a href="./admin.php" style="text-decoration: none; width: 100%;">
+                    <a href="./admin_clientes.php" style="text-decoration: none; width: 100%;">
                         <button class="links"><i class='bx bx-left-arrow'></i>Voltar</button>
                     </a>
                 </div>
                 <div class="line">
-                    <button class="links"><i class='bx bxs-dashboard'></i>Categorias</button>
+                    <a href="./admin.php" style="text-decoration: none; width: 100%;">
+                        <button class="links"><i class='bx bx-home'></i>Início</button>
+                    </a>
                 </div>
                 <div class="line">
-                    <button class="links"><i class='bx bx-user'></i>Clientes</button>
+                    <a href="./admin_clientes.php">
+                        <button class="links"><i class='bx bx-user'></i>Clientes</button>
+                    </a>
                 </div>
                 <div class="line">
-                    <a style="text-decoration: none;" href="./admin_produtos.php" target="_blank">
+                    <a style="text-decoration: none; width: 100%;" href="./admin_produtos.php" target="_blank">
                         <button class="links"><i class='bx bx-cart'></i>Produtos</button>
                     </a>
                 </div>
@@ -74,7 +78,7 @@ $cliente = buscarCliente();
                                     <tr>
                                         <td style="display: flex; justify-content:space-between; align-items: center;">
                                             <?php echo htmlspecialchars($cliente[$i]['nome']); ?>
-                                            <button name="delete" class="remove" value="<?php echo $cliente[$i]['usuario_id']; ?>">
+                                            <button name="delete_cliente" class="remove" value="<?php echo $cliente[$i]['cliente_id']; ?>">
                                                 <i class='bx bxs-trash' style="font-size: 21px;"></i>
                                             </button>
                                         </td>

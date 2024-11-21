@@ -104,11 +104,40 @@ function buscarCliente()
     } 
     // </Redirecionamento de formulários>
 
+    // <Inserir Clientes>
+    if (isset($_POST['inserir_cliente'])) {
+        // Captura os dados do formulário
+        $nome = $_POST['nome_cliente'];
+        $email = $_POST['email_cliente'];
+        $senha = $_POST['senha_cliente'];     
+
+        // Processa a imagem
+        if (isset($_FILES['imagem_cliente']) && $_FILES['imagem_cliente']['error'] == 0) {
+            $imagemTempCliente = file_get_contents($_FILES['imagem_cliente']['tmp_name']);
+        } else {
+            echo "Erro no envio da imagem: " . $imagemTempCliente;
+        }
+        // Chama a função para inserir o produto no Model
+        adicionarCliente($nome, $email, $senha, $imagemTempCliente);
+        echo "Seu cliente foi inserido!!<br>Retorne a página de admin para vê-lo!";
+    }
+    // </Inserir Clientes>
+
     // <Atualizar Cliente>
     function clienteID($id){
-        return buscarIdCliente($id);
+        return buscarIdCliente($id); 
     }
     // </Atualizar Cliente>
+
+    // <Deletar Cliente>
+        if (isset($_POST['delete_cliente'])) {
+            // Captura o ID do produto e chama a função para deletar
+            $cliente_id = $_POST['delete_cliente'];
+            deletarCliente($cliente_id);
+            header('Location: http://localhost/GitHub/PI-Volleyball-Center/Routes/admin_clientes_remover.php');
+            exit();
+        }
+    // </Deletar Cliente>
 
 // </CRUD CLIENTES>
 

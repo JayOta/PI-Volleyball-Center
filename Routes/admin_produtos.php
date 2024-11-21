@@ -6,6 +6,7 @@ $categoria = buscarCategoria();
 
 ?>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,6 +22,7 @@ $categoria = buscarCategoria();
     <title>CRUD PRODUTOS</title>
 
 </head>
+
 <body>
     <?php include '../Routes/perfil-on-navbar.php'; ?>
     <div style="display: flex; flex-direction: row; gap: 1rem;">
@@ -29,7 +31,7 @@ $categoria = buscarCategoria();
             <div id="sidebar" class="sidebar">
                 <button id="closeSidebarBtn" onclick="closeSidebar()"><i class='bx bx-x'></i></button>
                 <div class="line">
-                    <a href="./admin_produtos.php" style="text-decoration: none; width: 100%;">
+                    <a href="./admin.php" style="text-decoration: none; width: 100%;">
                         <button class="links"><i class='bx bx-left-arrow'></i>Voltar</button>
                     </a>
                 </div>
@@ -39,7 +41,9 @@ $categoria = buscarCategoria();
                     </a>
                 </div>
                 <div class="line">
-                    <button class="links"><i class='bx bx-user'></i>Clientes</button>
+                    <a style="text-decoration: none; list-style: none; width: 100%;" href="./admin_clientes.php" target="_blank">
+                        <button class="links"><i class='bx bx-user'></i>Clientes</button>
+                    </a>
                 </div>
                 <div class="line">
                     <a style="text-decoration: none; width: 100%;" href="./admin_produtos.php" target="_blank">

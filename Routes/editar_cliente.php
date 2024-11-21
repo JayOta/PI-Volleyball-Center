@@ -88,11 +88,11 @@ $clientes = clienteID($_GET['id']);
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1">Email</span>
-                            <input type="email" class="form-control" name="senha_cliente" aria-describedby="basic-addon1" value="<?php echo $clientes['email'];?>">
+                            <input type="text" class="form-control" name="senha_cliente" aria-describedby="basic-addon1" value="<?php echo $clientes['email'];?>">
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1">Senha</span>
-                            <input type="text" class="form-control" name="senha_cliente" aria-describedby="basic-addon1" step="0.01" value="<?php echo number_format($clientes['senha'], 2, '.', '');?>">
+                            <input type="text" class="form-control" name="senha_cliente" aria-describedby="basic-addon1"value="<?php echo $clientes['senha'];?>">
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1">Imagem do Perfil</span>

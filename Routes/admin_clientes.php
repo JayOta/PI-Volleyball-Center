@@ -29,7 +29,7 @@ $clientes = buscarCliente();
             <div id="sidebar" class="sidebar">
                 <button id="closeSidebarBtn" onclick="closeSidebar()"><i class='bx bx-x'></i></button>
                 <div class="line">
-                    <a href="./admin_clientes.php" style="text-decoration: none; width: 100%;">
+                    <a href="./admin.php" style="text-decoration: none; width: 100%;">
                         <button class="links"><i class='bx bx-left-arrow'></i>Voltar</button>
                     </a>
                 </div>
@@ -39,7 +39,9 @@ $clientes = buscarCliente();
                     </a>
                 </div>
                 <div class="line">
-                    <button class="links"><i class='bx bx-user'></i>Clientes</button>
+                    <a href="./admin_clientes.php" style="text-decoration: none; width: 100%;">
+                        <button class="links"><i class='bx bx-user'></i>Clientes</button>
+                    </a>
                 </div>
                 <div class="line">
                     <a style="text-decoration: none; width: 100%;" href="./admin_produtos.php" target="_blank">
@@ -74,6 +76,7 @@ $clientes = buscarCliente();
                                 <th>email</th>
                                 <th>senha</th>
                                 <th>imagem_perfil</th>
+                                <th>cliente_id</th>
                             </tr>
                             <?php for ($i = 0; $i < count($clientes); $i++) { ?>
                                 <tr class="clientes" style="width: 82.5%;">
@@ -92,6 +95,9 @@ $clientes = buscarCliente();
                                     <td style="display: flex; justify-content: center; align-items: center;">
                                         <img src="<?php $imagem = base64_encode($clientes[$i]['imagem_perfil']);
                                                     echo "data:image/jpeg;base64," . $imagem; ?>" alt="Imagem Produto" width="180px" height="180px">
+                                    </td>
+                                    <td style="display: flex; justify-content: center; align-items: center;">
+                                        <?php echo htmlspecialchars($clientes[$i]['cliente_id']); ?>
                                     </td>
                                 </tr>
                             <?php } ?>
