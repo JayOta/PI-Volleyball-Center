@@ -70,7 +70,7 @@ $clientes = buscarCliente();
                     </div>
                     <div class="inputs-area-todos">
                         <table class="clientes-container todos" style="display: flex; flex-direction: row; width: 232.6%;">
-                            <tr class="clientes" style="width: 82.5%;">
+                            <tr class="clientes" style="width: 84.2%;">
                                 <th>usuario_id</th>
                                 <th>nome</th>
                                 <th>email</th>
@@ -79,7 +79,7 @@ $clientes = buscarCliente();
                                 <th>cliente_id</th>
                             </tr>
                             <?php for ($i = 0; $i < count($clientes); $i++) { ?>
-                                <tr class="clientes" style="width: 82.5%;">
+                                <tr class="clientes" style="width: 84.2%;">
                                     <td style="display: flex; justify-content:center; align-items: center;">
                                         <?php echo htmlspecialchars($clientes[$i]['usuario_id']); ?>
                                     </td>
@@ -94,7 +94,7 @@ $clientes = buscarCliente();
                                     </td>
                                     <td style="display: flex; justify-content: center; align-items: center;">
                                         <img src="<?php $imagem = base64_encode($clientes[$i]['imagem_perfil']);
-                                                    echo "data:image/jpeg;base64," . $imagem; ?>" alt="Imagem Produto" width="180px" height="180px">
+                                                    echo "data:image/jpeg;base64," . $imagem; ?>" alt="Imagem Produto" width="160px" height="160px">
                                     </td>
                                     <td style="display: flex; justify-content: center; align-items: center;">
                                         <?php echo htmlspecialchars($clientes[$i]['cliente_id']); ?>

@@ -81,7 +81,7 @@ function buscarIdCliente($id)
 {
     global $conn;
     try {
-        $stmt = $conn->prepare("SELECT * FROM `clientes` WHERE `cliente_id` = '$id'");
+        $stmt = $conn->prepare("SELECT * FROM `usuarios` WHERE `usuario_id` = '$id'");
         $stmt->execute();
         $clientes = $stmt->fetchAll()[0];
         return $clientes;
@@ -115,21 +115,26 @@ function adicionarCliente($nome, $email, $senha, $imagemTempCliente)
         echo "Erro ao adicionar o cliente: " . $e->getMessage();
     }
 }
-function editarCliente($nome, $email, $senha, $imagemTempCliente)
+function editarCliente($clienteId, $nome, $email, $senha, $imagemTempCliente)
 {
-    global $conn;
+    global $conn; // Faz a variável $conn ser acessível dentro da função
+
     try {
-        /* Rever esta parte -> */
-        $stmt = $conn->prepare("UPDATE clientes SET nome = :nome, email = :email, senha = :senha, imagem_perfil = :imagem_perfil");
+        $stmt = $conn->prepare("UPDATE clientes 
+                                SET nome = :nome, email = :email, senha = :senha, imagem_perfil = :imagem_perfil 
+                                WHERE id = :cliente_id");
         $stmt->bindParam(':nome', $nome);
         $stmt->bindParam(':email', $email);
         $stmt->bindParam(':senha', $senha);
         $stmt->bindParam(':imagem_perfil', $imagemTempCliente, PDO::PARAM_LOB);
+        $stmt->bindParam(':cliente_id', $clienteId, PDO::PARAM_INT);
         $stmt->execute();
+        echo "Seu cliente foi alterado!!<br>Volte a página de admin para vê-lo!";
     } catch (PDOException $e) {
-        return "Erro ao mostrar informações -> " . $e;
+        die("Erro ao atualizar cliente: " . $e->getMessage());
     }
 }
+
 function deletarCliente($id)
 {
     global $conn;

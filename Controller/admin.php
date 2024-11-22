@@ -121,6 +121,23 @@ function buscarCliente()
         adicionarCliente($nome, $email, $senha, $imagemTempCliente);
         echo "Seu cliente foi inserido!!<br>Retorne a página de admin para vê-lo!";
     }
+    if (isset($_POST['editar_cliente'])) {
+        // Captura os dados do formulário
+        $nome = $_POST['nome_cliente'];
+        $email = $_POST['email_cliente'];
+        $senha = $_POST['senha_cliente'];     
+        $clienteId = $cliente[$_GET['id']];
+
+        // Processa a imagem
+        if (isset($_FILES['imagem_cliente']) && $_FILES['imagem_cliente']['error'] == 0) {
+            $imagemTempCliente = file_get_contents($_FILES['imagem_cliente']['tmp_name']);
+        } else {
+            echo "Erro no envio da imagem: " . $imagemTempCliente;
+        }
+        // Chama a função para inserir o produto no Model
+        editarCliente($clienteId, $nome, $email, $senha, $imagemTempCliente);
+        echo "Seu cliente foi inserido!!<br>Retorne a página de admin para vê-lo!";
+    }
     // </Inserir Clientes>
 
     // <Atualizar Cliente>

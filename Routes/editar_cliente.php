@@ -38,7 +38,7 @@ $clientes = clienteID($_GET['id']);
 </head>
 
 <body>
-
+    <!-- Teste para ver se estou pegando o id do usuario(na verdade estou tentando descobrir como eu pego o campo 'cliente_id' do usuario para fazer o update do cliente na tabelas 'usuarios' e 'clientes' -> <?php //echo $clientes[$_GET['id']]; ?> -->
     <?php include '../Routes/perfil-on-navbar.php'; ?>
 
     <div style="display: flex; flex-direction: row; gap: 1rem;">
@@ -97,7 +97,7 @@ $clientes = clienteID($_GET['id']);
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1">Imagem do Perfil</span>
                             <input type="file" class="form-control" name="imagem" aria-describedby="basic-addon1" placeholder="Selecione">
-                            <input class="send-crud btn btn-outline-success" name="inserir_cliente" type="submit" value="Inserir">
+                            <input class="send-crud btn btn-outline-success" name="editar_cliente" type="submit" value="Inserir">
                         </div>
                     </div>
                 </div>
