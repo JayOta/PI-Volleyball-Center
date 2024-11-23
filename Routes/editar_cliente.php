@@ -38,7 +38,8 @@ $clientes = clienteID($_GET['id']);
 </head>
 
 <body>
-    <!-- Teste para ver se estou pegando o id do usuario(na verdade estou tentando descobrir como eu pego o campo 'cliente_id' do usuario para fazer o update do cliente na tabelas 'usuarios' e 'clientes' -> <?php //echo $clientes[$_GET['id']]; ?> -->
+    <!-- Teste para ver se estou pegando o id do usuario(na verdade estou tentando descobrir como eu pego o campo 'cliente_id' do usuario para fazer o update do cliente na tabelas 'usuarios' e 'clientes' -> <?php //echo $clientes[$_GET['id']]; 
+                                                                                                                                                                                                                ?> -->
     <?php include '../Routes/perfil-on-navbar.php'; ?>
 
     <div style="display: flex; flex-direction: row; gap: 1rem;">
@@ -47,19 +48,24 @@ $clientes = clienteID($_GET['id']);
             <div id="sidebar" class="sidebar">
                 <button id="closeSidebarBtn" onclick="closeSidebar()"><i class='bx bx-x'></i></button>
                 <div class="line">
-                    <a href="./admin.php" style="text-decoration: none;" target="_blank"><button class="links"><i class='bx bx-left-arrow'></i>Voltar</button></a>
+                    <a href="./admin_clientes.php" style="text-decoration: none; width: 100%;">
+                        <button class="links"><i class='bx bx-left-arrow'></i>Voltar</button>
+                    </a>
                 </div>
                 <div class="line">
-                    <button class="links"><i class='bx bxs-dashboard'></i>Categorias</button>
+                    <a href="./admin.php" style="text-decoration: none; width: 100%;">
+                        <button class="links"><i class='bx bx-home'></i>Início</button>
+                    </a>
                 </div>
                 <div class="line">
-                    <button class="links"><i class='bx bx-user'></i>Clientes</button>
+                    <a href="./admin_clientes.php" style="text-decoration: none; width: 100%;">
+                        <button class="links"><i class='bx bx-user'></i>Clientes</button>
+                    </a>
                 </div>
                 <div class="line">
-                    <button class="links"><i class='bx bx-cart'></i>Produtos</button>
-                </div>
-                <div class="line">
-                    <button class="links"><i class='bx bx-bar-chart-alt-2'></i>CRUD Produtos</button>
+                    <a style="text-decoration: none; width: 100%;" href="./admin_produtos.php" target="_blank">
+                        <button class="links"><i class='bx bx-cart'></i>Produtos</button>
+                    </a>
                 </div>
                 <hr>
                 <div class="line">
@@ -84,15 +90,15 @@ $clientes = clienteID($_GET['id']);
                     <div class="inputs-area">
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1">Nome</span>
-                            <input type="text" class="form-control" name="nome_cliente" aria-describedby="basic-addon1" style="width: 30rem;" value="<?php echo $clientes['nome'];?>">
+                            <input type="text" class="form-control" name="nome_cliente" aria-describedby="basic-addon1" style="width: 30rem;" value="<?php echo $clientes['nome']; ?>">
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1">Email</span>
-                            <input type="text" class="form-control" name="senha_cliente" aria-describedby="basic-addon1" value="<?php echo $clientes['email'];?>">
+                            <input type="text" class="form-control" name="senha_cliente" aria-describedby="basic-addon1" value="<?php echo $clientes['email']; ?>">
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1">Senha</span>
-                            <input type="text" class="form-control" name="senha_cliente" aria-describedby="basic-addon1"value="<?php echo $clientes['senha'];?>">
+                            <input type="text" class="form-control" name="senha_cliente" aria-describedby="basic-addon1" value="<?php echo $clientes['senha']; ?>">
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1">Imagem do Perfil</span>

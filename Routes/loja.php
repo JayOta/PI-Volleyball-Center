@@ -10,7 +10,9 @@ if (isset($_SESSION['produtos'])) {
 	if (count($busca) > 0) {
 		$getAllProdutos = $busca;
 	}
-}
+} // else if (isset($_POST['voltar'])) {
+//	$getAllProdutos = buscarProdutos();
+//}
 ?>
 
 <!DOCTYPE html>
