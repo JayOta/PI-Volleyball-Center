@@ -15,7 +15,19 @@ require '../Controller/produto-page.php';
 </head>
 
 <body>
-    <header>
+    <header style="display: flex;">
+        <a href="./loja.php" style="
+        text-decoration: none; 
+        color: #fff; 
+        position: relative; 
+        right: 43rem; display: flex; 
+        justify-content: center; 
+        align-items: center;
+        border-radius: 3px;
+        padding: 3.5px;
+        transition: 0.3s ease-in-out;">
+            <i class='bx bx-left-arrow-alt'></i>Voltar
+        </a>
         <span>Carrinho de Compras</span>
     </header>
     <main>
