@@ -72,7 +72,7 @@ $categoria = buscarCategoria();
             alt="next symbol image"
             class="img-main__btnrgt-img img-main__btn-img" />
         </button>
-        <img src="<?php echo 'data:image/jpeg;base64,' . base64_encode($produto['imagem_produto']); ?>" alt="#" class="img-main" style="width: 30rem; height: 29rem; margin-top: 70px;">
+        <img src="<?php echo 'data:image/jpeg;base64,' . base64_encode($produto['imagem_produto']); ?>" alt="#" class="img-main" style="width: 40rem; height: 39rem; margin-top: 70px;">
       </section>
 
       <section class="price">
@@ -138,15 +138,13 @@ $categoria = buscarCategoria();
             <i class='bx bx-plus'></i>
             </button>
 
-         <form action="POST">
             <input name="quantity_cart" value = "<?php echo $_SESSION['contador']; ?>" style="font-size: 30px; background: transparent; outline: none; border: none; width: 17%;">
             <button type="button" class="price-btn__remove price-btn" name="sub_cart" type="submit">
               <i class='bx bx-minus'></i>
             </button> 
-          </form>
           </div>          
 
-          <button type="submit" class="price-cart__btn btn--blue" style="display: flex; justify-content: center; align-items: center; height: 8rem;">
+          <button type="submit" class="price-cart__btn btn--blue" name="enviar" style="display: flex; justify-content: center; align-items: center; height: 8rem;">
             <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; text-decoration: none; color:#fff;">
               <i class='bx bxs-cart price-cart__btn-img'></i>
               <p>Adicionar ao carrinho</p>

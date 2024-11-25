@@ -1,5 +1,8 @@
 <?php
 require '../Controller/produto-page.php';
+if(isset($_POST['remover_produto'])){
+    $remover_produto = "display: none;";
+}
 ?>
 
 <!DOCTYPE html>
@@ -31,88 +34,90 @@ require '../Controller/produto-page.php';
         <span>Carrinho de Compras</span>
     </header>
     <main>
-        <div class="page-title">Seu Carrinho</div>
-        <div class="content">
-            <section>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Produto</th>
-                            <th>Preço</th>
-                            <th>Quantidade</th>
-                            <th>Total</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <div class="product">
-                                    <img src="https://picsum.photos/100/120" alt="">
-                                    <div class="info">
-                                        <div class="name">Nome do produto</div>
-                                        <div class="category">Categoria</div>
+        <form action="../Controller/carrinho.php" method="post">
+            <div class="page-title">Seu Carrinho</div>
+            <div class="content">
+                <section>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Produto</th>
+                                <th>Preço</th>
+                                <th>Quantidade</th>
+                                <th>Total</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="<?php echo $remover_produto; ?>">
+                                <td>
+                                    <div class="product">
+                                        <img src="https://picsum.photos/100/120" alt="">
+                                        <div class="info">
+                                            <div class="name">Nome do produto</div>
+                                            <div class="category">Categoria</div>
+                                        </div>
                                     </div>
-                                </div>
-                            </td>
-                            <td>R$ 240</td>
-                            <td>
-                                <div class="qty">
-                                    <button><i class="bx bx-minus"></i></button>
-                                    <span>1</span>
-                                    <button><i class="bx bx-plus"></i></button>
-                                </div>
-                            </td>
-                            <td>R$ 240</td>
-                            <td>
-                                <button class="remove"><i class='bx bx-x'></i>
-                            </td></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="product">
-                                    <img src="https://picsum.photos/100/120" alt="">
-                                    <div class="info">
-                                        <div class="name">Nome do produto</div>
-                                        <div class="category">Categoria</div>
+                                </td>
+                                <td>R$ 240</td>
+                                <td>
+                                    <div class="qty">
+                                        <button><i class="bx bx-minus"></i></button>
+                                        <span>1</span>
+                                        <button><i class="bx bx-plus"></i></button>
                                     </div>
-                                </div>
-                            </td>
-                            <td>R$ 240</td>
-                            <td>
-                                <div class="qty">
-                                    <button><i class="bx bx-minus"></i></button>
-                                    <span>1</span>
-                                    <button><i class="bx bx-plus"></i></button>
-                                </div>
-                            </td>
-                            <td>R$ 240</td>
-                            <td>
-                                <button class="remove"><i class='bx bx-x'></i>
-                            </td></button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-            <aside>
-                <div class="box">
-                    <header>Resumo da Compra</header>
-                    <div class="info">
-                        <div><span>Total</span><span>R$ 480</span></div>
-                        <div><span>Frete</span><span>Gratuito</span></div>
-                        <div><button>Adicionar cupom de desconto<i class='bx bx-right-arrow-alt'></i></button></div>
-                    </div>
-                    <footer>
+                                </td>
+                                <td>R$ 240</td>
+                                <td>
+                                    <button type="submit" class="remove" name="remover_produto"><i class='bx bx-x'></i>
+                                </td></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="product">
+                                        <img src="https://picsum.photos/100/120" alt="">
+                                        <div class="info">
+                                            <div class="name">Nome do produto</div>
+                                            <div class="category">Categoria</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>R$ 240</td>
+                                <td>
+                                    <div class="qty">
+                                        <button><i class="bx bx-minus"></i></button>
+                                        <span>1</span>
+                                        <button><i class="bx bx-plus"></i></button>
+                                    </div>
+                                </td>
+                                <td>R$ 240</td>
+                                <td>
+                                    <button class="remove"><i class='bx bx-x'></i>
+                                </td></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <aside>
+                    <div class="box">
+                        <header>Resumo da Compra</header>
+                        <div class="info">
+                            <div><span>Total</span><span>R$ 480</span></div>
+                            <div><span>Frete</span><span>Gratuito</span></div>
+                            <div><button>Adicionar cupom de desconto<i class='bx bx-right-arrow-alt'></i></button></div>
+                        </div>
+                        <footer>
 
-                        <span>Total</span>
-                        <span>R$ 480</span>
-                    </footer>
-                </div>
-                <button id="finalizar">Finalizar compra</button>
-            </aside>
-        </div>
+                            <span>Total</span>
+                            <span>R$ 480</span>
+                        </footer>
+                    </div>
+                    <button id="finalizar">Finalizar compra</button>
+                </aside>
+            </div>
+        </form>
     </main>
 </body>
 

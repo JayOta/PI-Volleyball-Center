@@ -17,6 +17,9 @@ function buscarCategoria()
     $categoria = buscarCategoriasModel();
     return $categoria;
 }
+if(isset($_POST['enviar'])){
+    header("Location: http://localhost/GitHub/PI-Volleyball-Center/Routes/carrinho.php");
+}
 // if (isset($_POST['add_cart'])) {
 //     $_SESSION['value'] += 1;
 //     header("Location: http://localhost/GitHub/PI-Volleyball-Center/Routes/produto-page.php" . "?1");
