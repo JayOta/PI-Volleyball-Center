@@ -55,7 +55,9 @@ $categoria = buscarCategoria();
                     <button class="links"><i class='bx bx-bell'></i>Notificações</button>
                 </div>
                 <div class="line">
-                    <button class="links"><i class='bx bx-file-blank'></i>Páginas</button>
+                    <a href="./inicial.php" style="text-decoration: none; width: 100%;" target="_blank">
+                        <button class="links"><i class='bx bx-file-blank'></i>Páginas</button>
+                    </a>
                 </div>
             </div>
         </div>

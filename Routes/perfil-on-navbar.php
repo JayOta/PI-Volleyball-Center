@@ -45,7 +45,7 @@ if (isset($_SESSION['usuario_atual']['imagem_perfil'])) {
                             <?php } ?>
                             <details closed>
                                 <summary style="color: #fff; display: flex; flex-direction: row;"> <?php
-                                                                                                    echo $_SESSION['usuario_atual']['nome'] ?? "Undefined";
+                                                                                                    echo $_SESSION['usuario_atual']['nome'] ?? "Fazer Login";
                                                                                                     ?></summary>
                                 <ul>
                                     <div class="details-content">

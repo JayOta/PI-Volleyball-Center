@@ -33,9 +33,6 @@ $produtos = buscarProdutos();
             <div id="sidebar" class="sidebar">
                 <button id="closeSidebarBtn" onclick="closeSidebar()"><i class='bx bx-x'></i></button>
                 <div class="line">
-                    <button class="links"><i class='bx bxs-dashboard'></i>Categorias</button>
-                </div>
-                <div class="line">
                     <a style="text-decoration: none;" href="./admin_clientes.php" target="_blank">
                         <button class="links"><i class='bx bx-user'></i>Clientes</button>
                     </a>
@@ -50,15 +47,17 @@ $produtos = buscarProdutos();
                     <button class="links"><i class='bx bx-bell'></i>Notificações</button>
                 </div>
                 <div class="line">
-                    <button class="links"><i class='bx bx-file-blank'></i>Páginas</button>
+                    <a href="./inicial.php" style="text-decoration: none; width: 100%;" target="_blank">
+                        <button class="links"><i class='bx bx-file-blank'></i>Páginas</button>
+                    </a>
                 </div>
             </div>
             <div class="main-content" id="main-content" style="margin-top: 20px;">
                 <section>
                     <div class="mini-aligns">
                         <div class="mini-container">Vendas</div>
-                        <div class="mini-container">Receita</div>
-                        <div class="mini-container">Clientes</div>
+                        <div class="mini-container">Receitas</div>
+                        <div class="mini-container">Notificações</div>
                     </div>
 
                     <div class="big-aligns">

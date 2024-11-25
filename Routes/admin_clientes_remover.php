@@ -39,7 +39,7 @@ $cliente = buscarCliente();
                     </a>
                 </div>
                 <div class="line">
-                    <a href="./admin_clientes.php">
+                    <a href="./admin_clientes.php" style="text-decoration: none; width: 100%;">
                         <button class="links"><i class='bx bx-user'></i>Clientes</button>
                     </a>
                 </div>
@@ -72,7 +72,7 @@ $cliente = buscarCliente();
                         <div class="big-container">
                             <table class="clientes-container dois">
                                 <tr>
-                                    <th><?php echo "Clientes";?></th>
+                                    <th><?php echo "Clientes"; ?></th>
                                 </tr>
                                 <?php for ($i = 0; $i < count($cliente); $i++) { ?>
                                     <tr>

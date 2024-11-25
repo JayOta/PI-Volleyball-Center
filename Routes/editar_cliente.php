@@ -2,7 +2,8 @@
 <?php
 require '../Controller/admin.php';
 
-$clientes = clienteID($_GET['id']);
+$clientes = buscarCliente();
+$cliente = clienteID($_GET['id']);
 ?>
 <html lang="pt-br">
 
@@ -90,24 +91,33 @@ $clientes = clienteID($_GET['id']);
                     <div class="inputs-area">
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1">Nome</span>
-                            <input type="text" class="form-control" name="nome_cliente" aria-describedby="basic-addon1" style="width: 30rem;" value="<?php echo $clientes['nome']; ?>">
+                            <input type="text" class="form-control" name="nome_cliente" aria-describedby="basic-addon1" style="width: 30rem;" value="<?php echo $cliente['nome']; ?>">
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1">Email</span>
-                            <input type="text" class="form-control" name="senha_cliente" aria-describedby="basic-addon1" value="<?php echo $clientes['email']; ?>">
+                            <input type="text" class="form-control" name="email_cliente" aria-describedby="basic-addon1" value="<?php echo $cliente['email']; ?>">
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1">Senha</span>
-                            <input type="text" class="form-control" name="senha_cliente" aria-describedby="basic-addon1" value="<?php echo $clientes['senha']; ?>">
+                            <input type="text" class="form-control" name="senha_cliente" aria-describedby="basic-addon1" value="<?php echo $cliente['senha']; ?>">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">Cliente ID</span>
+                            <select class="form-control" name="cliente_id" aria-describedby="basic-addon1">
+                                <?php for ($i = 0; $i < count($clientes); $i++) { ?>
+                                    <option><?php echo $clientes[$i]['cliente_id']; ?></option>
+                                <?php } ?>
+                            </select>
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1">Imagem do Perfil</span>
-                            <input type="file" class="form-control" name="imagem" aria-describedby="basic-addon1" placeholder="Selecione">
+                            <input type="file" class="form-control" name="imagem_cliente" aria-describedby="basic-addon1" placeholder="Selecione">
                             <input class="send-crud btn btn-outline-success" name="editar_cliente" type="submit" value="Inserir">
                         </div>
                     </div>
                 </div>
             </main>
+        </form>
     </div>
     <?php include '../Routes/footer.php'; ?>
     <script src="admin.js"></script>

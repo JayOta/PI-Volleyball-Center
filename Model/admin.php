@@ -1,17 +1,18 @@
 <?php
 require "../Service/conexao.php";
 
-function buscarClientes()
+// <CRUD PRODUTOS>
+function buscarId($id)
 {
     global $conn;
     try {
-        $stmt = $conn->prepare("SELECT * FROM `usuarios` ");
+        $stmt = $conn->prepare("SELECT * FROM `produtos` where `produto_id` = '$id'");
         $stmt->execute();
 
-        $clientes = $stmt->fetchAll();
-        return $clientes;
+        $produtos = $stmt->fetchAll()[0];
+        return $produtos;
     } catch (PDOException $e) {
-        echo json_encode(['erro ao mostrar cliente' => $e->getMessage()]);
+        return "Erro ao mostrar informações -> " . $e;
     }
 }
 function adicionarProduto($categoria_id, $imagem, $nome, $descricao, $preco, $qtd_estoque)
@@ -32,6 +33,34 @@ function adicionarProduto($categoria_id, $imagem, $nome, $descricao, $preco, $qt
         echo "Erro ao adicionar o produto: " . $e->getMessage();
     }
 }
+function editarProduto($produtoID, $categoria_id, $imagemTemp, $nome, $descricao, $preco, $qtd_estoque)
+{
+    global $conn;
+    try {
+        $stmt = $conn->prepare("UPDATE `produtos` SET categorias_id = :categoria, imagem_produto = :imagem, nome = :nome, descricao = :descricao, preco = :preco, qtd_estoque = :qtd_estoque WHERE produto_id = :produto_id");
+        $stmt->bindParam(':categoria', $categoria_id);
+        $stmt->bindParam(':imagem', $imagemTemp, PDO::PARAM_LOB);
+        $stmt->bindParam(':nome', $nome);
+        $stmt->bindParam(':descricao', $descricao);
+        $stmt->bindParam(':preco', $preco);
+        $stmt->bindParam(':qtd_estoque', $qtd_estoque);
+        $stmt->bindParam(':produto_id', $produtoID);
+        $stmt->execute();
+        if (!$stmt->execute()) {
+            print_r($stmt->errorInfo()); // Exibe o erro SQL
+            exit;
+        }
+
+        if ($stmt->execute()) {
+            echo "Produto editado com sucesso!!";
+        } else {
+            echo "Erro ao atualizar o produto!";
+        }
+        echo "Seu produto foi editado!!<br>Retorne a loja para vê-lo!";
+    } catch (PDOException $e) {
+        return "Erro ao mostrar informações -> " . $e;
+    }
+}
 function deletarProduto($id)
 {
     global $conn;
@@ -44,39 +73,22 @@ function deletarProduto($id)
         echo "Erro ao deletar o produto: " . $e->getMessage();
     }
 }
-function buscarId($id)
+// </CRUD PRODUTOS>
+
+// <CRUD CLIENTES>
+function buscarClientes()
 {
     global $conn;
     try {
-        $stmt = $conn->prepare("SELECT * FROM `produtos` where `produto_id` = '$id'");
+        $stmt = $conn->prepare("SELECT * FROM `usuarios` ");
         $stmt->execute();
 
-        $produtos = $stmt->fetchAll()[0];
-        return $produtos;
+        $clientes = $stmt->fetchAll();
+        return $clientes;
     } catch (PDOException $e) {
-        return "Erro ao mostrar informações -> " . $e;
+        echo json_encode(['erro ao mostrar cliente' => $e->getMessage()]);
     }
 }
-function editarProduto($categoria_id, $imagem, $nome, $descricao, $preco, $qtd_estoque)
-{
-    global $conn;
-    try {
-        /* Rever esta parte -> */
-        $stmt = $conn->prepare("UPDATE produtos SET categorias_id = :categoria, imagem_produto = :imagem, nome = :nome, descricao = :descricao, preco = :preco, qtd_estoque = :qtd_estoque");
-        $stmt->bindParam(':categoria', $categoria_id);
-        $stmt->bindParam(':imagem', $imagem, PDO::PARAM_LOB);
-        $stmt->bindParam(':nome', $nome);
-        $stmt->bindParam(':descricao', $descricao);
-        $stmt->bindParam(':preco', $preco);
-        $stmt->bindParam(':qtd_estoque', $qtd_estoque);
-        $stmt->execute();
-    } catch (PDOException $e) {
-        return "Erro ao mostrar informações -> " . $e;
-    }
-}
-
-
-
 function buscarIdCliente($id)
 {
     global $conn;
@@ -120,14 +132,24 @@ function editarCliente($clienteId, $nome, $email, $senha, $imagemTempCliente)
     global $conn; // Faz a variável $conn ser acessível dentro da função
 
     try {
-        $stmt = $conn->prepare("UPDATE clientes 
+        $stmt = $conn->prepare("UPDATE `clientes` 
                                 SET nome = :nome, email = :email, senha = :senha, imagem_perfil = :imagem_perfil 
-                                WHERE id = :cliente_id");
+                                WHERE cliente_id = :cliente_id");
         $stmt->bindParam(':nome', $nome);
         $stmt->bindParam(':email', $email);
         $stmt->bindParam(':senha', $senha);
         $stmt->bindParam(':imagem_perfil', $imagemTempCliente, PDO::PARAM_LOB);
-        $stmt->bindParam(':cliente_id', $clienteId, PDO::PARAM_INT);
+        $stmt->bindParam(':cliente_id', $clienteId);
+        $stmt->execute();
+
+        $stmt = $conn->prepare("UPDATE `usuarios` 
+        SET nome = :nome, email = :email, senha = :senha, imagem_perfil = :imagem_perfil 
+        WHERE cliente_id = :cliente_id");
+        $stmt->bindParam(':nome', $nome);
+        $stmt->bindParam(':email', $email);
+        $stmt->bindParam(':senha', $senha);
+        $stmt->bindParam(':imagem_perfil', $imagemTempCliente, PDO::PARAM_LOB);
+        $stmt->bindParam(':cliente_id', $clienteId);
         $stmt->execute();
         echo "Seu cliente foi alterado!!<br>Volte a página de admin para vê-lo!";
     } catch (PDOException $e) {
@@ -148,3 +170,4 @@ function deletarCliente($id)
         echo "Erro ao deletar o produto: " . $e->getMessage();
     }
 }
+// </CRUD CLIENTES>

@@ -125,7 +125,7 @@ button a#saiba-mais {
 .row .col .card:hover {
   cursor: pointer;
   filter: brightness(80%);
-  box-shadow: 0px 2px 8px #0b0b0b;
+  box-shadow: 0px 1px 6px #0b0b0b;
 }
 .blue-back2 {
   position: relative;

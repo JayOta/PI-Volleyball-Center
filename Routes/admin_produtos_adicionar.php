@@ -51,13 +51,10 @@ $categorias = buscarCategoria();
                         <button class="links"><i class='bx bx-left-arrow'></i>Voltar</button>
                     </a>
                 </div>
-                <div class="line">
-                    <button class="links"><i class='bx bxs-dashboard'></i>Categorias</button>
-                </div>
                 <a href="./admin_clientes.php" style="text-decoration: none; width: 100%;">
-                <div class="line">
-                    <button class="links"><i class='bx bx-user'></i>Clientes</button>
-                </div>
+                    <div class="line">
+                        <button class="links"><i class='bx bx-user'></i>Clientes</button>
+                    </div>
                 </a>
                 <div class="line">
                     <a style="text-decoration: none;" href="./admin_produtos.php" target="_blank">
@@ -69,7 +66,9 @@ $categorias = buscarCategoria();
                     <button class="links"><i class='bx bx-bell'></i>Notificações</button>
                 </div>
                 <div class="line">
-                    <button class="links"><i class='bx bx-file-blank'></i>Páginas</button>
+                    <a href="./inicial.php" style="text-decoration: none; width: 100%;" target="_blank">
+                        <button class="links"><i class='bx bx-file-blank'></i>Páginas</button>
+                    </a>
                 </div>
             </div>
         </div>
