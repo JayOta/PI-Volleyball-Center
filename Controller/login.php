@@ -31,6 +31,12 @@ if ($_POST) {
             } else {
                 print_r($usuario);
                 echo "<script>alert('Senha ou Email incorretos!');</script>";
+                echo "<center><a href='../Routes/index.php'><button style='
+                padding: 2rem; 
+                font-size: 2rem; 
+                background: #f9cc02; 
+                border: 2px solid #eee; 
+                color: #fff;'>Voltar ao Login</button></a></center>";
             }
         }
     } else {

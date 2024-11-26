@@ -45,7 +45,7 @@ if (isset($_SESSION['usuario_atual']['imagem_perfil'])) {
                             <?php } ?>
                             <details closed>
                                 <summary style="color: #fff; display: flex; flex-direction: row;"> <?php
-                                                                                                    echo $_SESSION['usuario_atual']['nome'] ?? "Fazer Login";
+                                                                                                    echo $_SESSION['usuario_atual']['nome'] ?? "<a style='text-decoration: none; color: #fff;' href='./index.php'>Fazer Login</a>";
                                                                                                     ?></summary>
                                 <ul>
                                     <div class="details-content">
