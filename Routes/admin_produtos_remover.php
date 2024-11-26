@@ -22,7 +22,7 @@ $produtos = buscarProdutos();
 </head>
 
 <body>
-    <?php include '../Routes/perfil-on-navbar.php'; ?>
+    <?php include '../Routes/perfil-on-navbar-admin.php'; ?>
     <div style="display: flex; flex-direction: row; gap: 1rem;">
         <div class="sidebar-part">
             <button id="openSidebarBtn" onclick="openSidebar()" style="display:none;"><i class='bx bx-menu'></i></button>
@@ -45,7 +45,9 @@ $produtos = buscarProdutos();
                 </div>
                 <hr>
                 <div class="line">
-                    <button class="links"><i class='bx bx-bell'></i>Notificações</button>
+                    <a style="text-decoration: none; width: 100%;" href="./admin_noticias.php" target="_blank">
+                        <button class="links"><i class='bx bx-news'></i></i>Notícias</button>
+                    </a>
                 </div>
                 <div class="line">
                     <a href="./inicial.php" style="text-decoration: none; width: 100%;" target="_blank">

@@ -6,6 +6,10 @@ require "../Controller/noticias.php";
 $noticias = buscarnoticias();
 $cliente = buscarCliente();
 $produtos = buscarProdutos();
+$produtos_vendidos = produtoAdicionadoHoje();
+$qtd_clientes = count($cliente);
+$qtd_produtos = count($produtos);
+$qtd_noticias = count($noticias);
 ?>
 <html>
 
@@ -28,25 +32,27 @@ $produtos = buscarProdutos();
 
 <body>
 
-    <?php include '../Routes/perfil-on-navbar.php'; ?>
+    <?php include '../Routes/perfil-on-navbar-admin.php'; ?>
     <main class="main-class">
         <div class="separator">
             <button id="openSidebarBtn" onclick="openSidebar()" style="display:none;"><i class='bx bx-menu'></i></button>
             <div id="sidebar" class="sidebar">
                 <button id="closeSidebarBtn" onclick="closeSidebar()"><i class='bx bx-x'></i></button>
                 <div class="line">
-                    <a style="text-decoration: none;" href="./admin_clientes.php" target="_blank">
+                    <a style="text-decoration: none; width: 100%;" href="./admin_clientes.php" target="_blank">
                         <button class="links"><i class='bx bx-user'></i>Clientes</button>
                     </a>
                 </div>
                 <div class="line">
-                    <a style="text-decoration: none;" href="./admin_produtos.php" target="_blank">
+                    <a style="text-decoration: none; width: 100%;" href="./admin_produtos.php" target="_blank">
                         <button class="links"><i class='bx bx-cart'></i>Produtos</button>
                     </a>
                 </div>
                 <hr>
                 <div class="line">
-                    <button class="links"><i class='bx bx-bell'></i>Notificações</button>
+                    <a style="text-decoration: none; width: 100%;" href="./admin_noticias.php" target="_blank">
+                        <button class="links"><i class='bx bx-news'></i></i>Notícias</button>
+                    </a>
                 </div>
                 <div class="line">
                     <a href="./inicial.php" style="text-decoration: none; width: 100%;" target="_blank">
@@ -57,9 +63,18 @@ $produtos = buscarProdutos();
             <div class="main-content" id="main-content" style="margin-top: 20px;">
                 <section>
                     <div class="mini-aligns">
-                        <div class="mini-container">Vendas</div>
-                        <div class="mini-container">Receitas</div>
-                        <div class="mini-container">Notificações</div>
+                        <div class="mini-container">
+                            <h5>Quantidade de Clientes:</h5>
+                            <h2 class="qtd-clientes"><?php echo $qtd_clientes; ?></h2>
+                        </div>
+                        <div class="mini-container">
+                            <h5>Quantidade de Produtos:</h5>
+                            <h2 class="qtd-produtos"><?php echo $qtd_produtos; ?></h2>
+                        </div>
+                        <div class="mini-container">
+                            <h5>Quantidade de Notícias:</h5>
+                            <h2 class="qtd-produtos"><?php echo $qtd_noticias; ?></h2>
+                        </div>
                     </div>
 
                     <div class="big-aligns">
@@ -88,16 +103,19 @@ $produtos = buscarProdutos();
                             </table>
                         </div>
                         <div class="big-container">
-                            <table class="clientes-container tres">
+                            <table class="clientes-container dois">
                                 <tr>
-                                    <th>Vendidos Hoje</th>
+                                    <th>Notícias</th>
                                 </tr>
-                                <tr>
-                                    <td>Finalizar..</td>
-                                </tr>
-                                <tr>
-                                    <td>Finalizar..</td>
-                                </tr>
+                                <?php for ($i = 0; $i < count($noticias); $i++) { ?>
+                                    <tr>
+                                        <td><?php if ($noticias[$i]['titulo_noticias'] == NULL) {
+                                                echo "NULL";
+                                            } else {
+                                                echo $noticias[$i]['titulo_noticias'];
+                                            } ?></td>
+                                    </tr>
+                                <?php } ?>
                             </table>
                         </div>
                     </div>
@@ -119,40 +137,37 @@ $produtos = buscarProdutos();
                         </a>
                     </div>
                     <div class="aside-containers">
-                        <!-- add carouselExampleSlidesOnly (para o carousel funcionar) -->
-                        <div class="carousel-inner" style="transition: 0.5s ease-in-out; width: 28rem; height: 22rem; box-shadow: 0px 0px 12px #fff;  display: flex; ">
-                            <!-- Criar um for loop entre os produtos [0 - 2] -->
-                            <?php for ($i = 0; $i < 3; $i++) { ?>
-                                <?php for ($i = 0; $i < 2; $i++) { ?>
-                                    <a href="../Routes/loja.php">
-                                        <div class="carousel-item active" style="width: 28rem; height: 22rem">
-                                            <img class="anuncio" src="<?php $imagem = base64_encode($produtos[$i]['imagem_produto']);
-                                                                        echo "data:image/jpeg;base64," . $imagem; ?>" class="d-block w-100" alt="..." style="width: 28rem; height: 22rem;">
-                                        </div>
-                                    </a>
+                        <div id="carouselExampleInterval" class="carousel slide d-flex" data-bs-ride="carousel">
+                            <div class="carousel-inner" style="transition: 0.5s ease-in-out; width: 28rem; height: 22rem; box-shadow: 0px 0px 12px #fff;  display: flex; ">
+                                <!-- Criar um for loop entre os produtos [0 - 2] -->
+                                <?php for ($i = 0; $i < 3; $i++) { ?>
+                                    <?php for ($i = 0; $i < 3; $i++) { ?>
+                                        <a href="../Routes/loja.php" target="_blank">
+                                            <div class="carousel-item active" style="width: 28rem; height: 22rem">
+                                                <img class="anuncio" src="<?php $imagem = base64_encode($produtos[$i]['imagem_produto']);
+                                                                            echo "data:image/jpeg;base64," . $imagem; ?>" class="d-block w-100" alt="..." style="width: 28rem; height: 22rem;">
+                                            </div>
+                                        </a>
+                                    <?php } ?>
                                 <?php } ?>
-                            <?php } ?>
+                            </div>
                         </div>
                     </div>
                     <div class="aside-containers">
-                        <!-- add carouselExampleSlidesOnly (para o carousel funcionar) e terminar de colocar o back -->
-                        <div class="carousel-inner" style="transition: 0.5s ease-in-out; width: 28rem; height: 22rem; box-shadow: 0px 0px 12px #fff;">
-                            <!-- Criar um for loop entre os produtos [5 - 7] -->
-                            <a href="../Routes/loja.php" style="width: 28rem; height: 22rem">
-                                <div class="carousel-item active" style="width: 28rem; height: 22rem">
-                                    <img class="anuncio" src="../Routes/img/calca-compressao.png" class="d-block w-100" alt="..." style="width: 28rem; height: 22rem">
-                                </div>
-                            </a>
-                            <a href="../Routes/loja.php">
-                                <div class="carousel-item" style="width: 28rem; height: 22rem">
-                                    <img class="anuncio" src="../Routes/img/viseira-nike.png" class="d-block w-100" alt="..." style="width: 28rem; height: 22rem">
-                                </div>
-                            </a>
-                            <a href="../Routes/loja.php">
-                                <div class="carousel-item" style="width: 28rem; height: 22rem;">
-                                    <img class="anuncio" src="../Routes/img/tenis-volei.png" class="d-block w-100" alt="..." style="width: 28rem; height: 22rem">
-                                </div>
-                            </a>
+                        <div id="carouselExampleInterval" class="carousel slide d-flex" data-bs-ride="carousel">
+                            <div class="carousel-inner" style="transition: 0.5s ease-in-out; width: 28rem; height: 22rem; box-shadow: 0px 0px 12px #fff;  display: flex; ">
+                                <!-- Criar um for loop entre os produtos [0 - 2] -->
+                                <?php for ($i = 0; $i < 3; $i++) { ?>
+                                    <?php for ($i = 5; $i < 8; $i++) { ?>
+                                        <a href="../Routes/loja.php" target="_blank">
+                                            <div class="carousel-item active" style="width: 28rem; height: 22rem">
+                                                <img class="anuncio" src="<?php $imagem = base64_encode($produtos[$i]['imagem_produto']);
+                                                                            echo "data:image/jpeg;base64," . $imagem; ?>" class="d-block w-100" alt="..." style="width: 28rem; height: 22rem;">
+                                            </div>
+                                        </a>
+                                    <?php } ?>
+                                <?php } ?>
+                            </div>
                         </div>
                     </div>
                 </aside>

@@ -42,7 +42,7 @@
 
     <body>
 
-        <?php include '../Routes/perfil-on-navbar.php'; ?>
+        <?php include '../Routes/perfil-on-navbar-admin.php'; ?>
 
         <div style="display: flex; flex-direction: row; gap: 1rem;">
             <div class="sidebar-part">
@@ -72,10 +72,10 @@
                         <button class="links"><i class='bx bx-bell'></i>Notificações</button>
                     </div>
                     <div class="line">
-                    <a href="./inicial.php" style="text-decoration: none; width: 100%;" target="_blank">
-                        <button class="links"><i class='bx bx-file-blank'></i>Páginas</button>
-                    </a>
-                </div>
+                        <a href="./inicial.php" style="text-decoration: none; width: 100%;" target="_blank">
+                            <button class="links"><i class='bx bx-file-blank'></i>Páginas</button>
+                        </a>
+                    </div>
                 </div>
             </div>
             <form action="../Controller/admin.php" method="post" enctype="multipart/form-data">

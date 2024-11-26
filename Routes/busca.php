@@ -1,7 +1,7 @@
 <?php
 
 require '../Service/conexao.php';
-global $conn; 
+global $conn;
 
 session_start();
 
@@ -16,12 +16,12 @@ if (isset($_POST['nome'])) {
     $sql = "SELECT * FROM produtos where nome LIKE '%$nome%'";
     $resultado = $conn->query($sql);
 
-    
+
     if ($resultado->rowCount() > 0) {
         $produtos = $resultado->fetchAll(PDO::FETCH_ASSOC);
         $_SESSION['produtos'] = $produtos;
 
-        header("Location: http://localhost/GitHub/PI-Volleyball-Center/Routes/loja.php" );
+        header("Location: ../Routes/loja.php");
     } else {
         echo json_encode(['mensagem' => 'Nenhum produto encontrado com esse nome.']);
     }

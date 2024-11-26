@@ -5,25 +5,20 @@ require "../Model/admin.php";
 
 // <Redirecionamento de formulários>
 if (isset($_POST['adicionar'])) {
-    header('Location: http://localhost/GitHub/PI-Volleyball-Center/Routes/admin_produtos_adicionar.php');
+    header('Location: ../Routes/admin_produtos_adicionar.php');
 } else if (isset($_POST['editar'])) {
-    header('Location: http://localhost/GitHub/PI-Volleyball-Center/Routes/admin_produtos_editar.php');
+    header('Location: ../Routes/admin_produtos_editar.php');
 } else if (isset($_POST['remover'])) {
-    header('Location: http://localhost/GitHub/PI-Volleyball-Center/Routes/admin_produtos_remover.php');
+    header('Location: ../Routes/admin_produtos_remover.php');
 }
 // </Redirecionamento de formulários>
 
-
-// <Deletar Produtos>
-else if (isset($_POST['delete'])) {
-    // Captura o ID do produto e chama a função para deletar
-    $produto_id = $_POST['delete'];
-    deletarProduto($produto_id);
-    header('Location: http://localhost/GitHub/PI-Volleyball-Center/Routes/admin_produtos_remover.php');
-    exit();
+// <Vendidos Hoje>
+function produtoAdicionadoHoje()
+{
+    return adicionadosHoje();
 }
-// </Deletar Produtos>
-
+// </Vendidos Hoje>
 
 // <Inserir Produtos>
 if (isset($_POST['inserir'])) {
@@ -96,6 +91,16 @@ if (isset($_POST['editar_produto'])) {
 }
 // </Atualizar Produtos>
 
+// <Deletar Produtos>
+else if (isset($_POST['delete'])) {
+    // Captura o ID do produto e chama a função para deletar
+    $produto_id = $_POST['delete'];
+    deletarProduto($produto_id);
+    header('Location: ../Routes/admin_produtos_remover.php');
+    exit();
+}
+// </Deletar Produtos>
+
 // </CRUD PRODUTOS> 
 
 
@@ -116,11 +121,11 @@ function clienteID($id)
 
 // <Redirecionamento de formulários>
 if (isset($_POST['adicionar_cliente'])) {
-    header('Location: http://localhost/GitHub/PI-Volleyball-Center/Routes/admin_clientes_adicionar.php');
+    header('Location: ../Routes/admin_clientes_adicionar.php');
 } else if (isset($_POST['editar_cliente'])) {
-    header('Location: http://localhost/GitHub/PI-Volleyball-Center/Routes/admin_clientes_editar.php');
+    header('Location: ../Routes/admin_clientes_editar.php');
 } else if (isset($_POST['remover_cliente'])) {
-    header('Location: http://localhost/GitHub/PI-Volleyball-Center/Routes/admin_clientes_remover.php');
+    header('Location: ../Routes/admin_clientes_remover.php');
 }
 // </Redirecionamento de formulários>
 
@@ -167,7 +172,7 @@ if (isset($_POST['delete_cliente'])) {
     // Captura o ID do produto e chama a função para deletar
     $cliente_id = $_POST['delete_cliente'];
     deletarCliente($cliente_id);
-    header('Location: http://localhost/GitHub/PI-Volleyball-Center/Routes/admin_clientes_remover.php');
+    header('Location: ../Routes/admin_clientes_remover.php');
     exit();
 }
     // </Deletar Clientes>

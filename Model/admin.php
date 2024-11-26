@@ -8,9 +8,25 @@ function buscarId($id)
     try {
         $stmt = $conn->prepare("SELECT * FROM `produtos` where `produto_id` = '$id'");
         $stmt->execute();
-
         $produtos = $stmt->fetchAll()[0];
         return $produtos;
+    } catch (PDOException $e) {
+        return "Erro ao mostrar informações -> " . $e;
+    }
+}
+function adicionadosHoje()
+{
+    global $conn, $vendidos_hoje;
+
+    try {
+        $stmt = $conn->prepare("SELECT * FROM `produtos` WHERE `produto_id` = ':arrumar_aqui..'");
+        $stmt->bindParam(':vendidos_hoje', $vendidos_hoje);
+        $stmt->execute();
+        $produtos_vendidos = $stmt->fetchAll()[0];
+        if ($produtos_vendidos < 1) {
+            return "Nenhum Produto vendido hoje";
+        }
+        return $produtos_vendidos;
     } catch (PDOException $e) {
         return "Erro ao mostrar informações -> " . $e;
     }
@@ -29,6 +45,7 @@ function adicionarProduto($categoria_id, $imagem, $nome, $descricao, $preco, $qt
         $stmt->bindParam(':preco', $preco);
         $stmt->bindParam(':qtd_estoque', $qtd_estoque);
         $stmt->execute();
+        $vendidos_hoje = $conn->lastInsertId();
     } catch (PDOException $e) {
         echo "Erro ao adicionar o produto: " . $e->getMessage();
     }
