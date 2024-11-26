@@ -1,6 +1,8 @@
 /* SideBar - início */
 :root {
   --azul-cor: #0ea5e9;
+  --cinza-escurin: #b4b4b4;
+  --cinza: #e9e9e9;
 }
 body {
   margin: 0;
@@ -240,9 +242,50 @@ aside {
 .aside-containers {
   display: flex;
   justify-content: center;
-  width: 500px;
-  height: 360px;
-  border: #424242;
-  border-radius: 2px;
-  box-shadow: 0px 0px 1px 0px #0b0b0b;
+  align-items: center;
+  width: 28rem;
+  height: 22rem;
+  transition: 0.3s ease-in-out;
+  border-radius: 5px;
+}
+.aside-containers:hover {
+  box-shadow: 0px 0px 6px #157347;
+  filter: brightness(50%);
+  transform: scale(1.02);
+}
+.aside-containers img {
+  border: 1px solid var(--cinza);
+  border-radius: 5px;
+}
+.aside-containers img:hover {
+  border: none;
+}
+.card-noticia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-noticia:hover {
+  filter: none;
+  transform: scale(1.02);
+  transition: 0.3s ease-in-out;
+}
+.card-noticia img {
+  border-radius: 5px;
+  position: relative;
+  top: 2.5rem;
+  transition: 0.3s ease-in-out;
+}
+.card-noticia img:hover {
+  filter: brightness(50%);
+  box-shadow: 0px 0px 6px #157347;
+}
+.card-noticia a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-noticia h5 {
+  z-index: 2;
+  width: 80%;
 }

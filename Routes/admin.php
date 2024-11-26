@@ -2,6 +2,8 @@
 <?php
 require '../Controller/admin.php';
 require '../Controller/loja.php';
+require "../Controller/noticias.php";
+$noticias = buscarnoticias();
 $cliente = buscarCliente();
 $produtos = buscarProdutos();
 ?>
@@ -101,16 +103,60 @@ $produtos = buscarProdutos();
                     </div>
                 </section>
                 <aside>
-                    <div class="aside-containers">Atividade Recente | Hoje</div>
+                    <div class="aside-containers card-noticia">
+                        <a href="./noticias.php" target="_blank" style="text-decoration: none; color: #fff;">
+                            <img src="<?php $imagem = base64_encode($noticias[0]['imagem_noticias']);
+                                        echo "data:image/jpeg;base64," . $imagem; ?>" class="card-img-top" alt="Seleção" style="width: 28rem; height: 22rem; border-radius: 5px; position: relative; top: 2.5rem;">
+                            <h5 class="none" style="position: relative; bottom: 5rem;"><?php echo $noticias[0]['titulo_noticias'] ?></h5>
+                        </a>
+                    </div>
 
-                    <div class="aside-containers">Notícias e Atualizações | Hoje </div>
-                    <table class="noticias-container">
-
+                    <div class="aside-containers card-noticia">
+                        <a href="./noticias.php" target="_blank" style="text-decoration: none; color: #fff;">
+                            <img src="<?php $imagem = base64_encode($noticias[1]['imagem_noticias']);
+                                        echo "data:image/jpeg;base64," . $imagem; ?>" class="card-img-top" alt="Seleção" style="width: 28rem; height: 22rem; border-radius: 5px; position: relative; top: 1.75rem;">
+                            <h5 class="none" style="position: relative; bottom: 5rem;"><?php echo $noticias[1]['titulo_noticias'] ?></h5>
+                        </a>
+                    </div>
+                    <div class="aside-containers">
+                        <!-- add carouselExampleSlidesOnly (para o carousel funcionar) -->
+                        <div class="carousel-inner" style="transition: 0.5s ease-in-out; width: 28rem; height: 22rem; box-shadow: 0px 0px 12px #fff;  display: flex; ">
+                            <!-- Criar um for loop entre os produtos [0 - 2] -->
+                            <?php for ($i = 0; $i < 3; $i++) { ?>
+                                <?php for ($i = 0; $i < 2; $i++) { ?>
+                                    <a href="../Routes/loja.php">
+                                        <div class="carousel-item active" style="width: 28rem; height: 22rem">
+                                            <img class="anuncio" src="<?php $imagem = base64_encode($produtos[$i]['imagem_produto']);
+                                                                        echo "data:image/jpeg;base64," . $imagem; ?>" class="d-block w-100" alt="..." style="width: 28rem; height: 22rem;">
+                                        </div>
+                                    </a>
+                                <?php } ?>
+                            <?php } ?>
+                        </div>
+                    </div>
+                    <div class="aside-containers">
+                        <!-- add carouselExampleSlidesOnly (para o carousel funcionar) e terminar de colocar o back -->
+                        <div class="carousel-inner" style="transition: 0.5s ease-in-out; width: 28rem; height: 22rem; box-shadow: 0px 0px 12px #fff;">
+                            <!-- Criar um for loop entre os produtos [5 - 7] -->
+                            <a href="../Routes/loja.php" style="width: 28rem; height: 22rem">
+                                <div class="carousel-item active" style="width: 28rem; height: 22rem">
+                                    <img class="anuncio" src="../Routes/img/calca-compressao.png" class="d-block w-100" alt="..." style="width: 28rem; height: 22rem">
+                                </div>
+                            </a>
+                            <a href="../Routes/loja.php">
+                                <div class="carousel-item" style="width: 28rem; height: 22rem">
+                                    <img class="anuncio" src="../Routes/img/viseira-nike.png" class="d-block w-100" alt="..." style="width: 28rem; height: 22rem">
+                                </div>
+                            </a>
+                            <a href="../Routes/loja.php">
+                                <div class="carousel-item" style="width: 28rem; height: 22rem;">
+                                    <img class="anuncio" src="../Routes/img/tenis-volei.png" class="d-block w-100" alt="..." style="width: 28rem; height: 22rem">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
             </div>
-            <div class="aside-containers"></div>
-            <div class="aside-containers"></div>
-            </aside>
-        </div>
         </div>
     </main>
     <br><br><br><br><br><br><br><br><br><br><br>
