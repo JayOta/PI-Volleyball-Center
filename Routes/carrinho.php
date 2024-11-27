@@ -18,12 +18,12 @@ if(isset($_POST['remover_produto'])){
 </head>
 
 <body>
-    <header style="display: flex;">
+    <header style="display: flex; width: 1000px; ">
         <a href="./loja.php" style="
         text-decoration: none; 
         color: #fff; 
         position: relative; 
-        right: 43rem; display: flex; 
+        right: 20rem; display: flex; 
         justify-content: center; 
         align-items: center;
         border-radius: 3px;
@@ -33,7 +33,7 @@ if(isset($_POST['remover_produto'])){
         </a>
         <span>Carrinho de Compras</span>
     </header>
-    <main>
+    <main style="width: 939px;">
         <form action="../Controller/carrinho.php" method="post">
             <div class="page-title">Seu Carrinho</div>
             <div class="content">
