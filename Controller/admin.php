@@ -178,3 +178,69 @@ if (isset($_POST['delete_cliente'])) {
     // </Deletar Clientes>
 
 // </CRUD CLIENTES>
+
+// <CRUD NOTICIAS>
+
+// <Redirecionamento de formulários>
+if (isset($_POST['adicionar_noticias'])) {
+    header('Location: ../Routes/admin_noticias_adicionar.php');
+} else if (isset($_POST['editar_noticias'])) {
+    header('Location: ../Routes/admin_noticias_editar.php');
+} else if (isset($_POST['remover_noticias'])) {
+    header('Location: ../Routes/admin_noticias_remover.php');
+}
+// </Redirecionamento de formulários>
+
+// <Inserir Noticias>
+if (isset($_POST['inserir_noticia'])) {
+    // Captura os dados do formulário
+    $titulo = $_POST['titulo_noticia'];
+    $descricao = $_POST['descricao_noticia'];
+    $data = $_POST['data_noticia'];
+    $camps_normais = $_POST['camps_normais'];
+
+    // Processa a imagem
+    if (isset($_FILES['imagem_noticia']) && $_FILES['imagem_noticia']['error'] == 0) {
+        $imagemTemp = file_get_contents($_FILES['imagem_noticia']['tmp_name']);
+    } else {
+        echo "Erro no envio da imagem: " . $imagemTemp;
+    }
+    // Chama a função para inserir o produto no Model
+    adicionarNoticia($imagemTemp, $titulo, $descricao, $data, $camps_normais);
+    echo "Sua notícia foi inserida!!<br>Retorne a página de admin para vê-la!";
+}
+// </Inserir Noticias>
+
+// <Editar Noticias>
+function noticiasID($id)
+{
+    return buscarIdNoticia($id);
+}
+if (isset($_POST['editar_noticia'])) {
+    $titulo = $_POST['titulo_noticia'];
+    $descricao = $_POST['descricao_noticia'];
+    $data = $_POST['data_noticia'];
+    $camps_normais = $_POST['camps_normais'];
+
+    $noticiaID = $_POST['id_noticias'];
+    if (isset($_FILES['imagem_noticia']) && $_FILES['imagem_noticia']['error'] == 0) {
+        $imagemTemp = file_get_contents($_FILES['imagem_noticia']['tmp_name']);
+    } else {
+        echo "Erro no envio da imagem: " . $imagemTemp;
+    }
+
+    editarNoticia($noticiaID, $imagemTemp, $titulo, $descricao, $data, $camps_normais);
+}
+// </Editar Noticias>
+
+// <Remover Noticias>
+if (isset($_POST['delete_noticia'])) {
+    // Captura o ID do produto e chama a função para deletar
+    $id_noticia = $_POST['delete_noticia'];
+    deletarNoticia($id_noticia);
+    header('Location: ../Routes/admin_noticias_remover.php');
+    exit();
+}
+// </Remover Noticias>
+
+// </CRUD NOTICIAS>

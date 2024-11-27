@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <?php
-require '../Controller/loja.php';
-$produtos = buscarProdutos();
-$categorias = buscarCategoria();
+require '../Controller/admin.php';
+require '../Controller/noticias.php';
+
+$noticias = buscarnoticias();
+$noticia = noticiasID($_GET['id']);
 ?>
 <html lang="pt-br">
 
@@ -19,7 +21,7 @@ $categorias = buscarCategoria();
     <link rel="stylesheet" href="./Routes/css/admin-crud-produtos.css">
     <link rel="stylesheet" href="../Routes/css/perfil-on-navbar.css">
     <link rel="stylesheet" href="./css/admin_produtos_adicionar.php.css">
-    <title>CRUD PRODUTOS</title>
+    <title>CRUD NOTICIAS</title>
     <style>
         .crud-opcoes {
             display: flex;
@@ -47,7 +49,7 @@ $categorias = buscarCategoria();
             <div id="sidebar" class="sidebar">
                 <button id="closeSidebarBtn" onclick="closeSidebar()"><i class='bx bx-x'></i></button>
                 <div class="line">
-                    <a href="./admin_produtos.php" style="text-decoration: none; width: 100%;">
+                    <a href="./admin_noticias_editar.php" style="text-decoration: none; width: 100%;">
                         <button class="links"><i class='bx bx-left-arrow'></i>Voltar</button>
                     </a>
                 </div>
@@ -83,46 +85,50 @@ $categorias = buscarCategoria();
             <main style="padding: 2rem 0 0 0.6rem;">
                 <div class="inputs" style="display: flex; flex-direction: column;">
                     <div class="crud-opcoes" style="display: flex; flex-direction: row; gap: 1rem;">
-                        <h1 style="margin-bottom: 1rem; font-size: 2.5rem;" name="title-crud">Adicionar Produtos</h1>
+                        <h1 style="margin-bottom: 1rem; font-size: 2.5rem;" name="title-crud">Editar Notícia</h1>
                         <div class="botoes" style="display: flex; flex-direction: row; gap: 0.2rem;">
-                            <button class="btn btn-outline-dark active" name="adicionar">Adicionar</button>
-                            <button class="btn btn-outline-dark" name="editar">Editar</button>
-                            <button class="btn btn-outline-dark" name="remover">Remover</button>
+                            <button class="btn btn-outline-dark" name="adicionar_noticias">Adicionar</button>
+                            <button class="btn btn-outline-dark active" name="editar_noticias">Editar</button>
+                            <button class="btn btn-outline-dark" name="remover_noticias">Remover</button>
                         </div>
                     </div>
                     <div class="inputs-area">
                         <div class="input-group mb-3">
-                            <span class="input-group-text" id="basic-addon1">Nome</span>
-                            <input type="text" class="form-control" name="nome" aria-describedby="basic-addon1" style="width: 30rem;">
+                            <span class="input-group-text" id="basic-addon1">Título</span>
+                            <input type="text" class="form-control" name="titulo_noticia" aria-describedby="basic-addon1" style="width: 30rem;" value="<?php echo $noticia['titulo_noticias']; ?>">
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1">Descrição</span>
-                            <input type="text" class="form-control" name="descricao" aria-describedby="basic-addon1">
+                            <input type="text" class="form-control" name="descricao_noticia" aria-describedby="basic-addon1" value="<?php echo $noticia['descricao_noticias']; ?>">
                         </div>
                         <div class="input-group mb-3">
-                            <span class="input-group-text" id="basic-addon1">Preço</span>
-                            <input type="number" class="form-control" name="preco" aria-describedby="basic-addon1" step="0.01">
+                            <span class="input-group-text" id="basic-addon1">Data</span>
+                            <input type="date" class="form-control" name="data_noticia" aria-describedby="basic-addon1" value="<?php echo $noticia['data_noticias']; ?>">
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1">Imagem</span>
-                            <input type="file" class="form-control" name="imagem" aria-describedby="basic-addon1">
+                            <input type="file" class="form-control" name="imagem_noticia" aria-describedby="basic-addon1" placeholder="Selecione">
                         </div>
                         <div class="input-group mb-3">
-                            <span class="input-group-text" id="basic-addon1">Quantidade de Estoque</span>
-                            <input type="number" class="form-control" name="qtd_estoque" aria-describedby="basic-addon1">
-                        </div>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text" id="basic-addon1">Categoria</span>
-                            <select class="form-control" name="categoria" aria-describedby="basic-addon1">
-                                <?php for ($i = 0; $i < count($categorias); $i++) { ?>
-                                    <option><?php echo $categorias[$i]['nome']; ?></option>
+                            <span class="input-group-text" id="basic-addon1">Notícia ID</span>
+                            <select class="form-control" name="id_noticias" aria-describedby="basic-addon1">
+                                <?php for ($i = 0; $i < count($noticias); $i++) { ?>
+                                    <option><?php echo $noticias[$i]['id_noticias']; ?></option>
                                 <?php } ?>
                             </select>
-                            <input class="send-crud btn btn-outline-success" name="inserir" type="submit" value="Inserir">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">Camps Normais</span>
+                            <select class="form-control" name="camps_normais" aria-describedby="basic-addon1">
+                                <option><?php echo 0; ?></option>
+                                <option><?php echo 1; ?></option>
+                            </select>
+                            <input class="send-crud btn btn-outline-success" name="editar_noticia" type="submit" value="Inserir">
                         </div>
                     </div>
                 </div>
             </main>
+        </form>
     </div>
     <?php include '../Routes/footer.php'; ?>
     <script src="admin.js"></script>

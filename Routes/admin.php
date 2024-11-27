@@ -110,7 +110,7 @@ $qtd_noticias = count($noticias);
                                 <?php for ($i = 0; $i < count($noticias); $i++) { ?>
                                     <tr>
                                         <td><?php if ($noticias[$i]['titulo_noticias'] == NULL) {
-                                                echo "NULL";
+                                                echo "Nome -> NULL";
                                             } else {
                                                 echo $noticias[$i]['titulo_noticias'];
                                             } ?></td>

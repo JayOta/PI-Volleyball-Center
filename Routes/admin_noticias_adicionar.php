@@ -46,15 +46,20 @@ $noticias = buscarnoticias();
             <div id="sidebar" class="sidebar">
                 <button id="closeSidebarBtn" onclick="closeSidebar()"><i class='bx bx-x'></i></button>
                 <div class="line">
-                    <a href="./admin_produtos.php" style="text-decoration: none; width: 100%;">
+                    <a href="./admin_noticias.php" style="text-decoration: none; width: 100%;">
                         <button class="links"><i class='bx bx-left-arrow'></i>Voltar</button>
                     </a>
                 </div>
-                <a href="./admin_clientes.php" style="text-decoration: none; width: 100%;">
-                    <div class="line">
+                <div class="line">
+                    <a href="./admin.php" style="text-decoration: none; width: 100%;">
+                        <button class="links"><i class='bx bx-home'></i>Início</button>
+                    </a>
+                </div>
+                <div class="line">
+                    <a href="./admin_clientes.php" style="text-decoration: none; width: 100%;">
                         <button class="links"><i class='bx bx-user'></i>Clientes</button>
-                    </div>
-                </a>
+                    </a>
+                </div>
                 <div class="line">
                     <a style="text-decoration: none;" href="./admin_produtos.php" target="_blank">
                         <button class="links"><i class='bx bx-cart'></i>Produtos</button>
@@ -79,15 +84,15 @@ $noticias = buscarnoticias();
                     <div class="crud-opcoes" style="display: flex; flex-direction: row; gap: 1rem;">
                         <h1 style="margin-bottom: 1rem; font-size: 2.5rem;" name="title-crud">Adicionar Notícias</h1>
                         <div class="botoes" style="display: flex; flex-direction: row; gap: 0.2rem;">
-                            <button class="btn btn-outline-dark active" name="adicionar_noticia">Adicionar</button>
-                            <button class="btn btn-outline-dark" name="editar_noticia">Editar</button>
-                            <button class="btn btn-outline-dark" name="remover_noticia">Remover</button>
+                            <button class="btn btn-outline-dark active" name="adicionar_noticias">Adicionar</button>
+                            <button class="btn btn-outline-dark" name="editar_noticias">Editar</button>
+                            <button class="btn btn-outline-dark" name="remover_noticias">Remover</button>
                         </div>
                     </div>
                     <div class="inputs-area">
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1">Título</span>
-                            <input type="text" class="form-control" name="nome_noticia" aria-describedby="basic-addon1" style="width: 30rem;">
+                            <input type="text" class="form-control" name="titulo_noticia" aria-describedby="basic-addon1" style="width: 30rem;">
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1">Descrição</span>
@@ -95,7 +100,7 @@ $noticias = buscarnoticias();
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1">Data</span>
-                            <input type="text" class="form-control" name="data_noticia" aria-describedby="basic-addon1" step="0.01">
+                            <input type="date" class="form-control" name="data_noticia" aria-describedby="basic-addon1" placeholder="(Ano-Mês-Dia)">
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1">Imagem</span>
@@ -103,7 +108,7 @@ $noticias = buscarnoticias();
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1">Camps Normais</span>
-                            <select class="form-control" name="categoria" aria-describedby="basic-addon1">
+                            <select class="form-control" name="camps_normais" aria-describedby="basic-addon1">
                                 <option><?php echo 0; ?></option>
                                 <option><?php echo 1; ?></option>
                             </select>

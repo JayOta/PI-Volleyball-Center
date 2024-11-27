@@ -68,9 +68,9 @@ $noticias = buscarnoticias();
                     <div class="crud-opcoes" style="display: flex; flex-direction: row; gap: 1rem; justify-content: center;">
                         <h1 style="margin-bottom: 1rem; font-size: 2.5rem;" name="title-crud">CRUD Notícias</h1>
                         <div class="botoes" style="display: flex; flex-direction: row; gap: 0.2rem;">
-                            <button class="btn btn-outline-dark" name="adicionar">Adicionar</button>
-                            <button class="btn btn-outline-dark" name="editar">Editar</button>
-                            <button class="btn btn-outline-dark remover" name="remover">Remover</button>
+                            <button class="btn btn-outline-dark" name="adicionar_noticias">Adicionar</button>
+                            <button class="btn btn-outline-dark" name="editar_noticias">Editar</button>
+                            <button class="btn btn-outline-dark remover" name="remover_noticias">Remover</button>
                         </div>
                     </div>
                     <div class="inputs-area-todos">

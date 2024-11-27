@@ -188,3 +188,73 @@ function deletarCliente($id)
     }
 }
 // </CRUD CLIENTES>
+
+// <CRUD NOTICIAS>
+
+// <Inserir Noticias>
+function adicionarNoticia($imagemTemp, $titulo, $descricao, $data, $camps_normais)
+{
+    global $conn;
+    try {
+        // Prepara a consulta
+        $stmt = $conn->prepare("INSERT INTO `noticias`(`titulo_noticias`, `data_noticias`, `descricao_noticias`, `imagem_noticias`, `camps_normais`)
+                                VALUES (:titulo_noticias, :data_noticias, :descricao_noticias, :imagem_noticias, :camps_normais)");
+        $stmt->bindParam(':titulo_noticias', $titulo);
+        $stmt->bindParam(':data_noticias', $data);
+        $stmt->bindParam(':descricao_noticias', $descricao);
+        $stmt->bindParam(':imagem_noticias', $imagemTemp, PDO::PARAM_LOB); // Armazena como BLOB
+        $stmt->bindParam(':camps_normais', $camps_normais);
+        $stmt->execute();
+    } catch (PDOException $e) {
+        echo "Erro ao adicionar o produto: " . $e->getMessage();
+    }
+}
+// </Inserir Noticias>
+
+// <Atualizar Noticias>
+function buscarIdNoticia($id)
+{
+    global $conn;
+    try {
+        $stmt = $conn->prepare("SELECT * FROM `noticias` WHERE `id_noticias` = '$id'");
+        $stmt->execute();
+        $noticias = $stmt->fetchAll()[0];
+        return $noticias;
+    } catch (PDOException $e) {
+        return "Erro ao mostrar informações -> " . $e;
+    }
+}
+function editarNoticia($noticiaID, $imagemTemp, $titulo, $descricao, $data, $camps_normais)
+{
+    global $conn;
+    try {
+        $stmt = $conn->prepare("UPDATE `noticias` SET titulo_noticias = :titulo_noticias, data_noticias = :data_noticias, descricao_noticias = :descricao_noticias ,imagem_noticias = :imagem_noticias, camps_normais = :camps_normais WHERE id_noticias = :id_noticias");
+        $stmt->bindParam(':titulo_noticias', $titulo);
+        $stmt->bindParam(':data_noticias', $data);
+        $stmt->bindParam(':descricao_noticias', $descricao);
+        $stmt->bindParam(':imagem_noticias', $imagemTemp, PDO::PARAM_LOB); // Armazena como BLOB
+        $stmt->bindParam(':camps_normais', $camps_normais);
+        $stmt->bindParam(':id_noticias', $noticiaID);
+        $stmt->execute();
+        echo "Sua Notícia foi editada!!<br>Retorne a página de admin para vê-la!";
+    } catch (PDOException $e) {
+        return "Erro ao mostrar informações -> " . $e;
+    }
+}
+// </Atualizar Noticias>
+
+// <Remover Noticias>
+function deletarNoticia($id)
+{
+    global $conn;
+    try {
+        // $id = buscarID($produtos['produto_id']);
+        $stmt = $conn->prepare("DELETE FROM `noticias` WHERE `id_noticias` = :id");
+        $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+        $stmt->execute();
+    } catch (PDOException $e) {
+        echo "Erro ao deletar o produto: " . $e->getMessage();
+    }
+}
+// </Remover Noticias>
+// </CRUD NOTICIAS>
