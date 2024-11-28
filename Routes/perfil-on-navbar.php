@@ -18,6 +18,7 @@ if (isset($_SESSION['usuario_atual']['imagem_perfil'])) {
 
 <body>
     <form method="post" action="../Controller/login.php">
+        <input type="hidden" value="logout" name="logout">
         <nav class="navbar">
             <div class="container-navbar">
                 <a href="inicial.php">

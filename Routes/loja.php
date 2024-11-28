@@ -1,5 +1,5 @@
 <?php
-require "../Routes/busca.php";
+
 require "../Controller/loja.php";
 
 $getAllCategorias = buscarCategoria();
@@ -13,6 +13,25 @@ if (isset($_SESSION['produtos'])) {
 } // else if (isset($_POST['voltar'])) {
 //	$getAllProdutos = buscarProdutos();
 //}
+if (!isset($_SESSION['busca'])) {
+    $_SESSION['busca'] = array();
+}
+
+if (isset($_POST['nome'])) {
+    $nome = $_POST['nome'];
+	
+    $sql = "SELECT * FROM produtos WHERE nome LIKE '%$nome%'";
+    $resultado = $conn->query($sql);
+
+
+    if ($resultado->rowCount() > 0) {
+        $produtos = $resultado->fetchAll(PDO::FETCH_ASSOC);
+        $getAllProdutos = $produtos;
+
+    } else {
+        echo json_encode(['mensagem' => 'Nenhum produto encontrado com esse nome.']);
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -47,7 +66,7 @@ if (isset($_SESSION['produtos'])) {
 			<?php } ?>
 		</div>
 
-		<form action="busca.php" method="post" class="d-flex position-relative" role="search">
+		<form action="loja.php" method="post" class="d-flex position-relative" role="search">
 			<input class="input-search form-control me-2" type="search" name="nome" placeholder="Digite o nome do produto" aria-label="Search" style="width: 360px;">
 			<button class="btn btn-outline-success" type="submit">Pesquisar</button>
 		</form>

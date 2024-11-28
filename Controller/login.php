@@ -39,7 +39,8 @@ if ($_POST) {
                 color: #fff;'>Voltar ao Login</button></a></center>";
             }
         }
-    } else {
+    } 
+    if (isset($_POST['logout'])) {
         session_unset();
         session_destroy();
         header("Location: ../Routes/index.php");
