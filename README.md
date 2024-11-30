@@ -1,5 +1,5 @@
 # VOLLEYBALL CENTER - Projeto Integrador
-## Site de vôlei construído para o Projeto Integrador do Ensino Médio - Sesc/Senac
+## Site de vôlei construído pelo 2º Ano do Ensino Médio - Sesc/Senac 2024
 <h2>Objetivo</h2>
 <p>Um site de vôlei feito para a região do Paraná, com dicas para iniciantes, e notícias para os interessados, oferecendo uma melhor experiência para quem deseja aprender mais sobre o esporte e sentir-se mais informado, aprofundando-se no mundo do volêi de uma forma mais dinâmica.</p>
   <h4>Visite o site:</h4> <a href="http://volleyballcenter.infinityfreeapp.com/Routes/index.php">http://volleyballcenter.infinityfreeapp.com</a>
