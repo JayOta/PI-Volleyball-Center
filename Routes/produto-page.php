@@ -17,7 +17,7 @@ $categoria = buscarCategoria();
             //   }
             // }
 
-// $_SESSION['value'] = 0;
+ $_SESSION['value'] = 0;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -138,7 +138,7 @@ $categoria = buscarCategoria();
             <!-- <i class='bx bx-plus'></i> -->
             </button>
 
-            <input name="quantity_cart" type="number" value = "<?php echo $_SESSION['contador']; ?>" style="font-size: 30px; outline: none; border: none; width: 30%;">
+            <input name="quantity_cart" type="number" value = "<?php echo $_SESSION['value']; ?>" style="font-size: 30px; outline: none; border: none; width: 30%;">
             <button type="button" class="price-btn__remove price-btn" name="sub_cart" type="submit">
               <!-- <i class='bx bx-minus'></i> -->
             </button> 

@@ -23,7 +23,8 @@ if(isset($_POST['remover_produto'])){
         text-decoration: none; 
         color: #fff; 
         position: relative; 
-        right: 20rem; display: flex; 
+        right: 20rem; 
+        display: flex; 
         justify-content: center; 
         align-items: center;
         border-radius: 3px;
@@ -31,7 +32,7 @@ if(isset($_POST['remover_produto'])){
         transition: 0.3s ease-in-out;">
             <i class='bx bx-left-arrow-alt'></i>Voltar
         </a>
-        <span>Carrinho de Compras</span>
+        <span>Carrinho de Compras </span>
     </header>
     <main style="width: 939px;">
         <form action="../Controller/carrinho.php" method="post">
@@ -106,7 +107,7 @@ if(isset($_POST['remover_produto'])){
                         <div class="info">
                             <div><span>Total</span><span>R$ 480</span></div>
                             <div><span>Frete</span><span>Gratuito</span></div>
-                            <div><button>Adicionar cupom de desconto<i class='bx bx-right-arrow-alt'></i></button></div>
+                            <!-- <div><button>Adicionar cupom de desconto<i class='bx bx-right-arrow-alt'></i></button></div> -->
                         </div>
                         <footer>
 

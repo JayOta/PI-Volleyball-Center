@@ -63,7 +63,7 @@ if (isset($_POST['nome'])) {
 		<div class="categoria">
 			<?php for ($i = 0; $i < count($getAllCategorias); $i++) { ?>
 				<a name="categorias" href="<?php echo @$link; ?>"><?php echo $getAllCategorias[$i]['nome']; ?></a>
-			<?php } ?>
+			<?php } ?>                                        
 		</div>
 
 		<form action="loja.php" method="post" class="d-flex position-relative" role="search">
