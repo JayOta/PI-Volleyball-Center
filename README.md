@@ -20,5 +20,6 @@
   <li><a href="https://github.com/anarara">anarara</a></li>
   <li><a href="https://github.com/SaraBeraldo">Sara Beraldo</a></li>
   <li><a href="https://github.com/JMaxGuezzo">Jean Max Guezzo</a></li>
-  <li><a href="https://github.com/cpelegrin">cpelegrin</a></li>
+  <li><a href="https://github.com/cpelegrin">Carlos Eduardo Simões Pelegrin</a></li>
+  <li><a href="https://github.com/euricoinf">Eurico Junior Tozzo</a></li>
 </ul>
